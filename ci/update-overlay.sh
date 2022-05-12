@@ -75,7 +75,7 @@ push_changes () {
     return 1
   fi
 
-  if ! git remote add origin "https://${GITHUB_OAUTH_TOKEN}:x-oauth-basic@github.com/Soft/nix-google-fonts-overlay.git" >/dev/null 2>&1; then
+  if ! git remote add origin "https://${GITHUB_OAUTH_TOKEN}:x-oauth-basic@github.com/dimitarnestorov/nix-google-fonts-overlay.git" >/dev/null 2>&1; then
     echo "Failed to add origin";
     return 1
   fi
