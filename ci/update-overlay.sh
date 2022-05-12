@@ -24,7 +24,7 @@ clone_fonts () {
 
 install_nix_google_fonts_gen () {
   echo "Installing nix-google-fonts-gen"
-  git clone https://github.com/Soft/nix-google-fonts-gen.git ~/nix-google-fonts-gen >/dev/null 2>&1 &&
+  git clone https://github.com/dimitarnestorov/nix-google-fonts-gen.git ~/nix-google-fonts-gen >/dev/null 2>&1 &&
   pushd ~/nix-google-fonts-gen &&
   ./setup.py install &&
   popd
