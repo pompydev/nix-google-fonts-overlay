@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "ruthie-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/ruthie/Ruthie-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/6d91f3c06971d51f10e4327e3a7a5ba51d5dd318/ofl/ruthie/Ruthie-Regular.ttf?raw=true";
       name = "Ruthie-Regular.ttf";
-      sha256 = "7c5a1bfbcd9b0bf6f709686bdcefa4b06305f60fecdd290c1c2782de31559232";
+      sha256 = "f97e99910e79a6caebcc18dcca305969a0ab42595fce6767139f260c193da302";
     })
   ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "odor-mean-chey-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/odormeanchey/OdorMeanChey.ttf?raw=true";
-      name = "OdorMeanChey.ttf";
-      sha256 = "d6f88861db4db30dc7ed15251610bc992a27839c86bd559bf5ec9a9c9518c013";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/odormeanchey/OdorMeanChey-Regular.ttf?raw=true";
+      name = "OdorMeanChey-Regular.ttf";
+      sha256 = "29cb2e094a7e8ed9dd5701f48a5ef42c4e15db8acd85ea78e22804ae67188fbe";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 OdorMeanChey.ttf $out/share/fonts/truetype/OdorMeanChey.ttf
+     install -Dm644 OdorMeanChey-Regular.ttf $out/share/fonts/truetype/OdorMeanChey-Regular.ttf
   '';
 
   meta = with lib; {

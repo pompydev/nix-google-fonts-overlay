@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "flavors-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/flavors/Flavors-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7da86e3f405d4cf22e3949698519c75a021177db/ofl/flavors/Flavors-Regular.ttf?raw=true";
       name = "Flavors-Regular.ttf";
-      sha256 = "dd85071ba3eabb26f80815dff45479874cbb57ee4cada39de67318df22e0fe3f";
+      sha256 = "4e651bcdabe9753092ab8b1a85487c934d93650401853a591bbdb4658bf502d8";
     })
   ];
 

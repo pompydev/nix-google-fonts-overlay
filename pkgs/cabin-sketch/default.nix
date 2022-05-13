@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "cabin-sketch-${version}";
-  version = "2016-12-05-225801";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

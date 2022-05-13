@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "londrina-outline-${version}";
-  version = "2017-07-31-221703";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

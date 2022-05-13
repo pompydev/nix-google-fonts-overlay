@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "tajawal-${version}";
-  version = "2018-04-04-145825";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

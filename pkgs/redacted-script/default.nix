@@ -2,20 +2,25 @@
 
 stdenv.mkDerivation rec {
   name = "redacted-script-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bacec3651f66c2e219e20a9a0d0aa0286c74a777/ofl/redactedscript/RedactedScript-Regular.ttf?raw=true";
-      name = "RedactedScript-Regular.ttf";
-      sha256 = "0ea846f8aa0ea5049676e3bcda5a276e3b5b5b86002199ce11ba9ca2f03cfade";
+      url = "https://github.com/google/fonts/blob/b86355816fa30ea84fc8958b034b75ded8ee76a4/ofl/redactedscript/RedactedScript-Light.ttf?raw=true";
+      name = "RedactedScript-Light.ttf";
+      sha256 = "5ff11d7b9510a90cbee1525564457b6991a65e0a413ecc4fdbdde697452fe665";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bacec3651f66c2e219e20a9a0d0aa0286c74a777/ofl/redactedscript/RedactedScript-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b86355816fa30ea84fc8958b034b75ded8ee76a4/ofl/redactedscript/RedactedScript-Regular.ttf?raw=true";
+      name = "RedactedScript-Regular.ttf";
+      sha256 = "1ebaab9642a2f43fa33f449760469903143fd1d08b2433eb6c15e28602d9360d";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/b86355816fa30ea84fc8958b034b75ded8ee76a4/ofl/redactedscript/RedactedScript-Bold.ttf?raw=true";
       name = "RedactedScript-Bold.ttf";
-      sha256 = "e84ab9873e893d5a443ae9ee16283c816a21e20e577e8961ee64d22736978104";
+      sha256 = "48ad6a76be6f094893541898d1c9a04e3debe48645c314cf07add92c019e7983";
     })
   ];
 
@@ -26,6 +31,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
+     install -Dm644 RedactedScript-Light.ttf $out/share/fonts/truetype/RedactedScript-Light.ttf
      install -Dm644 RedactedScript-Regular.ttf $out/share/fonts/truetype/RedactedScript-Regular.ttf
      install -Dm644 RedactedScript-Bold.ttf $out/share/fonts/truetype/RedactedScript-Bold.ttf
   '';

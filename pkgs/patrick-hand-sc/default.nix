@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "patrick-hand-sc-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/patrickhandsc/PatrickHandSC-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/d08233f9c581786e8c834a1f0695a4f27869c119/ofl/patrickhandsc/PatrickHandSC-Regular.ttf?raw=true";
       name = "PatrickHandSC-Regular.ttf";
-      sha256 = "6906ac992051812f7fe1562a14f0f45f4027c169c2120a5af383c81e514daebd";
+      sha256 = "83eff88cfa3c4e501e25f334c0a1a88eb4d4af1ea9d4c32900edf2fb178244dc";
     })
   ];
 

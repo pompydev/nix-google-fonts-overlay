@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "bokor-${version}";
-  version = "2017-08-07-195003";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/08635a26b2cb73314f1be07621c335f0667db598/ofl/bokor/Bokor-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/bokor/Bokor-Regular.ttf?raw=true";
       name = "Bokor-Regular.ttf";
-      sha256 = "e1d300a99aca205ecf1921aca3befe5b447964130fbb0ca18455fde7fc520286";
+      sha256 = "640d475abdd109bfd80d2eef892fe1c63d3ec0faddcd15f819c5f1729712c370";
     })
   ];
 

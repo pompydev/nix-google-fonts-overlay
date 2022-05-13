@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "indie-flower-${version}";
-  version = "2016-11-01-164845";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

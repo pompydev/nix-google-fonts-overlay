@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "caveat-brush-${version}";
-  version = "2016-05-26-000618";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

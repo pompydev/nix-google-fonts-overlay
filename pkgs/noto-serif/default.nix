@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-${version}";
-  version = "2016-01-12-204307";
+  version = "2022-03-09-183858";
 
   phases = [ "unpackPhase" "installPhase" ];
 

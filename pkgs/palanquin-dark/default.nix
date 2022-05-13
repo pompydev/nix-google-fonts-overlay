@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "palanquin-dark-${version}";
-  version = "2017-05-09-184824";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

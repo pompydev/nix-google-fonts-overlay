@@ -2,45 +2,45 @@
 
 stdenv.mkDerivation rec {
   name = "palanquin-${version}";
-  version = "2017-05-09-184810";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c2849d0c1ff37324e8436607411cbd319a44fb92/ofl/palanquin/Palanquin-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/ba0ae485eccac41ad1465056176ad43d6da73fe8/ofl/palanquin/Palanquin-Thin.ttf?raw=true";
       name = "Palanquin-Thin.ttf";
-      sha256 = "3c18a02e7351dd1dbffad4b464af34e29d527f6792291fe4dff6ae6a60e79300";
+      sha256 = "387c32989030704407c8b6e711b05268b67dd93e0f033f8eebdd300a9c4f0809";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c2849d0c1ff37324e8436607411cbd319a44fb92/ofl/palanquin/Palanquin-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/ba0ae485eccac41ad1465056176ad43d6da73fe8/ofl/palanquin/Palanquin-ExtraLight.ttf?raw=true";
       name = "Palanquin-ExtraLight.ttf";
-      sha256 = "e9775ee9567cef73228b5a74edb3e5a31cd4a72a8ad0ad8228914b7245f3f491";
+      sha256 = "1e92eeaf00081e9320bbcbda4e1c54cbaa4c8148dc6a6a25c1ad0b3f1474f198";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c2849d0c1ff37324e8436607411cbd319a44fb92/ofl/palanquin/Palanquin-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/ba0ae485eccac41ad1465056176ad43d6da73fe8/ofl/palanquin/Palanquin-Light.ttf?raw=true";
       name = "Palanquin-Light.ttf";
-      sha256 = "7bf50ebb14ccf02c1dff2cd0a087a405df838e1d105699856c82a30444e24623";
+      sha256 = "33c40ff07f925a26240a76de1ac3a57c086a388138c44966f0ea2f56522893d0";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c2849d0c1ff37324e8436607411cbd319a44fb92/ofl/palanquin/Palanquin-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/ba0ae485eccac41ad1465056176ad43d6da73fe8/ofl/palanquin/Palanquin-Regular.ttf?raw=true";
       name = "Palanquin-Regular.ttf";
-      sha256 = "c29452dcfedcd99f4f1012cfc0513664c4336b41ddc32db48f422088391e1bf3";
+      sha256 = "f4f9cf415279b466b1c4df6168283f95fa88440b27bb34e884aeb03a432b02f0";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c2849d0c1ff37324e8436607411cbd319a44fb92/ofl/palanquin/Palanquin-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/ba0ae485eccac41ad1465056176ad43d6da73fe8/ofl/palanquin/Palanquin-Medium.ttf?raw=true";
       name = "Palanquin-Medium.ttf";
-      sha256 = "71a2ba8b3ee619d6e0f84a9a73fd538a45051af476c94e42b1e0a2925d5664ff";
+      sha256 = "9afdd20558ad624c4a45ec9d4450980320c49093be397c83d33033e413dcc4c4";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c2849d0c1ff37324e8436607411cbd319a44fb92/ofl/palanquin/Palanquin-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/ba0ae485eccac41ad1465056176ad43d6da73fe8/ofl/palanquin/Palanquin-SemiBold.ttf?raw=true";
       name = "Palanquin-SemiBold.ttf";
-      sha256 = "5b60a5f849d09649f0b75f8432fae67f7e1a43fbb65061a4b3f449cd9eafc8a5";
+      sha256 = "08cf0011bc5ab632e75ca79f2df1f37956fc3b93d1305b46117df17fb58cb414";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c2849d0c1ff37324e8436607411cbd319a44fb92/ofl/palanquin/Palanquin-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/ba0ae485eccac41ad1465056176ad43d6da73fe8/ofl/palanquin/Palanquin-Bold.ttf?raw=true";
       name = "Palanquin-Bold.ttf";
-      sha256 = "2a8745a17bbc04a04f35f4d25b31bfc25a74b903fe994c047403600954b70c80";
+      sha256 = "b9ff87d5743c179d1300ecbbdb97c53e7a1adb2f54c446c21acec50e2bc77acf";
     })
   ];
 

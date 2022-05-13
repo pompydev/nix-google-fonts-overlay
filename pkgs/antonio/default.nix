@@ -2,25 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "antonio-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/antonio/Antonio-Light.ttf?raw=true";
-      name = "Antonio-Light.ttf";
-      sha256 = "92d5b44496c33b8354b7a2334a3a8d31fd0eab7212afd9bb35efea618be03d7c";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/antonio/Antonio-Regular.ttf?raw=true";
-      name = "Antonio-Regular.ttf";
-      sha256 = "27f419ff2c909c2fab6a54e215d87e3a501d2b897c109707b360e309ebee8b62";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/antonio/Antonio-Bold.ttf?raw=true";
-      name = "Antonio-Bold.ttf";
-      sha256 = "6baef1da279bd96f1b4656ac4401fa57935a10bb1c4e3674cc199e14f93ee6f6";
+      url = "https://github.com/google/fonts/blob/1e47308e55771f6fe4f54cc7efb252a4f796afb9/ofl/antonio/Antonio[wght].ttf?raw=true";
+      name = "Antonio[wght].ttf";
+      sha256 = "9e95a2258ecdf3e45c72c5bbea1c4cd350e8f7bebc87c9dba53b29b1890b8903";
     })
   ];
 
@@ -31,9 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Antonio-Light.ttf $out/share/fonts/truetype/Antonio-Light.ttf
-     install -Dm644 Antonio-Regular.ttf $out/share/fonts/truetype/Antonio-Regular.ttf
-     install -Dm644 Antonio-Bold.ttf $out/share/fonts/truetype/Antonio-Bold.ttf
+     install -Dm644 'Antonio[wght].ttf' $out/share/fonts/truetype/'Antonio[wght].ttf'
   '';
 
   meta = with lib; {

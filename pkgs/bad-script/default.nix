@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "bad-script-${version}";
-  version = "2016-10-14-100002";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

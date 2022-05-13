@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "moulpali-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/moulpali/Moulpali.ttf?raw=true";
-      name = "Moulpali.ttf";
-      sha256 = "729290c19670f6d26570420271dbc8b7e39be540b30e3a27fc7fd09b65d841f6";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/moulpali/Moulpali-Regular.ttf?raw=true";
+      name = "Moulpali-Regular.ttf";
+      sha256 = "555fa15b85a70b3b18c182ccd26a24f2e1babaf64fb53ba31bbf91327a7b31b4";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Moulpali.ttf $out/share/fonts/truetype/Moulpali.ttf
+     install -Dm644 Moulpali-Regular.ttf $out/share/fonts/truetype/Moulpali-Regular.ttf
   '';
 
   meta = with lib; {

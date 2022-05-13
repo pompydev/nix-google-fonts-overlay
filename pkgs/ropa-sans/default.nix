@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "ropa-sans-${version}";
-  version = "2016-12-02-171757";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "meera-inimai-${version}";
-  version = "2017-05-23-170801";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

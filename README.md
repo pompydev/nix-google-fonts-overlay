@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dimitarnestorov/nix-google-fonts-overlay.svg?branch=master)](https://travis-ci.org/dimitarnestorov/nix-google-fonts-overlay)
 
-**967 high-quality fonts packaged for Nix**
+**1512 high-quality fonts packaged for Nix**
 
 This [Nix overlay](https://nixos.org) contains individual packages for all the
 fonts from the [Google Fonts project](https://github.com/google/fonts). The

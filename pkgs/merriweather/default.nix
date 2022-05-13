@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "merriweather-${version}";
-  version = "2017-10-31-191616";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

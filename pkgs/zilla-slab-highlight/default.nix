@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "zilla-slab-highlight-${version}";
-  version = "2017-08-29-155129";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

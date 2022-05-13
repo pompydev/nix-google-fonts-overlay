@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "vollkorn-${version}";
-  version = "2019-01-25-231657";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/37c1a2d88f3fe04a1bde9ad6000109fa926e5dfe/ofl/vollkorn/Vollkorn-Regular.ttf?raw=true";
-      name = "Vollkorn-Regular.ttf";
-      sha256 = "0f2949f3db470cede08a49c0f484d55d02040708c68a429efe9205ede737e564";
+      url = "https://github.com/google/fonts/blob/14cd2acd0902164aa1580c2be3835f9c696044f4/ofl/vollkorn/Vollkorn[wght].ttf?raw=true";
+      name = "Vollkorn[wght].ttf";
+      sha256 = "4ebef434f76f80286204840354a84db79a0dc3c87deeeb791e015b70b2ade49d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/37c1a2d88f3fe04a1bde9ad6000109fa926e5dfe/ofl/vollkorn/Vollkorn-Italic.ttf?raw=true";
-      name = "Vollkorn-Italic.ttf";
-      sha256 = "af5893110f170f7a05484304e51514b339e5495b5c54116611c3465a68985976";
+      url = "https://github.com/google/fonts/blob/14cd2acd0902164aa1580c2be3835f9c696044f4/ofl/vollkorn/Vollkorn-Italic[wght].ttf?raw=true";
+      name = "Vollkorn-Italic[wght].ttf";
+      sha256 = "cd947ae49b5d46e812d8d09434fbe8ec452286cd5557ef6a762a3562e2c8d300";
     })
   ];
 
@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Vollkorn-Regular.ttf $out/share/fonts/truetype/Vollkorn-Regular.ttf
-     install -Dm644 Vollkorn-Italic.ttf $out/share/fonts/truetype/Vollkorn-Italic.ttf
+     install -Dm644 'Vollkorn[wght].ttf' $out/share/fonts/truetype/'Vollkorn[wght].ttf'
+     install -Dm644 'Vollkorn-Italic[wght].ttf' $out/share/fonts/truetype/'Vollkorn-Italic[wght].ttf'
   '';
 
   meta = with lib; {

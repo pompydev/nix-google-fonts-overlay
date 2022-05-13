@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "raleway-dots-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/ralewaydots/RalewayDots-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/023aa4b2855c95413d1b1c510ad812beb345df75/ofl/ralewaydots/RalewayDots-Regular.ttf?raw=true";
       name = "RalewayDots-Regular.ttf";
-      sha256 = "cd3956043e1ee880bdf1670b7d0720bf25def80453528127d03332811c45e486";
+      sha256 = "a35582c11e29d5d40bf5ed263f4be18c42264376b51b6b8a7a1b79252b853e09";
     })
   ];
 

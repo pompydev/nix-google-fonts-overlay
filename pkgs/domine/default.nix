@@ -2,20 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "domine-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/domine/Domine-Regular.ttf?raw=true";
-      name = "Domine-Regular.ttf";
-      sha256 = "506e373ccfe036ede8b8488e1beb2b86c3839ebe32b7a2dba43270164fcd443b";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/domine/Domine-Bold.ttf?raw=true";
-      name = "Domine-Bold.ttf";
-      sha256 = "d3a54ebdf4811bb8aee01c9617e418ce9e5e0e8abcfd675f4b51adb2ad19446e";
+      url = "https://github.com/google/fonts/blob/2194d6669928109624e4238fbcdb51858ec35a99/ofl/domine/Domine[wght].ttf?raw=true";
+      name = "Domine[wght].ttf";
+      sha256 = "c63552cb60c658e90c1da3e83f9e7cf203562c39cdbf5a78ba9df62d8e7a1ed7";
     })
   ];
 
@@ -26,8 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Domine-Regular.ttf $out/share/fonts/truetype/Domine-Regular.ttf
-     install -Dm644 Domine-Bold.ttf $out/share/fonts/truetype/Domine-Bold.ttf
+     install -Dm644 'Domine[wght].ttf' $out/share/fonts/truetype/'Domine[wght].ttf'
   '';
 
   meta = with lib; {

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "press-start-2p-${version}";
-  version = "2017-01-17-072927";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

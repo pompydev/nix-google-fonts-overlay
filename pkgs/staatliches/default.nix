@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "staatliches-${version}";
-  version = "2018-12-10-221713";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

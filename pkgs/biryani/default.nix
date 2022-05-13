@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "biryani-${version}";
-  version = "2017-05-08-150504";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

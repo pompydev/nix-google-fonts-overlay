@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "cantata-one-${version}";
-  version = "2016-02-22-181423";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

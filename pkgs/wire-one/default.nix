@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "wire-one-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/57dac512dac3c0837fde4455c02fbc818a8ac927/ofl/wireone/WireOne.ttf?raw=true";
-      name = "WireOne.ttf";
-      sha256 = "a4b6c6a7e69f2d9b668443802db8d01d98f039fa728fddeaf79d73b3105e2364";
+      url = "https://github.com/google/fonts/blob/3f57c8fab77c7854f09cdb020398b5bfd182a7de/ofl/wireone/WireOne-Regular.ttf?raw=true";
+      name = "WireOne-Regular.ttf";
+      sha256 = "d505059c3c094b921358db3e41be899789edf4c4aec1ec777be1643efcd9fc05";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 WireOne.ttf $out/share/fonts/truetype/WireOne.ttf
+     install -Dm644 WireOne-Regular.ttf $out/share/fonts/truetype/WireOne-Regular.ttf
   '';
 
   meta = with lib; {

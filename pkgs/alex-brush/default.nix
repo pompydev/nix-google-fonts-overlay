@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "alex-brush-${version}";
-  version = "2017-05-09-135507";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/355221c0687130fd04d8d27879889df42f3ac778/ofl/alexbrush/AlexBrush-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7d87a7969ad5e54086c284c16440389a38cb7eb4/ofl/alexbrush/AlexBrush-Regular.ttf?raw=true";
       name = "AlexBrush-Regular.ttf";
-      sha256 = "608a08fc92ae99c2d9d3819cdc4d41acfe3693b6e32c7255f3ee22a06db36567";
+      sha256 = "1bb7e64d0ec2d4c09eaa37feff9d98cb02f8214e0d03eecf4692d2487a518ad1";
     })
   ];
 

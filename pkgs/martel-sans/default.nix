@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "martel-sans-${version}";
-  version = "2017-05-08-222732";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

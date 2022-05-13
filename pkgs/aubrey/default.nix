@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "aubrey-${version}";
-  version = "2017-08-07-195948";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/9fe318418f68ca06f8d6967710037b539857d4a7/ofl/aubrey/Aubrey-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4678b39ef50659bf72cf21c2b38ff83280d82a99/ofl/aubrey/Aubrey-Regular.ttf?raw=true";
       name = "Aubrey-Regular.ttf";
-      sha256 = "e991cb2b346b96fcf98baa3f1bf39cb1fa91deee1484c7510fd3e0141cec7d13";
+      sha256 = "0e5d5bcacda38d60d25b2c61a2b7130a91d20f0cab28072fccf29185fc2c3176";
     })
   ];
 

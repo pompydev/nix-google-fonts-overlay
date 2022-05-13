@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "aleo-${version}";
-  version = "2018-12-05-160959";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

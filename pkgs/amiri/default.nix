@@ -2,30 +2,30 @@
 
 stdenv.mkDerivation rec {
   name = "amiri-${version}";
-  version = "2017-08-07-210849";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fc2d9d776339a1c80907ed52be14ca9b38ee4636/ofl/amiri/Amiri-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4210df1abd7797158390c50c4a36dc8bcdb07f09/ofl/amiri/Amiri-Regular.ttf?raw=true";
       name = "Amiri-Regular.ttf";
-      sha256 = "bd185dcc872a9321d68b70525bd4fc45cc809c0410d307b8158c468a103825f3";
+      sha256 = "6f909d81f17de2919be4ce99fac51b07623794d9a46cfd1df53e2d6e669d9263";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fc2d9d776339a1c80907ed52be14ca9b38ee4636/ofl/amiri/Amiri-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4210df1abd7797158390c50c4a36dc8bcdb07f09/ofl/amiri/Amiri-Italic.ttf?raw=true";
       name = "Amiri-Italic.ttf";
-      sha256 = "005280aeb66a8727317299cafeeafe8baf5578beda9e36676c0f423a3203a22b";
+      sha256 = "df76cc7db0656e22c1968436586fd60d86caa0a3ec933034211f4f39dd7e8a7f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fc2d9d776339a1c80907ed52be14ca9b38ee4636/ofl/amiri/Amiri-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4210df1abd7797158390c50c4a36dc8bcdb07f09/ofl/amiri/Amiri-Bold.ttf?raw=true";
       name = "Amiri-Bold.ttf";
-      sha256 = "c519a145f8de6715a39c6911cf12782d536458a43325c12f81d05116d479ef72";
+      sha256 = "a0e7946a97cd016e4322c3d3dc06bdc62776a5c933e9a3417ad74c91d822b9bd";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fc2d9d776339a1c80907ed52be14ca9b38ee4636/ofl/amiri/Amiri-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4210df1abd7797158390c50c4a36dc8bcdb07f09/ofl/amiri/Amiri-BoldItalic.ttf?raw=true";
       name = "Amiri-BoldItalic.ttf";
-      sha256 = "0f21caa7ca55eef942a745c50e4812eb5c8b37a7227671fb4963756aed7372e8";
+      sha256 = "25c7d04a613c4c38a55c515d7fac0375704b5955cf0f64e3b6e761c125041ce7";
     })
   ];
 

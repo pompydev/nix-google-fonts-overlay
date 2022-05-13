@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "abeezee-${version}";
-  version = "2017-05-08-145323";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c9c92ddd2942802f7c867450923c4968e1257a62/ofl/abeezee/ABeeZee-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/a8bc01c6dcb2933dca0f37180df6c516e226b346/ofl/abeezee/ABeeZee-Regular.ttf?raw=true";
       name = "ABeeZee-Regular.ttf";
-      sha256 = "cc7ed559c4a02905a5631e14e31075c3dfa9f3c92858ee9f8e30168d9cb77c3d";
+      sha256 = "2901c8df256648cc2bb2e3afb381cb8d28e65ed3dbe11de20695ae4d5ffdeda9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c9c92ddd2942802f7c867450923c4968e1257a62/ofl/abeezee/ABeeZee-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/a8bc01c6dcb2933dca0f37180df6c516e226b346/ofl/abeezee/ABeeZee-Italic.ttf?raw=true";
       name = "ABeeZee-Italic.ttf";
-      sha256 = "34c688fa16eca53535df4139d8ee1d4090ef32603338db67ae97600cd04dcbdf";
+      sha256 = "3892bb74578207ed6edae040a0869e54dcae13a466d005460570947062137dd8";
     })
   ];
 

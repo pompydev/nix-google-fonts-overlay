@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "alice-${version}";
-  version = "2017-01-17-072759";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/47a80825906263bc7ff9bc3796a84a146584142d/ofl/alice/Alice-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/edfdc270a7be7c4c29d3f24914e2e00410d1faa8/ofl/alice/Alice-Regular.ttf?raw=true";
       name = "Alice-Regular.ttf";
-      sha256 = "26f43e1bf6e88ae87c6fcd30197af8a04574862b5a8cc7c171d28bff33c7ace4";
+      sha256 = "8212c40f10b306af9b82272ae68314de6964522b6dabf6abdaff647e74ac8b58";
     })
   ];
 

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "montserrat-alternates-${version}";
-  version = "2017-11-03-205118";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

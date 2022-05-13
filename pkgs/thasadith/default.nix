@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "thasadith-${version}";
-  version = "2018-09-10-213501";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

@@ -2,35 +2,35 @@
 
 stdenv.mkDerivation rec {
   name = "khula-${version}";
-  version = "2017-05-16-003426";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f4f92a27886d3757d2dcd455ac5f512a07726b19/ofl/khula/Khula-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/khula/Khula-Light.ttf?raw=true";
       name = "Khula-Light.ttf";
-      sha256 = "5f9d38f011cf40720df302bc51430a4f6c325abda17a9215bdc064679b12ff85";
+      sha256 = "805bec764710d2e18590c3b783d0ba241e76368a718107ede318f84b940e5075";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f4f92a27886d3757d2dcd455ac5f512a07726b19/ofl/khula/Khula-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/khula/Khula-Regular.ttf?raw=true";
       name = "Khula-Regular.ttf";
-      sha256 = "044fcb517bcd16b50d5fb7b13aefcfb280eacd7265e78fd8f529a4c777d1b667";
+      sha256 = "825477d3c995997ebd41245fc4177bf1681bfd6546674e0d67a29a094c78644f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f4f92a27886d3757d2dcd455ac5f512a07726b19/ofl/khula/Khula-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/khula/Khula-SemiBold.ttf?raw=true";
       name = "Khula-SemiBold.ttf";
-      sha256 = "121b19f633feafbc2b08a4d3e10680db0f349dcc4b45166dda41afab666511a7";
+      sha256 = "b12c4895da1a0e7eccc18c844baa1054fd51eab70d3a65786e7c8437fea51986";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f4f92a27886d3757d2dcd455ac5f512a07726b19/ofl/khula/Khula-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/khula/Khula-Bold.ttf?raw=true";
       name = "Khula-Bold.ttf";
-      sha256 = "0129ce592b61979c6b52e8eeed776f5fd65bf94ff92761d07b74ab048dca52da";
+      sha256 = "923cafe77cf48066e151f91358800bd9e036b1c417b9fcc326da39d281b87fe7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f4f92a27886d3757d2dcd455ac5f512a07726b19/ofl/khula/Khula-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/khula/Khula-ExtraBold.ttf?raw=true";
       name = "Khula-ExtraBold.ttf";
-      sha256 = "ec7a86ede2934300a44757cc620381c76c93eae8dfad8fbcf02cb2b814f439c3";
+      sha256 = "ba71d616a428488071037fba6fa660396f0a189fc545cf60b7a0de709075947f";
     })
   ];
 

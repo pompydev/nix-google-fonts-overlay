@@ -2,100 +2,100 @@
 
 stdenv.mkDerivation rec {
   name = "kanit-${version}";
-  version = "2017-05-08-212610";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-Thin.ttf?raw=true";
       name = "Kanit-Thin.ttf";
-      sha256 = "7b35b3312630691e08460af0057acd71fcb641dfba4c84a4c82484f57b70dd83";
+      sha256 = "740d8a4d92ddae394d13a3caea845c048b6d62b58f9fb92ed4ac0118ed38c083";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-ThinItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-ThinItalic.ttf?raw=true";
       name = "Kanit-ThinItalic.ttf";
-      sha256 = "9abffdfb05f660ed977b9fcad961a2ced8113e1aa975c5ea72ec9e7a4210ab26";
+      sha256 = "6f61a638ba025b495fbf23a05f96af31ae3e9ca710506da123e3d63abdcf7d40";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-ExtraLight.ttf?raw=true";
       name = "Kanit-ExtraLight.ttf";
-      sha256 = "35284c4f9f8c23405bc2fa66f918174990c0872913045440648849726b37035a";
+      sha256 = "f90e440b41170f2f75f2930d3273dbe9ed7a5ac49f7dbdc375ba5f8d2e224745";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-ExtraLightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-ExtraLightItalic.ttf?raw=true";
       name = "Kanit-ExtraLightItalic.ttf";
-      sha256 = "8ddfb2648b59448a70aa947f3164533b59d5fa32e6aac6c159ef5f6d2da6fcf3";
+      sha256 = "e62305565471f6ef1139581e2afbcd0b108fc2a8b140052cd06ec2852aad9cf9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-Light.ttf?raw=true";
       name = "Kanit-Light.ttf";
-      sha256 = "75b3606540e25ccf1e4b2ddd2c047716cc945ac0fe415dfce05515198a8b3967";
+      sha256 = "7c04b0be6011782fcc4c032f4033ef6f6ba1fef99b135ba1ee68b800c53017ec";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-LightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-LightItalic.ttf?raw=true";
       name = "Kanit-LightItalic.ttf";
-      sha256 = "6f9521fe724271d694e603b697724fdbf75f905621b4098b6e866a78a59d8de3";
+      sha256 = "e5cd0a7ce9ce65b7be59287320d247b7627b0a437a6a3bd1174440ceed4af1c6";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-Regular.ttf?raw=true";
       name = "Kanit-Regular.ttf";
-      sha256 = "47b3e4a00f80bb196284e13cc1e3595d3bb2260847e7f5d0b7dbb4daf13bcc59";
+      sha256 = "27170c049660b2f962d3ed28441fd20f4c743503ca031fec9c2b4542d6c52736";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-Italic.ttf?raw=true";
       name = "Kanit-Italic.ttf";
-      sha256 = "c1fe6216bd2383baa45e19e9944d3091062b8ea877a86275d25af3f3e61c733f";
+      sha256 = "7cbe69393a7bf948dd49e575369344a907f06b0182e7a618c033c67208abb27d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-Medium.ttf?raw=true";
       name = "Kanit-Medium.ttf";
-      sha256 = "e4fe8ff037a936b77a3ef4fd7451aa3f9a47ec6d585b49faaed0e56f9633fd4b";
+      sha256 = "50a237034244026a7c63fe55e24e0b4298babe363cde043e032075b764c545a2";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-MediumItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-MediumItalic.ttf?raw=true";
       name = "Kanit-MediumItalic.ttf";
-      sha256 = "18008b317a44b19cc44f2d79a889c03f9f8d0673146b65d44590bbc091062a6c";
+      sha256 = "266a8044e599ce2feef7dffa8e3ce7648c94927daba20c4838629054633cf8c4";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-SemiBold.ttf?raw=true";
       name = "Kanit-SemiBold.ttf";
-      sha256 = "b3f66681334b4ea87141c6c2cf77088dd5b143f5455c4c2808b4c089d39fa527";
+      sha256 = "67e64baf1a7e6e076435518ff0e6bf25c4d74b98143cd1a2688db906c0abce11";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-SemiBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-SemiBoldItalic.ttf?raw=true";
       name = "Kanit-SemiBoldItalic.ttf";
-      sha256 = "328892615ea04c87537d16be95bf6084ef3222feae447a84e4255e91b016294c";
+      sha256 = "df1f635f3022306a7f61ed03cdc1a90364f31e19454bd287cffe45f98ca805d0";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-Bold.ttf?raw=true";
       name = "Kanit-Bold.ttf";
-      sha256 = "1678f94b5688736d563d7d57426e37b1a42b7bbff0599fbfea354e7440e6aa2b";
+      sha256 = "5dec5b080dab13de9d2295437c0ff3ec05c9e75587dfc31358c005eb4efa5e70";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-BoldItalic.ttf?raw=true";
       name = "Kanit-BoldItalic.ttf";
-      sha256 = "73b45eb83a48b0d3ec69643bd5ae3a4693843f3380a8941660868c225f4b9a23";
+      sha256 = "194d26ba90b782465bd4653cc5a1cdf7a9bed7b9e271df4f6fb41b5dba359d78";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-ExtraBold.ttf?raw=true";
       name = "Kanit-ExtraBold.ttf";
-      sha256 = "61058f98e463ab74eebf78402d19b16ea4313f3d726337a1e910e037a5d9e14b";
+      sha256 = "70082870d1f5bb6ae9faa708572b2c36de3c076caae187edae753f709d0de984";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-ExtraBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-ExtraBoldItalic.ttf?raw=true";
       name = "Kanit-ExtraBoldItalic.ttf";
-      sha256 = "9631fe707d9b2460e1f4946cd819c192c7996d02e950ac922b9f90da403a9b0e";
+      sha256 = "e874a96de66b5340174ddf9c621593280a21e9adb8e07bb1587112de274acad5";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-Black.ttf?raw=true";
       name = "Kanit-Black.ttf";
-      sha256 = "c0982c40e812e2a4f1dff816b892cecdf28132c3e3192d9529c4584358f53264";
+      sha256 = "5d290c2cc9926764bd782aa6abc47a8f55bd64641d0afb56e115ee522698ee7e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6b1bfc8e8e2cdfb644a33e0cf19409cbfffb1b73/ofl/kanit/Kanit-BlackItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/674cdcf5e290b4d29f7b017ad1643e536d1bc372/ofl/kanit/Kanit-BlackItalic.ttf?raw=true";
       name = "Kanit-BlackItalic.ttf";
-      sha256 = "4097f97bdc7a4e361453a841862d1cad74540841e96e092b10feaec1a41c084b";
+      sha256 = "7fe3f1d87e33e165eae2d664e42a31faf542d24e431a2e7da36f4e4eee5f8529";
     })
   ];
 

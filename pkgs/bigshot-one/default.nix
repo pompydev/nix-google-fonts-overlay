@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "bigshot-one-${version}";
-  version = "2017-08-07-195203";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

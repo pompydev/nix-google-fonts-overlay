@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "vollkorn-sc-${version}";
-  version = "2017-10-31-213533";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "abhaya-libre-${version}";
-  version = "2017-02-17-184301";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

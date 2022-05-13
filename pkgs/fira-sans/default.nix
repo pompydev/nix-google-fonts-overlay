@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "fira-sans-${version}";
-  version = "2016-12-02-170953";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

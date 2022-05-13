@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "preahvihear-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/preahvihear/Preahvihear.ttf?raw=true";
-      name = "Preahvihear.ttf";
-      sha256 = "c4b725aa149e48d130cf6de5a64ef78d7a1309832b7425f6f9c4a888a0b65482";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/preahvihear/Preahvihear-Regular.ttf?raw=true";
+      name = "Preahvihear-Regular.ttf";
+      sha256 = "ea306be8e286bc3bd75b9cb497caa38bdcd06e8d6541a53e2e1a77f16d7ed522";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Preahvihear.ttf $out/share/fonts/truetype/Preahvihear.ttf
+     install -Dm644 Preahvihear-Regular.ttf $out/share/fonts/truetype/Preahvihear-Regular.ttf
   '';
 
   meta = with lib; {

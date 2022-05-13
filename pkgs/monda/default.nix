@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "monda-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/monda/Monda-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7f1eb1639d1954370545329a3219ad9c83cd7cc5/ofl/monda/Monda-Regular.ttf?raw=true";
       name = "Monda-Regular.ttf";
-      sha256 = "6e50607d72931e350822ddb81171e9560694e4712daa6055cab5876357cf7187";
+      sha256 = "e83b59ea26513c912843522204ff9ec5b5eca46429061e19202b628bff1c9331";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/monda/Monda-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7f1eb1639d1954370545329a3219ad9c83cd7cc5/ofl/monda/Monda-Bold.ttf?raw=true";
       name = "Monda-Bold.ttf";
-      sha256 = "ba508510d6c2cb4493dba4c237a0df6de1e61529a7ff5d54b091b8572d16ece9";
+      sha256 = "5466c59e352a18e1283534994a3a96fd44c6c00c237453a34b69bee883d24f9b";
     })
   ];
 

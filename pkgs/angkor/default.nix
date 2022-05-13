@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "angkor-${version}";
-  version = "2017-08-07-194046";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/af110f6c074ece1cf6d0e0ed71d3fe35692a9ff8/ofl/angkor/Angkor-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/8328055ac9d624a301f293060123ea8419bf1cad/ofl/angkor/Angkor-Regular.ttf?raw=true";
       name = "Angkor-Regular.ttf";
-      sha256 = "b89aa933a08fa13b518d681e4df4c045ff7950948501e9bff34a75ba3fa3980c";
+      sha256 = "ef3a846370cf0a5f6d5718162cb9133a1a9243586f32faf6cdbc449594a3dc1c";
     })
   ];
 

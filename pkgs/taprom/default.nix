@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "taprom-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/taprom/Taprom.ttf?raw=true";
-      name = "Taprom.ttf";
-      sha256 = "e3f9956715ab5c3d759921571b07a0e8cbc454e5f405c456b0482867e2b146d9";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/taprom/Taprom-Regular.ttf?raw=true";
+      name = "Taprom-Regular.ttf";
+      sha256 = "d89c52e9ad32693ffbd8646e2770e331d83c310056badf32ce3b12b3e1b5b45a";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Taprom.ttf $out/share/fonts/truetype/Taprom.ttf
+     install -Dm644 Taprom-Regular.ttf $out/share/fonts/truetype/Taprom-Regular.ttf
   '';
 
   meta = with lib; {

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "koulen-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/koulen/Koulen.ttf?raw=true";
-      name = "Koulen.ttf";
-      sha256 = "3dafea7b3be54b04f5a5df716f9b74e4a28c43593c3ecc8ce99a984bce20e230";
+      url = "https://github.com/google/fonts/blob/6a37f2a34525f75781cd76a95a433d64377fe9b8/ofl/koulen/Koulen-Regular.ttf?raw=true";
+      name = "Koulen-Regular.ttf";
+      sha256 = "4e19b0b83c537547b0f1ff1fb39dafb55cefbf6e957ef4bc900dccb9e4220117";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Koulen.ttf $out/share/fonts/truetype/Koulen.ttf
+     install -Dm644 Koulen-Regular.ttf $out/share/fonts/truetype/Koulen-Regular.ttf
   '';
 
   meta = with lib; {

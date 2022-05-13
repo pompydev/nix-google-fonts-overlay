@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "playball-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/playball/Playball-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/00ab40e1cdf29190ad0c1432c079f950185e11f4/ofl/playball/Playball-Regular.ttf?raw=true";
       name = "Playball-Regular.ttf";
-      sha256 = "3985700143687aa5d575b736abec8ef82170127494760393d826d7490f25e46b";
+      sha256 = "130654dd192f4ccd1c4fa2dc516d03cca93dc8ecdaf30d458283e54dcaef8f40";
     })
   ];
 

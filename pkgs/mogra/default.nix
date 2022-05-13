@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "mogra-${version}";
-  version = "2017-05-16-003728";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

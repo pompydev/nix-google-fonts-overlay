@@ -2,15 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "bevan-${version}";
-  version = "2016-12-02-172256";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/dd2f45e45a6cbc520fa1c2a8b9e0358e95e73ff1/ofl/bevan/Bevan-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/160c7fe82ecb74b108d886ed8d27762f6e346163/ofl/bevan/Bevan-Regular.ttf?raw=true";
       name = "Bevan-Regular.ttf";
-      sha256 = "11a453725d9873c87fde5f4dad000f20eeed38b7e265f60152093e32863a36a8";
+      sha256 = "8d16c0920330f1def84e342ce70626c27fbf179b4294e6391b19301ff5873469";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/160c7fe82ecb74b108d886ed8d27762f6e346163/ofl/bevan/Bevan-Italic.ttf?raw=true";
+      name = "Bevan-Italic.ttf";
+      sha256 = "bdf6744e1a398c2bbf80e94a8195209759992b25d09863eefacc42de4c9caf6b";
     })
   ];
 
@@ -22,6 +27,7 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
      install -Dm644 Bevan-Regular.ttf $out/share/fonts/truetype/Bevan-Regular.ttf
+     install -Dm644 Bevan-Italic.ttf $out/share/fonts/truetype/Bevan-Italic.ttf
   '';
 
   meta = with lib; {

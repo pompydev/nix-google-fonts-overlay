@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "elsie-swash-caps-${version}";
-  version = "2017-05-08-202245";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

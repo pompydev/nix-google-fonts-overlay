@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "trirong-${version}";
-  version = "2017-05-16-161552";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

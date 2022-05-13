@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "aref-ruqaa-${version}";
-  version = "2017-08-07-210825";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7785dbc9150ffa19a5e2c7965e1789e6f151f8b1/ofl/arefruqaa/ArefRuqaa-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/de3320b54068a9e69748aa943e582294623fd3b5/ofl/arefruqaa/ArefRuqaa-Regular.ttf?raw=true";
       name = "ArefRuqaa-Regular.ttf";
-      sha256 = "a8f0c27667bfaec627d7e1c2abfe22ddb753430ae8a673877c14e4e960f7f828";
+      sha256 = "ceb786d83ba92f35e96efcd8623c2858d288e0c543c8761ba35b1020989464f9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7785dbc9150ffa19a5e2c7965e1789e6f151f8b1/ofl/arefruqaa/ArefRuqaa-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/de3320b54068a9e69748aa943e582294623fd3b5/ofl/arefruqaa/ArefRuqaa-Bold.ttf?raw=true";
       name = "ArefRuqaa-Bold.ttf";
-      sha256 = "bf620622213efe5d4fa6302dbb457a25fd420565c8f2de4962cd3ff035cc42d3";
+      sha256 = "247071015b7eefd63f94d6e47949c5d10294ed31bd432f809ba9a219d93f91bb";
     })
   ];
 

@@ -2,30 +2,30 @@
 
 stdenv.mkDerivation rec {
   name = "arvo-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/35244154c985150ae1ff2850c9bd4a1b3200ed23/ofl/arvo/Arvo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/d2cc27513dcbc95a9171abf3e63376869fc294d6/ofl/arvo/Arvo-Regular.ttf?raw=true";
       name = "Arvo-Regular.ttf";
-      sha256 = "414289d440b46a5ebc0a40dd3e63adb253e6f3b15d68a7f6ddc1691d37979394";
+      sha256 = "f41bd41471ec2db7140351bdde614da5341524503598ff7fe79f3c89c13b605e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7d6402317f034601120fa2f7ae476d1316adfa8f/ofl/arvo/Arvo-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/d2cc27513dcbc95a9171abf3e63376869fc294d6/ofl/arvo/Arvo-Italic.ttf?raw=true";
       name = "Arvo-Italic.ttf";
-      sha256 = "d644bf55caaa03fd9a23dbaa38018c0d667d71dd70507ebf3e6c9d63d94452c2";
+      sha256 = "a2eb63a0771b8d13d8e54bf650a02aef813eeaa2e10f6298358e6b15d26c6686";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/35244154c985150ae1ff2850c9bd4a1b3200ed23/ofl/arvo/Arvo-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/d2cc27513dcbc95a9171abf3e63376869fc294d6/ofl/arvo/Arvo-Bold.ttf?raw=true";
       name = "Arvo-Bold.ttf";
-      sha256 = "db735f15dac276decaf787f300bd34be8a6d2fca5b0a1d4c8cd676e418c2ee09";
+      sha256 = "6239b2edee762db0ab99343137c9ba15ae81fc843da2e76a0a395781748cc21f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7d6402317f034601120fa2f7ae476d1316adfa8f/ofl/arvo/Arvo-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/d2cc27513dcbc95a9171abf3e63376869fc294d6/ofl/arvo/Arvo-BoldItalic.ttf?raw=true";
       name = "Arvo-BoldItalic.ttf";
-      sha256 = "6acdfbbd48ff4fc00cf4cb2a61cd831bfcb00dfd7944bccf6b84b04283ba00f2";
+      sha256 = "fc29e57f5558873e41ca9ff9a9c77521565f12c6972756d0fbcc592e1f0f4edb";
     })
   ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "oswald-${version}";
-  version = "2019-01-18-150628";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e6298cc84f595a6dda81460c3aebd320924c3833/ofl/oswald/Oswald-Regular.ttf?raw=true";
-      name = "Oswald-Regular.ttf";
-      sha256 = "f4dbd1617a7528ee73c84761af002234b83a11c95b5882c34070cd9cab119652";
+      url = "https://github.com/google/fonts/blob/7737b61706f8b5de7e6d883f99cb99000ab6cce8/ofl/oswald/Oswald[wght].ttf?raw=true";
+      name = "Oswald[wght].ttf";
+      sha256 = "08f3f1296114563252ae4fc3ca38dcd432cb461aa32b119a4f49aba7ea8f37cc";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Oswald-Regular.ttf $out/share/fonts/truetype/Oswald-Regular.ttf
+     install -Dm644 'Oswald[wght].ttf' $out/share/fonts/truetype/'Oswald[wght].ttf'
   '';
 
   meta = with lib; {

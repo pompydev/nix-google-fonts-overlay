@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "finger-paint-${version}";
-  version = "2017-05-08-202354";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

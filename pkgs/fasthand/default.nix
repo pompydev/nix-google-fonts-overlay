@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "fasthand-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bacec3651f66c2e219e20a9a0d0aa0286c74a777/ofl/fasthand/Fasthand-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/fasthand/Fasthand-Regular.ttf?raw=true";
       name = "Fasthand-Regular.ttf";
-      sha256 = "85ba3b935f1b37eeddf0b5808dd7ce5d1cf4899a2ceaae56db2b6193921f86e0";
+      sha256 = "f4a151d4d01ab2daf53e67904efd2b943c17ac7b7351de4e6ee7bda7697b0a13";
     })
   ];
 

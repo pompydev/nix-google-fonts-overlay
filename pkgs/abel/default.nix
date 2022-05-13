@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "abel-${version}";
-  version = "2017-05-01-172612";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d3e16741dff4c24a613fcf1c60ce45d4a243b039/ofl/abel/Abel-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/3b99d83d2625944fc0b8bd328d793fa819b92381/ofl/abel/Abel-Regular.ttf?raw=true";
       name = "Abel-Regular.ttf";
-      sha256 = "97cf1dbf8f17f42d7799b7725bacbee7d334da8eed29b3bbe3da0fab72a70379";
+      sha256 = "8809dcad25318225052f88333e208c5aad4adcb7b2c934c135735ec19aa410b4";
     })
   ];
 

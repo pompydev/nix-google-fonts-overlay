@@ -2,100 +2,100 @@
 
 stdenv.mkDerivation rec {
   name = "poppins-${version}";
-  version = "2018-02-28-203212";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-Thin.ttf?raw=true";
       name = "Poppins-Thin.ttf";
-      sha256 = "0f79f3b6913a16504c391f099e0454664dcd238b79d0da7235e9e393ab4e43dc";
+      sha256 = "6d8e5d9d29140cc93e321745fa1243c67889e6bc3639ec34db64f3da7a496352";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-ThinItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-ThinItalic.ttf?raw=true";
       name = "Poppins-ThinItalic.ttf";
-      sha256 = "db38b1747887a1376594bc2191fdb9150a63e907cf99acacb9e29fe65920aa86";
+      sha256 = "46df80ac970f5e84829b868d283878b4d97e289c7b1245541d8bbf66b5d670a8";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-ExtraLight.ttf?raw=true";
       name = "Poppins-ExtraLight.ttf";
-      sha256 = "a45537b1bb65599e49365b6707b9aa9a0802ae2282d4f759c19f8358e7711ece";
+      sha256 = "55c03314cc754e26f741f97890e5e9cbe3b3278fe3abcecfecafd60111b2643d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-ExtraLightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-ExtraLightItalic.ttf?raw=true";
       name = "Poppins-ExtraLightItalic.ttf";
-      sha256 = "9c5bbe87a23fe568fc3d3862296ea2e9ed05791d0c1b60dc17aac56de78b99ab";
+      sha256 = "7171a17e4cda8f6ded78a7a931f9b7f38987057f3ffd1fe07a71528ad0f01e49";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-Light.ttf?raw=true";
       name = "Poppins-Light.ttf";
-      sha256 = "7f02969b4cbfa615d737d159043f1f5a7bd2ce6a8e9c9080e8132a1024528c47";
+      sha256 = "650ba57fa99d12ec40c31ccfb680be656be4497fbe14164617d67e32ffe9cd46";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-LightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-LightItalic.ttf?raw=true";
       name = "Poppins-LightItalic.ttf";
-      sha256 = "173b7ea9a027274dc41dc77c7b5ddedc9d4eca8bccfd771a0c2f331c14b48e13";
+      sha256 = "b8f9c5be59723fadf8e5447fa1245c2c53b60a3464a24d6ece9ee3c283d8917b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-Regular.ttf?raw=true";
       name = "Poppins-Regular.ttf";
-      sha256 = "4bb722fdfadc6ca417a99d2b89ce6743795d1a59a86762962b03dcaf0ea70a2f";
+      sha256 = "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-Italic.ttf?raw=true";
       name = "Poppins-Italic.ttf";
-      sha256 = "f090292ec602aadd8ff55da97a73135878c0dae19898c9eb11e56b8528616b4a";
+      sha256 = "4fa76ae75b40f926420514044722cb97f32186cafd3b38263cc34dad7174d46d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-Medium.ttf?raw=true";
       name = "Poppins-Medium.ttf";
-      sha256 = "af4346521aa9de67c1d965effce8475660171c789e0759febddba2894a8eea64";
+      sha256 = "90373e7d838d32468438fc3e152dca0bdb12edcab99ea639f158790b1ba1fd05";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-MediumItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-MediumItalic.ttf?raw=true";
       name = "Poppins-MediumItalic.ttf";
-      sha256 = "0db51ce4fe216b7d4b929ce58cd0aeb1a69186414258ddb085b281db29c2fa91";
+      sha256 = "765addf6c7c11ec3c54325cacd68cabd05df8e4b6455302d812a9b9bafd1c614";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-SemiBold.ttf?raw=true";
       name = "Poppins-SemiBold.ttf";
-      sha256 = "29efe1f63af1e1eef1470061f69192f70811797830198b4e10061443fe313802";
+      sha256 = "d3bf1bdaf0550e83da9ac0b1d1d9fe6db086835a83aa28578e609a394b9a0286";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-SemiBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-SemiBoldItalic.ttf?raw=true";
       name = "Poppins-SemiBoldItalic.ttf";
-      sha256 = "6f63892bfaa40d6484b7058c63e51d3fa80a374f857d08a585e1476492e3ada2";
+      sha256 = "16bb118aa232c9a13fa238027d24d7854dd1a1d9cbaf99b17fec4388d56b432c";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-Bold.ttf?raw=true";
       name = "Poppins-Bold.ttf";
-      sha256 = "6b566b380759dd19554228564c6fb2dc01fcf6bfe5cdc5ba28f1ce3b360a9fb5";
+      sha256 = "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-BoldItalic.ttf?raw=true";
       name = "Poppins-BoldItalic.ttf";
-      sha256 = "44859e9a695350117b29af7044023ffe8e78f7a2843456cea9251cba2ea58cda";
+      sha256 = "3572ac8116a0ac7317d342262b29937bcbaf94d8f03f90df6fe666fa7e2fb43a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-ExtraBold.ttf?raw=true";
       name = "Poppins-ExtraBold.ttf";
-      sha256 = "559bd2dc8e240fa608926e298a41030cff709e6d9e39cc563c045a5fbaf57495";
+      sha256 = "f2ab17c1a63a0ecc12c2461848fc8a469395e3cd2d641803e889c643d9f958e1";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-ExtraBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-ExtraBoldItalic.ttf?raw=true";
       name = "Poppins-ExtraBoldItalic.ttf";
-      sha256 = "db8f803d5aaf8e646fd868d0a897ed9997985b88c931bfae3e08c7c8dc2556be";
+      sha256 = "dc00a2eb988373e9f4e99bf8ff76c6315ee21d36b341cbbff024e4c18cc7ac03";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-Black.ttf?raw=true";
       name = "Poppins-Black.ttf";
-      sha256 = "94cfd24cdcbf2bbbb74809dd121ecb5175ee6c438bb6a9a05eca5a70f7121210";
+      sha256 = "d82aaaf98a9283f9a8edd24e51173337d8eaf09e25cd3d98831f8ec8461748a1";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8311edb74d146679a93d79571f038c2c29190a14/ofl/poppins/Poppins-BlackItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/7dc16b7de42db624b902f2292b68ed9e489e5053/ofl/poppins/Poppins-BlackItalic.ttf?raw=true";
       name = "Poppins-BlackItalic.ttf";
-      sha256 = "d56d2b8ff884cfae1b637e73a71f3caf1d16cdb5b4acc123d9cd0b5864ca2567";
+      sha256 = "f4852ca89c29f69d800e14f097ed4d1f0a0cc454e9f77d73bfd6db1f71c287a0";
     })
   ];
 

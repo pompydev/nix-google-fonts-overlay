@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "dangrek-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/dangrek/Dangrek.ttf?raw=true";
-      name = "Dangrek.ttf";
-      sha256 = "2148e6eaa36456d6a9cdafd19aad553366ac78a2e720556a5710812a57b47782";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/dangrek/Dangrek-Regular.ttf?raw=true";
+      name = "Dangrek-Regular.ttf";
+      sha256 = "d7dbac288167ef960ea67a5d45890b47419e18c046e90c68ee655a0168e0d06d";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Dangrek.ttf $out/share/fonts/truetype/Dangrek.ttf
+     install -Dm644 Dangrek-Regular.ttf $out/share/fonts/truetype/Dangrek-Regular.ttf
   '';
 
   meta = with lib; {

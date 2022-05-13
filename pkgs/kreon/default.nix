@@ -2,25 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "kreon-${version}";
-  version = "2017-05-08-221902";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ca40bf388a8dab37afffd41f021d91fcd9507d89/ofl/kreon/Kreon-Light.ttf?raw=true";
-      name = "Kreon-Light.ttf";
-      sha256 = "c38d2be8ec1e28ad15116da590103cd15522e7c9707da0b79ad5bc67b3659dc1";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/ca40bf388a8dab37afffd41f021d91fcd9507d89/ofl/kreon/Kreon-Regular.ttf?raw=true";
-      name = "Kreon-Regular.ttf";
-      sha256 = "7dd3d73caf3383fefa5e853ed6f966734d38801a7a727bd1d3965942de99f399";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/ca40bf388a8dab37afffd41f021d91fcd9507d89/ofl/kreon/Kreon-Bold.ttf?raw=true";
-      name = "Kreon-Bold.ttf";
-      sha256 = "a71f6bd74595be2d7ea68b56c837c25c4856eb8c9a4b03e10a77714f4885a76d";
+      url = "https://github.com/google/fonts/blob/e38615a06eecd445550a1cf90aed75885e986f98/ofl/kreon/Kreon[wght].ttf?raw=true";
+      name = "Kreon[wght].ttf";
+      sha256 = "3fdb29ba16fe1907747c40b4706d3b8f91a9e95171609194bc10cbd16d982943";
     })
   ];
 
@@ -31,9 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Kreon-Light.ttf $out/share/fonts/truetype/Kreon-Light.ttf
-     install -Dm644 Kreon-Regular.ttf $out/share/fonts/truetype/Kreon-Regular.ttf
-     install -Dm644 Kreon-Bold.ttf $out/share/fonts/truetype/Kreon-Bold.ttf
+     install -Dm644 'Kreon[wght].ttf' $out/share/fonts/truetype/'Kreon[wght].ttf'
   '';
 
   meta = with lib; {

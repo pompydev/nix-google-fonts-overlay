@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "sue-ellen-francisco-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/sueellenfrancisco/SueEllenFrancisco.ttf?raw=true";
-      name = "SueEllenFrancisco.ttf";
-      sha256 = "71790cdeb69ec4081bea5ca4721c5510f31fd441afcd66e83bdd881b14ddd3e8";
+      url = "https://github.com/google/fonts/blob/023aa4b2855c95413d1b1c510ad812beb345df75/ofl/sueellenfrancisco/SueEllenFrancisco-Regular.ttf?raw=true";
+      name = "SueEllenFrancisco-Regular.ttf";
+      sha256 = "d6d72e046e8e92f659eacfb7457cf7e1f2142c112c3d8c43c0b5a3904a5c8621";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 SueEllenFrancisco.ttf $out/share/fonts/truetype/SueEllenFrancisco.ttf
+     install -Dm644 SueEllenFrancisco-Regular.ttf $out/share/fonts/truetype/SueEllenFrancisco-Regular.ttf
   '';
 
   meta = with lib; {

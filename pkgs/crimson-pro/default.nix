@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "crimson-pro-${version}";
-  version = "2019-01-18-145702";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/cd20fc29b01583e88a0ee39759f4b191d04db17d/ofl/crimsonpro/CrimsonPro-ExtraLight.ttf?raw=true";
-      name = "CrimsonPro-ExtraLight.ttf";
-      sha256 = "60cc307c6e0bac96cd2a8a04c1650230df4cb3ea4cfade913c67f0736f103b7d";
+      url = "https://github.com/google/fonts/blob/5c70a7919f949918e4b3d994dfc3c8864d174578/ofl/crimsonpro/CrimsonPro[wght].ttf?raw=true";
+      name = "CrimsonPro[wght].ttf";
+      sha256 = "16aa9fb7300a93637da51fac03a071b2ff08b6bbf65f99c794c25f040b58af6a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/cd20fc29b01583e88a0ee39759f4b191d04db17d/ofl/crimsonpro/CrimsonPro-ExtraLightItalic.ttf?raw=true";
-      name = "CrimsonPro-ExtraLightItalic.ttf";
-      sha256 = "2a1dcb6e6484a1115165b853d9c96d84dc1369e93074a2bc572dde3169b7082b";
+      url = "https://github.com/google/fonts/blob/5c70a7919f949918e4b3d994dfc3c8864d174578/ofl/crimsonpro/CrimsonPro-Italic[wght].ttf?raw=true";
+      name = "CrimsonPro-Italic[wght].ttf";
+      sha256 = "a74dc11dcf2fbb1452064e42395a40a907ca630b49cff86012223785e52b2559";
     })
   ];
 
@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 CrimsonPro-ExtraLight.ttf $out/share/fonts/truetype/CrimsonPro-ExtraLight.ttf
-     install -Dm644 CrimsonPro-ExtraLightItalic.ttf $out/share/fonts/truetype/CrimsonPro-ExtraLightItalic.ttf
+     install -Dm644 'CrimsonPro[wght].ttf' $out/share/fonts/truetype/'CrimsonPro[wght].ttf'
+     install -Dm644 'CrimsonPro-Italic[wght].ttf' $out/share/fonts/truetype/'CrimsonPro-Italic[wght].ttf'
   '';
 
   meta = with lib; {

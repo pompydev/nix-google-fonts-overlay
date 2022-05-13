@@ -2,20 +2,35 @@
 
 stdenv.mkDerivation rec {
   name = "hanuman-${version}";
-  version = "2017-05-08-202601";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e9b45b6a2b5beb64eb7a39cf28b611834ed19e3b/ofl/hanuman/Hanuman-Regular.ttf?raw=true";
-      name = "Hanuman-Regular.ttf";
-      sha256 = "651fd3f1935bd92704bd401071c37014eeae32485cb3d69c047a59f9725f6bb1";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/hanuman/Hanuman-Thin.ttf?raw=true";
+      name = "Hanuman-Thin.ttf";
+      sha256 = "5334c72bd57465da9e16528055540c20c67476ae2fa7472dd4504cea673fe2f7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e9b45b6a2b5beb64eb7a39cf28b611834ed19e3b/ofl/hanuman/Hanuman-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/hanuman/Hanuman-Light.ttf?raw=true";
+      name = "Hanuman-Light.ttf";
+      sha256 = "670367ff1060838be63b789f08b253e236f80f533da79cccea9420b884c24adb";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/hanuman/Hanuman-Regular.ttf?raw=true";
+      name = "Hanuman-Regular.ttf";
+      sha256 = "d982458e593018f1f10a754344419bf79d25d76adc9ffbaa8d609e6ff44e4906";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/hanuman/Hanuman-Bold.ttf?raw=true";
       name = "Hanuman-Bold.ttf";
-      sha256 = "937f93569fc4c0676bdfe7c5f7f23d28a75752fb1d20bd6d6572e613322fbbe0";
+      sha256 = "0570d63c1bc109170bfe1cc896015570eb89d91f486856c4dfdb0e5028a30264";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/hanuman/Hanuman-Black.ttf?raw=true";
+      name = "Hanuman-Black.ttf";
+      sha256 = "68f9db84ce0a78206dbc0717f6c8e434a7c9c2694ede430c302c67cd0a1e6bd1";
     })
   ];
 
@@ -26,8 +41,11 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
+     install -Dm644 Hanuman-Thin.ttf $out/share/fonts/truetype/Hanuman-Thin.ttf
+     install -Dm644 Hanuman-Light.ttf $out/share/fonts/truetype/Hanuman-Light.ttf
      install -Dm644 Hanuman-Regular.ttf $out/share/fonts/truetype/Hanuman-Regular.ttf
      install -Dm644 Hanuman-Bold.ttf $out/share/fonts/truetype/Hanuman-Bold.ttf
+     install -Dm644 Hanuman-Black.ttf $out/share/fonts/truetype/Hanuman-Black.ttf
   '';
 
   meta = with lib; {

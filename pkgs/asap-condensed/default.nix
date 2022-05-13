@@ -2,50 +2,50 @@
 
 stdenv.mkDerivation rec {
   name = "asap-condensed-${version}";
-  version = "2017-07-26-232444";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/32e5e67eeb57bc282f8add6392b854b145fadc03/ofl/asapcondensed/AsapCondensed-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/72e6bf867ab4b305ea3ea7a29a881752cd6222df/ofl/asapcondensed/AsapCondensed-Regular.ttf?raw=true";
       name = "AsapCondensed-Regular.ttf";
-      sha256 = "302ffb7bfe60696eec189f41fe7cdd56a70d2deeffebad2441faa83a731e0389";
+      sha256 = "95892d5a4a57839b90950cea36f41e4422cbc0550adf7ea861e903787e600b56";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/32e5e67eeb57bc282f8add6392b854b145fadc03/ofl/asapcondensed/AsapCondensed-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/72e6bf867ab4b305ea3ea7a29a881752cd6222df/ofl/asapcondensed/AsapCondensed-Italic.ttf?raw=true";
       name = "AsapCondensed-Italic.ttf";
-      sha256 = "6e243aa0b334ab0f8c435cedbe411d08fe6b9df2542e4dc94b8dae5f1c11465b";
+      sha256 = "bbc976a84bb0f51e21e186bf661512e4b0ece975807a1a9ea1a0e4099a509d02";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/32e5e67eeb57bc282f8add6392b854b145fadc03/ofl/asapcondensed/AsapCondensed-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/72e6bf867ab4b305ea3ea7a29a881752cd6222df/ofl/asapcondensed/AsapCondensed-Medium.ttf?raw=true";
       name = "AsapCondensed-Medium.ttf";
-      sha256 = "d5c453b19cde5d7a89ffaa8e9a83f71279637f8da9cead6b68b89bd8bb3bc7fd";
+      sha256 = "532c44963dcb901fcb05546c019121029fc78d39a07bb5dbff12bed0a95741db";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/32e5e67eeb57bc282f8add6392b854b145fadc03/ofl/asapcondensed/AsapCondensed-MediumItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/72e6bf867ab4b305ea3ea7a29a881752cd6222df/ofl/asapcondensed/AsapCondensed-MediumItalic.ttf?raw=true";
       name = "AsapCondensed-MediumItalic.ttf";
-      sha256 = "850a47be0740f7b011c42d86b1a7b7c971c8bd7cfd6fbd1a65dafd2cdc64a9ac";
+      sha256 = "deb5396cb8c0759eb3946d67e1d6b2926b25d3906e5094b979ed44f1ac8f1164";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/32e5e67eeb57bc282f8add6392b854b145fadc03/ofl/asapcondensed/AsapCondensed-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/72e6bf867ab4b305ea3ea7a29a881752cd6222df/ofl/asapcondensed/AsapCondensed-SemiBold.ttf?raw=true";
       name = "AsapCondensed-SemiBold.ttf";
-      sha256 = "281deb1668e27800f3a474d329035f128de652c164873c91354eba8ee24afd79";
+      sha256 = "53863a4475b75d9b8ee2e488be5ec2fbc532d3cce353cfe3b3d7d352ca4d306c";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/32e5e67eeb57bc282f8add6392b854b145fadc03/ofl/asapcondensed/AsapCondensed-SemiBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/72e6bf867ab4b305ea3ea7a29a881752cd6222df/ofl/asapcondensed/AsapCondensed-SemiBoldItalic.ttf?raw=true";
       name = "AsapCondensed-SemiBoldItalic.ttf";
-      sha256 = "168cf421420510228694f6b1ab27779215eed3d41fad785bf5d0bdaa1586d1ab";
+      sha256 = "9310ce31e50a600f09203b932459c074c883d304d2935b4e35de138fddef2ad3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/32e5e67eeb57bc282f8add6392b854b145fadc03/ofl/asapcondensed/AsapCondensed-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/72e6bf867ab4b305ea3ea7a29a881752cd6222df/ofl/asapcondensed/AsapCondensed-Bold.ttf?raw=true";
       name = "AsapCondensed-Bold.ttf";
-      sha256 = "129b17557e93ca846bbbf7ef2584285025cbd46ca509915bdc282cf64c51d2ba";
+      sha256 = "52b9b33337e3c2e8675b5aba8ac9bce44476275b0ffb4da0d026b3e1bc991cfa";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/32e5e67eeb57bc282f8add6392b854b145fadc03/ofl/asapcondensed/AsapCondensed-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/72e6bf867ab4b305ea3ea7a29a881752cd6222df/ofl/asapcondensed/AsapCondensed-BoldItalic.ttf?raw=true";
       name = "AsapCondensed-BoldItalic.ttf";
-      sha256 = "7678fe2f749823359b490feffb0eeb44cbcb33da87b378511f929336501a207d";
+      sha256 = "730e23ad2c1b3134dc2c58f3c578e061989c813230ff0fb9c91b4760035e9074";
     })
   ];
 

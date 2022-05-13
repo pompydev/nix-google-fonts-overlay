@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "spectral-${version}";
-  version = "2017-11-06-185002";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

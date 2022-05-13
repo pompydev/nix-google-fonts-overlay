@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "comfortaa-${version}";
-  version = "2018-12-05-144320";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/387b20862f999325568739bd2a5700b3d10672cf/ofl/comfortaa/Comfortaa-Regular.ttf?raw=true";
-      name = "Comfortaa-Regular.ttf";
-      sha256 = "6c18f166c93e0aae3879a45f442b7024f726517768ef22edcbfdbcb0f56a331d";
+      url = "https://github.com/google/fonts/blob/0c01af346718560354ea183d63169c8269bc76a2/ofl/comfortaa/Comfortaa[wght].ttf?raw=true";
+      name = "Comfortaa[wght].ttf";
+      sha256 = "0fc3f45dc48b614db9c39181502544b37217ecbf8bee2fb35886992bc96c5bd3";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Comfortaa-Regular.ttf $out/share/fonts/truetype/Comfortaa-Regular.ttf
+     install -Dm644 'Comfortaa[wght].ttf' $out/share/fonts/truetype/'Comfortaa[wght].ttf'
   '';
 
   meta = with lib; {

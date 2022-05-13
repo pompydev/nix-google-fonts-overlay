@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "didact-gothic-${version}";
-  version = "2017-01-25-171344";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

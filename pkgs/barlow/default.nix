@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "barlow-${version}";
-  version = "2018-12-05-153357";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

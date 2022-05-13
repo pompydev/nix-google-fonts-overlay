@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "pompiere-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/pompiere/Pompiere-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/023aa4b2855c95413d1b1c510ad812beb345df75/ofl/pompiere/Pompiere-Regular.ttf?raw=true";
       name = "Pompiere-Regular.ttf";
-      sha256 = "e983b7f9f2d57779855a6e571fd7c335c335c4256d64d6551efea3bfb486ca6e";
+      sha256 = "11610bde374970a6ca01136fdbea820f795fceae8c399c664e69f1277c1bc523";
     })
   ];
 

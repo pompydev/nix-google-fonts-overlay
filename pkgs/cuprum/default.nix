@@ -2,30 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "cuprum-${version}";
-  version = "2017-01-17-072907";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4e2b29bbf65aa2e840d8fe4283f376cfc9a5a589/ofl/cuprum/Cuprum-Regular.ttf?raw=true";
-      name = "Cuprum-Regular.ttf";
-      sha256 = "ec665ae9e39647943bcabb8ba69eba735c40ef7915e1712894e4654f2d3d4662";
+      url = "https://github.com/google/fonts/blob/df19ee8f7ea794d3802afb02a61924ebf4bd4b64/ofl/cuprum/Cuprum[wght].ttf?raw=true";
+      name = "Cuprum[wght].ttf";
+      sha256 = "be75585aa57a5f1c1d10de61305bb4266effa1b9083722d20c26adf97e911534";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4e2b29bbf65aa2e840d8fe4283f376cfc9a5a589/ofl/cuprum/Cuprum-Italic.ttf?raw=true";
-      name = "Cuprum-Italic.ttf";
-      sha256 = "36d9c2dc1a56cdb3a8e4572a50484278dcf3a3cdfa558cb876c1dac5652d7045";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/4e2b29bbf65aa2e840d8fe4283f376cfc9a5a589/ofl/cuprum/Cuprum-Bold.ttf?raw=true";
-      name = "Cuprum-Bold.ttf";
-      sha256 = "fa50bfee0b19d2d8fbda08a7335b402aeddcc86da130e06854b2f4b41d726f9e";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/4e2b29bbf65aa2e840d8fe4283f376cfc9a5a589/ofl/cuprum/Cuprum-BoldItalic.ttf?raw=true";
-      name = "Cuprum-BoldItalic.ttf";
-      sha256 = "e2ede4a89cdcc8ecfd291a8ba191d8512407945298f8b1bdc92fe24cceda039d";
+      url = "https://github.com/google/fonts/blob/df19ee8f7ea794d3802afb02a61924ebf4bd4b64/ofl/cuprum/Cuprum-Italic[wght].ttf?raw=true";
+      name = "Cuprum-Italic[wght].ttf";
+      sha256 = "1b2fa2441b421e16176ed3b0356949f406ef44497df17b2ee7977aa7f838312a";
     })
   ];
 
@@ -36,10 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Cuprum-Regular.ttf $out/share/fonts/truetype/Cuprum-Regular.ttf
-     install -Dm644 Cuprum-Italic.ttf $out/share/fonts/truetype/Cuprum-Italic.ttf
-     install -Dm644 Cuprum-Bold.ttf $out/share/fonts/truetype/Cuprum-Bold.ttf
-     install -Dm644 Cuprum-BoldItalic.ttf $out/share/fonts/truetype/Cuprum-BoldItalic.ttf
+     install -Dm644 'Cuprum[wght].ttf' $out/share/fonts/truetype/'Cuprum[wght].ttf'
+     install -Dm644 'Cuprum-Italic[wght].ttf' $out/share/fonts/truetype/'Cuprum-Italic[wght].ttf'
   '';
 
   meta = with lib; {

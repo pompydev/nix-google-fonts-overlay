@@ -2,80 +2,80 @@
 
 stdenv.mkDerivation rec {
   name = "ibm-plex-sans-condensed-${version}";
-  version = "2019-02-15-013019";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Thin.ttf?raw=true";
       name = "IBMPlexSansCondensed-Thin.ttf";
-      sha256 = "ed36a3d6c954f39c47379cbe36aef9827f35b7a170c194938d33563be55c644f";
+      sha256 = "fe67e17fdc8b55731d88d92294030f7cd8086cdbdc37aaaa993b31d147eba0f7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-ThinItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-ThinItalic.ttf?raw=true";
       name = "IBMPlexSansCondensed-ThinItalic.ttf";
-      sha256 = "008f16d94c45dbcb4de8bb9dd121eb9808f30ba7da2f2fc03cb1628189db1c4c";
+      sha256 = "8122c78b19fea475ac9aed5e5d0db831f74b820604bd7a389353de7adf20cb97";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-ExtraLight.ttf?raw=true";
       name = "IBMPlexSansCondensed-ExtraLight.ttf";
-      sha256 = "12bc377e762eae9444046535ffb833589b6b5383daa2daeab8677032e0752d42";
+      sha256 = "4a6ba94e0cc7590c277d5d91674705dd73bbb68ab9016d1460c0e2b0f9ef3350";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-ExtraLightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-ExtraLightItalic.ttf?raw=true";
       name = "IBMPlexSansCondensed-ExtraLightItalic.ttf";
-      sha256 = "288169d381d545b40b0b0fac47ba4b1a5116c9366a9fef9b6d5c0c88642894f5";
+      sha256 = "ab729485a2265722908101226d28c2e6681ce98ad09612b964a005e6ddabee7d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Light.ttf?raw=true";
       name = "IBMPlexSansCondensed-Light.ttf";
-      sha256 = "1a37f73605b405cecd9a0d409656d69cebfae34581e80b26d6f437dd880e9748";
+      sha256 = "3836ed1e1f5c870ddf9fd6a0ed7d74a4385a2ca194fa68782c6a10e609379cc8";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-LightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-LightItalic.ttf?raw=true";
       name = "IBMPlexSansCondensed-LightItalic.ttf";
-      sha256 = "dabdf3218151b3939e37594bcf76f9c3ed2eba2ecde2d624c4cddff1df8d10db";
+      sha256 = "4ff9689e3b8b3c2532e6ce6dfdba0bb5beb3d073c3b7b775a079b03cc2e561f3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Regular.ttf?raw=true";
       name = "IBMPlexSansCondensed-Regular.ttf";
-      sha256 = "61cbf6bc6ef91586f651f120df7e7ca1d55d02b58c1b89f84b069928689fa0f4";
+      sha256 = "e7437c072eef2ef592ae6f2beb0000446287385907abb57ac1cf07bcbaa2aa33";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Italic.ttf?raw=true";
       name = "IBMPlexSansCondensed-Italic.ttf";
-      sha256 = "a55fb424e1fd366fdb76e3b2f075ef00ca4400b7875e5fe0c1d34b16ec35164e";
+      sha256 = "a0320e60c17926c4e210dfdb3b1a346991f35f83b471daf55537ee79cbcb7c7f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Medium.ttf?raw=true";
       name = "IBMPlexSansCondensed-Medium.ttf";
-      sha256 = "05b17e0126d2b7eef7c11f4360d2557516c38dc12ed08180cc06313de6978956";
+      sha256 = "426350c298277f7f9d1a93956572799ca3d16e2d43e7f60eec8382bcd795ec30";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-MediumItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-MediumItalic.ttf?raw=true";
       name = "IBMPlexSansCondensed-MediumItalic.ttf";
-      sha256 = "9f0d3d2bf0db00f04072206d66e53f8b75589be5be1400a2b0bc1cb63e687a59";
+      sha256 = "ab8931c7274aff5b0315b798ac68149f92a667d9647cb9d6263f5f44403e5452";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-SemiBold.ttf?raw=true";
       name = "IBMPlexSansCondensed-SemiBold.ttf";
-      sha256 = "579f39020157906dffd040f90507923d939129038988471e4bfe613dcc8100ab";
+      sha256 = "a081ca60548aea14100757a2d6fe71ca60fd90ebce779c9a8ae5a0c8fb4526d4";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-SemiBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-SemiBoldItalic.ttf?raw=true";
       name = "IBMPlexSansCondensed-SemiBoldItalic.ttf";
-      sha256 = "80b6c020ade0b66e397280da5b9426402c7efd68472f7c6bbfa230eed902e033";
+      sha256 = "d98d8fb38a3cd725632900188b146c0ba72eabd515a03788bd895bbf365086ae";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Bold.ttf?raw=true";
       name = "IBMPlexSansCondensed-Bold.ttf";
-      sha256 = "ad0a436bf04daafcb7a1f5e04701f2441d4dbc326eab5014f6b4579323ffe565";
+      sha256 = "b65492d86cdd5cd9d43d2671b55d5d36fec36859fc8b08bc6aba78e441d6c849";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/137470e1c67e8632d41997d10e620eee1e023a80/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-BoldItalic.ttf?raw=true";
       name = "IBMPlexSansCondensed-BoldItalic.ttf";
-      sha256 = "e806dd055761adfd1bb2e198b9c86d2e3811d761f8cd22b06fc2f50acabcad3b";
+      sha256 = "fe1983c07a086fbee939e5f0f826e5428f7d02666c8e3bbb7295fb3504597a07";
     })
   ];
 

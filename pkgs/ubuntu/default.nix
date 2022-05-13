@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "ubuntu-${version}";
-  version = "2017-05-14-031219";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

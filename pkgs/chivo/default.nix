@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "chivo-${version}";
-  version = "2016-12-06-174608";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

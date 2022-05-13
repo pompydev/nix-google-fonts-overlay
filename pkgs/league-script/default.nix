@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "league-script-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/leaguescript/LeagueScript.ttf?raw=true";
-      name = "LeagueScript.ttf";
-      sha256 = "59c5ec3f328710bf5e87e13187747ee0eae046075f347de4e7ea9bdae0ba1a2b";
+      url = "https://github.com/google/fonts/blob/17eecaf5f05c6096272cd820c0061a79a07667c1/ofl/leaguescript/LeagueScript-Regular.ttf?raw=true";
+      name = "LeagueScript-Regular.ttf";
+      sha256 = "42c3a493028aec3a2266e540a1264f7b5e26eefd17219dda9b165b928986308a";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 LeagueScript.ttf $out/share/fonts/truetype/LeagueScript.ttf
+     install -Dm644 LeagueScript-Regular.ttf $out/share/fonts/truetype/LeagueScript-Regular.ttf
   '';
 
   meta = with lib; {

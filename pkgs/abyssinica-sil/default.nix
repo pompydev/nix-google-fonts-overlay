@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "abyssinica-sil-${version}";
-  version = "2016-01-26-020200";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

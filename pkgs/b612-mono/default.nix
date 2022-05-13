@@ -2,30 +2,30 @@
 
 stdenv.mkDerivation rec {
   name = "b612-mono-${version}";
-  version = "2018-12-05-154950";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0655ae3b2ff9ff28fd1139363940bcfb9f596e39/ofl/b612mono/B612Mono-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/bff0396e9441e090a54ce93d7eb46aec79f721a3/ofl/b612mono/B612Mono-Regular.ttf?raw=true";
       name = "B612Mono-Regular.ttf";
-      sha256 = "fee756b846b3449e64e0367cf0e525411e3693cfe561bfaecfddb04b531bd61c";
+      sha256 = "b98cb96cc8a6206dae08c063d60902df7e6d40f86139ebdb97256704253c9c69";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0655ae3b2ff9ff28fd1139363940bcfb9f596e39/ofl/b612mono/B612Mono-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/bff0396e9441e090a54ce93d7eb46aec79f721a3/ofl/b612mono/B612Mono-Italic.ttf?raw=true";
       name = "B612Mono-Italic.ttf";
-      sha256 = "59dd0d44ae7ad72f1bec4892156c0385d24d5606b0467a9eef7245a7b5d986af";
+      sha256 = "d58fa807e69d18159a40d5790d25772239df20167b50a0f840e9feb253002c9c";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0655ae3b2ff9ff28fd1139363940bcfb9f596e39/ofl/b612mono/B612Mono-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/bff0396e9441e090a54ce93d7eb46aec79f721a3/ofl/b612mono/B612Mono-Bold.ttf?raw=true";
       name = "B612Mono-Bold.ttf";
-      sha256 = "bac2ac09e69436505197e2aebe96e843e4b1281b7d406dfef01ed7037b6ba66d";
+      sha256 = "b467b1d19fdabed42be51d87e38c86645ceeff2f828f294775188d00d1fd68ca";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0655ae3b2ff9ff28fd1139363940bcfb9f596e39/ofl/b612mono/B612Mono-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/bff0396e9441e090a54ce93d7eb46aec79f721a3/ofl/b612mono/B612Mono-BoldItalic.ttf?raw=true";
       name = "B612Mono-BoldItalic.ttf";
-      sha256 = "586322e302fbdf2b2ef85f70d05b13370f53afe3e8ea90c536584ff2d786f444";
+      sha256 = "91a6a8535fc61354a2c59a64ea205a4f6957c2e09ac4ff91a1fc61d346c004e1";
     })
   ];
 

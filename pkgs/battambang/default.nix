@@ -2,20 +2,35 @@
 
 stdenv.mkDerivation rec {
   name = "battambang-${version}";
-  version = "2017-08-07-194014";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4fac0ad378ff3963fc2f11bdf42233297e7ad3b7/ofl/battambang/Battambang-Regular.ttf?raw=true";
-      name = "Battambang-Regular.ttf";
-      sha256 = "9ee76deaf205f55d200b3dcddb56878fea6c3c3d01ff64ac8e13fe17a651b580";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/battambang/Battambang-Thin.ttf?raw=true";
+      name = "Battambang-Thin.ttf";
+      sha256 = "8e02ceb59104791191d7370324a75c4e74e85623691272507f8bde3c83d7a8d9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4fac0ad378ff3963fc2f11bdf42233297e7ad3b7/ofl/battambang/Battambang-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/battambang/Battambang-Light.ttf?raw=true";
+      name = "Battambang-Light.ttf";
+      sha256 = "282626df0ef99cdba8e2519e63705de621d1cf29c3d323a1d8e424df1caea5ed";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/battambang/Battambang-Regular.ttf?raw=true";
+      name = "Battambang-Regular.ttf";
+      sha256 = "1fd3eb9960911396cb7955f2c68afe5ee21c2c14f8097e945d05b768ed4de942";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/battambang/Battambang-Bold.ttf?raw=true";
       name = "Battambang-Bold.ttf";
-      sha256 = "81c02bf544344a5992629fb55c778a3f1a5e12faa8bb410a52a0e81c57ffd0a8";
+      sha256 = "4cd10f7a56a7d9d1fb4184b2219821f8ad6f425be290243ef73c4ef3a80c86ff";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/battambang/Battambang-Black.ttf?raw=true";
+      name = "Battambang-Black.ttf";
+      sha256 = "4426332a541f6cc85489813b11d99b8a1aaca53b313f8deb21b403a3d58286dd";
     })
   ];
 
@@ -26,8 +41,11 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
+     install -Dm644 Battambang-Thin.ttf $out/share/fonts/truetype/Battambang-Thin.ttf
+     install -Dm644 Battambang-Light.ttf $out/share/fonts/truetype/Battambang-Light.ttf
      install -Dm644 Battambang-Regular.ttf $out/share/fonts/truetype/Battambang-Regular.ttf
      install -Dm644 Battambang-Bold.ttf $out/share/fonts/truetype/Battambang-Bold.ttf
+     install -Dm644 Battambang-Black.ttf $out/share/fonts/truetype/Battambang-Black.ttf
   '';
 
   meta = with lib; {

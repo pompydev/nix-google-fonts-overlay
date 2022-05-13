@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "yinmar-${version}";
-  version = "2016-01-29-205649";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "philosopher-${version}";
-  version = "2017-01-17-073032";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

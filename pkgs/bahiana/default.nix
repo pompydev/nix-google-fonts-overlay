@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "bahiana-${version}";
-  version = "2016-12-03-215315";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

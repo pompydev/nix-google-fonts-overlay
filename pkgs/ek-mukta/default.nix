@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "ek-mukta-${version}";
-  version = "2017-09-27-040242";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

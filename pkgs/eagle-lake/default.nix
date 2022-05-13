@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "eagle-lake-${version}";
-  version = "2016-09-26-145146";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

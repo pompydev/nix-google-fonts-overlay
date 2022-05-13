@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "tuffy-${version}";
-  version = "2017-10-25-011636";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

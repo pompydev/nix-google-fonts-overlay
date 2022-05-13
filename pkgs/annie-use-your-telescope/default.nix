@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "annie-use-your-telescope-${version}";
-  version = "2017-08-07-203136";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

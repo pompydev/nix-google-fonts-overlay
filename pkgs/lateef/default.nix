@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "lateef-${version}";
-  version = "2018-07-09-203917";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

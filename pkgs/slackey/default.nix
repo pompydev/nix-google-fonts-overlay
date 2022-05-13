@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "slackey-${version}";
-  version = "2017-08-07-205200";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

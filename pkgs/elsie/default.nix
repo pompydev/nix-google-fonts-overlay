@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "elsie-${version}";
-  version = "2017-05-08-202211";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/702fc4554a93231b0bfab4fe9ac68ee653b9215d/ofl/elsie/Elsie-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f276fa823700a5278b88de6ebe41499f3d5f98a2/ofl/elsie/Elsie-Regular.ttf?raw=true";
       name = "Elsie-Regular.ttf";
-      sha256 = "ccc773e8a7b836887e124bb7e3d9219932e7392cf92c38c22f1869853a143d1b";
+      sha256 = "9b3ff5056866667fb29f60beb4522994afdd4d5f580626c6fd9e6f5bf49f1ea5";
     })
     (fetchurl {
       url = "https://github.com/google/fonts/blob/702fc4554a93231b0bfab4fe9ac68ee653b9215d/ofl/elsie/Elsie-Black.ttf?raw=true";

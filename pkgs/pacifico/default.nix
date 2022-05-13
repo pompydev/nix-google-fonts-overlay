@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "pacifico-${version}";
-  version = "2017-11-06-185014";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e9c0bd454c07ae4d4113030ad494e008a455fd7b/ofl/pacifico/Pacifico-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/34ce35e2b6d7a1467c0ecfd9cd13082a87ffd23e/ofl/pacifico/Pacifico-Regular.ttf?raw=true";
       name = "Pacifico-Regular.ttf";
-      sha256 = "5e8c9c1d067ebc5f79edb7fc8e1656ef7ac637f85fec51b167cf51fd79e3161a";
+      sha256 = "5b6c0d5334a7bf77dea52b975c5a0c408878c0f7115ed5b6fb151f634b7bf701";
     })
   ];
 

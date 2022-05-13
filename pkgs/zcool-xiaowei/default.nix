@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "zcool-xiaowei-${version}";
-  version = "2018-12-05-144115";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

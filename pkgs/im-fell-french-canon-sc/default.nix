@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "im-fell-french-canon-sc-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

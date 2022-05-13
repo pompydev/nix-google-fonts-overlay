@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "zcool-kuaile-${version}";
-  version = "2018-12-05-143631";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

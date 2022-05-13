@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "vt323-${version}";
-  version = "2016-12-01-175217";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

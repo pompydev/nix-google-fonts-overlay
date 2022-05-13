@@ -2,30 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "lora-${version}";
-  version = "2017-12-19-110716";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/135381ca429c5261f7469a45c997bbd3a3a68d7d/ofl/lora/Lora-Regular.ttf?raw=true";
-      name = "Lora-Regular.ttf";
-      sha256 = "178a698904efd9f1e87b35f764d56cc2ee3654c0dc92ebd05f5ed7e208abdc84";
+      url = "https://github.com/google/fonts/blob/786ec5b83251f471919291ebba2781891d098e6c/ofl/lora/Lora[wght].ttf?raw=true";
+      name = "Lora[wght].ttf";
+      sha256 = "a65f70f36e2d2855df08effec06b230a6129919d0a01dbf4865a77430fc9e64a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/135381ca429c5261f7469a45c997bbd3a3a68d7d/ofl/lora/Lora-Italic.ttf?raw=true";
-      name = "Lora-Italic.ttf";
-      sha256 = "195f109ee5e20a6df6789141ed582c8679ba0c84627a536017cf1bc7b8967661";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/135381ca429c5261f7469a45c997bbd3a3a68d7d/ofl/lora/Lora-Bold.ttf?raw=true";
-      name = "Lora-Bold.ttf";
-      sha256 = "6cc7ecf18af9e7e0e6d29bdc35dfd713b3e047fd6187ca2e7fcc8303ce8395b8";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/135381ca429c5261f7469a45c997bbd3a3a68d7d/ofl/lora/Lora-BoldItalic.ttf?raw=true";
-      name = "Lora-BoldItalic.ttf";
-      sha256 = "4960511a741c96cf6de98a1c0d2abef228d63999540bacfe811e22a5f4e5831a";
+      url = "https://github.com/google/fonts/blob/786ec5b83251f471919291ebba2781891d098e6c/ofl/lora/Lora-Italic[wght].ttf?raw=true";
+      name = "Lora-Italic[wght].ttf";
+      sha256 = "c5a0c8a35e2bf1ab3349110a7d726cbcf1cbe652a55af5c76a3df003958cfee7";
     })
   ];
 
@@ -36,10 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Lora-Regular.ttf $out/share/fonts/truetype/Lora-Regular.ttf
-     install -Dm644 Lora-Italic.ttf $out/share/fonts/truetype/Lora-Italic.ttf
-     install -Dm644 Lora-Bold.ttf $out/share/fonts/truetype/Lora-Bold.ttf
-     install -Dm644 Lora-BoldItalic.ttf $out/share/fonts/truetype/Lora-BoldItalic.ttf
+     install -Dm644 'Lora[wght].ttf' $out/share/fonts/truetype/'Lora[wght].ttf'
+     install -Dm644 'Lora-Italic[wght].ttf' $out/share/fonts/truetype/'Lora-Italic[wght].ttf'
   '';
 
   meta = with lib; {

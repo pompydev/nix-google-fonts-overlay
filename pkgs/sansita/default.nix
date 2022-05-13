@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "sansita-${version}";
-  version = "2016-12-06-220634";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

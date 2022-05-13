@@ -2,25 +2,25 @@
 
 stdenv.mkDerivation rec {
   name = "kantumruy-${version}";
-  version = "2016-09-26-145146";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/49fbebd3dc75d42fe72c4a3eef6524f8fcc335fd/ofl/kantumruy/Kantumruy-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/9cb4270d0cd240f7fe58129f150a9351e60c4d5e/ofl/kantumruy/Kantumruy-Light.ttf?raw=true";
       name = "Kantumruy-Light.ttf";
-      sha256 = "f6d95de5e1c82e10da26df7d1636fd40d3f53003e3abb511450609adc45813c5";
+      sha256 = "21124042f062c601a2b35c688aa9a7ceca489640b9459c50a3bf249baa506172";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/49fbebd3dc75d42fe72c4a3eef6524f8fcc335fd/ofl/kantumruy/Kantumruy-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/9cb4270d0cd240f7fe58129f150a9351e60c4d5e/ofl/kantumruy/Kantumruy-Regular.ttf?raw=true";
       name = "Kantumruy-Regular.ttf";
-      sha256 = "669fa3916da00e80b9e5715626b71ff845cf919196a1112aa8229d9722338820";
+      sha256 = "c77d11f22eb9223f98b8c59a2f325c06defab3546584c6695f9d18c87dc4922a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/49fbebd3dc75d42fe72c4a3eef6524f8fcc335fd/ofl/kantumruy/Kantumruy-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/9cb4270d0cd240f7fe58129f150a9351e60c4d5e/ofl/kantumruy/Kantumruy-Bold.ttf?raw=true";
       name = "Kantumruy-Bold.ttf";
-      sha256 = "06e2c000b2c4f177b1e74059999f6e9932f8a4c083368af78bd920f7651e1ee4";
+      sha256 = "0b20134d3ae5afabefdc2676cc9b157a768894002fbd910623547c2e45de3ec5";
     })
   ];
 

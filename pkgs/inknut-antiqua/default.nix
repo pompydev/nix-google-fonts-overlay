@@ -2,45 +2,45 @@
 
 stdenv.mkDerivation rec {
   name = "inknut-antiqua-${version}";
-  version = "2017-05-08-202623";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/afd76e905c2869bd18142b45cac747638af45170/ofl/inknutantiqua/InknutAntiqua-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/inknutantiqua/InknutAntiqua-Light.ttf?raw=true";
       name = "InknutAntiqua-Light.ttf";
-      sha256 = "b6a2ff96a4a36383a21ffc9eaf01a30649428f280a252e856a6c4cf4ee435467";
+      sha256 = "6961c4e6b3dfffd2408417d5b58994882806ae959e005309a0096869babd80dc";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/afd76e905c2869bd18142b45cac747638af45170/ofl/inknutantiqua/InknutAntiqua-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/inknutantiqua/InknutAntiqua-Regular.ttf?raw=true";
       name = "InknutAntiqua-Regular.ttf";
-      sha256 = "d73f0ab0d5502420c3b596a1a9e9971840f722959904a35a211eee48b018a160";
+      sha256 = "d46c7420b1e5fedc2086c8ce89275a6ed13c6778829c0617f56df8c3bddd686f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/afd76e905c2869bd18142b45cac747638af45170/ofl/inknutantiqua/InknutAntiqua-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/inknutantiqua/InknutAntiqua-Medium.ttf?raw=true";
       name = "InknutAntiqua-Medium.ttf";
-      sha256 = "5365b0a85a65b1144041e1a6caad8b373029ae675bca8cde715f3c4733aa1068";
+      sha256 = "2ec563cf7dfc16e944ff6fb3411dd7fc49de13515d3993587243f02e76e4bf98";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/afd76e905c2869bd18142b45cac747638af45170/ofl/inknutantiqua/InknutAntiqua-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/inknutantiqua/InknutAntiqua-SemiBold.ttf?raw=true";
       name = "InknutAntiqua-SemiBold.ttf";
-      sha256 = "0f3f9927a09f166eb23a473613a844bd2b8cd008b97ca5af67993b71a0392c2f";
+      sha256 = "f4d31ad01f24ae26b30c8610f5b3e1ab9383876f1ef98cc0a4118024928456f4";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/afd76e905c2869bd18142b45cac747638af45170/ofl/inknutantiqua/InknutAntiqua-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/inknutantiqua/InknutAntiqua-Bold.ttf?raw=true";
       name = "InknutAntiqua-Bold.ttf";
-      sha256 = "0d000d49dbeed476a1993c97c36fd72ae32a8bc92441af941e6f4b001ff33d84";
+      sha256 = "222a233da522553541938fa7780d3bcc008af009679797658885f0052ffb76ef";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/afd76e905c2869bd18142b45cac747638af45170/ofl/inknutantiqua/InknutAntiqua-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/inknutantiqua/InknutAntiqua-ExtraBold.ttf?raw=true";
       name = "InknutAntiqua-ExtraBold.ttf";
-      sha256 = "9ed65bafdc3f19afea4f3668a3ff2e01ed1912cc6fb7c678d2443bd97c6d58f7";
+      sha256 = "89f62cfa8e72f8ec9acc5a0aae088ab4b04fed9c3dbaaad0d2fdb6563a41cba4";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/afd76e905c2869bd18142b45cac747638af45170/ofl/inknutantiqua/InknutAntiqua-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/inknutantiqua/InknutAntiqua-Black.ttf?raw=true";
       name = "InknutAntiqua-Black.ttf";
-      sha256 = "6d3b10f0006bd9ce031ffa7d522c2134ff40cbd89942881ff576bbf6f3e6b9b6";
+      sha256 = "279de2d9b3f21796a2a367cc55d8654eee9534a4f329d5d442294d82a333c361";
     })
   ];
 

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "flamenco-${version}";
-  version = "2017-05-08-214722";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

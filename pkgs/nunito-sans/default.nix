@@ -2,80 +2,80 @@
 
 stdenv.mkDerivation rec {
   name = "nunito-sans-${version}";
-  version = "2017-02-17-184209";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-ExtraLight.ttf?raw=true";
       name = "NunitoSans-ExtraLight.ttf";
-      sha256 = "dcb4f2eff3ba416391af7850438aa186757b88e7127eb6b6d8e612172cf267fa";
+      sha256 = "d3e68453bc7ef37e1c684cb408d0d38386ded50af065843ccbbe93ef26844913";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-ExtraLightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-ExtraLightItalic.ttf?raw=true";
       name = "NunitoSans-ExtraLightItalic.ttf";
-      sha256 = "0cc291e8e0643800e40d8105afeb4ba3ffe9a9998b395374c4126332544f2564";
+      sha256 = "8f9f09f2fad368cb5ea9cb5ff8ff9e0a23504efe790ccf0e9eea530888bee43b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-Light.ttf?raw=true";
       name = "NunitoSans-Light.ttf";
-      sha256 = "f70778a0a7053180b69c4e7fe3e98bd7335399d34fafab5457ffdf0b6452d3e2";
+      sha256 = "3df1ac568f1d9f4a1aff71f0c72bf340c18f9a247648bf470cd528a3b8ebfdb7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-LightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-LightItalic.ttf?raw=true";
       name = "NunitoSans-LightItalic.ttf";
-      sha256 = "f2087c57299bde57e96e31f0e45e4e2a0730c4978c8fcce5d9d92917177b264f";
+      sha256 = "9276286683bade29e1f03bd55f96b87ffdd738daf529f0191ff2bda69d3274da";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-Regular.ttf?raw=true";
       name = "NunitoSans-Regular.ttf";
-      sha256 = "c4e48d0d8e7d7230341c3a8869258988a38f0081f362d254642f15ea89656b43";
+      sha256 = "b26d1677f7776c8a07fd87a83db3a6fdc7486bb627332c73ec8b6c37d9416834";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-Italic.ttf?raw=true";
       name = "NunitoSans-Italic.ttf";
-      sha256 = "16cd557bd149984fc5ed826ebf305a82d0b3182285bace231ba0de238b5a3739";
+      sha256 = "456214f2a2743714d80367be43a00dedf45018e215c232fb9204e8dde50ba0a0";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-SemiBold.ttf?raw=true";
       name = "NunitoSans-SemiBold.ttf";
-      sha256 = "bee93c8250ec1ec573844d954ce7f77dfa23c13bd9576d00b98741cf3a6906e9";
+      sha256 = "e51e66d6a3e519f70b76a156066182406e464b1e8731fba28d16372b6b03fab0";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-SemiBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-SemiBoldItalic.ttf?raw=true";
       name = "NunitoSans-SemiBoldItalic.ttf";
-      sha256 = "1e098307f0157034a6ca8c895653ee17088847e3b4d75d24a4bb618180b7ecb8";
+      sha256 = "0c585b4ef9c8049bae908b61656d28604f5c4964fc41ce4b76ec57ef7b2e6efd";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-Bold.ttf?raw=true";
       name = "NunitoSans-Bold.ttf";
-      sha256 = "073150651606b45d5cec8797a5328997bb7aae97432cb4365aeb4f10ae7fc764";
+      sha256 = "4f4f1043f1fe2c44bb00d305dfa7084befd08e25d6be39e6b2383e1b8b874791";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-BoldItalic.ttf?raw=true";
       name = "NunitoSans-BoldItalic.ttf";
-      sha256 = "c9a2353649a027c211c2fa4e1823294e1d9eea33326316789f46305129b3c6bb";
+      sha256 = "dbfa5f91b69753f98b6a28b4cc9ac0c7954bf04a55d8061d99d8057570b83851";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-ExtraBold.ttf?raw=true";
       name = "NunitoSans-ExtraBold.ttf";
-      sha256 = "156e578a4433ba7189d378f230736208364b835e9418780f96d4e9f5c945f030";
+      sha256 = "aa2a5c1cb55b1681ea978ae6c3e9d194e5352230e8e49761a3a95f9dba85ad44";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-ExtraBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-ExtraBoldItalic.ttf?raw=true";
       name = "NunitoSans-ExtraBoldItalic.ttf";
-      sha256 = "2dcb5f7d1299f24a26f07a42f2af7ebcafbe7918aff3146d52b947a14f13488d";
+      sha256 = "52620d3dd80f0dbd5a4e1ec22f429259e5a526f778c6a7a9b9e45ae756380f30";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-Black.ttf?raw=true";
       name = "NunitoSans-Black.ttf";
-      sha256 = "e45d8748f19705818f8b682e4d7be359a4301cb1e1db13869ba3182faeed234f";
+      sha256 = "9306e907161cb7feb3358612b1b8a58c4dfdda58ac8a3def46406ebf58dab0d7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/acb29324dacd3c2b72bb3d70c1dc4c5150bd210c/ofl/nunitosans/NunitoSans-BlackItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dd96d4f0acd2b76027c3fe3926a214b0c4d40645/ofl/nunitosans/NunitoSans-BlackItalic.ttf?raw=true";
       name = "NunitoSans-BlackItalic.ttf";
-      sha256 = "82ba6e1f2bc57e8eba3a453ea4a1e64bdb0a616ab1690ae6ed973ae28a98f2f1";
+      sha256 = "2ba5da5ec3079525728aa938dbd9cdb5abddc9498bf1df8f2ab94f36be5c05a8";
     })
   ];
 

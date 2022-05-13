@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "freehand-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/freehand/Freehand.ttf?raw=true";
-      name = "Freehand.ttf";
-      sha256 = "4aa5ef81b02248628fc7bb43cb1d07b2c6bb21a1b8729b6fd4cbc0caa5354045";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/freehand/Freehand-Regular.ttf?raw=true";
+      name = "Freehand-Regular.ttf";
+      sha256 = "3f2f1155d862304cf29cc4252aa5df4d47468d127c3c12cbf16894b0dda6c833";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Freehand.ttf $out/share/fonts/truetype/Freehand.ttf
+     install -Dm644 Freehand-Regular.ttf $out/share/fonts/truetype/Freehand-Regular.ttf
   '';
 
   meta = with lib; {

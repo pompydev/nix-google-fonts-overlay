@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "rubik-mono-one-${version}";
-  version = "2016-11-09-144052";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

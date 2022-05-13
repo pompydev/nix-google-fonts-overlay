@@ -2,80 +2,80 @@
 
 stdenv.mkDerivation rec {
   name = "ibm-plex-sans-${version}";
-  version = "2019-02-15-013019";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-Thin.ttf?raw=true";
       name = "IBMPlexSans-Thin.ttf";
-      sha256 = "36a00e5cff8102abd6011a65bfa93447c42aef3c69fcd19b0a64153af31c44e4";
+      sha256 = "f5e91036b6d793d33becce4ca40218920eee7fc9a6a8d156674996c286990fab";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-ThinItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-ThinItalic.ttf?raw=true";
       name = "IBMPlexSans-ThinItalic.ttf";
-      sha256 = "e59e1ff9a6c40c9940d31e11490697a5cf7c0d6f304ca1fe447f2ccc9ef574e3";
+      sha256 = "f9cee8809c5403f9ba8a1ab1105239416bd8de4f4d4dd55284d17b475a0eb0ac";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-ExtraLight.ttf?raw=true";
       name = "IBMPlexSans-ExtraLight.ttf";
-      sha256 = "29c99a97ee62520c05414bcb2b1be59f2362455c541135806eb547535f013a1c";
+      sha256 = "cb62a9a0d1d83ff9f00d13676df824e1b1175635d4631da7ab13fa71a896e7d9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-ExtraLightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-ExtraLightItalic.ttf?raw=true";
       name = "IBMPlexSans-ExtraLightItalic.ttf";
-      sha256 = "f1b8bef9d6a47f3061fc5b9ff1bf0140f28d0cbd1dc41a89c050ee8d5340003e";
+      sha256 = "27d618d182c4fa220d520e83bf0aeb1c9bece79c685262aa6070f9eb2eac7d78";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-Light.ttf?raw=true";
       name = "IBMPlexSans-Light.ttf";
-      sha256 = "39c31245ef812fe0efae0f61dbc457be6ad6a92f922d0726f982971f2774df88";
+      sha256 = "2f3651400f85b1d604935686b786862d9f9278606c04260bd6d63d690eb16a10";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-LightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-LightItalic.ttf?raw=true";
       name = "IBMPlexSans-LightItalic.ttf";
-      sha256 = "5417a2aeeb8666c679286195f9a5fc257c542bd90ea75a75d46cb1a6890b6a0f";
+      sha256 = "742ea7fdf4caaa7929cd319475b2503d27be468f93bfa1eb148e02d98b266d32";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-Regular.ttf?raw=true";
       name = "IBMPlexSans-Regular.ttf";
-      sha256 = "f1090ad34ee3187c3360cc2a5dfb0fa21441adb1c1a80408b161d290451aa891";
+      sha256 = "52babd121ff827c4f6ebbb20844d51569795eee6373580fc8979afc540048596";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-Italic.ttf?raw=true";
       name = "IBMPlexSans-Italic.ttf";
-      sha256 = "7f02b9c2d4c82a8bdda02731c23c75eba4aaae602f5a05a64dde9e8bafb4b23d";
+      sha256 = "c80122573572bd04056c0f82ea3e1c8b1df7922621f3a4b447915d519ccf706a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-Medium.ttf?raw=true";
       name = "IBMPlexSans-Medium.ttf";
-      sha256 = "27ea9f08853fcf913d46aaeb4146849d508bb9bc2d646151bf44b718d15c4f8c";
+      sha256 = "791716d014b493b533a4faee947b3bef6078f31ee9dacee719445357aa9c0e1b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-MediumItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-MediumItalic.ttf?raw=true";
       name = "IBMPlexSans-MediumItalic.ttf";
-      sha256 = "cdaaf34051f1fedc68afdcd0a1c6b8dc7624a6d32572842df251d629990c5ad6";
+      sha256 = "7f218d51bd7ba75d3c526b172fc2b95f788506236d08fb419fdbce478a5e5c15";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-SemiBold.ttf?raw=true";
       name = "IBMPlexSans-SemiBold.ttf";
-      sha256 = "b08037c049fb4ccf91aa8c772cc952301b714ba16c6be1c57f46c72e15c318f6";
+      sha256 = "76bd04cf3b2321586e668ecae60b73ecb5b86b4dc68bbbcdc6715ac6605f7783";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-SemiBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-SemiBoldItalic.ttf?raw=true";
       name = "IBMPlexSans-SemiBoldItalic.ttf";
-      sha256 = "f8555e9fdf1d8277ff7572a6c0abf10cac32e7a1fe25daac46d88c38cc702681";
+      sha256 = "fb3ddc2f987dc683f69c711f7ab1ec2964294ca9a4fe14e32b794c327828510f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-Bold.ttf?raw=true";
       name = "IBMPlexSans-Bold.ttf";
-      sha256 = "e8a8b7a90dc55215be2d84c303278da48029542ad44f0599b9729a991a48296b";
+      sha256 = "a20702eabc06feecafd8de9eec45ec2294353006e0c101acc3e6c70f4a52d997";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexsans/IBMPlexSans-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e0b9f6ca2d88f7d6e89710ee06b17d53a21f6a22/ofl/ibmplexsans/IBMPlexSans-BoldItalic.ttf?raw=true";
       name = "IBMPlexSans-BoldItalic.ttf";
-      sha256 = "e35aa2a2beb41be59b423c6cd7e79ee27bc08f9fce79d65f99c1fe98d3cf4073";
+      sha256 = "59e201d9ffa61cce19153e94814676b4ba0bbf238cac442d75523ea15a5789b6";
     })
   ];
 

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "sarabun-${version}";
-  version = "2018-09-07-135731";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

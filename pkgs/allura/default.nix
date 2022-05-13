@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "allura-${version}";
-  version = "2017-08-07-204213";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8f76cbc03fecf57f822340f46cf4fb7952c140f0/ofl/allura/Allura-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/207719137a61f71c2f9aa363b0df1dae1b5cc9a9/ofl/allura/Allura-Regular.ttf?raw=true";
       name = "Allura-Regular.ttf";
-      sha256 = "4ef7d88faf0de12b02ebf8df63722a5bdbadf0d8a62b673b0fe67463a7905843";
+      sha256 = "2fbe9174896b8afa1140936dc44a34daf3948c766b20a0b1b4155805a2d5bba4";
     })
   ];
 

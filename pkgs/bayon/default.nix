@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "bayon-${version}";
-  version = "2017-08-07-193939";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/557f51e77b5f71a0d163f5a1565890e25b527e73/ofl/bayon/Bayon-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b95081fc50761be8e1392bff2f5fce234a8954a6/ofl/bayon/Bayon-Regular.ttf?raw=true";
       name = "Bayon-Regular.ttf";
-      sha256 = "e4d00d4e8ddc9f0b79601c4855e90548ff1b1efca57c39655b3676239fc819d7";
+      sha256 = "ffdeb7ad5ca1abd37631b0a637aaa1b2cd695f85e582f5c75ccce26bdaaf51b6";
     })
   ];
 

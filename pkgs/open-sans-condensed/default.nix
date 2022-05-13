@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "open-sans-condensed-${version}";
-  version = "2017-05-08-224436";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

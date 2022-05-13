@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "nanum-brush-script-${version}";
-  version = "2018-11-12-211713";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

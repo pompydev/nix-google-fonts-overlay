@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "kdam-thmor-${version}";
-  version = "2016-09-26-145146";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/49fbebd3dc75d42fe72c4a3eef6524f8fcc335fd/ofl/kdamthmor/KdamThmor-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/9cb4270d0cd240f7fe58129f150a9351e60c4d5e/ofl/kdamthmor/KdamThmor-Regular.ttf?raw=true";
       name = "KdamThmor-Regular.ttf";
-      sha256 = "adf234c417f867e6083569b0eedcdafe68762f1bfc1233bdc6125ad5adde7dcd";
+      sha256 = "ffc874f2f8988b4b3e7d04dc9ebbd7bb99a38f701df20cf06ebfb451c48cdd7e";
     })
   ];
 

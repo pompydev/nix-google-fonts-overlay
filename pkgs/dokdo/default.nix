@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "dokdo-${version}";
-  version = "2018-03-13-164329";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

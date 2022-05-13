@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "moul-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/moul/Moul.ttf?raw=true";
-      name = "Moul.ttf";
-      sha256 = "e5020ad44384950707915226c0bf70adf865fb7631ae5b19ba2ed3c41402ddc1";
+      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/moul/Moul-Regular.ttf?raw=true";
+      name = "Moul-Regular.ttf";
+      sha256 = "c0445e86767edf1bfb08a6fe65bd38f350b588c641af7e2e88a59d72ccecd9c3";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Moul.ttf $out/share/fonts/truetype/Moul.ttf
+     install -Dm644 Moul-Regular.ttf $out/share/fonts/truetype/Moul-Regular.ttf
   '';
 
   meta = with lib; {

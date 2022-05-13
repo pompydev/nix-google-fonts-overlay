@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "bigelow-rules-${version}";
-  version = "2017-08-07-195239";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

@@ -2,30 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "karla-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/karla/Karla-Regular.ttf?raw=true";
-      name = "Karla-Regular.ttf";
-      sha256 = "e2e0c223601a6a31d42d9a85152169a457938127b07446d26d9e10ddf6084969";
+      url = "https://github.com/google/fonts/blob/568985dba2cc5bf58d9f59af93fd5a5faea610ff/ofl/karla/Karla[wght].ttf?raw=true";
+      name = "Karla[wght].ttf";
+      sha256 = "3acf8df2fcd53113f9a685eaf457e6c5fcc39caaa8ed7628c9e6519bfc6fb292";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/karla/Karla-Italic.ttf?raw=true";
-      name = "Karla-Italic.ttf";
-      sha256 = "5319b5b9b6609b2270f0c4cefe191d4af1da366a3faecbc729df23172682d3f0";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/karla/Karla-Bold.ttf?raw=true";
-      name = "Karla-Bold.ttf";
-      sha256 = "6916f29111d92d1b90729c4e207b8f0a766ed1052301808e61ca8b83e994c1ba";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/karla/Karla-BoldItalic.ttf?raw=true";
-      name = "Karla-BoldItalic.ttf";
-      sha256 = "4e706aa0ebc0002add658353c017bd523781c52cc3adffb032d4136109c390b8";
+      url = "https://github.com/google/fonts/blob/568985dba2cc5bf58d9f59af93fd5a5faea610ff/ofl/karla/Karla-Italic[wght].ttf?raw=true";
+      name = "Karla-Italic[wght].ttf";
+      sha256 = "ec239d29a374c435e2d4d0b4f835683f8c733b4320edceb953be3548129929db";
     })
   ];
 
@@ -36,10 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Karla-Regular.ttf $out/share/fonts/truetype/Karla-Regular.ttf
-     install -Dm644 Karla-Italic.ttf $out/share/fonts/truetype/Karla-Italic.ttf
-     install -Dm644 Karla-Bold.ttf $out/share/fonts/truetype/Karla-Bold.ttf
-     install -Dm644 Karla-BoldItalic.ttf $out/share/fonts/truetype/Karla-BoldItalic.ttf
+     install -Dm644 'Karla[wght].ttf' $out/share/fonts/truetype/'Karla[wght].ttf'
+     install -Dm644 'Karla-Italic[wght].ttf' $out/share/fonts/truetype/'Karla-Italic[wght].ttf'
   '';
 
   meta = with lib; {

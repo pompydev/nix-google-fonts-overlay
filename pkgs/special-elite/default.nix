@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "special-elite-${version}";
-  version = "2017-08-07-205600";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "fredericka-the-great-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/frederickathegreat/FrederickatheGreat-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/66934bdd44c2f797dee0028472234c7128c45aa8/ofl/frederickathegreat/FrederickatheGreat-Regular.ttf?raw=true";
       name = "FrederickatheGreat-Regular.ttf";
-      sha256 = "990272dea68d64b9a819554b57e80ceb5276e3df1eaa32ac78190c6232a07132";
+      sha256 = "33dc0832b5e934f3db79dc683dea5029c22eb418183b69669b047355c0c245a2";
     })
   ];
 

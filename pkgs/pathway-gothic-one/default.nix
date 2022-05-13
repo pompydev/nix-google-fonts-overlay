@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "pathway-gothic-one-${version}";
-  version = "2017-05-09-185128";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

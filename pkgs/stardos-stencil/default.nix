@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "stardos-stencil-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/stardosstencil/StardosStencil-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3dc433a635e80e201e2290fa4804fced4d057f8/ofl/stardosstencil/StardosStencil-Regular.ttf?raw=true";
       name = "StardosStencil-Regular.ttf";
-      sha256 = "851c1fcfab457340e3e259c96ffa3529f893ba7714a7f6b7dd44f8758fb33d18";
+      sha256 = "208b13d15387c282a1c0c439a8e4c38809243d15c361b31da440b25a7e4f39ae";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/stardosstencil/StardosStencil-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3dc433a635e80e201e2290fa4804fced4d057f8/ofl/stardosstencil/StardosStencil-Bold.ttf?raw=true";
       name = "StardosStencil-Bold.ttf";
-      sha256 = "77d4b32606cddd6b52ec5769812652604270e6b70173aa57600920e18cb9fd11";
+      sha256 = "6b15f50b1b358512d922b5f11937af17e90704587e1d7fb009f1715d2d5dfa74";
     })
   ];
 

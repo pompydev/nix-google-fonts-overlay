@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "chenla-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/chenla/Chenla.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/84b31698cb643dd35af5cf4567974d98e57ff2ac/ofl/chenla/Chenla.ttf?raw=true";
       name = "Chenla.ttf";
-      sha256 = "ebc79ffc924df0c0302a46322e0427b1a79da1a1b61267513fa1c286ba99f73c";
+      sha256 = "0174cda2c7718e129b9f2599cd7dd9265b01a63b9acf67f939882f0fddff29b7";
     })
   ];
 

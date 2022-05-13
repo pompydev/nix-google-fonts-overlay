@@ -2,80 +2,80 @@
 
 stdenv.mkDerivation rec {
   name = "ibm-plex-serif-${version}";
-  version = "2019-02-15-013019";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-Thin.ttf?raw=true";
       name = "IBMPlexSerif-Thin.ttf";
-      sha256 = "c422b3f1f7f0da8db14a9d98c9d72411630e5fa5784d9deb6448539e453bcf72";
+      sha256 = "1b4df73116dad2432f2d13337ae347fff71a03b8c1ba2b3e1c06cc98aadba72b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-ThinItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-ThinItalic.ttf?raw=true";
       name = "IBMPlexSerif-ThinItalic.ttf";
-      sha256 = "71d6dcdc63858404618039915a8ed513a48d9d9cb0cf4aaa2ebed2b6b5fb3807";
+      sha256 = "772397765d3842e375712a277609783dc1c753653157de3c807c5390d6a1513d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-ExtraLight.ttf?raw=true";
       name = "IBMPlexSerif-ExtraLight.ttf";
-      sha256 = "2cf9b1299eefe9646f72ec11cca31c46ebfa30d0068188a8181fa25a05a6f115";
+      sha256 = "e70801926e16dd77c41f4a7c1099f6bab7140f489f03fb80856ec678820be60d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-ExtraLightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-ExtraLightItalic.ttf?raw=true";
       name = "IBMPlexSerif-ExtraLightItalic.ttf";
-      sha256 = "ab63114d14eeb1594eff947143bf29f73defa3d1124b31311781e3c0ea9cc3d1";
+      sha256 = "f45aca4b4a1402c0c07c4a4665b278eb01aced90b6b719af29e8ae1a2a8bdc43";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-Light.ttf?raw=true";
       name = "IBMPlexSerif-Light.ttf";
-      sha256 = "9c4ee4fff8fb0600818344ea3782f79bd3905e404c01fa0480783d4e24e10d1a";
+      sha256 = "698bad1d5e52004cb1d504249bd704cf0aed03740d7ef22d7a533db2bc020f69";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-LightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-LightItalic.ttf?raw=true";
       name = "IBMPlexSerif-LightItalic.ttf";
-      sha256 = "2d9622f276af0ee2369a115b407f02a111590e423157d8803190a960f2d7af80";
+      sha256 = "f4e4364e8fb60d9a0a4ed41e5bbe757672b042cdf2a963215035951782de8060";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-Regular.ttf?raw=true";
       name = "IBMPlexSerif-Regular.ttf";
-      sha256 = "fe093039520374cd6046a44effa5ddabea2b3a367f3ff182e7015c3ed162cc88";
+      sha256 = "e882efa9c41949a528ac2369079ec5ef050c1c996bbd0bacce3c3326d44cf80d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-Italic.ttf?raw=true";
       name = "IBMPlexSerif-Italic.ttf";
-      sha256 = "8d9941460acabd596c536fe11ec3dad37b2f2f440936a6fa8d8067c3538f7fca";
+      sha256 = "4b75b38be4673527231f49c48818d090c913d5042dd5c747b525bf6185d29ecb";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-Medium.ttf?raw=true";
       name = "IBMPlexSerif-Medium.ttf";
-      sha256 = "047b751f60f05c313f6d2c4f7771e3aa0d7e8295f60751c78f56034bea6989a6";
+      sha256 = "32925e73e5b4a441df9d23e847f2b8c4046c1fc3db094e90bad8883157811509";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-MediumItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-MediumItalic.ttf?raw=true";
       name = "IBMPlexSerif-MediumItalic.ttf";
-      sha256 = "80b276f03bd684d91fd910053dcebb1dce9a0fad382469bcdd627f1e32b0a960";
+      sha256 = "a3b5c5b291db0b88abf833bd02864adcaa4ba994d9f7d9b790f552e2fd0cbabd";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-SemiBold.ttf?raw=true";
       name = "IBMPlexSerif-SemiBold.ttf";
-      sha256 = "5e9c89e567c805c964631b2f86e5c1581e868a66acbb736674bac2d5dc808251";
+      sha256 = "27ce4d105591b48f666b228e1e399838a704594efea22b730000951bea700a60";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-SemiBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-SemiBoldItalic.ttf?raw=true";
       name = "IBMPlexSerif-SemiBoldItalic.ttf";
-      sha256 = "0cb9c76bd794cdeade1b04d592d36989819fce6576a37f203a113cb3fddcd1b4";
+      sha256 = "15f4e3974b83b2459a6a1b252caa356a9a11316deeba45adbc89b46fb4aab820";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-Bold.ttf?raw=true";
       name = "IBMPlexSerif-Bold.ttf";
-      sha256 = "e6e4966977bfc1223fa083aa9c28f22fd0e9bd90ba7bf126bbe2d07ae961a1d7";
+      sha256 = "534c02c295999dd86e770457ece1d43db0de9256dd98bf741426f63ae904209e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/115c6eb017ef7cdc035a3058bbc6336d9aa3d992/ofl/ibmplexserif/IBMPlexSerif-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b598f5e3ad6849188c9c71714b0fafe11dc88e02/ofl/ibmplexserif/IBMPlexSerif-BoldItalic.ttf?raw=true";
       name = "IBMPlexSerif-BoldItalic.ttf";
-      sha256 = "17ad2daa5d39ebb6272c7ff8eeaff78f34c5018ba7bf383125fb2a21cb3f68f7";
+      sha256 = "2a32b76ac19c1942bf5942dbbd2a1566e5f1ae9833e421ebcf36d3522715e153";
     })
   ];
 

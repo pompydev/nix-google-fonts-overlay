@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "hammersmith-one-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/hammersmithone/HammersmithOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/ff6fd2655deb043f1aee47a842525ad6533e0268/ofl/hammersmithone/HammersmithOne-Regular.ttf?raw=true";
       name = "HammersmithOne-Regular.ttf";
-      sha256 = "5c8da79fd5bd09fc38c391c4026f0bd4032d2f88f14c523b265a21c96c2cec64";
+      sha256 = "6faf4e9a59a2b25e1016c4e47cf4da4a494d07aee15dc2f708a88caae015ff8a";
     })
   ];
 

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "fahkwang-${version}";
-  version = "2018-09-07-134900";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

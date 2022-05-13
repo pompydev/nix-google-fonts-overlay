@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "yatra-one-${version}";
-  version = "2017-05-24-213236";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "trade-winds-${version}";
-  version = "2016-01-11-164358";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/tradewinds/TradeWinds-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/97f586e42631dedfe43896b31b794441bc1dab22/ofl/tradewinds/TradeWinds-Regular.ttf?raw=true";
       name = "TradeWinds-Regular.ttf";
-      sha256 = "b8d8ac0be4a262e8473b25b8b7f90d5909c8780648285b3edc44b5dff6341bb0";
+      sha256 = "bbc4c9a17927d6c5076a1957b0b165fae6c835c1bfa0fb8c07053243097e495b";
     })
   ];
 

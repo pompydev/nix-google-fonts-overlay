@@ -2,70 +2,70 @@
 
 stdenv.mkDerivation rec {
   name = "source-sans-pro-${version}";
-  version = "2017-05-16-000106";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f1467d58f677b4be9450f2f39f10a600d3846258/ofl/sourcesanspro/SourceSansPro-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-ExtraLight.ttf?raw=true";
       name = "SourceSansPro-ExtraLight.ttf";
-      sha256 = "8315c5b2e847440ce2ce9c233de6b87c568cbf0e611be67e4ebc799e536be978";
+      sha256 = "7a44c30e92eda0963633377ff584dd83505f56e65e6c118c5ca327190db42dcd";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f1467d58f677b4be9450f2f39f10a600d3846258/ofl/sourcesanspro/SourceSansPro-ExtraLightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-ExtraLightItalic.ttf?raw=true";
       name = "SourceSansPro-ExtraLightItalic.ttf";
-      sha256 = "fe316e78ae6023af035d6350e0e5f883142189c5bf90883cea040234e77a50eb";
+      sha256 = "609d64c048f49ffc52b5f1d6f4cd2f3f87840c0639b3564adaf2e47097a01ef3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f1467d58f677b4be9450f2f39f10a600d3846258/ofl/sourcesanspro/SourceSansPro-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-Light.ttf?raw=true";
       name = "SourceSansPro-Light.ttf";
-      sha256 = "5705ecafdaa64d8af74d0c03f89272a65cfee9f7e62b55016a8dcbe4a69b6f86";
+      sha256 = "719319e7fe1ed06a6bc5e66a1cfea8c52250eefee502d175780cf4571ddc5bf0";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f1467d58f677b4be9450f2f39f10a600d3846258/ofl/sourcesanspro/SourceSansPro-LightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-LightItalic.ttf?raw=true";
       name = "SourceSansPro-LightItalic.ttf";
-      sha256 = "93ed5542962715b40b4a63779206cd099d1ca865f0ee096a5cddce265be0c356";
+      sha256 = "605425dc687ecc7bdce9329c0fc976ea38eb38a910c24144ced60d73f35e855e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f1467d58f677b4be9450f2f39f10a600d3846258/ofl/sourcesanspro/SourceSansPro-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-Regular.ttf?raw=true";
       name = "SourceSansPro-Regular.ttf";
-      sha256 = "71d10a86b4c54a5a9c0c8b467e53ac67d79edb96c956e4e9f65a7074dfb9992a";
+      sha256 = "3d2e962599d4bd83b797ab813f2017f2c7f7e7e0e2e8e3a497f4e713a0b3c9c9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f1467d58f677b4be9450f2f39f10a600d3846258/ofl/sourcesanspro/SourceSansPro-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-Italic.ttf?raw=true";
       name = "SourceSansPro-Italic.ttf";
-      sha256 = "dac7846e443ec58c0802cd6fa55836060a62d8a7448c0bccff5242bac9e71d0e";
+      sha256 = "740798947aa0151c6bec4508ba73eb7cb22f9ef2e4354314fc638f66eaa2f072";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c0329fe2714198653d179e5077d6d86d3cb8036a/ofl/sourcesanspro/SourceSansPro-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-SemiBold.ttf?raw=true";
       name = "SourceSansPro-SemiBold.ttf";
-      sha256 = "1abd7bd14daea0c793865e0df0e17b3f07ec1cbf22855676c4716726b930f17e";
+      sha256 = "37bb472f47d33a04f5616c6e9120723ed944c31306838ecd692feb7c69084da2";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c0329fe2714198653d179e5077d6d86d3cb8036a/ofl/sourcesanspro/SourceSansPro-SemiBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-SemiBoldItalic.ttf?raw=true";
       name = "SourceSansPro-SemiBoldItalic.ttf";
-      sha256 = "f819a0030a22a416cf14cda512e731643faf8d5615e833b57c6f2ac2e316643e";
+      sha256 = "8e1136c1c135261a389118f9758d477d3582c9dda10fec6b7511e27e866adfbc";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f1467d58f677b4be9450f2f39f10a600d3846258/ofl/sourcesanspro/SourceSansPro-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-Bold.ttf?raw=true";
       name = "SourceSansPro-Bold.ttf";
-      sha256 = "da4f442e66843990825ed4757e27ad3442cad83f9844cc503e8ece85e00f77f2";
+      sha256 = "e1ac971e7b62b2ad0b0bb9f55bc15f6215df8af5bf69e894905341cfdfa51aea";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f1467d58f677b4be9450f2f39f10a600d3846258/ofl/sourcesanspro/SourceSansPro-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-BoldItalic.ttf?raw=true";
       name = "SourceSansPro-BoldItalic.ttf";
-      sha256 = "4413cbf92a508e6a6eb0a089ee9bcf1b94f0b366ea755c5c64b6d4755f160c40";
+      sha256 = "0ad42cce23ed61aada9e6a156bfa411fd03354067711e04b3bb3c8470f82d8c6";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f1467d58f677b4be9450f2f39f10a600d3846258/ofl/sourcesanspro/SourceSansPro-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-Black.ttf?raw=true";
       name = "SourceSansPro-Black.ttf";
-      sha256 = "0451ace0a903d4f14d1fb67b38508778aceb88af0430962978a8fdba522f2b98";
+      sha256 = "51fb02911c19199d2b0b35789ef52b0179380e7294abaac93855bfd1b0b1b704";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f1467d58f677b4be9450f2f39f10a600d3846258/ofl/sourcesanspro/SourceSansPro-BlackItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3f3d547cd8c4f7963bcd4dc1965ba564b281ef7/ofl/sourcesanspro/SourceSansPro-BlackItalic.ttf?raw=true";
       name = "SourceSansPro-BlackItalic.ttf";
-      sha256 = "1ceae12d99691d3f9a4a6a1c914f9e85b0f6be21a118d5477362a96dbc8f3787";
+      sha256 = "0de64da2f8b859920cb60e8ea617274b9f1c9dba427773be61307d79c982204a";
     })
   ];
 

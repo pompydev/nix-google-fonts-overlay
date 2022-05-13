@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "astloch-${version}";
-  version = "2017-08-07-200135";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/94982614b3aec3585bc85ccaa415cf463ac0e4fd/ofl/astloch/Astloch-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/6873b904efbc2675173ff44473c7b53f657d4250/ofl/astloch/Astloch-Regular.ttf?raw=true";
       name = "Astloch-Regular.ttf";
-      sha256 = "1c1505d568bef7a21b3fe48ad3d16efb5f19ba7c63d9a42a5dcb3058a0058562";
+      sha256 = "1b6f98e4c391da70d9166182369f90164cb02870ad210c4b3287f35ff28227f0";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/94982614b3aec3585bc85ccaa415cf463ac0e4fd/ofl/astloch/Astloch-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/6873b904efbc2675173ff44473c7b53f657d4250/ofl/astloch/Astloch-Bold.ttf?raw=true";
       name = "Astloch-Bold.ttf";
-      sha256 = "b6fcf52838e2e886f89588ce64beb612aace3050d3acbbc2e4caa5836f2a87bf";
+      sha256 = "dee95fb52f9b24afc701e9991208275f654160870db06bec84cecb25e10fbeee";
     })
   ];
 

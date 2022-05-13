@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "coming-soon-${version}";
-  version = "2017-08-07-204454";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/58e6b444409f33b0aaa157622832c68be2f23af9/apache/comingsoon/ComingSoon-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/0fc4c4f4a270a62fa1b769c7289a994cbf199b03/apache/comingsoon/ComingSoon-Regular.ttf?raw=true";
       name = "ComingSoon-Regular.ttf";
-      sha256 = "0fa985cc8a627b9c25b5d31bb6cbb98aa5b0a630f33b40bd0f6cf93fa3aaf8cc";
+      sha256 = "cf81388f587ff6122de1a705d1070b8f00abccdba66108509908b5d10715068c";
     })
   ];
 

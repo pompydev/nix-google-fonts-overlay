@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "aclonica-${version}";
-  version = "2017-05-01-172603";
+  version = "2022-04-16-030742";
 
   phases = [ "unpackPhase" "installPhase" ];
 
