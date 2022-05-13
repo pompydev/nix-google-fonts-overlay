@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "public-sans-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-13-114616";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f4c4f1fcbc0d4ec0a194848c1d9683157e3e783e/ofl/publicsans/PublicSans[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/37caf657942042c2de8f5f11d9d6866a1b689b84/ofl/publicsans/PublicSans[wght].ttf?raw=true";
       name = "PublicSans[wght].ttf";
-      sha256 = "ba4a92d3fe1a78822e242aff733f287dbcb90b7ba2e59aeaf192c633e087219b";
+      sha256 = "d75a7dc1a27eb9e336d5b33f55489d2ecb5621bf694d5c43b2415bce2ca830a8";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f4c4f1fcbc0d4ec0a194848c1d9683157e3e783e/ofl/publicsans/PublicSans-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/37caf657942042c2de8f5f11d9d6866a1b689b84/ofl/publicsans/PublicSans-Italic[wght].ttf?raw=true";
       name = "PublicSans-Italic[wght].ttf";
-      sha256 = "9aa41974baa024f8b4a9479fd5cf9678a27a51c29c5d312048807ff4849aff36";
+      sha256 = "6ce292b05aa8c66bc644bedff834b4d0ddee9af75c55f98dcb28faa32a81056f";
     })
   ];
 

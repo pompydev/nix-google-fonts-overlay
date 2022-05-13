@@ -252,6 +252,7 @@ self: super:
     google-fonts-changa = super.callPackage ./pkgs/changa {};
     google-fonts-changa-one = super.callPackage ./pkgs/changa-one {};
     google-fonts-chango = super.callPackage ./pkgs/chango {};
+    google-fonts-charis-sil = super.callPackage ./pkgs/charis-sil {};
     google-fonts-charm = super.callPackage ./pkgs/charm {};
     google-fonts-charmonman = super.callPackage ./pkgs/charmonman {};
     google-fonts-chathura = super.callPackage ./pkgs/chathura {};
@@ -403,6 +404,7 @@ self: super:
     google-fonts-fenix = super.callPackage ./pkgs/fenix {};
     google-fonts-festive = super.callPackage ./pkgs/festive {};
     google-fonts-finger-paint = super.callPackage ./pkgs/finger-paint {};
+    google-fonts-finlandica = super.callPackage ./pkgs/finlandica {};
     google-fonts-fira-code = super.callPackage ./pkgs/fira-code {};
     google-fonts-fira-mono = super.callPackage ./pkgs/fira-mono {};
     google-fonts-fira-sans = super.callPackage ./pkgs/fira-sans {};
@@ -446,6 +448,8 @@ self: super:
     google-fonts-genos = super.callPackage ./pkgs/genos {};
     google-fonts-gentium-basic = super.callPackage ./pkgs/gentium-basic {};
     google-fonts-gentium-book-basic = super.callPackage ./pkgs/gentium-book-basic {};
+    google-fonts-gentium-plus = super.callPackage ./pkgs/gentium-plus {};
+    google-fonts-gentium-plus-book = super.callPackage ./pkgs/gentium-plus-book {};
     google-fonts-geo = super.callPackage ./pkgs/geo {};
     google-fonts-georama = super.callPackage ./pkgs/georama {};
     google-fonts-geostar = super.callPackage ./pkgs/geostar {};

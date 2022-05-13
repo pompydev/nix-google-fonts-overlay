@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "blaka-ink-${version}";
-  version = "2022-05-06-031916";
+  version = "2022-05-13-113124";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/35a8cf3bf9ae2f862abf63d18fdeadb70694fad1/ofl/blakaink/BlakaInk-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b6afa0153d4a941b4be101e651cf000287acd1c3/ofl/blakaink/BlakaInk-Regular.ttf?raw=true";
       name = "BlakaInk-Regular.ttf";
-      sha256 = "7621e0b1ffd25da31d07268677a774698dd94e604bdb75733da48c20fd3369ad";
+      sha256 = "2effe5be99706a57df02b738a80f4de57d679d4cea679ce70ad5a3280b67b418";
     })
   ];
 
