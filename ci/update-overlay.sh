@@ -61,6 +61,8 @@ push_changes () {
 
   echo "Committing changes"
 
+  git checkout master
+
   message="[skip ci] Automatic update $(date "+%Y-%m-%d") (Build $TRAVIS_BUILD_NUMBER)"
 
   if ! git commit -m "$message"; then
