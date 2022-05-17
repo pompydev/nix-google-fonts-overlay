@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/04b9cc0b96616b190802646dc9a6d51a25d428de/ofl/sourcecodepro/SourceCodePro[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/04b9cc0b96616b190802646dc9a6d51a25d428de/ofl/sourcecodepro/SourceCodePro%5Bwght%5D.ttf?raw=true";
       name = "SourceCodePro_wght_.ttf";
       sha256 = "be88a2e3c368311c6ff8f62b043bb11addd696048582719253b681b8c8029aef";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/04b9cc0b96616b190802646dc9a6d51a25d428de/ofl/sourcecodepro/SourceCodePro-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/04b9cc0b96616b190802646dc9a6d51a25d428de/ofl/sourcecodepro/SourceCodePro-Italic%5Bwght%5D.ttf?raw=true";
       name = "SourceCodePro-Italic_wght_.ttf";
       sha256 = "17a14e2460d871f6e55361b16be173f28448b1af9241e2781ae60cf57aa40812";
     })

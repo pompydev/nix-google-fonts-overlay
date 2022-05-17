@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/956ee3203d796c132e1a201fafb02931dab25a04/ofl/readexpro/ReadexPro[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/956ee3203d796c132e1a201fafb02931dab25a04/ofl/readexpro/ReadexPro%5Bwght%5D.ttf?raw=true";
       name = "ReadexPro_wght_.ttf";
       sha256 = "bdf57ad5b3477babe9087bda26202cc2f92e1f3910a0ce63d0d6ed6ac74c90f4";
     })

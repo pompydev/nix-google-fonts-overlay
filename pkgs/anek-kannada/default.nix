@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8781cff489a699f0e20b122afa7f791640dbcb58/ofl/anekkannada/AnekKannada[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/8781cff489a699f0e20b122afa7f791640dbcb58/ofl/anekkannada/AnekKannada%5Bwdth,wght%5D.ttf?raw=true";
       name = "AnekKannada_wdth,wght_.ttf";
       sha256 = "6808783ecb95edd948c928ff394953256eed78bdb71dd1fd96eccaa4da05a330";
     })

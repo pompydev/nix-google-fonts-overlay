@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e24965e60f784bdfeff869baca4ff94dbb3b542d/ofl/sansitaswashed/SansitaSwashed[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e24965e60f784bdfeff869baca4ff94dbb3b542d/ofl/sansitaswashed/SansitaSwashed%5Bwght%5D.ttf?raw=true";
       name = "SansitaSwashed_wght_.ttf";
       sha256 = "a6ff6619f22d01eb9582fb00a38052d7afba404ff5868be9bddf37e2888a1c6a";
     })

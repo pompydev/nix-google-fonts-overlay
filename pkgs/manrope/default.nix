@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8f9a401dbb3793e0d1264b15d96aa253f05280f5/ofl/manrope/Manrope[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/8f9a401dbb3793e0d1264b15d96aa253f05280f5/ofl/manrope/Manrope%5Bwght%5D.ttf?raw=true";
       name = "Manrope_wght_.ttf";
       sha256 = "d0639be45d0af36e798172419d7bd173c4bd4f29e2b76cbb69db1d11bf8b0a40";
     })

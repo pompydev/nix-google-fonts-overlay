@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/df19ee8f7ea794d3802afb02a61924ebf4bd4b64/ofl/cuprum/Cuprum[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/df19ee8f7ea794d3802afb02a61924ebf4bd4b64/ofl/cuprum/Cuprum%5Bwght%5D.ttf?raw=true";
       name = "Cuprum_wght_.ttf";
       sha256 = "be75585aa57a5f1c1d10de61305bb4266effa1b9083722d20c26adf97e911534";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/df19ee8f7ea794d3802afb02a61924ebf4bd4b64/ofl/cuprum/Cuprum-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/df19ee8f7ea794d3802afb02a61924ebf4bd4b64/ofl/cuprum/Cuprum-Italic%5Bwght%5D.ttf?raw=true";
       name = "Cuprum-Italic_wght_.ttf";
       sha256 = "1b2fa2441b421e16176ed3b0356949f406ef44497df17b2ee7977aa7f838312a";
     })

@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/91b26e2e0231f5aa85f5470a7b23d6d732ab15fc/ofl/jost/Jost[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/91b26e2e0231f5aa85f5470a7b23d6d732ab15fc/ofl/jost/Jost%5Bwght%5D.ttf?raw=true";
       name = "Jost_wght_.ttf";
       sha256 = "6343b70971000b04c5d401c96ae08ce371086135e999d5e1e1413039c0213076";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/91b26e2e0231f5aa85f5470a7b23d6d732ab15fc/ofl/jost/Jost-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/91b26e2e0231f5aa85f5470a7b23d6d732ab15fc/ofl/jost/Jost-Italic%5Bwght%5D.ttf?raw=true";
       name = "Jost-Italic_wght_.ttf";
       sha256 = "15a6f7e3e11f9e8e338a583a6fe03e8f6b1d9ce877efa3fe579282b6c1cb15fe";
     })

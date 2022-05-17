@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fafa568b91c1e9b19cf9288497c632d2450f8ce4/ofl/petrona/Petrona[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fafa568b91c1e9b19cf9288497c632d2450f8ce4/ofl/petrona/Petrona%5Bwght%5D.ttf?raw=true";
       name = "Petrona_wght_.ttf";
       sha256 = "0ede77fbf726541cf93ece7b721a7b069f004cb413ab205f74963560015ab075";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fafa568b91c1e9b19cf9288497c632d2450f8ce4/ofl/petrona/Petrona-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/fafa568b91c1e9b19cf9288497c632d2450f8ce4/ofl/petrona/Petrona-Italic%5Bwght%5D.ttf?raw=true";
       name = "Petrona-Italic_wght_.ttf";
       sha256 = "f4ad599093d29a668e2f945e027b47baee8476647d92bc8c23a89b0f86c08078";
     })

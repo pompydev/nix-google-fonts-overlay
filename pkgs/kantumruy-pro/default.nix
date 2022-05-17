@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bbc4168004b6d8255d3ea176d4595712279b67ea/ofl/kantumruypro/KantumruyPro[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/bbc4168004b6d8255d3ea176d4595712279b67ea/ofl/kantumruypro/KantumruyPro%5Bwght%5D.ttf?raw=true";
       name = "KantumruyPro_wght_.ttf";
       sha256 = "104129b14d55bc2ac86d495bd2a8ea0666cd359a39f2f6bad4791cba161fce9b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bbc4168004b6d8255d3ea176d4595712279b67ea/ofl/kantumruypro/KantumruyPro-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/bbc4168004b6d8255d3ea176d4595712279b67ea/ofl/kantumruypro/KantumruyPro-Italic%5Bwght%5D.ttf?raw=true";
       name = "KantumruyPro-Italic_wght_.ttf";
       sha256 = "0ab262cc1ae8488eb642b7995c7b83d9e0652d52ea2da127e174408338b29254";
     })

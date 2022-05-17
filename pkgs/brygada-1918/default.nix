@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4714790f81723b4ed52c2f08a16855cc24e7ad05/ofl/brygada1918/Brygada1918[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4714790f81723b4ed52c2f08a16855cc24e7ad05/ofl/brygada1918/Brygada1918%5Bwght%5D.ttf?raw=true";
       name = "Brygada1918_wght_.ttf";
       sha256 = "93a23e7c6de5e2c54410116abceed294a05b71aa03af52fbaa92c2cc79003d4d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4714790f81723b4ed52c2f08a16855cc24e7ad05/ofl/brygada1918/Brygada1918-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4714790f81723b4ed52c2f08a16855cc24e7ad05/ofl/brygada1918/Brygada1918-Italic%5Bwght%5D.ttf?raw=true";
       name = "Brygada1918-Italic_wght_.ttf";
       sha256 = "c694f075a9240c47c72a2298acf9c14f79abdf7bae824eca96b78099dbed93c5";
     })

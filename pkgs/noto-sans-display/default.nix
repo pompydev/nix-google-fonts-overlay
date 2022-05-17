@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansdisplay/NotoSansDisplay[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansdisplay/NotoSansDisplay%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansDisplay_wdth,wght_.ttf";
       sha256 = "deaa68141fa5ad21bd17d7c11fa79183ceda19b32e40ff5c33874d42f3636dde";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansdisplay/NotoSansDisplay-Italic[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansdisplay/NotoSansDisplay-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansDisplay-Italic_wdth,wght_.ttf";
       sha256 = "81374b375e9476e2fa5b31a9ee4bcab524a307270dd5bf033346c7ba932f226b";
     })

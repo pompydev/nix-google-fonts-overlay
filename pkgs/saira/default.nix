@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3cfea32a77637ada0e209f10d9f91e7ff9d2a32f/ofl/saira/Saira[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/3cfea32a77637ada0e209f10d9f91e7ff9d2a32f/ofl/saira/Saira%5Bwdth,wght%5D.ttf?raw=true";
       name = "Saira_wdth,wght_.ttf";
       sha256 = "9d050fc5a01c85f74c4257c207d50b55d1e40c37308c642f974a2c5003231dde";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3cfea32a77637ada0e209f10d9f91e7ff9d2a32f/ofl/saira/Saira-Italic[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/3cfea32a77637ada0e209f10d9f91e7ff9d2a32f/ofl/saira/Saira-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "Saira-Italic_wdth,wght_.ttf";
       sha256 = "965972c2543b72948aedb55fae36e23175661d0f9d2d8d7f14a1009e466912f8";
     })

@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5377e4c5ca6b224e0deb0dee313888bb46eaea35/ofl/imbue/Imbue[opsz,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/5377e4c5ca6b224e0deb0dee313888bb46eaea35/ofl/imbue/Imbue%5Bopsz,wght%5D.ttf?raw=true";
       name = "Imbue_opsz,wght_.ttf";
       sha256 = "bf45ff1dc01974acedf4f11bcbfa7365053d97f4d598ddafe189d238ac80a534";
     })

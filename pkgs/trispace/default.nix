@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b85ab0fbcfc0bbf38423f56638abb9169f2d1b91/ofl/trispace/Trispace[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/b85ab0fbcfc0bbf38423f56638abb9169f2d1b91/ofl/trispace/Trispace%5Bwdth,wght%5D.ttf?raw=true";
       name = "Trispace_wdth,wght_.ttf";
       sha256 = "4021d8d7abd42907c64f0bf192446ad9f869320563f8c71a526993830e405464";
     })

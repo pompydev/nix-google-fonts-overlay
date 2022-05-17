@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/846eb7f39ee398e771a2807cc94ab7fd86bb8565/ofl/gluten/Gluten[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/846eb7f39ee398e771a2807cc94ab7fd86bb8565/ofl/gluten/Gluten%5Bwght%5D.ttf?raw=true";
       name = "Gluten_wght_.ttf";
       sha256 = "a0b1811546f40f04ab2e4eb057dd1614ec7878880d9f43748257b12d36134b64";
     })

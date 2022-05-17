@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/57311b5baf175fa1bdbf055d5ccb50e53d19e745/ofl/opensans/OpenSans[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/57311b5baf175fa1bdbf055d5ccb50e53d19e745/ofl/opensans/OpenSans%5Bwdth,wght%5D.ttf?raw=true";
       name = "OpenSans_wdth,wght_.ttf";
       sha256 = "aaa9bda12706b5ac4c1e7f937c83725f499806113a2672a4e7883a86fc26f4cc";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/57311b5baf175fa1bdbf055d5ccb50e53d19e745/ofl/opensans/OpenSans-Italic[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/57311b5baf175fa1bdbf055d5ccb50e53d19e745/ofl/opensans/OpenSans-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "OpenSans-Italic_wdth,wght_.ttf";
       sha256 = "08ad5582b365272ad5c9eac7cd332a71f6f2bef2c69351d1ba072c50f6049753";
     })

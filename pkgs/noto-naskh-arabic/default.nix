@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notonaskharabic/NotoNaskhArabic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notonaskharabic/NotoNaskhArabic%5Bwght%5D.ttf?raw=true";
       name = "NotoNaskhArabic_wght_.ttf";
       sha256 = "d9c87ec796cd6155d47a91b8270f93932a25618a102c8ec7c1441a80c2b25851";
     })

@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e5488681f12727d42e13a13f29ddebe9f475b1fd/ofl/markazitext/MarkaziText[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e5488681f12727d42e13a13f29ddebe9f475b1fd/ofl/markazitext/MarkaziText%5Bwght%5D.ttf?raw=true";
       name = "MarkaziText_wght_.ttf";
       sha256 = "424b7331681160ff2a4b209bfc356ea9564d429a7daea43ee4dc28de8ff4f9fe";
     })

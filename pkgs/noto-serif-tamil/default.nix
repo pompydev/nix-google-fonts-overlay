@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoseriftamil/NotoSerifTamil[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoseriftamil/NotoSerifTamil%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSerifTamil_wdth,wght_.ttf";
       sha256 = "217bf0655e07742d88eaaba8c5ae906adfc41c2930fb881cd9fd936c2cf618ec";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/9b085f82900b7ec74b57bf2d19edddd2f1533111/ofl/notoseriftamil/NotoSerifTamil-Italic[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/9b085f82900b7ec74b57bf2d19edddd2f1533111/ofl/notoseriftamil/NotoSerifTamil-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSerifTamil-Italic_wdth,wght_.ttf";
       sha256 = "72e4157c71fcc6e472c6df8f772430ed8dc249f61b0646d046e3fa5dbde26675";
     })

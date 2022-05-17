@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/josefinslab/JosefinSlab[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/josefinslab/JosefinSlab%5Bwght%5D.ttf?raw=true";
       name = "JosefinSlab_wght_.ttf";
       sha256 = "2d1316f95cb11dad6e73b1fb1006c0ecb3bd95a40583c1946d27868a75672b1b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/josefinslab/JosefinSlab-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/d1933f61bbd8d55a9879f07e0b4b36c73f126c56/ofl/josefinslab/JosefinSlab-Italic%5Bwght%5D.ttf?raw=true";
       name = "JosefinSlab-Italic_wght_.ttf";
       sha256 = "b9139992b266820d626c8035fe3080dba68d67cd79d3809f4aad0a1cc4b8e5b1";
     })

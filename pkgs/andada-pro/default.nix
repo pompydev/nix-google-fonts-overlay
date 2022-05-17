@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4898fcbdc1ae6fddefcaf37c3fc7e7e331467373/ofl/andadapro/AndadaPro[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4898fcbdc1ae6fddefcaf37c3fc7e7e331467373/ofl/andadapro/AndadaPro%5Bwght%5D.ttf?raw=true";
       name = "AndadaPro_wght_.ttf";
       sha256 = "4f378349c5e7a6c0e6d93ff3cba92a2ecf2217407a0b633ab6ac807c80ab20a3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4898fcbdc1ae6fddefcaf37c3fc7e7e331467373/ofl/andadapro/AndadaPro-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/4898fcbdc1ae6fddefcaf37c3fc7e7e331467373/ofl/andadapro/AndadaPro-Italic%5Bwght%5D.ttf?raw=true";
       name = "AndadaPro-Italic_wght_.ttf";
       sha256 = "8544abeadeeda80d70201f444621678ede1aeb140a96d26cd7113bda771ef831";
     })

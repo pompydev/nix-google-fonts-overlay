@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/becd3517c582fa68f041364b02bc597ee822ef1c/ofl/oxanium/Oxanium[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/becd3517c582fa68f041364b02bc597ee822ef1c/ofl/oxanium/Oxanium%5Bwght%5D.ttf?raw=true";
       name = "Oxanium_wght_.ttf";
       sha256 = "2ce01d946e1e1ffc8d7eecfffbda8623bedd63eaf811a20488c4b69af45babb0";
     })

@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/dce3aa6dca876ac74f787ae655373af010160e7b/ofl/robotoflex/RobotoFlex[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/dce3aa6dca876ac74f787ae655373af010160e7b/ofl/robotoflex/RobotoFlex%5BGRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght%5D.ttf?raw=true";
       name = "RobotoFlex_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght_.ttf";
       sha256 = "a8663ec429d36a7f243314289665da11ba5b6a7c8b032b02be85366451d88142";
     })

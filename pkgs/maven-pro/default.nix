@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5cc7852391fa929e4103e1948a71b928f3db9f6e/ofl/mavenpro/MavenPro[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/5cc7852391fa929e4103e1948a71b928f3db9f6e/ofl/mavenpro/MavenPro%5Bwght%5D.ttf?raw=true";
       name = "MavenPro_wght_.ttf";
       sha256 = "2bd0568c49abe4a2be338203515bf36db1bde5cf5243470d81db5b8a6a210272";
     })

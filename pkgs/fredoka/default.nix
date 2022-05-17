@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/eda3fe521878f70de0e2d91fd6d800f93f8c4758/ofl/fredoka/Fredoka[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/eda3fe521878f70de0e2d91fd6d800f93f8c4758/ofl/fredoka/Fredoka%5Bwdth,wght%5D.ttf?raw=true";
       name = "Fredoka_wdth,wght_.ttf";
       sha256 = "2ba02e68b152868aef9ba28e24b3648c7d457fe6f25c761f2c2c53fb61a73fc8";
     })

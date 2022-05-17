@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/60dc03fb1238cbb20a5f712759c24b286b67d77f/ofl/montaguslab/MontaguSlab[opsz,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/60dc03fb1238cbb20a5f712759c24b286b67d77f/ofl/montaguslab/MontaguSlab%5Bopsz,wght%5D.ttf?raw=true";
       name = "MontaguSlab_opsz,wght_.ttf";
       sha256 = "26fe25e6f5221fa48b97807d9666bbf36e7486bc7853676b24bb631373e8a505";
     })

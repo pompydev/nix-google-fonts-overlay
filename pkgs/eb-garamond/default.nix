@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/177c41e760ce7c766ba001e49be72f0367d6b347/ofl/ebgaramond/EBGaramond[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/177c41e760ce7c766ba001e49be72f0367d6b347/ofl/ebgaramond/EBGaramond%5Bwght%5D.ttf?raw=true";
       name = "EBGaramond_wght_.ttf";
       sha256 = "b7f1dd91643e4f81f60e43fa9c4ba117663a001621913dcfd213706a4d83e6d9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/177c41e760ce7c766ba001e49be72f0367d6b347/ofl/ebgaramond/EBGaramond-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/177c41e760ce7c766ba001e49be72f0367d6b347/ofl/ebgaramond/EBGaramond-Italic%5Bwght%5D.ttf?raw=true";
       name = "EBGaramond-Italic_wght_.ttf";
       sha256 = "3b681621f9c52ef3e013955305009c5d00f85a50c612897a3b4f18bbce490458";
     })

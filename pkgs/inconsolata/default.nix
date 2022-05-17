@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0f203e3740b5eb77e0b179dff1e5869482676782/ofl/inconsolata/Inconsolata[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/0f203e3740b5eb77e0b179dff1e5869482676782/ofl/inconsolata/Inconsolata%5Bwdth,wght%5D.ttf?raw=true";
       name = "Inconsolata_wdth,wght_.ttf";
       sha256 = "23ded25b447074d00659392bf9b1123d89df55cb07b0ad9bfef3366d199b5fcb";
     })

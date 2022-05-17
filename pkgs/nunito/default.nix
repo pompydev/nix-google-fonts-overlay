@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/604936664fd62c14271209b51f98e7f495dd1a3e/ofl/nunito/Nunito[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/604936664fd62c14271209b51f98e7f495dd1a3e/ofl/nunito/Nunito%5Bwght%5D.ttf?raw=true";
       name = "Nunito_wght_.ttf";
       sha256 = "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/604936664fd62c14271209b51f98e7f495dd1a3e/ofl/nunito/Nunito-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/604936664fd62c14271209b51f98e7f495dd1a3e/ofl/nunito/Nunito-Italic%5Bwght%5D.ttf?raw=true";
       name = "Nunito-Italic_wght_.ttf";
       sha256 = "b520cc871868b0acfca1beda875df7f4a44ebce914f8a89f83977fc9c09529c8";
     })

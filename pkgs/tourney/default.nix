@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/eb0bc5baaca1d95e5352f706f042064fffbe72ac/ofl/tourney/Tourney[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/eb0bc5baaca1d95e5352f706f042064fffbe72ac/ofl/tourney/Tourney%5Bwdth,wght%5D.ttf?raw=true";
       name = "Tourney_wdth,wght_.ttf";
       sha256 = "ee686a1a657ca9397d4d1e9ba3ada1c10a5d9b6da53aeb94411cd62b1b793377";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/eb0bc5baaca1d95e5352f706f042064fffbe72ac/ofl/tourney/Tourney-Italic[wdth,wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/eb0bc5baaca1d95e5352f706f042064fffbe72ac/ofl/tourney/Tourney-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "Tourney-Italic_wdth,wght_.ttf";
       sha256 = "038c789a1ec5be0e935b8a7ad7de6cec7bd0ed8e54cd82f2c95478f54b0744ce";
     })

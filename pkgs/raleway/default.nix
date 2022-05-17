@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e16e28b2a73398cbc960f5306f961c1276cc29fc/ofl/raleway/Raleway[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e16e28b2a73398cbc960f5306f961c1276cc29fc/ofl/raleway/Raleway%5Bwght%5D.ttf?raw=true";
       name = "Raleway_wght_.ttf";
       sha256 = "8bbcc3eb8275c388f4bcd998832f8a4b943eadbaf6a595205312774b5951aefb";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e16e28b2a73398cbc960f5306f961c1276cc29fc/ofl/raleway/Raleway-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/e16e28b2a73398cbc960f5306f961c1276cc29fc/ofl/raleway/Raleway-Italic%5Bwght%5D.ttf?raw=true";
       name = "Raleway-Italic_wght_.ttf";
       sha256 = "96629caf2202183fab46c70237055a7d67e6a5400b85413d45a77ed6f2a0770c";
     })

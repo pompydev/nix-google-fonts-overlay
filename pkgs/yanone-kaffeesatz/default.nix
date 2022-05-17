@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/25240a5fc4a6bb412d1889c8d3e9ce7b39e1d9ce/ofl/yanonekaffeesatz/YanoneKaffeesatz[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/25240a5fc4a6bb412d1889c8d3e9ce7b39e1d9ce/ofl/yanonekaffeesatz/YanoneKaffeesatz%5Bwght%5D.ttf?raw=true";
       name = "YanoneKaffeesatz_wght_.ttf";
       sha256 = "091690fb1f10d63848c3c1b417d5fce709a7a604a82ee44b465132922e23304f";
     })

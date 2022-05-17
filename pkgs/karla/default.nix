@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/568985dba2cc5bf58d9f59af93fd5a5faea610ff/ofl/karla/Karla[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/568985dba2cc5bf58d9f59af93fd5a5faea610ff/ofl/karla/Karla%5Bwght%5D.ttf?raw=true";
       name = "Karla_wght_.ttf";
       sha256 = "3acf8df2fcd53113f9a685eaf457e6c5fcc39caaa8ed7628c9e6519bfc6fb292";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/568985dba2cc5bf58d9f59af93fd5a5faea610ff/ofl/karla/Karla-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/568985dba2cc5bf58d9f59af93fd5a5faea610ff/ofl/karla/Karla-Italic%5Bwght%5D.ttf?raw=true";
       name = "Karla-Italic_wght_.ttf";
       sha256 = "ec239d29a374c435e2d4d0b4f835683f8c733b4320edceb953be3548129929db";
     })

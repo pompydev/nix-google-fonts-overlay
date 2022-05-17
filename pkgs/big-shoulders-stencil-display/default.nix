@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/081d4ba5b9a8dd141d79c1108596876529fd4602/ofl/bigshouldersstencildisplay/BigShouldersStencilDisplay[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/081d4ba5b9a8dd141d79c1108596876529fd4602/ofl/bigshouldersstencildisplay/BigShouldersStencilDisplay%5Bwght%5D.ttf?raw=true";
       name = "BigShouldersStencilDisplay_wght_.ttf";
       sha256 = "93bbefb9f3a497fcfeec5d1ac85c4a947a32b8e5bcaf3b7b5efff52f1b11b0e4";
     })

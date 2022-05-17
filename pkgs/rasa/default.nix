@@ -8,12 +8,12 @@ stdenv.mkDerivation rec {
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f3c5b833a98f01f157aa3d6dc2a1bb2dbc76ee36/ofl/rasa/Rasa[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3c5b833a98f01f157aa3d6dc2a1bb2dbc76ee36/ofl/rasa/Rasa%5Bwght%5D.ttf?raw=true";
       name = "Rasa_wght_.ttf";
       sha256 = "10d2f75aaf7b3f232c948c34584c49caf0cdd17a4c93eb7a5aeb3438efd42e19";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f3c5b833a98f01f157aa3d6dc2a1bb2dbc76ee36/ofl/rasa/Rasa-Italic[wght].ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/f3c5b833a98f01f157aa3d6dc2a1bb2dbc76ee36/ofl/rasa/Rasa-Italic%5Bwght%5D.ttf?raw=true";
       name = "Rasa-Italic_wght_.ttf";
       sha256 = "ecea773edd1e87c3310a0fb811ec6102aea71da235f93bc2ce2506e81b3c21a7";
     })
