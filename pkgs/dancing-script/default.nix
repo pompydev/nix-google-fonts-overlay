@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "dancing-script-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/f8dc91f6f13564fd038c60c02e82f305be8c551d/ofl/dancingscript/DancingScript[wght].ttf?raw=true";
-      name = "DancingScript[wght].ttf";
+      name = "DancingScript_wght_.ttf";
       sha256 = "21808625578fe8d8cd10cb684be546dca077b27cd03a53a2f1ec11dc743c924c";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'DancingScript[wght].ttf' $out/share/fonts/truetype/'DancingScript[wght].ttf'
+     install -Dm644 DancingScript_wght_.ttf $out/share/fonts/truetype/DancingScript_wght_.ttf
   '';
 
   meta = with lib; {

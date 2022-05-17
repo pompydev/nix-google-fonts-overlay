@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifkhmer/NotoSerifKhmer[wdth,wght].ttf?raw=true";
-      name = "NotoSerifKhmer[wdth,wght].ttf";
+      name = "NotoSerifKhmer_wdth,wght_.ttf";
       sha256 = "c86b031c647f8575fbb56e2ca1cd8207f45b077ed573b0436ba29759c89e715f";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSerifKhmer[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSerifKhmer[wdth,wght].ttf'
+     install -Dm644 NotoSerifKhmer_wdth,wght_.ttf $out/share/fonts/truetype/NotoSerifKhmer_wdth,wght_.ttf
   '';
 
   meta = with lib; {

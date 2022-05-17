@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "varta-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/fea96ec714e4a082faf107e54e65103ac4f2a0eb/ofl/varta/Varta[wght].ttf?raw=true";
-      name = "Varta[wght].ttf";
+      name = "Varta_wght_.ttf";
       sha256 = "45933f4041ba1df953c13bdab388bf3127c7081b2e7dfbe71e36f9214d05760f";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Varta[wght].ttf' $out/share/fonts/truetype/'Varta[wght].ttf'
+     install -Dm644 Varta_wght_.ttf $out/share/fonts/truetype/Varta_wght_.ttf
   '';
 
   meta = with lib; {

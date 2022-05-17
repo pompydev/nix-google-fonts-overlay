@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "reem-kufi-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/e3db99000da5a629aa53c1913abd7040fa200cad/ofl/reemkufi/ReemKufi[wght].ttf?raw=true";
-      name = "ReemKufi[wght].ttf";
+      name = "ReemKufi_wght_.ttf";
       sha256 = "1b009a8bf9eeeaddc6f4b87e43e9b44b32133c88346888aae1bfbcd6dcccee6a";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'ReemKufi[wght].ttf' $out/share/fonts/truetype/'ReemKufi[wght].ttf'
+     install -Dm644 ReemKufi_wght_.ttf $out/share/fonts/truetype/ReemKufi_wght_.ttf
   '';
 
   meta = with lib; {

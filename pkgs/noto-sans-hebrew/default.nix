@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanshebrew/NotoSansHebrew[wdth,wght].ttf?raw=true";
-      name = "NotoSansHebrew[wdth,wght].ttf";
+      name = "NotoSansHebrew_wdth,wght_.ttf";
       sha256 = "9e4eb7bb57f2b932db1af78f9ad142114614b0e226f2e18b05327c1fde04c86d";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansHebrew[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansHebrew[wdth,wght].ttf'
+     install -Dm644 NotoSansHebrew_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansHebrew_wdth,wght_.ttf
   '';
 
   meta = with lib; {

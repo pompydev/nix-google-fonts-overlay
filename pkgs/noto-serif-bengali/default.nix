@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifbengali/NotoSerifBengali[wdth,wght].ttf?raw=true";
-      name = "NotoSerifBengali[wdth,wght].ttf";
+      name = "NotoSerifBengali_wdth,wght_.ttf";
       sha256 = "2223d59dc64638ccc5a014e1e5af70987065be9fed335c1ad78a5b6d93dc7819";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSerifBengali[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSerifBengali[wdth,wght].ttf'
+     install -Dm644 NotoSerifBengali_wdth,wght_.ttf $out/share/fonts/truetype/NotoSerifBengali_wdth,wght_.ttf
   '';
 
   meta = with lib; {

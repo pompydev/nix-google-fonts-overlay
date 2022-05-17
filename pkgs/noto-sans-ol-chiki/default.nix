@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansolchiki/NotoSansOlChiki[wght].ttf?raw=true";
-      name = "NotoSansOlChiki[wght].ttf";
+      name = "NotoSansOlChiki_wght_.ttf";
       sha256 = "e63b478019d99b1dacf995ed3416262df50a3438e8dd78d8bb1a4091b6efca6c";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansOlChiki[wght].ttf' $out/share/fonts/truetype/'NotoSansOlChiki[wght].ttf'
+     install -Dm644 NotoSansOlChiki_wght_.ttf $out/share/fonts/truetype/NotoSansOlChiki_wght_.ttf
   '';
 
   meta = with lib; {

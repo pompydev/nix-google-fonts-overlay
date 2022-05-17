@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssundanese/NotoSansSundanese[wght].ttf?raw=true";
-      name = "NotoSansSundanese[wght].ttf";
+      name = "NotoSansSundanese_wght_.ttf";
       sha256 = "5a909fa1eec7a4e25b1238407c7759ee6e1e7e40cbef1a65fb6b9943f73ea50a";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansSundanese[wght].ttf' $out/share/fonts/truetype/'NotoSansSundanese[wght].ttf'
+     install -Dm644 NotoSansSundanese_wght_.ttf $out/share/fonts/truetype/NotoSansSundanese_wght_.ttf
   '';
 
   meta = with lib; {

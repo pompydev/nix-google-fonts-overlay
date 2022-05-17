@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "paprika-${version}";
-  version = "2022-04-29-121553";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 

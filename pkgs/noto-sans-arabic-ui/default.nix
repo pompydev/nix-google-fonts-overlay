@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansarabicui/NotoSansArabicUI[wdth,wght].ttf?raw=true";
-      name = "NotoSansArabicUI[wdth,wght].ttf";
+      name = "NotoSansArabicUI_wdth,wght_.ttf";
       sha256 = "2d47090f7a3de2fd01ba8aff9a775263b3ab70a46cd2a6bfe3d1c3e1dd89ffe5";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansArabicUI[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansArabicUI[wdth,wght].ttf'
+     install -Dm644 NotoSansArabicUI_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansArabicUI_wdth,wght_.ttf
   '';
 
   meta = with lib; {

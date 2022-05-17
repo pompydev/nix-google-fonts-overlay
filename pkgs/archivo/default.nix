@@ -2,19 +2,19 @@
 
 stdenv.mkDerivation rec {
   name = "archivo-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/6c70c829f09ea345d3590406693220ea35c6553f/ofl/archivo/Archivo[wdth,wght].ttf?raw=true";
-      name = "Archivo[wdth,wght].ttf";
+      name = "Archivo_wdth,wght_.ttf";
       sha256 = "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053";
     })
     (fetchurl {
       url = "https://github.com/google/fonts/blob/6c70c829f09ea345d3590406693220ea35c6553f/ofl/archivo/Archivo-Italic[wdth,wght].ttf?raw=true";
-      name = "Archivo-Italic[wdth,wght].ttf";
+      name = "Archivo-Italic_wdth,wght_.ttf";
       sha256 = "305d13b4eb80e62f7d517f78d7c045250d977552a420f2dbed906f314e761305";
     })
   ];
@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Archivo[wdth,wght].ttf' $out/share/fonts/truetype/'Archivo[wdth,wght].ttf'
-     install -Dm644 'Archivo-Italic[wdth,wght].ttf' $out/share/fonts/truetype/'Archivo-Italic[wdth,wght].ttf'
+     install -Dm644 Archivo_wdth,wght_.ttf $out/share/fonts/truetype/Archivo_wdth,wght_.ttf
+     install -Dm644 Archivo-Italic_wdth,wght_.ttf $out/share/fonts/truetype/Archivo-Italic_wdth,wght_.ttf
   '';
 
   meta = with lib; {

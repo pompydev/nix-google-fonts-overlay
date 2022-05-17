@@ -2,19 +2,19 @@
 
 stdenv.mkDerivation rec {
   name = "familjen-grotesk-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/c5472db7405caf4c4a962843ab2d446519090161/ofl/familjengrotesk/FamiljenGrotesk[wght].ttf?raw=true";
-      name = "FamiljenGrotesk[wght].ttf";
+      name = "FamiljenGrotesk_wght_.ttf";
       sha256 = "9bc27f9addaaf093bcd9685d9b2a7fa4903ffb2ca94f21cac79bb36d34c51038";
     })
     (fetchurl {
       url = "https://github.com/google/fonts/blob/c5472db7405caf4c4a962843ab2d446519090161/ofl/familjengrotesk/FamiljenGrotesk-Italic[wght].ttf?raw=true";
-      name = "FamiljenGrotesk-Italic[wght].ttf";
+      name = "FamiljenGrotesk-Italic_wght_.ttf";
       sha256 = "66ed991be0eba5601f4c2021fae41faf769e384c3c51ef976ce4ed16a2e8565f";
     })
   ];
@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'FamiljenGrotesk[wght].ttf' $out/share/fonts/truetype/'FamiljenGrotesk[wght].ttf'
-     install -Dm644 'FamiljenGrotesk-Italic[wght].ttf' $out/share/fonts/truetype/'FamiljenGrotesk-Italic[wght].ttf'
+     install -Dm644 FamiljenGrotesk_wght_.ttf $out/share/fonts/truetype/FamiljenGrotesk_wght_.ttf
+     install -Dm644 FamiljenGrotesk-Italic_wght_.ttf $out/share/fonts/truetype/FamiljenGrotesk-Italic_wght_.ttf
   '';
 
   meta = with lib; {

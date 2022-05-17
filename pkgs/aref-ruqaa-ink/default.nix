@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "aref-ruqaa-ink-${version}";
-  version = "2022-05-11-150105";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 

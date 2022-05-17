@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanshanifirohingya/NotoSansHanifiRohingya[wght].ttf?raw=true";
-      name = "NotoSansHanifiRohingya[wght].ttf";
+      name = "NotoSansHanifiRohingya_wght_.ttf";
       sha256 = "11295c1cb5d0144bec38c240614fffdcf9fce4f8eaa17e119bbae3fb87a00767";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansHanifiRohingya[wght].ttf' $out/share/fonts/truetype/'NotoSansHanifiRohingya[wght].ttf'
+     install -Dm644 NotoSansHanifiRohingya_wght_.ttf $out/share/fonts/truetype/NotoSansHanifiRohingya_wght_.ttf
   '';
 
   meta = with lib; {

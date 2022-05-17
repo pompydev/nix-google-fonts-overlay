@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "m-plus-1-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/96800fb3e967b900421481008771f14c3717ec52/ofl/mplus1/MPLUS1[wght].ttf?raw=true";
-      name = "MPLUS1[wght].ttf";
+      name = "MPLUS1_wght_.ttf";
       sha256 = "20785932102b0e9809422b2f31cc6b55183d0285c7af63d5373101208267bdc6";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'MPLUS1[wght].ttf' $out/share/fonts/truetype/'MPLUS1[wght].ttf'
+     install -Dm644 MPLUS1_wght_.ttf $out/share/fonts/truetype/MPLUS1_wght_.ttf
   '';
 
   meta = with lib; {

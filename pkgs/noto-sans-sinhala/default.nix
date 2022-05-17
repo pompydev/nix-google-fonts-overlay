@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssinhala/NotoSansSinhala[wdth,wght].ttf?raw=true";
-      name = "NotoSansSinhala[wdth,wght].ttf";
+      name = "NotoSansSinhala_wdth,wght_.ttf";
       sha256 = "b7272d5a0e48ec1f8e1c27fe6f28feb3d2288c043c4c940c5fca64c34b206a4c";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansSinhala[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansSinhala[wdth,wght].ttf'
+     install -Dm644 NotoSansSinhala_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansSinhala_wdth,wght_.ttf
   '';
 
   meta = with lib; {

@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansthaana/NotoSansThaana[wght].ttf?raw=true";
-      name = "NotoSansThaana[wght].ttf";
+      name = "NotoSansThaana_wght_.ttf";
       sha256 = "dfbdfa4ec44ee90e654882805ed38e260da9314ada3fe2e6e62ee76f0addec04";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansThaana[wght].ttf' $out/share/fonts/truetype/'NotoSansThaana[wght].ttf'
+     install -Dm644 NotoSansThaana_wght_.ttf $out/share/fonts/truetype/NotoSansThaana_wght_.ttf
   '';
 
   meta = with lib; {

@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifgujarati/NotoSerifGujarati[wght].ttf?raw=true";
-      name = "NotoSerifGujarati[wght].ttf";
+      name = "NotoSerifGujarati_wght_.ttf";
       sha256 = "02883eeb9c795756c9cd8206eca66ddac06db496cee8d926fe1aa29d1dd0d354";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSerifGujarati[wght].ttf' $out/share/fonts/truetype/'NotoSerifGujarati[wght].ttf'
+     install -Dm644 NotoSerifGujarati_wght_.ttf $out/share/fonts/truetype/NotoSerifGujarati_wght_.ttf
   '';
 
   meta = with lib; {

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "andika-${version}";
-  version = "2022-05-13-114134";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 

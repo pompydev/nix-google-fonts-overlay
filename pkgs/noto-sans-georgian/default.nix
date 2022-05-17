@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansgeorgian/NotoSansGeorgian[wdth,wght].ttf?raw=true";
-      name = "NotoSansGeorgian[wdth,wght].ttf";
+      name = "NotoSansGeorgian_wdth,wght_.ttf";
       sha256 = "4fde7bd804de6e81d80c7a38e25b674062a7170b64c038ee24a0b0c3f5b1d7dc";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansGeorgian[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansGeorgian[wdth,wght].ttf'
+     install -Dm644 NotoSansGeorgian_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansGeorgian_wdth,wght_.ttf
   '';
 
   meta = with lib; {

@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "fredoka-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/eda3fe521878f70de0e2d91fd6d800f93f8c4758/ofl/fredoka/Fredoka[wdth,wght].ttf?raw=true";
-      name = "Fredoka[wdth,wght].ttf";
+      name = "Fredoka_wdth,wght_.ttf";
       sha256 = "2ba02e68b152868aef9ba28e24b3648c7d457fe6f25c761f2c2c53fb61a73fc8";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Fredoka[wdth,wght].ttf' $out/share/fonts/truetype/'Fredoka[wdth,wght].ttf'
+     install -Dm644 Fredoka_wdth,wght_.ttf $out/share/fonts/truetype/Fredoka_wdth,wght_.ttf
   '';
 
   meta = with lib; {

@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "lexend-tera-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/beda156f5a2abc96ec52442f60bb1ab4d122e38d/ofl/lexendtera/LexendTera[wght].ttf?raw=true";
-      name = "LexendTera[wght].ttf";
+      name = "LexendTera_wght_.ttf";
       sha256 = "153c623deb39a4a79f26972e1a7b61651c16f9d567d4af83be2942303307dfac";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'LexendTera[wght].ttf' $out/share/fonts/truetype/'LexendTera[wght].ttf'
+     install -Dm644 LexendTera_wght_.ttf $out/share/fonts/truetype/LexendTera_wght_.ttf
   '';
 
   meta = with lib; {

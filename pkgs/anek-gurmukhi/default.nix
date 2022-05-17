@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "anek-gurmukhi-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/315b62b7005991f2723ccb9d789b010ea4a4298f/ofl/anekgurmukhi/AnekGurmukhi[wdth,wght].ttf?raw=true";
-      name = "AnekGurmukhi[wdth,wght].ttf";
+      name = "AnekGurmukhi_wdth,wght_.ttf";
       sha256 = "40d72129eb332d7c4fafd25e80a30d2ac11f45e14a1660d6f7bacbf9c800d7d5";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'AnekGurmukhi[wdth,wght].ttf' $out/share/fonts/truetype/'AnekGurmukhi[wdth,wght].ttf'
+     install -Dm644 AnekGurmukhi_wdth,wght_.ttf $out/share/fonts/truetype/AnekGurmukhi_wdth,wght_.ttf
   '';
 
   meta = with lib; {

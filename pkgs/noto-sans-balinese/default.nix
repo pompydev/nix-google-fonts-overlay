@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansbalinese/NotoSansBalinese[wght].ttf?raw=true";
-      name = "NotoSansBalinese[wght].ttf";
+      name = "NotoSansBalinese_wght_.ttf";
       sha256 = "123ba3b34d9255902b3d12b1161e69966fd2b9cfb0683205d9e234b022e25bae";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansBalinese[wght].ttf' $out/share/fonts/truetype/'NotoSansBalinese[wght].ttf'
+     install -Dm644 NotoSansBalinese_wght_.ttf $out/share/fonts/truetype/NotoSansBalinese_wght_.ttf
   '';
 
   meta = with lib; {

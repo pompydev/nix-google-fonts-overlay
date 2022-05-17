@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssymbols/NotoSansSymbols[wght].ttf?raw=true";
-      name = "NotoSansSymbols[wght].ttf";
+      name = "NotoSansSymbols_wght_.ttf";
       sha256 = "d0ce73181c5c2bf20778d2d4447da9c94cb7ba5db16a6754abf311be2e2caf69";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansSymbols[wght].ttf' $out/share/fonts/truetype/'NotoSansSymbols[wght].ttf'
+     install -Dm644 NotoSansSymbols_wght_.ttf $out/share/fonts/truetype/NotoSansSymbols_wght_.ttf
   '';
 
   meta = with lib; {

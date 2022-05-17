@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifethiopic/NotoSerifEthiopic[wdth,wght].ttf?raw=true";
-      name = "NotoSerifEthiopic[wdth,wght].ttf";
+      name = "NotoSerifEthiopic_wdth,wght_.ttf";
       sha256 = "27c5d1a628216c03bfb69aa62180f3fa67db92e0a91fd99ab3d731ae8015e813";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSerifEthiopic[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSerifEthiopic[wdth,wght].ttf'
+     install -Dm644 NotoSerifEthiopic_wdth,wght_.ttf $out/share/fonts/truetype/NotoSerifEthiopic_wdth,wght_.ttf
   '';
 
   meta = with lib; {

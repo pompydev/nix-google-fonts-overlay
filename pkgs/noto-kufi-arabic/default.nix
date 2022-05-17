@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/f7d34edb8b8aa4aa3c19e49ea7ece1ac9b354e7b/ofl/notokufiarabic/NotoKufiArabic[wght].ttf?raw=true";
-      name = "NotoKufiArabic[wght].ttf";
+      name = "NotoKufiArabic_wght_.ttf";
       sha256 = "e315b2a227ffed14f9d58860c784b82cf88ea90802c902da11f9acb65b25dabd";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoKufiArabic[wght].ttf' $out/share/fonts/truetype/'NotoKufiArabic[wght].ttf'
+     install -Dm644 NotoKufiArabic_wght_.ttf $out/share/fonts/truetype/NotoKufiArabic_wght_.ttf
   '';
 
   meta = with lib; {

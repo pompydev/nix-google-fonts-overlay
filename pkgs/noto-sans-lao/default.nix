@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanslao/NotoSansLao[wdth,wght].ttf?raw=true";
-      name = "NotoSansLao[wdth,wght].ttf";
+      name = "NotoSansLao_wdth,wght_.ttf";
       sha256 = "9be9702eebc9759dfab99ec1f8ddf9cd1ea94c9f78ad226d409172dbd10abb72";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansLao[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansLao[wdth,wght].ttf'
+     install -Dm644 NotoSansLao_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansLao_wdth,wght_.ttf
   '';
 
   meta = with lib; {

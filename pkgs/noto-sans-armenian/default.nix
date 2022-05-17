@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansarmenian/NotoSansArmenian[wdth,wght].ttf?raw=true";
-      name = "NotoSansArmenian[wdth,wght].ttf";
+      name = "NotoSansArmenian_wdth,wght_.ttf";
       sha256 = "658758b9a091df5b08feac419206c74a06e18d4125b081eecf37d9ea9ad34cc0";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansArmenian[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansArmenian[wdth,wght].ttf'
+     install -Dm644 NotoSansArmenian_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansArmenian_wdth,wght_.ttf
   '';
 
   meta = with lib; {

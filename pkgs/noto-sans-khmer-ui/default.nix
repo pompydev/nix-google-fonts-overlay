@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanskhmerui/NotoSansKhmerUI[wdth,wght].ttf?raw=true";
-      name = "NotoSansKhmerUI[wdth,wght].ttf";
+      name = "NotoSansKhmerUI_wdth,wght_.ttf";
       sha256 = "1467a1828bfbfe6598127482e7c3d3d7c82bed213d4d54e3066dce5d980db77b";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansKhmerUI[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansKhmerUI[wdth,wght].ttf'
+     install -Dm644 NotoSansKhmerUI_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansKhmerUI_wdth,wght_.ttf
   '';
 
   meta = with lib; {

@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "recursive-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/90cefea260c147a08c59c8c5cbe4fa28c40ae4f9/ofl/recursive/Recursive[CASL,CRSV,MONO,slnt,wght].ttf?raw=true";
-      name = "Recursive[CASL,CRSV,MONO,slnt,wght].ttf";
+      name = "Recursive_CASL,CRSV,MONO,slnt,wght_.ttf";
       sha256 = "b91b4e4d33f1b8bb50ec20e819224ced5e30ba77b306cae6c63d39c278c8952d";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Recursive[CASL,CRSV,MONO,slnt,wght].ttf' $out/share/fonts/truetype/'Recursive[CASL,CRSV,MONO,slnt,wght].ttf'
+     install -Dm644 Recursive_CASL,CRSV,MONO,slnt,wght_.ttf $out/share/fonts/truetype/Recursive_CASL,CRSV,MONO,slnt,wght_.ttf
   '';
 
   meta = with lib; {

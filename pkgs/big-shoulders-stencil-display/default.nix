@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "big-shoulders-stencil-display-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/081d4ba5b9a8dd141d79c1108596876529fd4602/ofl/bigshouldersstencildisplay/BigShouldersStencilDisplay[wght].ttf?raw=true";
-      name = "BigShouldersStencilDisplay[wght].ttf";
+      name = "BigShouldersStencilDisplay_wght_.ttf";
       sha256 = "93bbefb9f3a497fcfeec5d1ac85c4a947a32b8e5bcaf3b7b5efff52f1b11b0e4";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'BigShouldersStencilDisplay[wght].ttf' $out/share/fonts/truetype/'BigShouldersStencilDisplay[wght].ttf'
+     install -Dm644 BigShouldersStencilDisplay_wght_.ttf $out/share/fonts/truetype/BigShouldersStencilDisplay_wght_.ttf
   '';
 
   meta = with lib; {

@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "big-shoulders-display-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/94ee6b8b988ef08c912b463d697e51d1658cf6e8/ofl/bigshouldersdisplay/BigShouldersDisplay[wght].ttf?raw=true";
-      name = "BigShouldersDisplay[wght].ttf";
+      name = "BigShouldersDisplay_wght_.ttf";
       sha256 = "60e208dc276a1c35fc5b62e94f9fb959c40c11783a9eb7548175c14b1fbeb720";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'BigShouldersDisplay[wght].ttf' $out/share/fonts/truetype/'BigShouldersDisplay[wght].ttf'
+     install -Dm644 BigShouldersDisplay_wght_.ttf $out/share/fonts/truetype/BigShouldersDisplay_wght_.ttf
   '';
 
   meta = with lib; {

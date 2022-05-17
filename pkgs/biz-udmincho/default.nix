@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "biz-udmincho-${version}";
-  version = "2022-05-11-135615";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 

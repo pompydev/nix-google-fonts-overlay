@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "trispace-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/b85ab0fbcfc0bbf38423f56638abb9169f2d1b91/ofl/trispace/Trispace[wdth,wght].ttf?raw=true";
-      name = "Trispace[wdth,wght].ttf";
+      name = "Trispace_wdth,wght_.ttf";
       sha256 = "4021d8d7abd42907c64f0bf192446ad9f869320563f8c71a526993830e405464";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Trispace[wdth,wght].ttf' $out/share/fonts/truetype/'Trispace[wdth,wght].ttf'
+     install -Dm644 Trispace_wdth,wght_.ttf $out/share/fonts/truetype/Trispace_wdth,wght_.ttf
   '';
 
   meta = with lib; {

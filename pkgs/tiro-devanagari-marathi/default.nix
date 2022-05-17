@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "tiro-devanagari-marathi-${version}";
-  version = "2022-04-29-121746";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 

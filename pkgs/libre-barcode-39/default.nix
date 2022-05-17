@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "libre-barcode-39-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 

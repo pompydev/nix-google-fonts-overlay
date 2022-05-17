@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "murecho-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/15010ad77ab4506015ff78788f3991db34a94ded/ofl/murecho/Murecho[wght].ttf?raw=true";
-      name = "Murecho[wght].ttf";
+      name = "Murecho_wght_.ttf";
       sha256 = "3a273c2f11e0164f829bc15c0689e587fe34d1493ff167d5afff8fe71a29e667";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Murecho[wght].ttf' $out/share/fonts/truetype/'Murecho[wght].ttf'
+     install -Dm644 Murecho_wght_.ttf $out/share/fonts/truetype/Murecho_wght_.ttf
   '';
 
   meta = with lib; {

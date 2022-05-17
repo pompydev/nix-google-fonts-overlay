@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansadlam/NotoSansAdlam[wght].ttf?raw=true";
-      name = "NotoSansAdlam[wght].ttf";
+      name = "NotoSansAdlam_wght_.ttf";
       sha256 = "078496d52544f6e5c8e6d8fd8b858938428b7ce228115b1c91aa8be3ff366ef9";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansAdlam[wght].ttf' $out/share/fonts/truetype/'NotoSansAdlam[wght].ttf'
+     install -Dm644 NotoSansAdlam_wght_.ttf $out/share/fonts/truetype/NotoSansAdlam_wght_.ttf
   '';
 
   meta = with lib; {

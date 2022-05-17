@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "anek-odia-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/059d40cac1819d084d21a60e63f2af92631dfa53/ofl/anekodia/AnekOdia[wdth,wght].ttf?raw=true";
-      name = "AnekOdia[wdth,wght].ttf";
+      name = "AnekOdia_wdth,wght_.ttf";
       sha256 = "673bb6e51b71af1de1f11f9a547a3a58c50a6fa32d480958e1ef0f06980ca45f";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'AnekOdia[wdth,wght].ttf' $out/share/fonts/truetype/'AnekOdia[wdth,wght].ttf'
+     install -Dm644 AnekOdia_wdth,wght_.ttf $out/share/fonts/truetype/AnekOdia_wdth,wght_.ttf
   '';
 
   meta = with lib; {

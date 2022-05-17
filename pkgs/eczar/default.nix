@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "eczar-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/597475e6f4459f731c6857f7c64ecc5183e4e10d/ofl/eczar/Eczar[wght].ttf?raw=true";
-      name = "Eczar[wght].ttf";
+      name = "Eczar_wght_.ttf";
       sha256 = "b52af3a3b457f9b2278612b73c97eaf28270ffc91c99e4c90471cc15bb8748c6";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Eczar[wght].ttf' $out/share/fonts/truetype/'Eczar[wght].ttf'
+     install -Dm644 Eczar_wght_.ttf $out/share/fonts/truetype/Eczar_wght_.ttf
   '';
 
   meta = with lib; {

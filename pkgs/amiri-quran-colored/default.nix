@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "amiri-quran-colored-${version}";
-  version = "2022-05-06-031916";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 

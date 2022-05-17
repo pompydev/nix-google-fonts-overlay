@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanslisu/NotoSansLisu[wght].ttf?raw=true";
-      name = "NotoSansLisu[wght].ttf";
+      name = "NotoSansLisu_wght_.ttf";
       sha256 = "e218a160712d72088364c31032ec3a3612cd70bb7306034bbd550b423c417046";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansLisu[wght].ttf' $out/share/fonts/truetype/'NotoSansLisu[wght].ttf'
+     install -Dm644 NotoSansLisu_wght_.ttf $out/share/fonts/truetype/NotoSansLisu_wght_.ttf
   '';
 
   meta = with lib; {

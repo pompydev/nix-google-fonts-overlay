@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansgurmukhiui/NotoSansGurmukhiUI[wdth,wght].ttf?raw=true";
-      name = "NotoSansGurmukhiUI[wdth,wght].ttf";
+      name = "NotoSansGurmukhiUI_wdth,wght_.ttf";
       sha256 = "3615afc43386f768ac15335349e8bf810bb811614f6b42252eca1fc34849692b";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansGurmukhiUI[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansGurmukhiUI[wdth,wght].ttf'
+     install -Dm644 NotoSansGurmukhiUI_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansGurmukhiUI_wdth,wght_.ttf
   '';
 
   meta = with lib; {

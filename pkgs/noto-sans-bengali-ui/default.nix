@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansbengaliui/NotoSansBengaliUI[wdth,wght].ttf?raw=true";
-      name = "NotoSansBengaliUI[wdth,wght].ttf";
+      name = "NotoSansBengaliUI_wdth,wght_.ttf";
       sha256 = "1500fd029ade204249bc276615be983f8144e45ac75812ad5fedc1a0f735240c";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansBengaliUI[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansBengaliUI[wdth,wght].ttf'
+     install -Dm644 NotoSansBengaliUI_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansBengaliUI_wdth,wght_.ttf
   '';
 
   meta = with lib; {

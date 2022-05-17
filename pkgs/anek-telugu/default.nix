@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "anek-telugu-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/2d216f8bd5906809f23313a9fe05480000669367/ofl/anektelugu/AnekTelugu[wdth,wght].ttf?raw=true";
-      name = "AnekTelugu[wdth,wght].ttf";
+      name = "AnekTelugu_wdth,wght_.ttf";
       sha256 = "25981968a8a3faab975993a54eec455829214390821037fb3a4d6c447d2e1179";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'AnekTelugu[wdth,wght].ttf' $out/share/fonts/truetype/'AnekTelugu[wdth,wght].ttf'
+     install -Dm644 AnekTelugu_wdth,wght_.ttf $out/share/fonts/truetype/AnekTelugu_wdth,wght_.ttf
   '';
 
   meta = with lib; {

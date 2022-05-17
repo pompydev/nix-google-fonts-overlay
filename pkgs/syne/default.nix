@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "syne-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/54fb97bd69162b95b2aa2c3996ffd71466c1aec2/ofl/syne/Syne[wght].ttf?raw=true";
-      name = "Syne[wght].ttf";
+      name = "Syne_wght_.ttf";
       sha256 = "ce5ac77142a65cab2248a1a2ebb740b1d4d9c20b52488877d3ff664d1356104a";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Syne[wght].ttf' $out/share/fonts/truetype/'Syne[wght].ttf'
+     install -Dm644 Syne_wght_.ttf $out/share/fonts/truetype/Syne_wght_.ttf
   '';
 
   meta = with lib; {

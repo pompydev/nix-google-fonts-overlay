@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansethiopic/NotoSansEthiopic[wdth,wght].ttf?raw=true";
-      name = "NotoSansEthiopic[wdth,wght].ttf";
+      name = "NotoSansEthiopic_wdth,wght_.ttf";
       sha256 = "e42df16d47e2fd7c08b7c860c38a5a7c4b1aae62f8035d1bd8ad4f848a39181f";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansEthiopic[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansEthiopic[wdth,wght].ttf'
+     install -Dm644 NotoSansEthiopic_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansEthiopic_wdth,wght_.ttf
   '';
 
   meta = with lib; {

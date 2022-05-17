@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "markazi-text-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/e5488681f12727d42e13a13f29ddebe9f475b1fd/ofl/markazitext/MarkaziText[wght].ttf?raw=true";
-      name = "MarkaziText[wght].ttf";
+      name = "MarkaziText_wght_.ttf";
       sha256 = "424b7331681160ff2a4b209bfc356ea9564d429a7daea43ee4dc28de8ff4f9fe";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'MarkaziText[wght].ttf' $out/share/fonts/truetype/'MarkaziText[wght].ttf'
+     install -Dm644 MarkaziText_wght_.ttf $out/share/fonts/truetype/MarkaziText_wght_.ttf
   '';
 
   meta = with lib; {

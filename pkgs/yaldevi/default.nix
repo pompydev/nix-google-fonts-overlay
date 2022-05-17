@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "yaldevi-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/5236812944acca710a7b6db2dbc583a02671ea2f/ofl/yaldevi/Yaldevi[wght].ttf?raw=true";
-      name = "Yaldevi[wght].ttf";
+      name = "Yaldevi_wght_.ttf";
       sha256 = "21d5516cd9a8831964b57503f5b7a119aafa9603bdddd0183e91a0ac8c8dc2e4";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Yaldevi[wght].ttf' $out/share/fonts/truetype/'Yaldevi[wght].ttf'
+     install -Dm644 Yaldevi_wght_.ttf $out/share/fonts/truetype/Yaldevi_wght_.ttf
   '';
 
   meta = with lib; {

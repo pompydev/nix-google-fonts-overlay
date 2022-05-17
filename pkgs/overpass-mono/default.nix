@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "overpass-mono-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/55c4c396ff0d12beaa40883ab3fe9b7400b67a12/ofl/overpassmono/OverpassMono[wght].ttf?raw=true";
-      name = "OverpassMono[wght].ttf";
+      name = "OverpassMono_wght_.ttf";
       sha256 = "49f230e10251608f0ae1a2ce46be768d7b9ddcbe5cdca2e9f6b762fcbce1ae4f";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'OverpassMono[wght].ttf' $out/share/fonts/truetype/'OverpassMono[wght].ttf'
+     install -Dm644 OverpassMono_wght_.ttf $out/share/fonts/truetype/OverpassMono_wght_.ttf
   '';
 
   meta = with lib; {

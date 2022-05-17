@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "podkova-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/2d2737569a9626b680130747811148bee4acf8a5/ofl/podkova/Podkova[wght].ttf?raw=true";
-      name = "Podkova[wght].ttf";
+      name = "Podkova_wght_.ttf";
       sha256 = "a7be6732a489b1c5c7c37a5c2e816fad901563ccd882e9bbc56d13eeebf4a4e7";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Podkova[wght].ttf' $out/share/fonts/truetype/'Podkova[wght].ttf'
+     install -Dm644 Podkova_wght_.ttf $out/share/fonts/truetype/Podkova_wght_.ttf
   '';
 
   meta = with lib; {

@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "baloo-da-2-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/9104fa8b6299c9de3d70e0a9dbe471cc7d5b5743/ofl/balooda2/BalooDa2[wght].ttf?raw=true";
-      name = "BalooDa2[wght].ttf";
+      name = "BalooDa2_wght_.ttf";
       sha256 = "8b62a8c4dbe659be5e4d40c19b7b3012120335b333205c5aa101b45cdb449cff";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'BalooDa2[wght].ttf' $out/share/fonts/truetype/'BalooDa2[wght].ttf'
+     install -Dm644 BalooDa2_wght_.ttf $out/share/fonts/truetype/BalooDa2_wght_.ttf
   '';
 
   meta = with lib; {

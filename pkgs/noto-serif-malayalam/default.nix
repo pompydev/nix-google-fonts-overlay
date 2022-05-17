@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifmalayalam/NotoSerifMalayalam[wght].ttf?raw=true";
-      name = "NotoSerifMalayalam[wght].ttf";
+      name = "NotoSerifMalayalam_wght_.ttf";
       sha256 = "8cc0300245cc68fd034c54692a491add209d7a9bdd8c45d50e964edcbb194d7c";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSerifMalayalam[wght].ttf' $out/share/fonts/truetype/'NotoSerifMalayalam[wght].ttf'
+     install -Dm644 NotoSerifMalayalam_wght_.ttf $out/share/fonts/truetype/NotoSerifMalayalam_wght_.ttf
   '';
 
   meta = with lib; {

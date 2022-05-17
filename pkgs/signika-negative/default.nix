@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "signika-negative-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/359c4c4749175df8fba498bffd510322523051db/ofl/signikanegative/SignikaNegative[wght].ttf?raw=true";
-      name = "SignikaNegative[wght].ttf";
+      name = "SignikaNegative_wght_.ttf";
       sha256 = "2d111b1f760fdf84739371f11c88d47d47f642ad643039d3e639466606a5cdec";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'SignikaNegative[wght].ttf' $out/share/fonts/truetype/'SignikaNegative[wght].ttf'
+     install -Dm644 SignikaNegative_wght_.ttf $out/share/fonts/truetype/SignikaNegative_wght_.ttf
   '';
 
   meta = with lib; {

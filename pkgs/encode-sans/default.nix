@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "encode-sans-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/ec8be826b983fca7e6448c1d63d51ccae044adb4/ofl/encodesans/EncodeSans[wdth,wght].ttf?raw=true";
-      name = "EncodeSans[wdth,wght].ttf";
+      name = "EncodeSans_wdth,wght_.ttf";
       sha256 = "7735320abb63a1022d086c938872dae32754db733ecd4dcd402f2a445cbeb43f";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'EncodeSans[wdth,wght].ttf' $out/share/fonts/truetype/'EncodeSans[wdth,wght].ttf'
+     install -Dm644 EncodeSans_wdth,wght_.ttf $out/share/fonts/truetype/EncodeSans_wdth,wght_.ttf
   '';
 
   meta = with lib; {

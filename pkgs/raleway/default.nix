@@ -2,19 +2,19 @@
 
 stdenv.mkDerivation rec {
   name = "raleway-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/e16e28b2a73398cbc960f5306f961c1276cc29fc/ofl/raleway/Raleway[wght].ttf?raw=true";
-      name = "Raleway[wght].ttf";
+      name = "Raleway_wght_.ttf";
       sha256 = "8bbcc3eb8275c388f4bcd998832f8a4b943eadbaf6a595205312774b5951aefb";
     })
     (fetchurl {
       url = "https://github.com/google/fonts/blob/e16e28b2a73398cbc960f5306f961c1276cc29fc/ofl/raleway/Raleway-Italic[wght].ttf?raw=true";
-      name = "Raleway-Italic[wght].ttf";
+      name = "Raleway-Italic_wght_.ttf";
       sha256 = "96629caf2202183fab46c70237055a7d67e6a5400b85413d45a77ed6f2a0770c";
     })
   ];
@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Raleway[wght].ttf' $out/share/fonts/truetype/'Raleway[wght].ttf'
-     install -Dm644 'Raleway-Italic[wght].ttf' $out/share/fonts/truetype/'Raleway-Italic[wght].ttf'
+     install -Dm644 Raleway_wght_.ttf $out/share/fonts/truetype/Raleway_wght_.ttf
+     install -Dm644 Raleway-Italic_wght_.ttf $out/share/fonts/truetype/Raleway-Italic_wght_.ttf
   '';
 
   meta = with lib; {

@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansthai/NotoSansThai[wdth,wght].ttf?raw=true";
-      name = "NotoSansThai[wdth,wght].ttf";
+      name = "NotoSansThai_wdth,wght_.ttf";
       sha256 = "4dfaca296706635ba28a445d6c79065e5dae0494eefc54436a2b5e40b9a338fb";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansThai[wdth,wght].ttf' $out/share/fonts/truetype/'NotoSansThai[wdth,wght].ttf'
+     install -Dm644 NotoSansThai_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansThai_wdth,wght_.ttf
   '';
 
   meta = with lib; {

@@ -2,19 +2,19 @@
 
 stdenv.mkDerivation rec {
   name = "epilogue-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/07078f01d0d661d2cba6c4e6ef09c927af35e668/ofl/epilogue/Epilogue[wght].ttf?raw=true";
-      name = "Epilogue[wght].ttf";
+      name = "Epilogue_wght_.ttf";
       sha256 = "012f651b45f47c10c7714cb7e3f2f7d9ccb7f235a2cc72c6b273ddc735705c67";
     })
     (fetchurl {
       url = "https://github.com/google/fonts/blob/07078f01d0d661d2cba6c4e6ef09c927af35e668/ofl/epilogue/Epilogue-Italic[wght].ttf?raw=true";
-      name = "Epilogue-Italic[wght].ttf";
+      name = "Epilogue-Italic_wght_.ttf";
       sha256 = "7e5263bfe5b8ea9d46201fc3e3d59c354628de2220c3f3fe831fad946a1f7db2";
     })
   ];
@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Epilogue[wght].ttf' $out/share/fonts/truetype/'Epilogue[wght].ttf'
-     install -Dm644 'Epilogue-Italic[wght].ttf' $out/share/fonts/truetype/'Epilogue-Italic[wght].ttf'
+     install -Dm644 Epilogue_wght_.ttf $out/share/fonts/truetype/Epilogue_wght_.ttf
+     install -Dm644 Epilogue-Italic_wght_.ttf $out/share/fonts/truetype/Epilogue-Italic_wght_.ttf
   '';
 
   meta = with lib; {

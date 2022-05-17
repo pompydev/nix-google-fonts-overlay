@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmedefaidrin/NotoSansMedefaidrin[wght].ttf?raw=true";
-      name = "NotoSansMedefaidrin[wght].ttf";
+      name = "NotoSansMedefaidrin_wght_.ttf";
       sha256 = "f83008aea2ad8feb72776e1e2a9483de98eab53d81cb286c2247051aea2fe021";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansMedefaidrin[wght].ttf' $out/share/fonts/truetype/'NotoSansMedefaidrin[wght].ttf'
+     install -Dm644 NotoSansMedefaidrin_wght_.ttf $out/share/fonts/truetype/NotoSansMedefaidrin_wght_.ttf
   '';
 
   meta = with lib; {

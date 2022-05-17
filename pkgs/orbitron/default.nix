@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "orbitron-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/abf71245949027c279caff7c2cb988c97e7d0b11/ofl/orbitron/Orbitron[wght].ttf?raw=true";
-      name = "Orbitron[wght].ttf";
+      name = "Orbitron_wght_.ttf";
       sha256 = "f42db2dd16e642258e35782916eceb1dcdbea06fb958d77ad71dc5963587e8fd";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'Orbitron[wght].ttf' $out/share/fonts/truetype/'Orbitron[wght].ttf'
+     install -Dm644 Orbitron_wght_.ttf $out/share/fonts/truetype/Orbitron_wght_.ttf
   '';
 
   meta = with lib; {

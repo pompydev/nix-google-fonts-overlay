@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "anek-malayalam-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/5df45cccfed5dd2d07b7b2a987384bfd76a537f5/ofl/anekmalayalam/AnekMalayalam[wdth,wght].ttf?raw=true";
-      name = "AnekMalayalam[wdth,wght].ttf";
+      name = "AnekMalayalam_wdth,wght_.ttf";
       sha256 = "319ccd3dc61afce2a5f2e5f3ce16f555c1f385390e80d12af7b9d017dd4993fe";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'AnekMalayalam[wdth,wght].ttf' $out/share/fonts/truetype/'AnekMalayalam[wdth,wght].ttf'
+     install -Dm644 AnekMalayalam_wdth,wght_.ttf $out/share/fonts/truetype/AnekMalayalam_wdth,wght_.ttf
   '';
 
   meta = with lib; {

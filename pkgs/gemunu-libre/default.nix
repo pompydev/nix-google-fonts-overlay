@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "gemunu-libre-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/77b7a8700e8ed0d45b9f2ecbfd378ac3a97185ed/ofl/gemunulibre/GemunuLibre[wght].ttf?raw=true";
-      name = "GemunuLibre[wght].ttf";
+      name = "GemunuLibre_wght_.ttf";
       sha256 = "e723b7f44b06b2443b44eb734f32794eae64915029842d2b2187eadd74b377a6";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'GemunuLibre[wght].ttf' $out/share/fonts/truetype/'GemunuLibre[wght].ttf'
+     install -Dm644 GemunuLibre_wght_.ttf $out/share/fonts/truetype/GemunuLibre_wght_.ttf
   '';
 
   meta = with lib; {

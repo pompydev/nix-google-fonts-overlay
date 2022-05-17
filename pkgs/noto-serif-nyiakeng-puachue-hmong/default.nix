@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifnyiakengpuachuehmong/NotoSerifNyiakengPuachueHmong[wght].ttf?raw=true";
-      name = "NotoSerifNyiakengPuachueHmong[wght].ttf";
+      name = "NotoSerifNyiakengPuachueHmong_wght_.ttf";
       sha256 = "802b838de1cae59401c5140620479ee6dc4eaa28d877d4fcc5b79d92e8b43555";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSerifNyiakengPuachueHmong[wght].ttf' $out/share/fonts/truetype/'NotoSerifNyiakengPuachueHmong[wght].ttf'
+     install -Dm644 NotoSerifNyiakengPuachueHmong_wght_.ttf $out/share/fonts/truetype/NotoSerifNyiakengPuachueHmong_wght_.ttf
   '';
 
   meta = with lib; {

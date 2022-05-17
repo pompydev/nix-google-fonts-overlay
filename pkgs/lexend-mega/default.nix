@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   name = "lexend-mega-${version}";
-  version = "2022-04-16-030742";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/beda156f5a2abc96ec52442f60bb1ab4d122e38d/ofl/lexendmega/LexendMega[wght].ttf?raw=true";
-      name = "LexendMega[wght].ttf";
+      name = "LexendMega_wght_.ttf";
       sha256 = "caf207a658a8519365a89274b64d8bea36ecf5927453d388965789ce7be25df9";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'LexendMega[wght].ttf' $out/share/fonts/truetype/'LexendMega[wght].ttf'
+     install -Dm644 LexendMega_wght_.ttf $out/share/fonts/truetype/LexendMega_wght_.ttf
   '';
 
   meta = with lib; {

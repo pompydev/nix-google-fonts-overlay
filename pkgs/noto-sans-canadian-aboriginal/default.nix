@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanscanadianaboriginal/NotoSansCanadianAboriginal[wght].ttf?raw=true";
-      name = "NotoSansCanadianAboriginal[wght].ttf";
+      name = "NotoSansCanadianAboriginal_wght_.ttf";
       sha256 = "66e2c47457bad34d00d702ee3a051ff020cd697c4a4e2896c1d3473de333ca9c";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansCanadianAboriginal[wght].ttf' $out/share/fonts/truetype/'NotoSansCanadianAboriginal[wght].ttf'
+     install -Dm644 NotoSansCanadianAboriginal_wght_.ttf $out/share/fonts/truetype/NotoSansCanadianAboriginal_wght_.ttf
   '';
 
   meta = with lib; {

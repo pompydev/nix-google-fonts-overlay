@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   srcs = [
     (fetchurl {
       url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssorasompeng/NotoSansSoraSompeng[wght].ttf?raw=true";
-      name = "NotoSansSoraSompeng[wght].ttf";
+      name = "NotoSansSoraSompeng_wght_.ttf";
       sha256 = "b714275278d77a82778e330220dcc50c614ae0aa78e987c3f18e2e3aa34f3208";
     })
   ];
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 'NotoSansSoraSompeng[wght].ttf' $out/share/fonts/truetype/'NotoSansSoraSompeng[wght].ttf'
+     install -Dm644 NotoSansSoraSompeng_wght_.ttf $out/share/fonts/truetype/NotoSansSoraSompeng_wght_.ttf
   '';
 
   meta = with lib; {

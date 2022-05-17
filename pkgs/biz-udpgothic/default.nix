@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "biz-udpgothic-${version}";
-  version = "2022-05-11-135659";
+  version = "2022-05-16-221214";
 
   phases = [ "unpackPhase" "installPhase" ];
 
