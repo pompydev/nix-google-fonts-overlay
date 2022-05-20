@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "kantumruy-pro-${version}";
-  version = "2022-05-12-103441";
+  version = "2022-05-18-133158";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bbc4168004b6d8255d3ea176d4595712279b67ea/ofl/kantumruypro/KantumruyPro%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/d196ccbac3f85ba0d5ba43faf54be225a1155fc9/ofl/kantumruypro/KantumruyPro%5Bwght%5D.ttf?raw=true";
       name = "KantumruyPro_wght_.ttf";
-      sha256 = "104129b14d55bc2ac86d495bd2a8ea0666cd359a39f2f6bad4791cba161fce9b";
+      sha256 = "613bc1b1ca4e26f5f8ac98d223b76f5ed0cb79e7c3fa6558c2bd6929efe043ae";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bbc4168004b6d8255d3ea176d4595712279b67ea/ofl/kantumruypro/KantumruyPro-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/d196ccbac3f85ba0d5ba43faf54be225a1155fc9/ofl/kantumruypro/KantumruyPro-Italic%5Bwght%5D.ttf?raw=true";
       name = "KantumruyPro-Italic_wght_.ttf";
-      sha256 = "0ab262cc1ae8488eb642b7995c7b83d9e0652d52ea2da127e174408338b29254";
+      sha256 = "79912e0f9a6c77680bf320633ada1d8a4b01f2e70ed9f26a799223293914d4b0";
     })
   ];
 

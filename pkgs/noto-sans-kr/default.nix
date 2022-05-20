@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-kr-${version}";
-  version = "2022-05-12-102739";
+  version = "2022-05-17-205400";
 
   phases = [ "unpackPhase" "installPhase" ];
 

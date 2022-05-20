@@ -448,8 +448,8 @@ self: super:
     google-fonts-genos = super.callPackage ./pkgs/genos {};
     google-fonts-gentium-basic = super.callPackage ./pkgs/gentium-basic {};
     google-fonts-gentium-book-basic = super.callPackage ./pkgs/gentium-book-basic {};
+    google-fonts-gentium-book-plus = super.callPackage ./pkgs/gentium-book-plus {};
     google-fonts-gentium-plus = super.callPackage ./pkgs/gentium-plus {};
-    google-fonts-gentium-plus-book = super.callPackage ./pkgs/gentium-plus-book {};
     google-fonts-geo = super.callPackage ./pkgs/geo {};
     google-fonts-georama = super.callPackage ./pkgs/georama {};
     google-fonts-geostar = super.callPackage ./pkgs/geostar {};
@@ -490,6 +490,7 @@ self: super:
     google-fonts-gruppo = super.callPackage ./pkgs/gruppo {};
     google-fonts-gudea = super.callPackage ./pkgs/gudea {};
     google-fonts-gugi = super.callPackage ./pkgs/gugi {};
+    google-fonts-gulzar = super.callPackage ./pkgs/gulzar {};
     google-fonts-gupter = super.callPackage ./pkgs/gupter {};
     google-fonts-gurajada = super.callPackage ./pkgs/gurajada {};
     google-fonts-gwendolyn = super.callPackage ./pkgs/gwendolyn {};
