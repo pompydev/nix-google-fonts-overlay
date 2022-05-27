@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "roboto-flex-${version}";
-  version = "2022-05-16-221214";
+  version = "2022-05-24-010327";
 
   phases = [ "unpackPhase" "installPhase" ];
 

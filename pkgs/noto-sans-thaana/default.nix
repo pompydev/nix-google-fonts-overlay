@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-thaana-${version}";
-  version = "2022-03-09-183858";
+  version = "2022-05-24-075352";
 
   phases = [ "unpackPhase" "installPhase" ];
 

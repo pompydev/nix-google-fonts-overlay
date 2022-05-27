@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-lydian-${version}";
-  version = "2022-03-09-183858";
+  version = "2022-05-24-065742";
 
   phases = [ "unpackPhase" "installPhase" ];
 

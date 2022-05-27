@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "ibm-plex-sans-devanagari-${version}";
-  version = "2022-05-16-221214";
+  version = "2022-05-23-214203";
 
   phases = [ "unpackPhase" "installPhase" ];
 

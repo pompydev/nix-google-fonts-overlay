@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "gluten-${version}";
-  version = "2022-05-16-221214";
+  version = "2022-05-25-171121";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/846eb7f39ee398e771a2807cc94ab7fd86bb8565/ofl/gluten/Gluten%5Bwght%5D.ttf?raw=true";
-      name = "Gluten_wght_.ttf";
-      sha256 = "a0b1811546f40f04ab2e4eb057dd1614ec7878880d9f43748257b12d36134b64";
+      url = "https://github.com/google/fonts/blob/d9161816916ec715a3d4353a594ee583d938f122/ofl/gluten/Gluten%5Bslnt,wght%5D.ttf?raw=true";
+      name = "Gluten_slnt,wght_.ttf";
+      sha256 = "cb4b01e4754e36615125e7cb16fe1ec8255d1db02d0b236d7c992438dc1a83e4";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Gluten_wght_.ttf $out/share/fonts/truetype/Gluten_wght_.ttf
+     install -Dm644 Gluten_slnt,wght_.ttf $out/share/fonts/truetype/Gluten_slnt,wght_.ttf
   '';
 
   meta = with lib; {

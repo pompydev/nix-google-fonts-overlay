@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "kavivanar-${version}";
-  version = "2022-05-16-221214";
+  version = "2022-05-23-214203";
 
   phases = [ "unpackPhase" "installPhase" ];
 

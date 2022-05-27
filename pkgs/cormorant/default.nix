@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "cormorant-${version}";
-  version = "2022-05-19-134344";
+  version = "2022-05-23-211740";
 
   phases = [ "unpackPhase" "installPhase" ];
 

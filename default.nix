@@ -86,6 +86,7 @@ self: super:
     google-fonts-are-you-serious = super.callPackage ./pkgs/are-you-serious {};
     google-fonts-aref-ruqaa = super.callPackage ./pkgs/aref-ruqaa {};
     google-fonts-aref-ruqaa-ink = super.callPackage ./pkgs/aref-ruqaa-ink {};
+    google-fonts-arima = super.callPackage ./pkgs/arima {};
     google-fonts-arima-madurai = super.callPackage ./pkgs/arima-madurai {};
     google-fonts-arimo = super.callPackage ./pkgs/arimo {};
     google-fonts-arizonia = super.callPackage ./pkgs/arizonia {};
@@ -1352,6 +1353,7 @@ self: super:
     google-fonts-spicy-rice = super.callPackage ./pkgs/spicy-rice {};
     google-fonts-spinnaker = super.callPackage ./pkgs/spinnaker {};
     google-fonts-spirax = super.callPackage ./pkgs/spirax {};
+    google-fonts-splash = super.callPackage ./pkgs/splash {};
     google-fonts-spline-sans = super.callPackage ./pkgs/spline-sans {};
     google-fonts-spline-sans-mono = super.callPackage ./pkgs/spline-sans-mono {};
     google-fonts-squada-one = super.callPackage ./pkgs/squada-one {};

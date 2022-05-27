@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "share-tech-mono-${version}";
-  version = "2022-05-16-221214";
+  version = "2022-05-23-231859";
 
   phases = [ "unpackPhase" "installPhase" ];
 

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "alfa-slab-one-${version}";
-  version = "2022-05-16-221214";
+  version = "2022-05-23-195233";
 
   phases = [ "unpackPhase" "installPhase" ];
 

@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "comic-neue-${version}";
-  version = "2022-05-16-221214";
+  version = "2022-05-23-211740";
 
   phases = [ "unpackPhase" "installPhase" ];
 

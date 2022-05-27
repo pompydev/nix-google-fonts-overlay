@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "pushster-${version}";
-  version = "2022-05-16-221214";
+  version = "2022-05-25-201243";
 
   phases = [ "unpackPhase" "installPhase" ];
 

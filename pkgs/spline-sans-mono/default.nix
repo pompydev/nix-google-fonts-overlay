@@ -2,15 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "spline-sans-mono-${version}";
-  version = "2022-05-16-221214";
+  version = "2022-05-25-144440";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/754c4a21e0e5360bd28c26f514535c1c4c1a620e/ofl/splinesansmono/SplineSansMono%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/926666b01c84f852f4203e8382ba7e2379cdade7/ofl/splinesansmono/SplineSansMono%5Bwght%5D.ttf?raw=true";
       name = "SplineSansMono_wght_.ttf";
-      sha256 = "f0a19cb6407b00c30b9079044e383134ea686253055078853e64d6b0a39bd01d";
+      sha256 = "e20c1df32aa2f886e828cfcc81ca5c405d3f3b160990f6b892923e2e449bf525";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/926666b01c84f852f4203e8382ba7e2379cdade7/ofl/splinesansmono/SplineSansMono-Italic%5Bwght%5D.ttf?raw=true";
+      name = "SplineSansMono-Italic_wght_.ttf";
+      sha256 = "073f111f37a86cc6d952b7870b3c1aebbfc78f4056dd3996db28bbc7166667a6";
     })
   ];
 
@@ -22,6 +27,7 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
      install -Dm644 SplineSansMono_wght_.ttf $out/share/fonts/truetype/SplineSansMono_wght_.ttf
+     install -Dm644 SplineSansMono-Italic_wght_.ttf $out/share/fonts/truetype/SplineSansMono-Italic_wght_.ttf
   '';
 
   meta = with lib; {

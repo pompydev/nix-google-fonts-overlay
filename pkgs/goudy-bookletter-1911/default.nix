@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   name = "goudy-bookletter-1911-${version}";
-  version = "2022-05-16-221214";
+  version = "2022-05-23-214203";
 
   phases = [ "unpackPhase" "installPhase" ];
 
