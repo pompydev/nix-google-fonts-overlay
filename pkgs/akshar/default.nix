@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "akshar-${version}";
-  version = "2022-05-23-195233";
+  version = "2022-06-01-135618";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6dac97888a4878f6f59db268c0f8a336e49a2890/ofl/akshar/Akshar%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/ee638854e6c5599373f150c8858f33533554fbde/ofl/akshar/Akshar%5Bwght%5D.ttf?raw=true";
       name = "Akshar_wght_.ttf";
-      sha256 = "cff1ba32b91efffc94474fab787b61cd951f4ac99ce90339b1caa500fa72e890";
+      sha256 = "5288f970076f57f158dba767f44aec8f8e852920f1a3cc20a3268420ad9ec251";
     })
   ];
 

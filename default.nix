@@ -4,6 +4,7 @@ self: super:
     google-fonts-abeezee = super.callPackage ./pkgs/abeezee {};
     google-fonts-abel = super.callPackage ./pkgs/abel {};
     google-fonts-abhaya-libre = super.callPackage ./pkgs/abhaya-libre {};
+    google-fonts-aboreto = super.callPackage ./pkgs/aboreto {};
     google-fonts-abril-fatface = super.callPackage ./pkgs/abril-fatface {};
     google-fonts-abyssinica-sil = super.callPackage ./pkgs/abyssinica-sil {};
     google-fonts-aclonica = super.callPackage ./pkgs/aclonica {};
@@ -443,6 +444,7 @@ self: super:
     google-fonts-galdeano = super.callPackage ./pkgs/galdeano {};
     google-fonts-galindo = super.callPackage ./pkgs/galindo {};
     google-fonts-gamja-flower = super.callPackage ./pkgs/gamja-flower {};
+    google-fonts-gantari = super.callPackage ./pkgs/gantari {};
     google-fonts-gayathri = super.callPackage ./pkgs/gayathri {};
     google-fonts-gelasio = super.callPackage ./pkgs/gelasio {};
     google-fonts-gemunu-libre = super.callPackage ./pkgs/gemunu-libre {};
@@ -776,6 +778,7 @@ self: super:
     google-fonts-miltonian = super.callPackage ./pkgs/miltonian {};
     google-fonts-miltonian-tattoo = super.callPackage ./pkgs/miltonian-tattoo {};
     google-fonts-mina = super.callPackage ./pkgs/mina {};
+    google-fonts-mingzat = super.callPackage ./pkgs/mingzat {};
     google-fonts-miniver = super.callPackage ./pkgs/miniver {};
     google-fonts-miriam-libre = super.callPackage ./pkgs/miriam-libre {};
     google-fonts-mirza = super.callPackage ./pkgs/mirza {};
