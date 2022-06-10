@@ -1034,6 +1034,7 @@ self: super:
     google-fonts-noto-serif-gujarati = super.callPackage ./pkgs/noto-serif-gujarati {};
     google-fonts-noto-serif-gurmukhi = super.callPackage ./pkgs/noto-serif-gurmukhi {};
     google-fonts-noto-serif-hebrew = super.callPackage ./pkgs/noto-serif-hebrew {};
+    google-fonts-noto-serif-hk = super.callPackage ./pkgs/noto-serif-hk {};
     google-fonts-noto-serif-jp = super.callPackage ./pkgs/noto-serif-jp {};
     google-fonts-noto-serif-kannada = super.callPackage ./pkgs/noto-serif-kannada {};
     google-fonts-noto-serif-khmer = super.callPackage ./pkgs/noto-serif-khmer {};
