@@ -3,7 +3,7 @@
 main() {
   clone_fonts &&
     install_nix_google_fonts_gen &&
-    # update_overlay &&
+    update_overlay &&
     commit_changes
 }
 
