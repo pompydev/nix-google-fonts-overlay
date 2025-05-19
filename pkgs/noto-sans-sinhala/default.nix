@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-sinhala-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssinhala/NotoSansSinhala%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanssinhala/NotoSansSinhala%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansSinhala_wdth,wght_.ttf";
-      sha256 = "b7272d5a0e48ec1f8e1c27fe6f28feb3d2288c043c4c940c5fca64c34b206a4c";
+      sha256 = "9bd93e407a278075be403324063bc94a7e306c44de4df81214e932330c22eecf";
     })
   ];
 

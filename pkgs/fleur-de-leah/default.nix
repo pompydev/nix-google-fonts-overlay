@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "fleur-de-leah-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90b4ee651f4e634ed699e3658fc69ea1d3127cac/ofl/fleurdeleah/FleurDeLeah-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/fleurdeleah/FleurDeLeah-Regular.ttf?raw=true";
       name = "FleurDeLeah-Regular.ttf";
       sha256 = "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "big-shoulders-inline-display-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d5baecffa3e9457ce8a7beda09c584b7a16f9415/ofl/bigshouldersinlinedisplay/BigShouldersInlineDisplay%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bigshouldersinlinedisplay/BigShouldersInlineDisplay%5Bwght%5D.ttf?raw=true";
       name = "BigShouldersInlineDisplay_wght_.ttf";
       sha256 = "b0b18de4605db4fb9f8eb54c00e893e80342faa8f0e95b78126474cc32cbdf62";
     })

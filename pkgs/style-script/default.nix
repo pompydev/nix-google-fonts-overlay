@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "style-script-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ea1203dd089e4702ab45557123d80a8c34e3eadd/ofl/stylescript/StyleScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/stylescript/StyleScript-Regular.ttf?raw=true";
       name = "StyleScript-Regular.ttf";
       sha256 = "4f285aa7b2e87de9ea8fc3d3a571cc428257c42ac77b5f786d99d9949ac4ed9a";
     })

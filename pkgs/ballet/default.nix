@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "ballet-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/03fc129d8f320c5cbfbaed842c7325efb9ca9c59/ofl/ballet/Ballet%5Bopsz%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ballet/Ballet%5Bopsz%5D.ttf?raw=true";
       name = "Ballet_opsz_.ttf";
       sha256 = "6500b6abb6dd31c3389e8f32a21ae3c66e3257d0afefecf7688aa23f742cb677";
     })

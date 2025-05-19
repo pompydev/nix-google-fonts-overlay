@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "lovers-quarrel-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/385af64e06099604fd67c2b002c915748892358b/ofl/loversquarrel/LoversQuarrel-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/loversquarrel/LoversQuarrel-Regular.ttf?raw=true";
       name = "LoversQuarrel-Regular.ttf";
       sha256 = "a856cd5a36d050a6e7fb4b976143e6ddad8271bdeebfb2c2efec78ab0f8569b6";
     })

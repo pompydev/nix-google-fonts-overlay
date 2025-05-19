@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sue-ellen-francisco-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/023aa4b2855c95413d1b1c510ad812beb345df75/ofl/sueellenfrancisco/SueEllenFrancisco-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sueellenfrancisco/SueEllenFrancisco-Regular.ttf?raw=true";
       name = "SueEllenFrancisco-Regular.ttf";
       sha256 = "d6d72e046e8e92f659eacfb7457cf7e1f2142c112c3d8c43c0b5a3904a5c8621";
     })

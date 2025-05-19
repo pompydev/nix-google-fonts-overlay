@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-ethiopic-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansethiopic/NotoSansEthiopic%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansethiopic/NotoSansEthiopic%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansEthiopic_wdth,wght_.ttf";
-      sha256 = "e42df16d47e2fd7c08b7c860c38a5a7c4b1aae62f8035d1bd8ad4f848a39181f";
+      sha256 = "0dbccc00b22d180ebd6a4bd8a733918a29e709fa6798023adc3e6cd40da65077";
     })
   ];
 

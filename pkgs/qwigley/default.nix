@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "qwigley-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/82139bf16dcf542bfa931ec07c8ceb517eb28c70/ofl/qwigley/Qwigley-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/qwigley/Qwigley-Regular.ttf?raw=true";
       name = "Qwigley-Regular.ttf";
       sha256 = "6a018d872fa8ad613a71a48383b3f0f987a0e7cd305678ca3a7c87648e6cdbb2";
     })

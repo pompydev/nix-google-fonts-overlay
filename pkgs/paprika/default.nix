@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "paprika-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/377b7801a2ae23133e600dac1cc39f1b752f5422/ofl/paprika/Paprika-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/paprika/Paprika-Regular.ttf?raw=true";
       name = "Paprika-Regular.ttf";
       sha256 = "a53bba54989b5401d61115332ad2554c3cc6b7ab82e02cb0bd1abc4d48ad63cb";
     })

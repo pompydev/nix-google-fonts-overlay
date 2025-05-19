@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "chicle-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b736f39c3ab7f3f8ad9ac213876cd556185db902/ofl/chicle/Chicle-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/chicle/Chicle-Regular.ttf?raw=true";
       name = "Chicle-Regular.ttf";
       sha256 = "2c82494b86d3f03821284d60f2209a33218adde0dad7133ce3eb063b4363372b";
     })

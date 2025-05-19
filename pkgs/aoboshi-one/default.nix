@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "aoboshi-one-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/cf2da3975aefd17b0a95dbd72416665bc9d731fd/ofl/aoboshione/AoboshiOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/aoboshione/AoboshiOne-Regular.ttf?raw=true";
       name = "AoboshiOne-Regular.ttf";
       sha256 = "3d197454026eeb34ee409d0d7eda75a8c7ee654a8dfa9c1a73ada2d9e525b7b1";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "urbanist-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/69409947a524cb5c9fdc3977270e8bcb3a95a498/ofl/urbanist/Urbanist%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/urbanist/Urbanist%5Bwght%5D.ttf?raw=true";
       name = "Urbanist_wght_.ttf";
       sha256 = "748362d51eb276840e9f0023cd2d98299bf709a95fb3a5ae4ffcb624c638ebb9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/69409947a524cb5c9fdc3977270e8bcb3a95a498/ofl/urbanist/Urbanist-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/urbanist/Urbanist-Italic%5Bwght%5D.ttf?raw=true";
       name = "Urbanist-Italic_wght_.ttf";
       sha256 = "05ac7a65decda23806d1678d44b8ef23dd656d6793555499dd79ee24c3e777ed";
     })

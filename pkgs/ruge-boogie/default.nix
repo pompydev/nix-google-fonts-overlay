@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "ruge-boogie-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/478fca0fe6fa5e2c676dcccec8b121cbf921778c/ofl/rugeboogie/RugeBoogie-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rugeboogie/RugeBoogie-Regular.ttf?raw=true";
       name = "RugeBoogie-Regular.ttf";
       sha256 = "affe25b2431ecd42cb8c6eeb2de56bb264d666e6a4b2b27b6ac3e2257436eed0";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-tangut-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoseriftangut/NotoSerifTangut-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoseriftangut/NotoSerifTangut-Regular.ttf?raw=true";
       name = "NotoSerifTangut-Regular.ttf";
-      sha256 = "0db5db0492d049c5bcaa3910ece7db3917475a6e91b6c74b5125760b01b3ef5d";
+      sha256 = "b98f1d3daea708a1c81116542a9371ae560e6ac59d0a4362764417f693b385e3";
     })
   ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-tai-viet-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanstaiviet/NotoSansTaiViet-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanstaiviet/NotoSansTaiViet-Regular.ttf?raw=true";
       name = "NotoSansTaiViet-Regular.ttf";
-      sha256 = "b7e6d86488e34d9bbc3c6ba55097d8b1a16325650af50a7242df2c2a4a663ced";
+      sha256 = "ba2a5346d6a9c041663fc835cf090efcbb9feb81a620245e7a64ecf6caafc59d";
     })
   ];
 

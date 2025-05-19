@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "baskervville-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f514d07957d41a490d9d0e55df5a418732eaac1d/ofl/baskervville/Baskervville-Regular.ttf?raw=true";
-      name = "Baskervville-Regular.ttf";
-      sha256 = "aeea682b360f0ae2d2641d335918c3c6783a7c7a0712d8326aacacc137bf8664";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/baskervville/Baskervville%5Bwght%5D.ttf?raw=true";
+      name = "Baskervville_wght_.ttf";
+      sha256 = "a08bcf988383b344aacfd34365a8cd408a4a9665caaf19dc0d716a93833a0fa7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f514d07957d41a490d9d0e55df5a418732eaac1d/ofl/baskervville/Baskervville-Italic.ttf?raw=true";
-      name = "Baskervville-Italic.ttf";
-      sha256 = "2e303ca18fe3a5242f2f58edece96aa44b2a8bcb69aed1fc58736c230c8f3545";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/baskervville/Baskervville-Italic%5Bwght%5D.ttf?raw=true";
+      name = "Baskervville-Italic_wght_.ttf";
+      sha256 = "279ff53ed5c733efabb206345af87face1c137b8ab2667298d6cf228ebffbf01";
     })
   ];
 
@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Baskervville-Regular.ttf $out/share/fonts/truetype/Baskervville-Regular.ttf
-     install -Dm644 Baskervville-Italic.ttf $out/share/fonts/truetype/Baskervville-Italic.ttf
+     install -Dm644 Baskervville_wght_.ttf $out/share/fonts/truetype/Baskervville_wght_.ttf
+     install -Dm644 Baskervville-Italic_wght_.ttf $out/share/fonts/truetype/Baskervville-Italic_wght_.ttf
   '';
 
   meta = with lib; {

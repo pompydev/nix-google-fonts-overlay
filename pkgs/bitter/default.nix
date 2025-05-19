@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "bitter-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7aca1ebb5db6fbe957ed765cc800b0b148a9539d/ofl/bitter/Bitter%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bitter/Bitter%5Bwght%5D.ttf?raw=true";
       name = "Bitter_wght_.ttf";
-      sha256 = "238fa4ba51402494ff57d3ab46b4ba0e84628f76246a10939e24aeeabf6ac260";
+      sha256 = "ef2b9a711fb02f1e5823b34da1b7450e0fc76793b7d733a8b41006e24916d4a7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7aca1ebb5db6fbe957ed765cc800b0b148a9539d/ofl/bitter/Bitter-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bitter/Bitter-Italic%5Bwght%5D.ttf?raw=true";
       name = "Bitter-Italic_wght_.ttf";
-      sha256 = "491bbab78a63af62ad750e6f8f0d1f05997215a5be24031c3dcb270b062c6267";
+      sha256 = "5e6e0af503171c9d7b4be7a22c16f474d7a638cf83a80051d825bcc58d664bc3";
     })
   ];
 

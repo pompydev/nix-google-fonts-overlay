@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "neonderthaw-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ab89534e05283b490c85a5ae471a1a547bfbae3e/ofl/neonderthaw/Neonderthaw-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/neonderthaw/Neonderthaw-Regular.ttf?raw=true";
       name = "Neonderthaw-Regular.ttf";
       sha256 = "15a72ab630eb73ee922ad653783b81053cf381ef53bcc17a536f3c7fa8097184";
     })

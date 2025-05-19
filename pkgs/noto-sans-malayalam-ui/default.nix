@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-malayalam-ui-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmalayalamui/NotoSansMalayalamUI%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmalayalamui/NotoSansMalayalamUI%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansMalayalamUI_wdth,wght_.ttf";
       sha256 = "6980d9e69af585a3346e21cdaf2e20fcbd292e24db043da679ddf2bf2acb884c";
     })

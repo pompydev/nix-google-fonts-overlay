@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "liu-jian-mao-cao-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0bf38a8a393773912e43d57dfb8b45e7fb868044/ofl/liujianmaocao/LiuJianMaoCao-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/liujianmaocao/LiuJianMaoCao-Regular.ttf?raw=true";
       name = "LiuJianMaoCao-Regular.ttf";
       sha256 = "cab396b91a5b7c0b4005a35891180d06e6751f5ac261fe680aec65c1ae209033";
     })

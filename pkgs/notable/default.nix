@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "notable-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c9d3903b093395cbf6dd60779c6ab18835b301cb/ofl/notable/Notable-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notable/Notable-Regular.ttf?raw=true";
       name = "Notable-Regular.ttf";
       sha256 = "fe5105a1e0b5c4daf1ea10730aac2fbbeaec3a6431e67eb827bf56e3a966d3c6";
     })

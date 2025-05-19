@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-ol-chiki-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansolchiki/NotoSansOlChiki%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansolchiki/NotoSansOlChiki%5Bwght%5D.ttf?raw=true";
       name = "NotoSansOlChiki_wght_.ttf";
-      sha256 = "e63b478019d99b1dacf995ed3416262df50a3438e8dd78d8bb1a4091b6efca6c";
+      sha256 = "c9c31988656f49eccec9588825ab3b5045099c2f850ef98f356f976e8a596b4d";
     })
   ];
 

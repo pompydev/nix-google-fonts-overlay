@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "yaldevi-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5236812944acca710a7b6db2dbc583a02671ea2f/ofl/yaldevi/Yaldevi%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/yaldevi/Yaldevi%5Bwght%5D.ttf?raw=true";
       name = "Yaldevi_wght_.ttf";
       sha256 = "21d5516cd9a8831964b57503f5b7a119aafa9603bdddd0183e91a0ac8c8dc2e4";
     })

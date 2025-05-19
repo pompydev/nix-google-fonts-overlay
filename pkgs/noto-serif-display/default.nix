@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-display-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifdisplay/NotoSerifDisplay%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifdisplay/NotoSerifDisplay%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSerifDisplay_wdth,wght_.ttf";
       sha256 = "4b661adcf6a5d38bf5befdc4d976e8a7238a4aeb57e62c1c1a67775380a09df9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifdisplay/NotoSerifDisplay-Italic%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifdisplay/NotoSerifDisplay-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSerifDisplay-Italic_wdth,wght_.ttf";
       sha256 = "daad4d314708839a5c343f26e75467edf6c05a3a726502c98974dd3e240e6516";
     })

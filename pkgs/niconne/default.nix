@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "niconne-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/niconne/Niconne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/niconne/Niconne-Regular.ttf?raw=true";
       name = "Niconne-Regular.ttf";
       sha256 = "dc70580a25914aeec39a9460b7858ee08eb4ad0bbbcd1d7c9cb888a6ea989a27";
     })

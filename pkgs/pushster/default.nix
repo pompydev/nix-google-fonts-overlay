@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "pushster-${version}";
-  version = "2022-06-03-005842";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a2e33f35fddfb580f42350a8dd78230d2b41c7bb/ofl/pushster/Pushster-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pushster/Pushster-Regular.ttf?raw=true";
       name = "Pushster-Regular.ttf";
       sha256 = "d6568e697fd50cedc0be04d8aae4127fe95add607e7bff954ca88604be80c205";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "joti-one-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/jotione/JotiOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/jotione/JotiOne-Regular.ttf?raw=true";
       name = "JotiOne-Regular.ttf";
-      sha256 = "6d31399c9aca62e6bf47d7f2949e1a77249500ba0157037346bd61ddb5bcbf00";
+      sha256 = "16d31b49095da1a5c2d3ba5479cd966cff05d3db1d3e235532cb9aef607ef0a9";
     })
   ];
 

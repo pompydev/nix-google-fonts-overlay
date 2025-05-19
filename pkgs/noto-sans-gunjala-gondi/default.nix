@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-gunjala-gondi-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansgunjalagondi/NotoSansGunjalaGondi-Regular.ttf?raw=true";
-      name = "NotoSansGunjalaGondi-Regular.ttf";
-      sha256 = "10b7744bfd151e4ad844155cefd0f60032b005269cf34738fea02b0ff5dacf9c";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansgunjalagondi/NotoSansGunjalaGondi%5Bwght%5D.ttf?raw=true";
+      name = "NotoSansGunjalaGondi_wght_.ttf";
+      sha256 = "1de8a430d5c176994d1c5ae61151af141ae39fcb38a29f340b1f46e7ad9522d4";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoSansGunjalaGondi-Regular.ttf $out/share/fonts/truetype/NotoSansGunjalaGondi-Regular.ttf
+     install -Dm644 NotoSansGunjalaGondi_wght_.ttf $out/share/fonts/truetype/NotoSansGunjalaGondi_wght_.ttf
   '';
 
   meta = with lib; {

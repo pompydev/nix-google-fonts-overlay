@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "fauna-one-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/faunaone/FaunaOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/faunaone/FaunaOne-Regular.ttf?raw=true";
       name = "FaunaOne-Regular.ttf";
-      sha256 = "57326459715c908b2f74b990da53e4f255ab4ab31d862d8cfd3689b0ab9c1b6d";
+      sha256 = "3c636067331e86fbf349924f3c1964155b99072a390caaffe60ce6c0866363fe";
     })
   ];
 

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "inconsolata-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0f203e3740b5eb77e0b179dff1e5869482676782/ofl/inconsolata/Inconsolata%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/inconsolata/Inconsolata%5Bwdth,wght%5D.ttf?raw=true";
       name = "Inconsolata_wdth,wght_.ttf";
       sha256 = "23ded25b447074d00659392bf9b1123d89df55cb07b0ad9bfef3366d199b5fcb";
     })

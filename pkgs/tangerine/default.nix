@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "tangerine-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c593dd5bbb65fd69c73043371c6d485595e63660/ofl/tangerine/Tangerine-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tangerine/Tangerine-Regular.ttf?raw=true";
       name = "Tangerine-Regular.ttf";
       sha256 = "3f5db6010de48f7173939f16621c0e0e794b589eec04e3b04e0a81be848dfab9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c593dd5bbb65fd69c73043371c6d485595e63660/ofl/tangerine/Tangerine-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tangerine/Tangerine-Bold.ttf?raw=true";
       name = "Tangerine-Bold.ttf";
       sha256 = "a35368c814c71c15928ffc60cbac32bc81461f03b895a4a607df9c64b3d1548b";
     })

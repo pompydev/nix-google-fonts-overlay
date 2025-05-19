@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "jua-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/jua/Jua-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/jua/Jua-Regular.ttf?raw=true";
       name = "Jua-Regular.ttf";
-      sha256 = "3080d35028a655cf20b6dbd0714fa8170605b933e4a211c1ae2e4f442039faf6";
+      sha256 = "769677aef240bfc3b9965f2b50748075bff885e6c6992fc591a3fb268279f898";
     })
   ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "kirang-haerang-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/kiranghaerang/KirangHaerang-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kiranghaerang/KirangHaerang-Regular.ttf?raw=true";
       name = "KirangHaerang-Regular.ttf";
-      sha256 = "1bce75bcd68a82db188372fb1919aa9fbb009dabd273353d5020dc60f93e28c3";
+      sha256 = "d677d28d466989017c520f00a2a7794ea581ea3d9fa9a830fbb44f1015eac72d";
     })
   ];
 

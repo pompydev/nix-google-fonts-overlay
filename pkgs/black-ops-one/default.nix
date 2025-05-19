@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "black-ops-one-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/35b26b31773a8ca372d6430899d705822e021699/ofl/blackopsone/BlackOpsOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/blackopsone/BlackOpsOne-Regular.ttf?raw=true";
       name = "BlackOpsOne-Regular.ttf";
-      sha256 = "838f00508ccefff4a6bbdb3c1c6899a77c7e225b72d9609584ba807026a3c538";
+      sha256 = "282a825b5f294377387e3969f765408157dbea8da0f5d0aae68c6bc704b145b3";
     })
   ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-cuneiform-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanscuneiform/NotoSansCuneiform-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanscuneiform/NotoSansCuneiform-Regular.ttf?raw=true";
       name = "NotoSansCuneiform-Regular.ttf";
-      sha256 = "1138815fabc470753e09876c6deeb4a006219b756e6b2d9bfe0e91aa4bcc21e1";
+      sha256 = "b4e0a892514fcb1beb081c8b652fb36689f77105491d1796c2c3f5a59b4524d2";
     })
   ];
 

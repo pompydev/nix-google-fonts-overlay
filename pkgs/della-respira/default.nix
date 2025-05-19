@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "della-respira-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/dellarespira/DellaRespira-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/dellarespira/DellaRespira-Regular.ttf?raw=true";
       name = "DellaRespira-Regular.ttf";
       sha256 = "81518be5b7baf69db5b8e4cff1a447ac2f6bf7a6029ca4963a67e1fb1b0b9218";
     })

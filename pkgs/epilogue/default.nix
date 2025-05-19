@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "epilogue-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/07078f01d0d661d2cba6c4e6ef09c927af35e668/ofl/epilogue/Epilogue%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/epilogue/Epilogue%5Bwght%5D.ttf?raw=true";
       name = "Epilogue_wght_.ttf";
       sha256 = "012f651b45f47c10c7714cb7e3f2f7d9ccb7f235a2cc72c6b273ddc735705c67";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/07078f01d0d661d2cba6c4e6ef09c927af35e668/ofl/epilogue/Epilogue-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/epilogue/Epilogue-Italic%5Bwght%5D.ttf?raw=true";
       name = "Epilogue-Italic_wght_.ttf";
       sha256 = "7e5263bfe5b8ea9d46201fc3e3d59c354628de2220c3f3fe831fad946a1f7db2";
     })

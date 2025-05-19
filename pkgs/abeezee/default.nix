@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "abeezee-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a8bc01c6dcb2933dca0f37180df6c516e226b346/ofl/abeezee/ABeeZee-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/abeezee/ABeeZee-Regular.ttf?raw=true";
       name = "ABeeZee-Regular.ttf";
       sha256 = "2901c8df256648cc2bb2e3afb381cb8d28e65ed3dbe11de20695ae4d5ffdeda9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a8bc01c6dcb2933dca0f37180df6c516e226b346/ofl/abeezee/ABeeZee-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/abeezee/ABeeZee-Italic.ttf?raw=true";
       name = "ABeeZee-Italic.ttf";
       sha256 = "3892bb74578207ed6edae040a0869e54dcae13a466d005460570947062137dd8";
     })

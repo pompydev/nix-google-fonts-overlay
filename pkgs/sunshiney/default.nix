@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sunshiney-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/15cb31c6e701c9a8b3c58835804bb5e3fd9d3160/apache/sunshiney/Sunshiney-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/sunshiney/Sunshiney-Regular.ttf?raw=true";
       name = "Sunshiney-Regular.ttf";
       sha256 = "2f41cbc6263c033c18f1db7ae6523a89eb50cd5665b0b7635cc3a4c9c9a0fe4d";
     })

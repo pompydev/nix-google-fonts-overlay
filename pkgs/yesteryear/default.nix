@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "yesteryear-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/yesteryear/Yesteryear-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/yesteryear/Yesteryear-Regular.ttf?raw=true";
       name = "Yesteryear-Regular.ttf";
       sha256 = "17d1b2c57ec648ff9b13d2000bdd9b5c1c326ba14acff4597afe3a730d0a2c94";
     })

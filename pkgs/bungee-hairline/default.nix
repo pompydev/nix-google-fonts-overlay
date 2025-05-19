@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "bungee-hairline-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fb1fae9a43df913c39e4ee0423c60f4e737c9902/ofl/bungeehairline/BungeeHairline-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bungeehairline/BungeeHairline-Regular.ttf?raw=true";
       name = "BungeeHairline-Regular.ttf";
-      sha256 = "a5fb25778bbfc169ea809a87b4ba74865bd386019df785a0777b44bcb6b3fdc3";
+      sha256 = "fa720052780a73c9e8ba196bbb5332d361d366624f13f486beff125097fdbfb2";
     })
   ];
 

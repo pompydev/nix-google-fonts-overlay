@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "joan-${version}";
-  version = "2022-04-28-101127";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5ddb8daa287281964b825109da0cde122d72e8f1/ofl/joan/Joan-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/joan/Joan-Regular.ttf?raw=true";
       name = "Joan-Regular.ttf";
-      sha256 = "e89462572e11a18b80d29826dcf3fb7debba8b2e0d20d0cff50d45c1e5cdf266";
+      sha256 = "8777dccac8b33ee6fe4a0c7ab20e08cad20d7d10c18b0ce775e728f8e67be0e4";
     })
   ];
 

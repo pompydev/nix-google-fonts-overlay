@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "elsie-swash-caps-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/557254baf20d404b6ff30ca0ab100da6cddaad01/ofl/elsieswashcaps/ElsieSwashCaps-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/elsieswashcaps/ElsieSwashCaps-Regular.ttf?raw=true";
       name = "ElsieSwashCaps-Regular.ttf";
-      sha256 = "8ca1c544ecb26d6db3483522be473e9bc78e35b9b211b3e6e1ee5b1778b57537";
+      sha256 = "6b9c2d61e6f955e4cc7bc51777a2e411c2034d921d150473098b9c7554734520";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/557254baf20d404b6ff30ca0ab100da6cddaad01/ofl/elsieswashcaps/ElsieSwashCaps-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/elsieswashcaps/ElsieSwashCaps-Black.ttf?raw=true";
       name = "ElsieSwashCaps-Black.ttf";
-      sha256 = "2b6d3b171e118d4381e03b288ad37db19a78eac12ebe20975375c7012bbe112b";
+      sha256 = "6961a1cda97a11a9783151670529a01dab5e44a84cd1029a44c95270b72b26bd";
     })
   ];
 

@@ -1,0 +1,32 @@
+{ lib, stdenv, fetchurl }:
+
+stdenv.mkDerivation rec {
+  name = "gloock-${version}";
+  version = "2025-05-16-181022";
+
+  phases = [ "unpackPhase" "installPhase" ];
+
+  srcs = [
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gloock/Gloock-Regular.ttf?raw=true";
+      name = "Gloock-Regular.ttf";
+      sha256 = "c3a67e0212f7da01764796ae721cb9bab3e122d142354f97cf9c63fb763e6d77";
+    })
+  ];
+
+  unpackPhase = ''
+    for font in $srcs; do
+      cp "$font" "$(echo "$font" | cut -d- -f2-)"
+    done
+  '';
+
+  installPhase = ''
+     install -Dm644 Gloock-Regular.ttf $out/share/fonts/truetype/Gloock-Regular.ttf
+  '';
+
+  meta = with lib; {
+    description = "Gloock";
+    license = licenses.ofl;
+    platforms = platforms.all;
+  };
+}

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-gurmukhi-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifgurmukhi/NotoSerifGurmukhi%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifgurmukhi/NotoSerifGurmukhi%5Bwght%5D.ttf?raw=true";
       name = "NotoSerifGurmukhi_wght_.ttf";
-      sha256 = "ba746e1c4ad372c19763dfe5b0d1e5148d86ec66f14011e3708100f31836bd4f";
+      sha256 = "0d15ba8362035a032156c0516038cb8ed93507f7a7762df3e65eaad9218d764b";
     })
   ];
 

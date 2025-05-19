@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-ethiopic-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifethiopic/NotoSerifEthiopic%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifethiopic/NotoSerifEthiopic%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSerifEthiopic_wdth,wght_.ttf";
-      sha256 = "27c5d1a628216c03bfb69aa62180f3fa67db92e0a91fd99ab3d731ae8015e813";
+      sha256 = "49d5daa6c3477a427f5d4f8a5ae9ea7f0a04ea7f865fc21f7e08fc4aed70d92a";
     })
   ];
 

@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "roboto-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3b947ee2732103ef6132b09d234aecd768d2d83c/apache/roboto/Roboto%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/roboto/Roboto%5Bwdth,wght%5D.ttf?raw=true";
       name = "Roboto_wdth,wght_.ttf";
-      sha256 = "9c514b40e644ce46192c5ac340b676669ef5a9837201d4aaa24b23592c73b921";
+      sha256 = "e1722faf1243fd28995b776f9192e44e0bc7f5a07fc6a80b9d73eda34d4d4c8f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3b947ee2732103ef6132b09d234aecd768d2d83c/apache/roboto/Roboto-Italic%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/roboto/Roboto-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "Roboto-Italic_wdth,wght_.ttf";
-      sha256 = "40bbf1a744288a61706c283a27de30633b72508a8f382581c6332555fed74785";
+      sha256 = "c38704321bfebbbdffdcc47cf210b4c3911a19e966e263b183b79404e583a39e";
     })
   ];
 
@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "Roboto";
-    license = licenses.asl20;
+    license = licenses.ofl;
     platforms = platforms.all;
   };
 }

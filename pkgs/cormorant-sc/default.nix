@@ -2,35 +2,35 @@
 
 stdenv.mkDerivation rec {
   name = "cormorant-sc-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/76b26bd5f369b72bc0d39471fb7c5092c85914d0/ofl/cormorantsc/CormorantSC-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantsc/CormorantSC-Light.ttf?raw=true";
       name = "CormorantSC-Light.ttf";
-      sha256 = "37aa5dc1a9d1c69f0f87fd486ed807178a0aa9b0e09fd0bd054dd747e57786cb";
+      sha256 = "d3dfcbf1aa9281743cb123292851862b4419602efbf29c4867e680d53774a2ae";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/76b26bd5f369b72bc0d39471fb7c5092c85914d0/ofl/cormorantsc/CormorantSC-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantsc/CormorantSC-Regular.ttf?raw=true";
       name = "CormorantSC-Regular.ttf";
-      sha256 = "38271a83e53289b189bfc00e4b8deef1beb4640ec207875c573b9b57aaa6b15e";
+      sha256 = "a51985a075f3884d8dc9b2d20367c51b6b05e53fdb912959acb785084579aeaa";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/76b26bd5f369b72bc0d39471fb7c5092c85914d0/ofl/cormorantsc/CormorantSC-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantsc/CormorantSC-Medium.ttf?raw=true";
       name = "CormorantSC-Medium.ttf";
-      sha256 = "91ab6067047556cd8976c920a9327d632b7f7f137f238bc2c1d345d2be9e9302";
+      sha256 = "7ec02e6b6c20697fd8d5038349452b6f3c628c16440a04156650d42e3fef89bf";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/76b26bd5f369b72bc0d39471fb7c5092c85914d0/ofl/cormorantsc/CormorantSC-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantsc/CormorantSC-SemiBold.ttf?raw=true";
       name = "CormorantSC-SemiBold.ttf";
-      sha256 = "65ffbcf9fded0bcca5e31339b9c1662aa2a3fbf41eaca472690fe0d304fc18e7";
+      sha256 = "648cd1c932871e4e8e1d147b593315409e8ea82282f88e9397e2cceae83d065b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/76b26bd5f369b72bc0d39471fb7c5092c85914d0/ofl/cormorantsc/CormorantSC-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantsc/CormorantSC-Bold.ttf?raw=true";
       name = "CormorantSC-Bold.ttf";
-      sha256 = "6f8f0c52614c82bd3569a24c3ec1aafce229af9d8bb09a090d88e4e9b0cb0557";
+      sha256 = "78f70c79b5c0a1e66641d4b4a2e2ed32e1a45774b3de94e56f8de68510219177";
     })
   ];
 

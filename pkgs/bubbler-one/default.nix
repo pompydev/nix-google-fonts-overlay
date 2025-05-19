@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "bubbler-one-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/70a30639c1fc5d61726c0b06e8f64738d5927b18/ofl/bubblerone/BubblerOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bubblerone/BubblerOne-Regular.ttf?raw=true";
       name = "BubblerOne-Regular.ttf";
-      sha256 = "7994c6379c0405aba9b3459f3afa075959297e2a5b3e0827b41a82c53530d4ec";
+      sha256 = "a6dfd3cba4ffb33a603317be430f2cb8ff91ce04e529af79ae7fdef6dd2e1782";
     })
   ];
 

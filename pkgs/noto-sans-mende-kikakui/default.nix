@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-mende-kikakui-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmendekikakui/NotoSansMendeKikakui-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmendekikakui/NotoSansMendeKikakui-Regular.ttf?raw=true";
       name = "NotoSansMendeKikakui-Regular.ttf";
-      sha256 = "732aa89620f926e431f01764362166042cfc309f24272db33fde8aac30911183";
+      sha256 = "1f0d4e5957f2d74ffd2ef4850b512e512066c58365308e433985c3842f2d779f";
     })
   ];
 

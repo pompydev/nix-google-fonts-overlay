@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rochester-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a324c37d5817eb9823876e3e3f25bbbd30f7ea75/apache/rochester/Rochester-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/rochester/Rochester-Regular.ttf?raw=true";
       name = "Rochester-Regular.ttf";
       sha256 = "38657df5e357e841a39995592970ac14ea96a1376f178f0d8e0231fd5d630b2b";
     })

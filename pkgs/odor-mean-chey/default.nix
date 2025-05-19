@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "odor-mean-chey-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/odormeanchey/OdorMeanChey-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/odormeanchey/OdorMeanChey-Regular.ttf?raw=true";
       name = "OdorMeanChey-Regular.ttf";
       sha256 = "29cb2e094a7e8ed9dd5701f48a5ef42c4e15db8acd85ea78e22804ae67188fbe";
     })

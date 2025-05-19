@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "sedan-sc-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/sedansc/SedanSC-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sedansc/SedanSC-Regular.ttf?raw=true";
       name = "SedanSC-Regular.ttf";
-      sha256 = "8efd44489b2fa950e84c20e4f40ab6fdb395d301d8b41afa72cdd24920f9cd77";
+      sha256 = "b015b262e6138cd0e8279ba75695f07748af01f8a9eed5d4d536e283baa57314";
     })
   ];
 

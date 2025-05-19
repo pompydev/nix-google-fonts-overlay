@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "average-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0f95952384d52f3d4fec1c40e86021dcb5e7a58b/ofl/average/Average-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/average/Average-Regular.ttf?raw=true";
       name = "Average-Regular.ttf";
-      sha256 = "dd9e57c09e6312e18fe8d77283eaa64db6bead988057f526af7fce878270a16d";
+      sha256 = "f9efcc21a222870178c86d2d47d3861a40284d25acd28657554f646f68902e34";
     })
   ];
 

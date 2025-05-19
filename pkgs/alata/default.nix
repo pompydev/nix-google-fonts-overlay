@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "alata-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/592024db0c46f27093450456efc36c7c12343a37/ofl/alata/Alata-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/alata/Alata-Regular.ttf?raw=true";
       name = "Alata-Regular.ttf";
-      sha256 = "a9d5cb27a9e81d6a604ac677d4d8a62287ac7660e76dd38226a42ca4fc4aa51f";
+      sha256 = "7b71432a5e2e2409a3583553bc5ce703209a8bce9b2f136ca257ac4c2d3addc4";
     })
   ];
 

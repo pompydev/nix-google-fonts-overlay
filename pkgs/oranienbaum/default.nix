@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "oranienbaum-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bacec3651f66c2e219e20a9a0d0aa0286c74a777/ofl/oranienbaum/Oranienbaum-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oranienbaum/Oranienbaum-Regular.ttf?raw=true";
       name = "Oranienbaum-Regular.ttf";
       sha256 = "d0c2527f106ddaf53bebce08e903b585d1fd1d830eddd23ed723c313b4fe2c6c";
     })

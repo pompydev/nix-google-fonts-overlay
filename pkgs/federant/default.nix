@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "federant-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/585b8438bebd24e70c63b9c542844c3aaecadefa/ofl/federant/Federant-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/federant/Federant-Regular.ttf?raw=true";
       name = "Federant-Regular.ttf";
       sha256 = "d40cb09c85114c2b0c9442636412e997d8258b383e1d1a684e7e32b21d07a5c2";
     })

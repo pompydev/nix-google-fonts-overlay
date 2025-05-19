@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-old-turkic-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansoldturkic/NotoSansOldTurkic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansoldturkic/NotoSansOldTurkic-Regular.ttf?raw=true";
       name = "NotoSansOldTurkic-Regular.ttf";
-      sha256 = "7da596306eb88cdab43bb44d45d0b5bb12614488be6e4eec31cc8413c3e18773";
+      sha256 = "b8e3f206a9fdaea960a988bb1ed3275391eb534d127859611dca87f2204da4a7";
     })
   ];
 

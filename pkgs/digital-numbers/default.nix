@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "digital-numbers-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e860dd8502bff9c68f345ed29e82fe929038f4d6/ofl/digitalnumbers/DigitalNumbers-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/digitalnumbers/DigitalNumbers-Regular.ttf?raw=true";
       name = "DigitalNumbers-Regular.ttf";
       sha256 = "de9e0cfb83bc10ac6fad876f35d8f381a3ff07f5ca9925919e9d32f980bc9d49";
     })

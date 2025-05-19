@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "fontdiner-swanky-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c9bc5498a323be2c3ca18459fef1bacf6abd5359/apache/fontdinerswanky/FontdinerSwanky-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/fontdinerswanky/FontdinerSwanky-Regular.ttf?raw=true";
       name = "FontdinerSwanky-Regular.ttf";
       sha256 = "847229fbf58c7f7479f93fd7cf9fc269b54c0c9f6465abcb65a206fb261be41b";
     })

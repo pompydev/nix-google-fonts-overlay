@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "red-hat-mono-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/78451af6645cd74705cc18b245107637010d6b79/ofl/redhatmono/RedHatMono%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/redhatmono/RedHatMono%5Bwght%5D.ttf?raw=true";
       name = "RedHatMono_wght_.ttf";
-      sha256 = "04bb17e675f38652f94f108b923d55dc1508a85fb807bdf4b2d5759557e93f2f";
+      sha256 = "253377ac29ccce89cb1b5fb297c69812ffe993b0c436322b3656323ff30fd14f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/78451af6645cd74705cc18b245107637010d6b79/ofl/redhatmono/RedHatMono-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/redhatmono/RedHatMono-Italic%5Bwght%5D.ttf?raw=true";
       name = "RedHatMono-Italic_wght_.ttf";
-      sha256 = "26d35c573ca0b1909c9b32d6237a1859046029c4cfa20f7b9238a9a39760e1f6";
+      sha256 = "bdb184e308ec6dfb2790a5ec6a0b1aceb2aca32b95db447873451934eb3517b7";
     })
   ];
 

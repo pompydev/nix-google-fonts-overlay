@@ -2,20 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-javanese-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansjavanese/NotoSansJavanese-Regular.ttf?raw=true";
-      name = "NotoSansJavanese-Regular.ttf";
-      sha256 = "faff63a3ea4c5a882508d85935f02e4f80e923551d4716e27706dd3c6cb07d67";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansjavanese/NotoSansJavanese-Bold.ttf?raw=true";
-      name = "NotoSansJavanese-Bold.ttf";
-      sha256 = "5f22e4a45700f7ec3f1eb36d36fbc9669f7c2fe418fa32088857b9f7c214d764";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansjavanese/NotoSansJavanese%5Bwght%5D.ttf?raw=true";
+      name = "NotoSansJavanese_wght_.ttf";
+      sha256 = "0bcb88de05a855aec38471d6317e860fa2a40d1c3ca93f2736b7c34ad9288d90";
     })
   ];
 
@@ -26,8 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoSansJavanese-Regular.ttf $out/share/fonts/truetype/NotoSansJavanese-Regular.ttf
-     install -Dm644 NotoSansJavanese-Bold.ttf $out/share/fonts/truetype/NotoSansJavanese-Bold.ttf
+     install -Dm644 NotoSansJavanese_wght_.ttf $out/share/fonts/truetype/NotoSansJavanese_wght_.ttf
   '';
 
   meta = with lib; {

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "merge-one-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/mergeone/MergeOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mergeone/MergeOne-Regular.ttf?raw=true";
       name = "MergeOne-Regular.ttf";
       sha256 = "93ad28579d4abf3bec9ad9961fd20912ecea60afad1d77c3ecbd39349b88d967";
     })

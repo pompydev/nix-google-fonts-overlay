@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "gideon-roman-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b1573ad2c7d24dc107e5935abcdeef17fe35bd4f/ofl/gideonroman/GideonRoman-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gideonroman/GideonRoman-Regular.ttf?raw=true";
       name = "GideonRoman-Regular.ttf";
       sha256 = "8edd923657529e420382016e8f0a395d2d526c391328fc97cf4d42ed2d18bdce";
     })

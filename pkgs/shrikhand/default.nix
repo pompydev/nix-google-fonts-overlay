@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "shrikhand-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0cffc716084fe004545f47e7f77a007f26d3ca88/ofl/shrikhand/Shrikhand-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/shrikhand/Shrikhand-Regular.ttf?raw=true";
       name = "Shrikhand-Regular.ttf";
       sha256 = "8ba32f6d6a96fb8dbc92fc1acfbc4d2123d5348063d89b2c3dd784e7afcb81af";
     })

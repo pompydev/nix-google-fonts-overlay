@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-nyiakeng-puachue-hmong-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifnyiakengpuachuehmong/NotoSerifNyiakengPuachueHmong%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifnyiakengpuachuehmong/NotoSerifNyiakengPuachueHmong%5Bwght%5D.ttf?raw=true";
       name = "NotoSerifNyiakengPuachueHmong_wght_.ttf";
       sha256 = "802b838de1cae59401c5140620479ee6dc4eaa28d877d4fcc5b79d92e8b43555";
     })

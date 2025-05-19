@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "baumans-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/75a4258500cb76408c404142da0d70557c07d879/ofl/baumans/Baumans-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/baumans/Baumans-Regular.ttf?raw=true";
       name = "Baumans-Regular.ttf";
       sha256 = "fc224bf301c1c9204ab89fff5a8962472aea25af01a20223d8fe2aa69d06d6b9";
     })

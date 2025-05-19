@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rubik-microbe-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/25163d4b1689c331d3a58c4a56f0b9d60b1f94a1/ofl/rubikmicrobe/RubikMicrobe-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rubikmicrobe/RubikMicrobe-Regular.ttf?raw=true";
       name = "RubikMicrobe-Regular.ttf";
       sha256 = "af2360aa13ce3a068142dedded39d2d831615d8bbe370bc086e95192f2e528d7";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "el-messiri-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a1b41d3a87354004b98884ac5f442a4e88954b56/ofl/elmessiri/ElMessiri%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/elmessiri/ElMessiri%5Bwght%5D.ttf?raw=true";
       name = "ElMessiri_wght_.ttf";
       sha256 = "5d58d5259d2accccba39cffe12e1226e88b6afc5150e3605eb2a9c2fe06ccab0";
     })

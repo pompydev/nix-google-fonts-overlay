@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "monofett-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/monofett/Monofett.ttf?raw=true";
-      name = "Monofett.ttf";
-      sha256 = "05c225ab2653d62e9aeef6a78693d6c990383d3253daece8bedc5964231d5c52";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/monofett/Monofett-Regular.ttf?raw=true";
+      name = "Monofett-Regular.ttf";
+      sha256 = "1483f18841a24238172d6f3462a3ea790b7a3e6ca8bb55d404dede93669238d5";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Monofett.ttf $out/share/fonts/truetype/Monofett.ttf
+     install -Dm644 Monofett-Regular.ttf $out/share/fonts/truetype/Monofett-Regular.ttf
   '';
 
   meta = with lib; {

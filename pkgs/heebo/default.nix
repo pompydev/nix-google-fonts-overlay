@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "heebo-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/902785a6e34f09caa1768877c59d3eeb1b299378/ofl/heebo/Heebo%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/heebo/Heebo%5Bwght%5D.ttf?raw=true";
       name = "Heebo_wght_.ttf";
-      sha256 = "a805a36fbd459d8582d23b452c74ccd66d38d39f45a33a700030488ad6ec7614";
+      sha256 = "18f930b583fa8fe6b40b2f8263b7ac6afbac07adc91a12467874e7467d3ace30";
     })
   ];
 

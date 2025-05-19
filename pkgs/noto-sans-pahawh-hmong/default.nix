@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-pahawh-hmong-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanspahawhhmong/NotoSansPahawhHmong-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanspahawhhmong/NotoSansPahawhHmong-Regular.ttf?raw=true";
       name = "NotoSansPahawhHmong-Regular.ttf";
-      sha256 = "303dbcc71425c331cc5d293254acfdf15aed04cf5e0075ecba0ed0d8a5d5862b";
+      sha256 = "8b575d82f37d1119c7fb6d0f569fafea572bddfeb83861c8501d4ab5a5faef92";
     })
   ];
 

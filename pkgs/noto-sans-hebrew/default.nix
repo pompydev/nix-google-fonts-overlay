@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-hebrew-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanshebrew/NotoSansHebrew%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanshebrew/NotoSansHebrew%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansHebrew_wdth,wght_.ttf";
-      sha256 = "9e4eb7bb57f2b932db1af78f9ad142114614b0e226f2e18b05327c1fde04c86d";
+      sha256 = "7ef36a2c3593758cdb622e1bdef4f84523e92fbc3ccc667438dd80ff54c2de88";
     })
   ];
 

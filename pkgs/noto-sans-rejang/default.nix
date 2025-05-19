@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-rejang-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansrejang/NotoSansRejang-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansrejang/NotoSansRejang-Regular.ttf?raw=true";
       name = "NotoSansRejang-Regular.ttf";
-      sha256 = "929034bf94778de56bcfda14d4099eaf094e472eb4db2b173b6e838ab35d4427";
+      sha256 = "27a3f1e60bf4ed7b7a5956fea6505e7ac0861397e0ff0acc112ab42451dc40e3";
     })
   ];
 

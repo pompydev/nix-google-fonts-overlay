@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "overpass-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d8f31106ea0af85ee2f3a3d38a2fe155de0d716c/ofl/overpass/Overpass%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/overpass/Overpass%5Bwght%5D.ttf?raw=true";
       name = "Overpass_wght_.ttf";
       sha256 = "970717df17a7f9911dee45f60695d05bfa9d745fa0a11fc5c348371fa21f0073";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d8f31106ea0af85ee2f3a3d38a2fe155de0d716c/ofl/overpass/Overpass-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/overpass/Overpass-Italic%5Bwght%5D.ttf?raw=true";
       name = "Overpass-Italic_wght_.ttf";
       sha256 = "3b45ac4193930bbeb491b5c76227afd5991607712f0d16d6bc5d74db6bbd8172";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "indie-flower-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/48e30c13625133283f79042e86693a5d04c6bfa0/ofl/indieflower/IndieFlower-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/indieflower/IndieFlower-Regular.ttf?raw=true";
       name = "IndieFlower-Regular.ttf";
       sha256 = "ccc94b22b156e9c5dfe50fd051f01b097600b252c24473e624bb43a143140a94";
     })

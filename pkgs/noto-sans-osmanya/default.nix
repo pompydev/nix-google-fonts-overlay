@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-osmanya-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansosmanya/NotoSansOsmanya-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansosmanya/NotoSansOsmanya-Regular.ttf?raw=true";
       name = "NotoSansOsmanya-Regular.ttf";
-      sha256 = "4263abe435e70af98ea372b94d181520bcf6a85f12c2432d2f16448256ceb198";
+      sha256 = "8832125f106a0be9d4b7e6442493a96f2d6626b8edb2cc20f53c48e9b73fd5a7";
     })
   ];
 

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "metal-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/metal/Metal-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/metal/Metal-Regular.ttf?raw=true";
       name = "Metal-Regular.ttf";
       sha256 = "3718096fff5cf6a76005fdcb786c7f321f496fe6d56fbcb7f664c12c433d8413";
     })

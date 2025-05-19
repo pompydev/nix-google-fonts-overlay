@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-yezidi-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifyezidi/NotoSerifYezidi%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifyezidi/NotoSerifYezidi%5Bwght%5D.ttf?raw=true";
       name = "NotoSerifYezidi_wght_.ttf";
-      sha256 = "ced8cdb5a97bc0646697fb834a5ba098cab86ba50aebf7727a915d4af76ee91a";
+      sha256 = "807b3ec568b2333601e297484565e1ff48adb014aa4d8aaa7eba23dc04e44e05";
     })
   ];
 

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "east-sea-dokdo-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/eastseadokdo/EastSeaDokdo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/eastseadokdo/EastSeaDokdo-Regular.ttf?raw=true";
       name = "EastSeaDokdo-Regular.ttf";
       sha256 = "8cebb39d375134fdbcedef9bf4ec4f6c3f02c39ed0aacd6e83f7a0f435e593b2";
     })

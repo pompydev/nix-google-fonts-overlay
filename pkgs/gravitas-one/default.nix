@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "gravitas-one-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/gravitasone/GravitasOne.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gravitasone/GravitasOne.ttf?raw=true";
       name = "GravitasOne.ttf";
       sha256 = "b40dc45f3354f282107286acf1542072d258c717c8edf1d118ef0105f25e627b";
     })

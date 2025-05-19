@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "nanum-brush-script-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/nanumbrushscript/NanumBrushScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/nanumbrushscript/NanumBrushScript-Regular.ttf?raw=true";
       name = "NanumBrushScript-Regular.ttf";
       sha256 = "27ceaf578c96f594cdf07fe0181b251790acbb746a164e45c1f6473f89911a31";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-nushu-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansnushu/NotoSansNushu-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansnushu/NotoSansNushu-Regular.ttf?raw=true";
       name = "NotoSansNushu-Regular.ttf";
-      sha256 = "9a59c6a764740a008aad18ea495c27185176e4840cfa13c848f3a86c707af88f";
+      sha256 = "dc9cd53e71e2ecfb749b6a824bf779c88af840b9f9bdd22db51246fc6b9fca2d";
     })
   ];
 

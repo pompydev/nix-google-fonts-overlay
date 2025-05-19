@@ -2,15 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "biz-udpmincho-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2d8896e3a19b7ea3d3b11bef2946d7ca67e6694a/ofl/bizudpmincho/BIZUDPMincho-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bizudpmincho/BIZUDPMincho-Regular.ttf?raw=true";
       name = "BIZUDPMincho-Regular.ttf";
-      sha256 = "02e07546c51503acb864004b663f1762f099d8fbe1af7d619b185568568101ef";
+      sha256 = "dbcea04578ac1e9d3484525e870ce491bd04361768f4d2ba4b827d96e20f891d";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bizudpmincho/BIZUDPMincho-Bold.ttf?raw=true";
+      name = "BIZUDPMincho-Bold.ttf";
+      sha256 = "99618e39b881597efc03d58706bd194757c968c1bf7a7017a893efead6b1b260";
     })
   ];
 
@@ -22,6 +27,7 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
      install -Dm644 BIZUDPMincho-Regular.ttf $out/share/fonts/truetype/BIZUDPMincho-Regular.ttf
+     install -Dm644 BIZUDPMincho-Bold.ttf $out/share/fonts/truetype/BIZUDPMincho-Bold.ttf
   '';
 
   meta = with lib; {

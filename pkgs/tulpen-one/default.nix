@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "tulpen-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/tulpenone/TulpenOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tulpenone/TulpenOne-Regular.ttf?raw=true";
       name = "TulpenOne-Regular.ttf";
       sha256 = "b773d2fd30f5ef174560ce0fe05b05c6fa901e710236c4e9eea4c3f669580005";
     })

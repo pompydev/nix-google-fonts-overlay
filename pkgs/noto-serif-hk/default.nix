@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-hk-${version}";
-  version = "2022-06-08-123023";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/85bd399cae055c1b2f7201438d314f9a9784e8ea/ofl/notoserifhk/NotoSerifHK%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifhk/NotoSerifHK%5Bwght%5D.ttf?raw=true";
       name = "NotoSerifHK_wght_.ttf";
-      sha256 = "707ee153cb6b84c10ae98da8e4d680892b604667ccebac3e933c26ed1400d71d";
+      sha256 = "66108860e321aa413e7cb346448b4a418b779d94ae392accb32d163c024ae661";
     })
   ];
 

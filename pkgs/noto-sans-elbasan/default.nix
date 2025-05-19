@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-elbasan-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanselbasan/NotoSansElbasan-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanselbasan/NotoSansElbasan-Regular.ttf?raw=true";
       name = "NotoSansElbasan-Regular.ttf";
-      sha256 = "6b4e554827154cbead6b00c8b261cdde9453845e33871ff081ad68f58c65166d";
+      sha256 = "fce315f8ec66dd6f627cd8e2d076d622ebb244ef609def9621f820f209eaf576";
     })
   ];
 

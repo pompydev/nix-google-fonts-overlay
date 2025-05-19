@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-warang-citi-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanswarangciti/NotoSansWarangCiti-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanswarangciti/NotoSansWarangCiti-Regular.ttf?raw=true";
       name = "NotoSansWarangCiti-Regular.ttf";
-      sha256 = "4d6dff50fd1e5f45eb643ccfc5f67e69bf9425a5e3cd375ddfd64e96ca8a48fb";
+      sha256 = "f4c6ec5458b85e1d7d9452fb404bf0c4762e98ac7eea95aa6a7e5798cb6ffdba";
     })
   ];
 

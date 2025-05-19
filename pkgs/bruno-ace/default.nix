@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "bruno-ace-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/brunoace/BrunoAce-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/brunoace/BrunoAce-Regular.ttf?raw=true";
       name = "BrunoAce-Regular.ttf";
-      sha256 = "8b7f7b78a83b0ed655b479e6a6cc8e1b133f271e2f10882dbc2e0501794ec71e";
+      sha256 = "2ebb34cae30afcb6859757b8c0cc49c49203781216e4446e07a77046c633cc2b";
     })
   ];
 

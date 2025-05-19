@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "bangers-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6a5743e871dea40d1ae5e5889f7bcbb6aab14aad/ofl/bangers/Bangers-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bangers/Bangers-Regular.ttf?raw=true";
       name = "Bangers-Regular.ttf";
-      sha256 = "bedd2be09f6c3503034f76174d0e6e144fd5ba40d4bdec67049acfaac93aeb6c";
+      sha256 = "4160a7311de9342674cce9160cde9fcbb30f48190397d86ff1b70b455af65824";
     })
   ];
 

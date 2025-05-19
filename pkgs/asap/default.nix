@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "asap-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6daa244b0a0c6457128e0132cd4a7c7e8a5a7893/ofl/asap/Asap%5Bwght%5D.ttf?raw=true";
-      name = "Asap_wght_.ttf";
-      sha256 = "a57c8bfe4969bdc57903aac09d0b3d3081b1b00be5079b20e3e864d78a943073";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/asap/Asap%5Bwdth,wght%5D.ttf?raw=true";
+      name = "Asap_wdth,wght_.ttf";
+      sha256 = "a3938b208d7a46d88faf22d2d4221e871ab2cc686c0e555a273b2a126a2bd321";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6daa244b0a0c6457128e0132cd4a7c7e8a5a7893/ofl/asap/Asap-Italic%5Bwght%5D.ttf?raw=true";
-      name = "Asap-Italic_wght_.ttf";
-      sha256 = "22d5c46ef129f55fbf99f1c24b1ebaf3b15be1f6020f9c6e8510f739e2c7657d";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/asap/Asap-Italic%5Bwdth,wght%5D.ttf?raw=true";
+      name = "Asap-Italic_wdth,wght_.ttf";
+      sha256 = "6cea0e3ea852761503c25f3505a328a9f4c064a33d28ab97c78533f093e6ab74";
     })
   ];
 
@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Asap_wght_.ttf $out/share/fonts/truetype/Asap_wght_.ttf
-     install -Dm644 Asap-Italic_wght_.ttf $out/share/fonts/truetype/Asap-Italic_wght_.ttf
+     install -Dm644 Asap_wdth,wght_.ttf $out/share/fonts/truetype/Asap_wdth,wght_.ttf
+     install -Dm644 Asap-Italic_wdth,wght_.ttf $out/share/fonts/truetype/Asap-Italic_wdth,wght_.ttf
   '';
 
   meta = with lib; {

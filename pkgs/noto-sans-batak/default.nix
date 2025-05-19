@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-batak-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansbatak/NotoSansBatak-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansbatak/NotoSansBatak-Regular.ttf?raw=true";
       name = "NotoSansBatak-Regular.ttf";
-      sha256 = "d7913a9681f6bf3f63a3c87f34c87d20bcf8515aceee9c081dc2851292f4efa4";
+      sha256 = "677f8de17de9290bfe1e5bcd6307fa5a99734d052600ef3aaa50121699247db7";
     })
   ];
 

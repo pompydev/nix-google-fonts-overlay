@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "abyssinica-sil-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/80ffd33a4822fd307c1a053ad8d42c01e1a3e199/ofl/abyssinicasil/AbyssinicaSIL-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/abyssinicasil/AbyssinicaSIL-Regular.ttf?raw=true";
       name = "AbyssinicaSIL-Regular.ttf";
-      sha256 = "bf103bdc35c366aea65f5303860627bc68b9d3afb57f1557cb8892a0a08e5a40";
+      sha256 = "f0e4fb92ee26967a3e6462342494956a3798b952345f917e1388913bb191cf2b";
     })
   ];
 

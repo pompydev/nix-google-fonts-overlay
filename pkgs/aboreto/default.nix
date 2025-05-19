@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "aboreto-${version}";
-  version = "2022-06-01-134329";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/cb1d70a463c113cb2c7e2b38a9faf169732a71ba/ofl/aboreto/Aboreto-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/aboreto/Aboreto-Regular.ttf?raw=true";
       name = "Aboreto-Regular.ttf";
-      sha256 = "b9458031bcba06d9b6053ad866c017e1bed673644ca7bd8660cbe0d0c900b8a6";
+      sha256 = "fc702d535857fa2bda802647b9d55f82a07502d4acdfd95b47279b3bf479eaa1";
     })
   ];
 

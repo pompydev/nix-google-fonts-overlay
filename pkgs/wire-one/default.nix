@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "wire-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3f57c8fab77c7854f09cdb020398b5bfd182a7de/ofl/wireone/WireOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/wireone/WireOne-Regular.ttf?raw=true";
       name = "WireOne-Regular.ttf";
       sha256 = "d505059c3c094b921358db3e41be899789edf4c4aec1ec777be1643efcd9fc05";
     })

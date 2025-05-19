@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "cuprum-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/df19ee8f7ea794d3802afb02a61924ebf4bd4b64/ofl/cuprum/Cuprum%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cuprum/Cuprum%5Bwght%5D.ttf?raw=true";
       name = "Cuprum_wght_.ttf";
       sha256 = "be75585aa57a5f1c1d10de61305bb4266effa1b9083722d20c26adf97e911534";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/df19ee8f7ea794d3802afb02a61924ebf4bd4b64/ofl/cuprum/Cuprum-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cuprum/Cuprum-Italic%5Bwght%5D.ttf?raw=true";
       name = "Cuprum-Italic_wght_.ttf";
       sha256 = "1b2fa2441b421e16176ed3b0356949f406ef44497df17b2ee7977aa7f838312a";
     })

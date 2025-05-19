@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "press-start-2p-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/dbd72d6ef9ebea750d33c02c7189633e972d6a40/ofl/pressstart2p/PressStart2P-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pressstart2p/PressStart2P-Regular.ttf?raw=true";
       name = "PressStart2P-Regular.ttf";
       sha256 = "034c77f1f05ec89421e4a63f0e3a4ca1ecf852cc6d2bf611f126f275728e017d";
     })

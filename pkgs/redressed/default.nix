@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "redressed-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f677032495a8f645cd582c084df67cebd5bbee56/apache/redressed/Redressed-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/redressed/Redressed-Regular.ttf?raw=true";
       name = "Redressed-Regular.ttf";
       sha256 = "e7063f1abd35c048ad22c5e52232d9503f3106376f3de7f38125c3a543ba6598";
     })

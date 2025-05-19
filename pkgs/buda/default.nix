@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "buda-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f728618b23f3e5fc327ffb2bcdccaac581853c9e/ofl/buda/Buda-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/buda/Buda-Light.ttf?raw=true";
       name = "Buda-Light.ttf";
       sha256 = "1c8a9bb52f69dba3b66961b792c03e5407f48070bf9ff8436103082f6dd6a720";
     })

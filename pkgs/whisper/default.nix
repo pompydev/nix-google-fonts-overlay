@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "whisper-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/21635fa33f706273ffadc353d1c2f4a0b35e13cd/ofl/whisper/Whisper-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/whisper/Whisper-Regular.ttf?raw=true";
       name = "Whisper-Regular.ttf";
       sha256 = "f1f415a0de888897ab638fe6a0547406ecc469901d26afd06af619ddb4c623ec";
     })

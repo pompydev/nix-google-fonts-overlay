@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "chonburi-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f2bdc7d8394ddd713df33f9a2ef60dea7afe9bf4/ofl/chonburi/Chonburi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/chonburi/Chonburi-Regular.ttf?raw=true";
       name = "Chonburi-Regular.ttf";
       sha256 = "aa0dac4df08af10785ba1dc10121492227f8e4288f0a23d11dd1d1f5a7f6ebfa";
     })

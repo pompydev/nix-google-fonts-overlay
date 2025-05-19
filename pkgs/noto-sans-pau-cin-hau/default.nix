@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-pau-cin-hau-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanspaucinhau/NotoSansPauCinHau-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanspaucinhau/NotoSansPauCinHau-Regular.ttf?raw=true";
       name = "NotoSansPauCinHau-Regular.ttf";
-      sha256 = "50fd145467b5d971b526643c73784e8530f5571f8192876b8d6654f94bf6d47b";
+      sha256 = "148f6ad11e71c58a4c557af7f492a6478b3e96700202a62e7013dd7031057a83";
     })
   ];
 

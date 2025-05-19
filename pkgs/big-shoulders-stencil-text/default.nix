@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "big-shoulders-stencil-text-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4ea17f133ba241776798ab68a43bd10b6a15eee4/ofl/bigshouldersstenciltext/BigShouldersStencilText%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bigshouldersstenciltext/BigShouldersStencilText%5Bwght%5D.ttf?raw=true";
       name = "BigShouldersStencilText_wght_.ttf";
       sha256 = "583e3423e62bb853b4970d7b10d44384d179d86e3e96a0bc54103cfbfb96a122";
     })

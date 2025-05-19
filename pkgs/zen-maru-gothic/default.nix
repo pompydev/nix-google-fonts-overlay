@@ -2,33 +2,33 @@
 
 stdenv.mkDerivation rec {
   name = "zen-maru-gothic-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ef3b6f8df2d299a7a82c68cd8743c8f9c11e1c8f/ofl/zenmarugothic/ZenMaruGothic-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zenmarugothic/ZenMaruGothic-Light.ttf?raw=true";
       name = "ZenMaruGothic-Light.ttf";
       sha256 = "c4e6fa10ff517df37cb0c13038fe2813f3c47afe6577fa4a5573200e4508b2c1";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ef3b6f8df2d299a7a82c68cd8743c8f9c11e1c8f/ofl/zenmarugothic/ZenMaruGothic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zenmarugothic/ZenMaruGothic-Regular.ttf?raw=true";
       name = "ZenMaruGothic-Regular.ttf";
-      sha256 = "d38657d92bbb343a1c6c4f9133025c7991efc52419444d16e31e3a97aaef2d9d";
+      sha256 = "a0c0b53543e0993ae2225e629c833f3d51495ad31720694ff112ce4ce11111ef";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ef3b6f8df2d299a7a82c68cd8743c8f9c11e1c8f/ofl/zenmarugothic/ZenMaruGothic-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zenmarugothic/ZenMaruGothic-Medium.ttf?raw=true";
       name = "ZenMaruGothic-Medium.ttf";
       sha256 = "3cfdb98a13571ede17fcc769f5093a97c38b80a7b9b2ab754a26b4d822092b3b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ef3b6f8df2d299a7a82c68cd8743c8f9c11e1c8f/ofl/zenmarugothic/ZenMaruGothic-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zenmarugothic/ZenMaruGothic-Bold.ttf?raw=true";
       name = "ZenMaruGothic-Bold.ttf";
       sha256 = "fe24426b9c8b5523a0146a8235c8674eccf0493af354a53ec895c3596d9eb745";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ef3b6f8df2d299a7a82c68cd8743c8f9c11e1c8f/ofl/zenmarugothic/ZenMaruGothic-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zenmarugothic/ZenMaruGothic-Black.ttf?raw=true";
       name = "ZenMaruGothic-Black.ttf";
       sha256 = "6bd74fe76cd39ee0ec18775c3661d845343fb3f6f8fa09a3076638417baf741f";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "dr-sugiyama-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/drsugiyama/DrSugiyama-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/drsugiyama/DrSugiyama-Regular.ttf?raw=true";
       name = "DrSugiyama-Regular.ttf";
       sha256 = "8436c1eae3a06126a6e0aa85b1dffb1b507d39eab7b6512a9bb1adc5d514d9b9";
     })

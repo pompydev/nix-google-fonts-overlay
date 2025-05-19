@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "kapakana-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/89317c42d5be47346f161fcbde8bd196b1596580/ofl/kapakana/Kapakana%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kapakana/Kapakana%5Bwght%5D.ttf?raw=true";
       name = "Kapakana_wght_.ttf";
-      sha256 = "5a3cd4c8e88abc776ceb92b5bdf29e61d71ad5d594cae896cb5d5ce571d7fe32";
+      sha256 = "5ff3af9e470b5b278d645099214818ceb3933b542fbfd4b38c0a9b0be29fd35e";
     })
   ];
 

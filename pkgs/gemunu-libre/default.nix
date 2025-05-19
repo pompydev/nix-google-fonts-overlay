@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "gemunu-libre-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/77b7a8700e8ed0d45b9f2ecbfd378ac3a97185ed/ofl/gemunulibre/GemunuLibre%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gemunulibre/GemunuLibre%5Bwght%5D.ttf?raw=true";
       name = "GemunuLibre_wght_.ttf";
       sha256 = "e723b7f44b06b2443b44eb734f32794eae64915029842d2b2187eadd74b377a6";
     })

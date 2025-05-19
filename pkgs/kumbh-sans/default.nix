@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "kumbh-sans-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a96b1ce809acfe0bf73e608a788d3e0221a286e3/ofl/kumbhsans/KumbhSans%5Bwght%5D.ttf?raw=true";
-      name = "KumbhSans_wght_.ttf";
-      sha256 = "7cd32a2184734c6753a6a5ed84257a23a5911c6e415fd0972e9fcef71a767f83";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kumbhsans/KumbhSans%5BYOPQ,wght%5D.ttf?raw=true";
+      name = "KumbhSans_YOPQ,wght_.ttf";
+      sha256 = "f29b8814e682a1524c1b6cad866700c844c287c2df1f6d362dcaec4cc75dadf9";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 KumbhSans_wght_.ttf $out/share/fonts/truetype/KumbhSans_wght_.ttf
+     install -Dm644 KumbhSans_YOPQ,wght_.ttf $out/share/fonts/truetype/KumbhSans_YOPQ,wght_.ttf
   '';
 
   meta = with lib; {

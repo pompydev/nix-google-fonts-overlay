@@ -2,33 +2,33 @@
 
 stdenv.mkDerivation rec {
   name = "hind-mysuru-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b2a8b187d3cf35d1556cf1ea4424b496d5cd8085/ofl/hindmysuru/HindMysuru-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hindmysuru/HindMysuru-Light.ttf?raw=true";
       name = "HindMysuru-Light.ttf";
       sha256 = "40634c5beb3700c0f1b556c8ddf4dda27e6a20fb1b90da7a5cae85c536284887";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b2a8b187d3cf35d1556cf1ea4424b496d5cd8085/ofl/hindmysuru/HindMysuru-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hindmysuru/HindMysuru-Regular.ttf?raw=true";
       name = "HindMysuru-Regular.ttf";
       sha256 = "a38a33806d9f008fbdf204d2f684e80b23cecfc42ee0c2aed81c7b3a8333e7f2";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b2a8b187d3cf35d1556cf1ea4424b496d5cd8085/ofl/hindmysuru/HindMysuru-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hindmysuru/HindMysuru-Medium.ttf?raw=true";
       name = "HindMysuru-Medium.ttf";
       sha256 = "cef72258d349131d78ca9d5de286d4d54199d27e506287ad08345b01626c3240";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b2a8b187d3cf35d1556cf1ea4424b496d5cd8085/ofl/hindmysuru/HindMysuru-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hindmysuru/HindMysuru-SemiBold.ttf?raw=true";
       name = "HindMysuru-SemiBold.ttf";
       sha256 = "7a9eed3f486affb0e469acf75e60562743a1993737f79635bed740aaa8c82a84";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b2a8b187d3cf35d1556cf1ea4424b496d5cd8085/ofl/hindmysuru/HindMysuru-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hindmysuru/HindMysuru-Bold.ttf?raw=true";
       name = "HindMysuru-Bold.ttf";
       sha256 = "37e0493369db44f74d42ef36c2dda9a1977f9a724e5ac51a2ca7edd38189aa28";
     })

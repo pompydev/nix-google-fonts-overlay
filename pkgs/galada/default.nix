@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "galada-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a98b83a29a5bb99796787f4557cb35c6c419f8bd/ofl/galada/Galada-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/galada/Galada-Regular.ttf?raw=true";
       name = "Galada-Regular.ttf";
       sha256 = "acc22b41ee470dc542e15b5f8907c7fbebef1b9c01eb20e4127bdbf052b006ee";
     })

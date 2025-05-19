@@ -2,35 +2,35 @@
 
 stdenv.mkDerivation rec {
   name = "khand-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/21bb9bd12fb1cf1e94ce5817d3572a402cbbbc2c/ofl/khand/Khand-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/khand/Khand-Light.ttf?raw=true";
       name = "Khand-Light.ttf";
-      sha256 = "aa330bf068dd64dea07ef1a764c885053efddb51533975fe1b2773aa608bc5df";
+      sha256 = "52429cff48e8a2a77a63940ca7f7957dfd404c2375691272fc7a386e33fe0055";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/21bb9bd12fb1cf1e94ce5817d3572a402cbbbc2c/ofl/khand/Khand-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/khand/Khand-Regular.ttf?raw=true";
       name = "Khand-Regular.ttf";
-      sha256 = "c0102bfe641ba12cfb072c5bcdd8c3d7723e03aed17e785fecad1d45d6333a06";
+      sha256 = "fb2b604a80f9fd6e3532b1f25c964bf56002240e2da0ea7a7265eec7bb4bc519";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/21bb9bd12fb1cf1e94ce5817d3572a402cbbbc2c/ofl/khand/Khand-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/khand/Khand-Medium.ttf?raw=true";
       name = "Khand-Medium.ttf";
-      sha256 = "959f51907a0581e8ab23383e8743badc516990643385af8999ae6f20657188e0";
+      sha256 = "40405d6ac45cec61455b960bc13a353536b9787dff38e8070ad3b9cc18a80639";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/21bb9bd12fb1cf1e94ce5817d3572a402cbbbc2c/ofl/khand/Khand-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/khand/Khand-SemiBold.ttf?raw=true";
       name = "Khand-SemiBold.ttf";
-      sha256 = "373745b494d6ec8dbe736107624a3494d1c3fea45a55f09309cf8e2d4ebd588c";
+      sha256 = "918cb97509c99fe0a9acb857dfa90e5524fc231791fedd76e6bc1f9d94fa038e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/21bb9bd12fb1cf1e94ce5817d3572a402cbbbc2c/ofl/khand/Khand-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/khand/Khand-Bold.ttf?raw=true";
       name = "Khand-Bold.ttf";
-      sha256 = "cc10f4a89f64cb03ec21e07a371e6a4892169192ffb2795a8fecd236e88f6f31";
+      sha256 = "1e166cadaf044765dc41f99386756376d8b648c71e198133653c142a4e9a086e";
     })
   ];
 

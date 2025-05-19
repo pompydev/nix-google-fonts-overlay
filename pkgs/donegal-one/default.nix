@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "donegal-one-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/donegalone/DonegalOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/donegalone/DonegalOne-Regular.ttf?raw=true";
       name = "DonegalOne-Regular.ttf";
       sha256 = "1f9b07bbaf3813103281848f782fae74499f5dfc3b3b9f4e90ebea4aa42fbc75";
     })

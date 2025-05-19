@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rocknroll-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7ed0c3a1b2321dbc2b073177fdc83e51f93d9c2e/ofl/rocknrollone/RocknRollOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rocknrollone/RocknRollOne-Regular.ttf?raw=true";
       name = "RocknRollOne-Regular.ttf";
       sha256 = "dc0f5ff975851827f63f2c6bfed128ffbca14b6399a10fb5e1711215c0108526";
     })

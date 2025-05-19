@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-georgian-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifgeorgian/NotoSerifGeorgian%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifgeorgian/NotoSerifGeorgian%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSerifGeorgian_wdth,wght_.ttf";
-      sha256 = "f5cf90453b19f33fb1a128238cc1a559d888cc17f59f603626619b2535b85222";
+      sha256 = "a13a90c44a612ab80f79032d3edbbc7f6757f0c6b1613dba1a92f38077cccc57";
     })
   ];
 

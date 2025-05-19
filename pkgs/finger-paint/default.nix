@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "finger-paint-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3a2f5cae34c258424a223e8d889b58fa63d18428/ofl/fingerpaint/FingerPaint-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/fingerpaint/FingerPaint-Regular.ttf?raw=true";
       name = "FingerPaint-Regular.ttf";
       sha256 = "fce000ae028b09ca53949172a838282c678796e1542d259e6da373e257377fc8";
     })

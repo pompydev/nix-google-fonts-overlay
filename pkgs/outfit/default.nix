@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "outfit-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/29e94d990c84a54f83644e7c43f42dfc9e1a4ac7/ofl/outfit/Outfit%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/outfit/Outfit%5Bwght%5D.ttf?raw=true";
       name = "Outfit_wght_.ttf";
-      sha256 = "63bf759fb9d5f96edf6909adbfd3c8e6d44f7d1681064d6065dd2d1d258468e7";
+      sha256 = "fc7287273e66929776e2ba54f144fe699080bec29f61bf649d70d871468aeade";
     })
   ];
 

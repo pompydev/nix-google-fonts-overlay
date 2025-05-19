@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "corinthia-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/51050e9d1358c58702b96017bc891ad59342f5bd/ofl/corinthia/Corinthia-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/corinthia/Corinthia-Regular.ttf?raw=true";
       name = "Corinthia-Regular.ttf";
       sha256 = "ee2adb172a41a52c5f6b7de6de5953bf8e9e6bdfa5bc641fdddbdf4c737fc98e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/51050e9d1358c58702b96017bc891ad59342f5bd/ofl/corinthia/Corinthia-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/corinthia/Corinthia-Bold.ttf?raw=true";
       name = "Corinthia-Bold.ttf";
       sha256 = "86c58bf8f6a7160f9914160fb3c8dfbf75d5b145dd0ab943a0b82913836516f9";
     })

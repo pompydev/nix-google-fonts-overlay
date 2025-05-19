@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-caucasian-albanian-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanscaucasianalbanian/NotoSansCaucasianAlbanian-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanscaucasianalbanian/NotoSansCaucasianAlbanian-Regular.ttf?raw=true";
       name = "NotoSansCaucasianAlbanian-Regular.ttf";
-      sha256 = "0faeefe156c6952e432ead92629ea3b835b060f45a01311ac27f3038c01888d9";
+      sha256 = "7d5a81e7f9f90eb1aaef9935b2c4d68b6300939a2df9dbb9472b38a4fbec50bc";
     })
   ];
 

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "chewy-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/577b1ca8c24482dfa78cfdcf6efc84c5a427ef15/apache/chewy/Chewy-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/chewy/Chewy-Regular.ttf?raw=true";
       name = "Chewy-Regular.ttf";
       sha256 = "7cf75ea288f82fd20badea8ab4da7a656a96a7277c170811e813b3d3d6294147";
     })

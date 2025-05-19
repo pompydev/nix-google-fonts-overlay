@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "benne-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b4de97e85d669fd689f5d811bcc8b6aadd9295f8/ofl/benne/Benne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/benne/Benne-Regular.ttf?raw=true";
       name = "Benne-Regular.ttf";
       sha256 = "681a3aadbde40f411b34bf6fb555971b1d6c1e979adf7eea5793f9bdd5ec7f3d";
     })

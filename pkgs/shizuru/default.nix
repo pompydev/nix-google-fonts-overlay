@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "shizuru-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/1031401d9f1fb8372738a98d16706395a2be5585/ofl/shizuru/Shizuru-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/shizuru/Shizuru-Regular.ttf?raw=true";
       name = "Shizuru-Regular.ttf";
       sha256 = "5954562e5fbb40fffe6361cbbcac0d4a4c9c5e2897d7b20876f294fbcc243f7f";
     })

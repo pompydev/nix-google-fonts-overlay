@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "galdeano-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/galdeano/Galdeano-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/galdeano/Galdeano-Regular.ttf?raw=true";
       name = "Galdeano-Regular.ttf";
       sha256 = "ec2379e6ae1192420eb7a633c170890cf85944abc73e6ef6c68371d1c05c6652";
     })

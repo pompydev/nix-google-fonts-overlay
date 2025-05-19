@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sigmar-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b7f0cc9e1bf34f771d90dff4a8e603e3dba59bb6/ofl/sigmarone/SigmarOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sigmarone/SigmarOne-Regular.ttf?raw=true";
       name = "SigmarOne-Regular.ttf";
       sha256 = "0817eb698a5c4aac2c07bb84be1ead806494c489da468db23f5ffd9bcf3f0970";
     })

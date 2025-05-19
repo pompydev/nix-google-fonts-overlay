@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "gaegu-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/gaegu/Gaegu-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gaegu/Gaegu-Light.ttf?raw=true";
       name = "Gaegu-Light.ttf";
       sha256 = "da44ad6e5823819599ec42e1a516f23002cc0e72f968f93bd49e793360cd77ca";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/gaegu/Gaegu-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gaegu/Gaegu-Regular.ttf?raw=true";
       name = "Gaegu-Regular.ttf";
       sha256 = "aa52c98336f7c62e2896fc8b12b56a75d5b476d88a2f104b0980f4f7ce0adfc3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/gaegu/Gaegu-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gaegu/Gaegu-Bold.ttf?raw=true";
       name = "Gaegu-Bold.ttf";
       sha256 = "cc38a4af9506a45254d1ce07c589ec473d9e5f0be319e5a77b17c214903f8c1c";
     })

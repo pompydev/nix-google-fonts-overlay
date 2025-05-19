@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "felipa-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/felipa/Felipa-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/felipa/Felipa-Regular.ttf?raw=true";
       name = "Felipa-Regular.ttf";
       sha256 = "d3f07e2669e046acc1030139a4b08046d7eca87c0b477a8cc99ac1c46af84edc";
     })

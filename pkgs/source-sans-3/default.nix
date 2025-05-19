@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "source-sans-3-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4013637d2e1a67ceb8b0a50957bbbff41a27d0f6/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf?raw=true";
       name = "SourceSans3_wght_.ttf";
-      sha256 = "8b95ef0061a8eb29ec83589c30e9c4cea279590782ac58963ab5edfca9a51493";
+      sha256 = "042fe2cc0b933e328410d7acbd0aa6a1873dca5aef81875f4bc214b08825c7b9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4013637d2e1a67ceb8b0a50957bbbff41a27d0f6/ofl/sourcesans3/SourceSans3-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sourcesans3/SourceSans3-Italic%5Bwght%5D.ttf?raw=true";
       name = "SourceSans3-Italic_wght_.ttf";
-      sha256 = "31463a98f9bcd77c8a1451906823054d821e70b25cc6c4ec8d3eff670ffc3855";
+      sha256 = "39e3ab05ccd7cb94907c31005bb5bec1d5432f0b096a2b782976e217a540eb6c";
     })
   ];
 

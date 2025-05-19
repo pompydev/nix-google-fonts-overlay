@@ -2,20 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "merienda-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/merienda/Merienda-Regular.ttf?raw=true";
-      name = "Merienda-Regular.ttf";
-      sha256 = "0712e50e6daea6780a034b7f4a01bca9041d483585ae0cefa388ba43c508c1be";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/merienda/Merienda-Bold.ttf?raw=true";
-      name = "Merienda-Bold.ttf";
-      sha256 = "38e1eef698b73d44fc467764bf86b9b6f2ed3e07036d584604754d07f465de2e";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/merienda/Merienda%5Bwght%5D.ttf?raw=true";
+      name = "Merienda_wght_.ttf";
+      sha256 = "a91e4d88a50b4f80c7b1f31fe46e376eb87b72247d2a216f5e5be1881340deea";
     })
   ];
 
@@ -26,8 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Merienda-Regular.ttf $out/share/fonts/truetype/Merienda-Regular.ttf
-     install -Dm644 Merienda-Bold.ttf $out/share/fonts/truetype/Merienda-Bold.ttf
+     install -Dm644 Merienda_wght_.ttf $out/share/fonts/truetype/Merienda_wght_.ttf
   '';
 
   meta = with lib; {

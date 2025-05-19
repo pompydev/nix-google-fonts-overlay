@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "mea-culpa-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/73ac3ca72a6064df6b2590fe3cad5cf15133b8d2/ofl/meaculpa/MeaCulpa-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/meaculpa/MeaCulpa-Regular.ttf?raw=true";
       name = "MeaCulpa-Regular.ttf";
       sha256 = "c5a293151793820d25ff10844f1418170ae755fa61d0a126cefa1e9b82f21ce5";
     })

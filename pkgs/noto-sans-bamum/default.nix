@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-bamum-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansbamum/NotoSansBamum%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansbamum/NotoSansBamum%5Bwght%5D.ttf?raw=true";
       name = "NotoSansBamum_wght_.ttf";
-      sha256 = "7610a9ae25b9d174e734b8ab0f5924ced28d51d444a8e1da21655c3a9f9f957d";
+      sha256 = "ac9c498f2030192040e2c5541302ed428a81184ff4635faacd32417a58d83e53";
     })
   ];
 

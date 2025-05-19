@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "poor-story-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/1ef157d3939299d14563418b2f7271b20f0e9161/ofl/poorstory/PoorStory-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/poorstory/PoorStory-Regular.ttf?raw=true";
       name = "PoorStory-Regular.ttf";
       sha256 = "831ab87f7b5463f9cd83ac249bf386816f3a478f1d226427c88cac907adb7ee2";
     })

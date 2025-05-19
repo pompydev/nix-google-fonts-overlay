@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-samaritan-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssamaritan/NotoSansSamaritan-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanssamaritan/NotoSansSamaritan-Regular.ttf?raw=true";
       name = "NotoSansSamaritan-Regular.ttf";
-      sha256 = "4878dd9a29f8d24ba1869c85ae5c3b7056e677a14b355135f3359b90b14e1ecc";
+      sha256 = "b2e86cdcac51ecae8948cac8a6925bb1c2e98f8a64e5cf83bb05f1294cd79810";
     })
   ];
 

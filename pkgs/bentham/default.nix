@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "bentham-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4e933f27bc3d27d51d0b455d1b50b399796fa72a/ofl/bentham/Bentham-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bentham/Bentham-Regular.ttf?raw=true";
       name = "Bentham-Regular.ttf";
       sha256 = "6b5d6ac11b4902fc6912c3afb99520e290f59a56245228ca7529fe3937cba793";
     })

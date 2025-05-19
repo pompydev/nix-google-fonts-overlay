@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "literata-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2f7e976afd0935d8fef127fbe92cbcf300913ef4/ofl/literata/Literata%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/literata/Literata%5Bopsz,wght%5D.ttf?raw=true";
       name = "Literata_opsz,wght_.ttf";
-      sha256 = "b267914c907470fdfaa28e626fa11366ccec9b1bafa6cd37b1278f27256a61f4";
+      sha256 = "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2f7e976afd0935d8fef127fbe92cbcf300913ef4/ofl/literata/Literata-Italic%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/literata/Literata-Italic%5Bopsz,wght%5D.ttf?raw=true";
       name = "Literata-Italic_opsz,wght_.ttf";
-      sha256 = "913038c9313a9a7d2fdc30ef8a6088defbb106bb2149486fd8cfd9f307884392";
+      sha256 = "d483dfaeba9cbf4ce71d32a52ee65df82f7e35b15fff8d1011cdb242d1fcd465";
     })
   ];
 

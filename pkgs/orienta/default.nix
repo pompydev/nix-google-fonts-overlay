@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "orienta-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/orienta/Orienta-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/orienta/Orienta-Regular.ttf?raw=true";
       name = "Orienta-Regular.ttf";
-      sha256 = "a5abf818a4fdfcdeea109e3bb8b4bd1c94e4c914dca76ab04d01183fba2179da";
+      sha256 = "c7ca99f5789c097565d12313a23449eeb7b46a9d60342419ab696870793ca291";
     })
   ];
 

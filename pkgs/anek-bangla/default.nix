@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "anek-bangla-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/60d08bb25d216d2394094e3ab5e61f92d354bbd8/ofl/anekbangla/AnekBangla%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/anekbangla/AnekBangla%5Bwdth,wght%5D.ttf?raw=true";
       name = "AnekBangla_wdth,wght_.ttf";
       sha256 = "8b4ec2eaf7400ea9903718a4addf3135475292e6e0b04db7735d0f999289d919";
     })

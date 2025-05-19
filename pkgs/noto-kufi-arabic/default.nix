@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-kufi-arabic-${version}";
-  version = "2022-04-28-030829";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f7d34edb8b8aa4aa3c19e49ea7ece1ac9b354e7b/ofl/notokufiarabic/NotoKufiArabic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notokufiarabic/NotoKufiArabic%5Bwght%5D.ttf?raw=true";
       name = "NotoKufiArabic_wght_.ttf";
-      sha256 = "e315b2a227ffed14f9d58860c784b82cf88ea90802c902da11f9acb65b25dabd";
+      sha256 = "494f6b61469d7a02a2d63f0fc4930bb007388d8cfe551de5eb98354e100889f3";
     })
   ];
 

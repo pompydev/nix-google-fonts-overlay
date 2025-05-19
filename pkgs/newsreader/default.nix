@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "newsreader-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/991ce1de6075188e6b8977a5aa9fcd3610a4e946/ofl/newsreader/Newsreader%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/newsreader/Newsreader%5Bopsz,wght%5D.ttf?raw=true";
       name = "Newsreader_opsz,wght_.ttf";
       sha256 = "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/991ce1de6075188e6b8977a5aa9fcd3610a4e946/ofl/newsreader/Newsreader-Italic%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/newsreader/Newsreader-Italic%5Bopsz,wght%5D.ttf?raw=true";
       name = "Newsreader-Italic_opsz,wght_.ttf";
       sha256 = "796668611f80b64d5adf182fde3b6f29ed83b4e7cbec7b96937e84ac01364792";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-color-emoji-compat-test-${version}";
-  version = "2022-02-23-063905";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/186b5bc050d1372823bb9d565585ebc3b3385a54/ofl/notocoloremojicompattest/NotoColorEmojiCompatTest-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notocoloremojicompattest/NotoColorEmojiCompatTest-Regular.ttf?raw=true";
       name = "NotoColorEmojiCompatTest-Regular.ttf";
       sha256 = "6e549759a4476fb250b0f787fd84689f8edeef15eebc8779d5ce5159534db6cb";
     })

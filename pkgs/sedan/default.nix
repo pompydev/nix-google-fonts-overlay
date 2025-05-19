@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "sedan-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/sedan/Sedan-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sedan/Sedan-Regular.ttf?raw=true";
       name = "Sedan-Regular.ttf";
-      sha256 = "d3a77b907804d1ca4bf9532a3225db588d15fd75cf9d3c11f305dd693c85f02e";
+      sha256 = "ad6ea5b34a1e5508bc35ac01c9aa23367c9aace7e1cd42d54bcb517ec788e0e8";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/sedan/Sedan-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sedan/Sedan-Italic.ttf?raw=true";
       name = "Sedan-Italic.ttf";
-      sha256 = "99290cd3dcd1a56a0fa3360727ec2dac2bb2b1ddb0708fa1c6cc8e5d246c30f8";
+      sha256 = "d76f24f467075ba42c7483cde7ab8f785bd10a74e6e7eb967ab10c876bac1051";
     })
   ];
 

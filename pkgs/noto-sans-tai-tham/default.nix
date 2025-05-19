@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-tai-tham-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanstaitham/NotoSansTaiTham%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanstaitham/NotoSansTaiTham%5Bwght%5D.ttf?raw=true";
       name = "NotoSansTaiTham_wght_.ttf";
-      sha256 = "a95a6dabbdf3f381d98ebc1b2e6df7a8cc918acb469ba77a56c2b7a341894693";
+      sha256 = "a053b99fc5ed0a3e5fb14eecbbf137245cb0b8c34c2cb4ffd0872db3097bcd0a";
     })
   ];
 

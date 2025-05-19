@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-saurashtra-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssaurashtra/NotoSansSaurashtra-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanssaurashtra/NotoSansSaurashtra-Regular.ttf?raw=true";
       name = "NotoSansSaurashtra-Regular.ttf";
-      sha256 = "6b5944253e7a33a9336317de9b73bb8a137e7f7795e9f9f2ef82fc13cc665f5c";
+      sha256 = "d2df88b4e293636d04c363b13dc5c6f88fca0e9a3b6fece52f12c11d77e9e566";
     })
   ];
 

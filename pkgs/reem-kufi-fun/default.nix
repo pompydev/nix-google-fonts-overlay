@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "reem-kufi-fun-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/35a8cf3bf9ae2f862abf63d18fdeadb70694fad1/ofl/reemkufifun/ReemKufiFun%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/reemkufifun/ReemKufiFun%5Bwght%5D.ttf?raw=true";
       name = "ReemKufiFun_wght_.ttf";
-      sha256 = "4cc6c2ef6fc89ad3b1e507a7fc5ce9559b64b3ff3a10aca45768a67a24a7279f";
+      sha256 = "fdaa5e89cbf79d3198d6f19b52024a5241963e767fa7221ba83da12ae00baaeb";
     })
   ];
 

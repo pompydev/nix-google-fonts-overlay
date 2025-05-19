@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "adobe-blank-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/54875d8a836ef2b05ea29bcf51f797929c2def61/ofl/adobeblank/AdobeBlank-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/adobeblank/AdobeBlank-Regular.ttf?raw=true";
       name = "AdobeBlank-Regular.ttf";
       sha256 = "3b468f6efabe9274e804edf10477c8bdaf27cb2a76f50a5dd7cca34599f8b918";
     })

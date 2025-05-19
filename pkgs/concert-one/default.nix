@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "concert-one-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/concertone/ConcertOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/concertone/ConcertOne-Regular.ttf?raw=true";
       name = "ConcertOne-Regular.ttf";
-      sha256 = "1651e05fba9a75b10a5c5c5bd83de642cbd47e820a9639a3f1592c8eb5d0342c";
+      sha256 = "54e934724b90a9c20d53b25a8d17574a7631f8461e29c8462bd7b36d49fc1e78";
     })
   ];
 

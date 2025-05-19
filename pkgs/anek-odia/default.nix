@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "anek-odia-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/059d40cac1819d084d21a60e63f2af92631dfa53/ofl/anekodia/AnekOdia%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/anekodia/AnekOdia%5Bwdth,wght%5D.ttf?raw=true";
       name = "AnekOdia_wdth,wght_.ttf";
       sha256 = "673bb6e51b71af1de1f11f9a547a3a58c50a6fa32d480958e1ef0f06980ca45f";
     })

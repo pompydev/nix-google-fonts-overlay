@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-hebrew-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifhebrew/NotoSerifHebrew%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifhebrew/NotoSerifHebrew%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSerifHebrew_wdth,wght_.ttf";
-      sha256 = "b16cd8d47acc53746c84a221c6aeea9f2d116477474796f006107695e5980981";
+      sha256 = "93caef921360788dc3b0e32136bb26f16bc57717ec482d48fc7fd43820617165";
     })
   ];
 

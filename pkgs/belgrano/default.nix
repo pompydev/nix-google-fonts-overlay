@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "belgrano-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/162b8ed636547bdbdb0592ba206b2986f13633d3/ofl/belgrano/Belgrano-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/belgrano/Belgrano-Regular.ttf?raw=true";
       name = "Belgrano-Regular.ttf";
       sha256 = "5bf095dfbc56718bea7d74c0b30c36413714aaf8833d2cb012b604b64fd383d9";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-lydian-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanslydian/NotoSansLydian-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanslydian/NotoSansLydian-Regular.ttf?raw=true";
       name = "NotoSansLydian-Regular.ttf";
-      sha256 = "a01cc8ef4ce62c34d126a0c68b42944da3f5e45cde8e130056872f293dcab9e1";
+      sha256 = "25466c3aa089d25abf5829a29c6a72738e006a21865a48e03c58411b0227920a";
     })
   ];
 

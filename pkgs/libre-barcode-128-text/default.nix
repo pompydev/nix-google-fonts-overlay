@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "libre-barcode-128-text-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a6ef91d18f15cf351952c56f8021678f15fc616c/ofl/librebarcode128text/LibreBarcode128Text-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librebarcode128text/LibreBarcode128Text-Regular.ttf?raw=true";
       name = "LibreBarcode128Text-Regular.ttf";
       sha256 = "0e8a268749e77c8bf1644a19cdd65e83af6486bcadc06225e486cdf569d58f58";
     })

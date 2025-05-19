@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-carian-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanscarian/NotoSansCarian-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanscarian/NotoSansCarian-Regular.ttf?raw=true";
       name = "NotoSansCarian-Regular.ttf";
-      sha256 = "962bac788f4ab38c61f6de86d5b8c1bca2b105d88a511c10b9a9058c6b1291aa";
+      sha256 = "73f83bf71bac6046bd409f42706cd5e3706bce4521150302be3010ef6a161ecd";
     })
   ];
 

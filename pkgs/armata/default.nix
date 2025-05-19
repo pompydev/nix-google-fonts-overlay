@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "armata-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ecc5f91e743cb05a846e391b99246c033bf11bbf/ofl/armata/Armata-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/armata/Armata-Regular.ttf?raw=true";
       name = "Armata-Regular.ttf";
       sha256 = "ee4a6a0410bafc1d0b46bd4551e5360d4ef7603eea1a9c783d46e9569a936905";
     })

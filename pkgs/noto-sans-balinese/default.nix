@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-balinese-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansbalinese/NotoSansBalinese%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansbalinese/NotoSansBalinese%5Bwght%5D.ttf?raw=true";
       name = "NotoSansBalinese_wght_.ttf";
-      sha256 = "123ba3b34d9255902b3d12b1161e69966fd2b9cfb0683205d9e234b022e25bae";
+      sha256 = "ccca9d3492b86930d8e0272d1e06d9e2e11147489b04d9858aa58e766cc30374";
     })
   ];
 

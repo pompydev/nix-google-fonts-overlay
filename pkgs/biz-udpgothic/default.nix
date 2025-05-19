@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "biz-udpgothic-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/01ac47e0b1cddbc298334c69a5dfafb0205ffa28/ofl/bizudpgothic/BIZUDPGothic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bizudpgothic/BIZUDPGothic-Regular.ttf?raw=true";
       name = "BIZUDPGothic-Regular.ttf";
-      sha256 = "a8e73ddd5a208b2bef62c2846a87c173cd7aae101725044d9e723d361093d7db";
+      sha256 = "258d7156c165f2ff774b6efee637c22c3b950de0d8a10e501137061bc8085d01";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/01ac47e0b1cddbc298334c69a5dfafb0205ffa28/ofl/bizudpgothic/BIZUDPGothic-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bizudpgothic/BIZUDPGothic-Bold.ttf?raw=true";
       name = "BIZUDPGothic-Bold.ttf";
-      sha256 = "91e6e67841a04533e893885de3643333a803e35242d8b60e343107f506ac5bfa";
+      sha256 = "30eba52fc837e8b62c97d4b82e6706583149fb7294e3712dd71a655eaea80a90";
     })
   ];
 

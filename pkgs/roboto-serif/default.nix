@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "roboto-serif-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a84cf0f0bb7f869fbfe664b0014f17176537417d/ofl/robotoserif/RobotoSerif%5BGRAD,opsz,wdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/robotoserif/RobotoSerif%5BGRAD,opsz,wdth,wght%5D.ttf?raw=true";
       name = "RobotoSerif_GRAD,opsz,wdth,wght_.ttf";
-      sha256 = "2e4ea0467fdb230d725d652cac5ffec22f4c33edfcf48594800628506c32ec85";
+      sha256 = "351ced75f3851806aa6d846b669361521eb1925cfc530396df9c1a1b77061ddb";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a84cf0f0bb7f869fbfe664b0014f17176537417d/ofl/robotoserif/RobotoSerif-Italic%5BGRAD,opsz,wdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/robotoserif/RobotoSerif-Italic%5BGRAD,opsz,wdth,wght%5D.ttf?raw=true";
       name = "RobotoSerif-Italic_GRAD,opsz,wdth,wght_.ttf";
-      sha256 = "3ddd86bc67f6e865f1e2bf2303bb95149b7869f5d064e4eb34e7cb3b8103c2bf";
+      sha256 = "695ffbe6bfd0893a8de90b1ea13632e7e838bc7427b818584e1daf82b36b99de";
     })
   ];
 

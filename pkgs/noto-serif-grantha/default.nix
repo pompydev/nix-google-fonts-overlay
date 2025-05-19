@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-grantha-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifgrantha/NotoSerifGrantha-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifgrantha/NotoSerifGrantha-Regular.ttf?raw=true";
       name = "NotoSerifGrantha-Regular.ttf";
-      sha256 = "469306809e14c3ab636ae07d5c2552252352a9e924ce53c90da84dc2f0c8cfb4";
+      sha256 = "f47a1d121f525a1bedffdc836ddbc824c005bbaf25076650df93c5292122f94a";
     })
   ];
 

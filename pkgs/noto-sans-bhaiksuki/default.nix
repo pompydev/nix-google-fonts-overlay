@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-bhaiksuki-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansbhaiksuki/NotoSansBhaiksuki-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansbhaiksuki/NotoSansBhaiksuki-Regular.ttf?raw=true";
       name = "NotoSansBhaiksuki-Regular.ttf";
-      sha256 = "c2b72982fc4c28287a5df6dccfbec65d2a74e3f7526e4a083195160d6211f80d";
+      sha256 = "eac343bece0d783218f3ab574df20217c0e165de3d04cd6fef8b47934605e0d9";
     })
   ];
 

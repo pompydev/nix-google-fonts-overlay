@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "stalinist-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/47acff4b8a9426b1da5d8e951a88f339bb95a7aa/ofl/stalinistone/StalinistOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/stalinistone/StalinistOne-Regular.ttf?raw=true";
       name = "StalinistOne-Regular.ttf";
       sha256 = "73cc48eefa01543b09fd3df9bab6af2a302e52e292b8625f4b62c868bc152eeb";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-runic-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansrunic/NotoSansRunic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansrunic/NotoSansRunic-Regular.ttf?raw=true";
       name = "NotoSansRunic-Regular.ttf";
-      sha256 = "49e540798dedccf24301437fb5ea5c8a3f42143b1b6c108c1d48c78a41c4ce0f";
+      sha256 = "615b6c1166a8c51816dc1536784acbf486547e3bed03dbfdd70910e10066793b";
     })
   ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "englebert-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/englebert/Englebert-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/englebert/Englebert-Regular.ttf?raw=true";
       name = "Englebert-Regular.ttf";
-      sha256 = "e7c5cf4ffa49ba93289a0434f7db8bf784983a97734588871cd93965ce5efd33";
+      sha256 = "97be7df4f050113b713077b9cb4a51e7f62c155ba22c7adf7ee65e0d7b0f7577";
     })
   ];
 

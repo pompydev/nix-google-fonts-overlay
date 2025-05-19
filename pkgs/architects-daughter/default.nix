@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "architects-daughter-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2a0c94b33e35d8fca983a4e50efdf7de50019ce2/ofl/architectsdaughter/ArchitectsDaughter-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/architectsdaughter/ArchitectsDaughter-Regular.ttf?raw=true";
       name = "ArchitectsDaughter-Regular.ttf";
       sha256 = "6159718a08898e34bc1cb7354086141a5f9a70b73e54dbec27ead0d59a697359";
     })

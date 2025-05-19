@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "rammetto-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/rammettoone/RammettoOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rammettoone/RammettoOne-Regular.ttf?raw=true";
       name = "RammettoOne-Regular.ttf";
-      sha256 = "2e42c03b2df082392e5dfe3fcb74d25b6b415eedc83794d61a97e4377208db9d";
+      sha256 = "0063c5480f7868be5dd95dd668575643ff953199541dce65fe5a88310bd7733f";
     })
   ];
 

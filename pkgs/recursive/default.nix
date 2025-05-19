@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "recursive-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90cefea260c147a08c59c8c5cbe4fa28c40ae4f9/ofl/recursive/Recursive%5BCASL,CRSV,MONO,slnt,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/recursive/Recursive%5BCASL,CRSV,MONO,slnt,wght%5D.ttf?raw=true";
       name = "Recursive_CASL,CRSV,MONO,slnt,wght_.ttf";
-      sha256 = "b91b4e4d33f1b8bb50ec20e819224ced5e30ba77b306cae6c63d39c278c8952d";
+      sha256 = "653221ca467f4732fe6856ac493f6c409e9f56a7674abe36b2364acc89796f7c";
     })
   ];
 

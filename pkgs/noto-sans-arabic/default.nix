@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-arabic-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansarabic/NotoSansArabic%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansarabic/NotoSansArabic%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansArabic_wdth,wght_.ttf";
-      sha256 = "0034c0191a40ff93d03409e666be59c1dbb5b7a54f0e300a864b588ba850ad5b";
+      sha256 = "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e";
     })
   ];
 

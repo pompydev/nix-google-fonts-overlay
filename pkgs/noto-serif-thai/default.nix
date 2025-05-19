@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-thai-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifthai/NotoSerifThai%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifthai/NotoSerifThai%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSerifThai_wdth,wght_.ttf";
-      sha256 = "3b8a88ed2236f94f69f82a7414296e01bbe762f0482ef5d3c5b395867e2a51e5";
+      sha256 = "34a7ad11647c845303aabdde639059806c56b84719e5d2ceb28eb038711bdf53";
     })
   ];
 

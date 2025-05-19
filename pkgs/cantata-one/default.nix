@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "cantata-one-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/cantataone/CantataOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cantataone/CantataOne-Regular.ttf?raw=true";
       name = "CantataOne-Regular.ttf";
       sha256 = "e12df35ae88a3e0898422110301e0b7ff4c54a4c129b92077ae7f456f45ba3db";
     })

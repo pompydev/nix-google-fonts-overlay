@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rock-salt-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f33cb5d999f10475b814d1fd9338b2ee110b49d8/apache/rocksalt/RockSalt-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/rocksalt/RockSalt-Regular.ttf?raw=true";
       name = "RockSalt-Regular.ttf";
       sha256 = "c5421d1ced1949488f29d11b75b7ef967abe2d870f816246bf18fdc0f3e29c96";
     })

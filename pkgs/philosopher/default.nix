@@ -2,30 +2,30 @@
 
 stdenv.mkDerivation rec {
   name = "philosopher-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/04e90dca48cc6a4384ae8ba2dfbdd760910ea298/ofl/philosopher/Philosopher-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/philosopher/Philosopher-Regular.ttf?raw=true";
       name = "Philosopher-Regular.ttf";
-      sha256 = "e5b60b3448c0e57dc96e25b41e860abe280a66279ffb642048041121856b0974";
+      sha256 = "e1cba0b5003b5694f1d6cc0fbe629f78362ad38a9ffd4d0cb7abfd9698a575ed";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/04e90dca48cc6a4384ae8ba2dfbdd760910ea298/ofl/philosopher/Philosopher-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/philosopher/Philosopher-Italic.ttf?raw=true";
       name = "Philosopher-Italic.ttf";
-      sha256 = "870dd32aef115bb4b98d2323765240295490f782a98356d3f1d144ccffaeac16";
+      sha256 = "1ec5f0cc140a5daefca74692c1693c224aaac6936b8eda16598d56eba94cf008";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/04e90dca48cc6a4384ae8ba2dfbdd760910ea298/ofl/philosopher/Philosopher-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/philosopher/Philosopher-Bold.ttf?raw=true";
       name = "Philosopher-Bold.ttf";
-      sha256 = "e46667d7ef944d9d0a94c56aae44d93c01ca0949f7c347916072089b24420182";
+      sha256 = "2277c78b95657274b949f40b64b58d18fe7bbe0ec968c104d38906ec700024ea";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/04e90dca48cc6a4384ae8ba2dfbdd760910ea298/ofl/philosopher/Philosopher-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/philosopher/Philosopher-BoldItalic.ttf?raw=true";
       name = "Philosopher-BoldItalic.ttf";
-      sha256 = "b9e38f7c424ff127e8298eeb902b7b1ac069aad9b44b6d46f6235b0eae84b4f9";
+      sha256 = "a8abb9341d1dc574d301edebf9ad8ea68dd0ae61ca1fa640b9bbdb5f388013c4";
     })
   ];
 

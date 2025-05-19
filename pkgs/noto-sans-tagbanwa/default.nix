@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-tagbanwa-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanstagbanwa/NotoSansTagbanwa-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanstagbanwa/NotoSansTagbanwa-Regular.ttf?raw=true";
       name = "NotoSansTagbanwa-Regular.ttf";
-      sha256 = "108c5df5e6913a3b68280963b9ed9c43cadee644b3757e2edd6a969374f95c7c";
+      sha256 = "9f9288024e3eddfd3ce77088c4806e0515d47aa093b1a04bc7bc24bdfd5d998a";
     })
   ];
 

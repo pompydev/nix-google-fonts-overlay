@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "mochiy-pop-one-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/63082b6587710953689e74734d9af6ea1ca649b8/ofl/mochiypopone/MochiyPopOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mochiypopone/MochiyPopOne-Regular.ttf?raw=true";
       name = "MochiyPopOne-Regular.ttf";
       sha256 = "9e009430e1316c271a5f34759c6b65fc343c4e806f193042528887e7235a92c6";
     })

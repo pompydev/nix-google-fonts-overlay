@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-mono-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmono/NotoSansMono%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmono/NotoSansMono%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansMono_wdth,wght_.ttf";
-      sha256 = "83433121d6c3235a30b5b5b779f11daa7d76aefc3d2c8388bb48296694a73ccd";
+      sha256 = "2cb2adb378a8f574213e23df697050b83c54c27df465a2015552740b2769a081";
     })
   ];
 

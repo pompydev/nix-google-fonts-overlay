@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-rashi-hebrew-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notorashihebrew/NotoRashiHebrew%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notorashihebrew/NotoRashiHebrew%5Bwght%5D.ttf?raw=true";
       name = "NotoRashiHebrew_wght_.ttf";
-      sha256 = "3c361fbf8eaf1f409ad84930c44f8e7b3018fd1739ca97583ff2cdd19b85e169";
+      sha256 = "4da0058f46aa66f9a334967a640a1e56abb642eba3c1c3fc5080f6282c9eb126";
     })
   ];
 

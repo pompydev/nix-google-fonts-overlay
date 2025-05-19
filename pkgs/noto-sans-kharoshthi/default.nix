@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-kharoshthi-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanskharoshthi/NotoSansKharoshthi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanskharoshthi/NotoSansKharoshthi-Regular.ttf?raw=true";
       name = "NotoSansKharoshthi-Regular.ttf";
-      sha256 = "debbf499348e5a8ac8e292fef6cb4a9e24438ef8abfc4f50a3d32287e4a466d3";
+      sha256 = "e1cc4bd5abc3c0efe6cb102a30b543371c8a42d12ed661bcc4c3f3e3421ee670";
     })
   ];
 

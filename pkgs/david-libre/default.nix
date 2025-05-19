@@ -2,25 +2,25 @@
 
 stdenv.mkDerivation rec {
   name = "david-libre-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2df67f4d580a12cdba3f4a4711b00c31e9215097/ofl/davidlibre/DavidLibre-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/davidlibre/DavidLibre-Regular.ttf?raw=true";
       name = "DavidLibre-Regular.ttf";
-      sha256 = "b28ae0fde84129694df5cafa014b747d129685248f0858068c624bf956e7c53b";
+      sha256 = "923f06e0f6dc84e1649d8cc5d5e12a8d663adf6aba83ba15baa5d559fb47b86e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2df67f4d580a12cdba3f4a4711b00c31e9215097/ofl/davidlibre/DavidLibre-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/davidlibre/DavidLibre-Medium.ttf?raw=true";
       name = "DavidLibre-Medium.ttf";
-      sha256 = "c8bab4cc918e281ac2cb65e70acbad07f98beab8bd592fe34091050a710d03c3";
+      sha256 = "fa3e35197472768520a489b77009b75bfc55601f61a0c4d0c1b23ca7f87701ce";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2df67f4d580a12cdba3f4a4711b00c31e9215097/ofl/davidlibre/DavidLibre-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/davidlibre/DavidLibre-Bold.ttf?raw=true";
       name = "DavidLibre-Bold.ttf";
-      sha256 = "df289445a121f2c8012063b006ee214fc49cdc8a5f4961c24c449d2007513017";
+      sha256 = "7610819c7888c8e7ecdfc573089113ec5355cf95078614ae0e30b509b05468f8";
     })
   ];
 

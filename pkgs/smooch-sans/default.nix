@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "smooch-sans-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fa96e5f2ec435cf11958306c9648d0d6df89e332/ofl/smoochsans/SmoochSans%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/smoochsans/SmoochSans%5Bwght%5D.ttf?raw=true";
       name = "SmoochSans_wght_.ttf";
       sha256 = "6d82f480d71365d9c6c4f96ad1f3cab44053ea3f0b63650b1e0e539d915aff49";
     })

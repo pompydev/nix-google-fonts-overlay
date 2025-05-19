@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "nuosu-sil-${version}";
-  version = "2022-04-28-101719";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f02ae1b6160f938704f00fbeee26c9f708bbe27c/ofl/nuosusil/NuosuSIL-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/nuosusil/NuosuSIL-Regular.ttf?raw=true";
       name = "NuosuSIL-Regular.ttf";
-      sha256 = "3ca4e30180b7575e724554c5d7cf324bc8be3dd56c5ef1de0627c683952032cd";
+      sha256 = "632b875ede95598e162da0323fb79e0f4dace58643ddbe29bfc460c78ee2ac64";
     })
   ];
 

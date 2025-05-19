@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-vai-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansvai/NotoSansVai-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansvai/NotoSansVai-Regular.ttf?raw=true";
       name = "NotoSansVai-Regular.ttf";
-      sha256 = "5f58a9c96639c56ea31f85282084dde6d658ede746e3eec64869212fc25a393a";
+      sha256 = "1ee63dafc2d2a71c42d7bb06259ae1728d8fd155bc752254a1cc5a7002e13a8d";
     })
   ];
 

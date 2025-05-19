@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "smokum-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0e5ac906dbdaa6f85c628f32e619b6c1ab615837/apache/smokum/Smokum-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/smokum/Smokum-Regular.ttf?raw=true";
       name = "Smokum-Regular.ttf";
       sha256 = "dfb06e95e7b99724e2e508979bdd679c2a1a9c8413c7f6961656097fd38c9a63";
     })

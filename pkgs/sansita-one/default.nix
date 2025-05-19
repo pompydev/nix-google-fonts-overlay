@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sansita-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/715265304afa4e6f2d9672f8d84fa28050f6b1f9/ofl/sansitaone/SansitaOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sansitaone/SansitaOne-Regular.ttf?raw=true";
       name = "SansitaOne-Regular.ttf";
       sha256 = "8cbe88157d350a7a15faadb0e68eee7310cb18330b9d25ff2d64b1d32f3185ad";
     })

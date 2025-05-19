@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "pattaya-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5f90bd61222804d7dbeacc30482245f2919fcba8/ofl/pattaya/Pattaya-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pattaya/Pattaya-Regular.ttf?raw=true";
       name = "Pattaya-Regular.ttf";
       sha256 = "02b77f7f5b52e718a91230c8ea153bfe746e1d748dabded4e41d7e6765fa9889";
     })

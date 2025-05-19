@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "cherry-bomb-one-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/6d254d7517c4970b0bd73f62b77435eee0a21d0f/ofl/cherrybombone/CherryBombOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cherrybombone/CherryBombOne-Regular.ttf?raw=true";
       name = "CherryBombOne-Regular.ttf";
       sha256 = "9596c6793eb0335057d655b13751ce7ccb50ef0cd15cb52c58465fb62de2bb8f";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "special-elite-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0c42307921ce94c085ce191020cde436f8396ec3/apache/specialelite/SpecialElite-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/specialelite/SpecialElite-Regular.ttf?raw=true";
       name = "SpecialElite-Regular.ttf";
       sha256 = "a776fcb4ceb8bdf03e2967688ebdad42680de5b91a7e62c17e718ae212d14bc4";
     })

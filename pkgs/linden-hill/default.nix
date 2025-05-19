@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "linden-hill-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/lindenhill/LindenHill-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lindenhill/LindenHill-Regular.ttf?raw=true";
       name = "LindenHill-Regular.ttf";
       sha256 = "eed3fde6c495dd558b88aa0d3486516dd4d9956a497c335db7beaa9c29d0508a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/lindenhill/LindenHill-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lindenhill/LindenHill-Italic.ttf?raw=true";
       name = "LindenHill-Italic.ttf";
       sha256 = "6071ebcba53242167cfe38dfd0ae108125055405fb1b4ecd0468e287a9e7c743";
     })

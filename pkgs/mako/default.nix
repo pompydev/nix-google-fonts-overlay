@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "mako-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/mako/Mako-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mako/Mako-Regular.ttf?raw=true";
       name = "Mako-Regular.ttf";
-      sha256 = "fc000a21aad2f3c7d68369a3f7ac825c897d2191149a9f916f9a936c9fffe91b";
+      sha256 = "660904f61bb44671dd8f5029bf179f82c7f78daa1c250c7dadb5927f1f1ef816";
     })
   ];
 

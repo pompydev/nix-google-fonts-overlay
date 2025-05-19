@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "ma-shan-zheng-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c09952432d5f03e750f15af768a0c1ab6eaac35e/ofl/mashanzheng/MaShanZheng-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mashanzheng/MaShanZheng-Regular.ttf?raw=true";
       name = "MaShanZheng-Regular.ttf";
       sha256 = "3f1516c14f2576b9070ef5dab3145d2d8243aab7179abeab8953baa1bb253afa";
     })

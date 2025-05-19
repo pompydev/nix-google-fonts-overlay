@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "londrina-sketch-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c238df8bf44bfb00fe8cb31dc0d213a3be7defd6/ofl/londrinasketch/LondrinaSketch-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/londrinasketch/LondrinaSketch-Regular.ttf?raw=true";
       name = "LondrinaSketch-Regular.ttf";
       sha256 = "1d3b7beeda7015014412c916e205016ed66d1f8298a97dce0ca3ae2d13271c9f";
     })

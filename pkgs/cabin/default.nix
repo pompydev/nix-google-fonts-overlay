@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "cabin-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e0e68be377b55f90b78cf34146bbc7ff47c0bff1/ofl/cabin/Cabin%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cabin/Cabin%5Bwdth,wght%5D.ttf?raw=true";
       name = "Cabin_wdth,wght_.ttf";
       sha256 = "a16576e6cec01cf994c46838ed1c17ffdb62cf6da8430edfbcb011f57dd62457";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e0e68be377b55f90b78cf34146bbc7ff47c0bff1/ofl/cabin/Cabin-Italic%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cabin/Cabin-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "Cabin-Italic_wdth,wght_.ttf";
       sha256 = "f033cc4391bdcbb674169c997e3cafbf3417b1fd790a1d9bd31eafa0ca8afea4";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-thai-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansthai/NotoSansThai%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansthai/NotoSansThai%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansThai_wdth,wght_.ttf";
-      sha256 = "4dfaca296706635ba28a445d6c79065e5dae0494eefc54436a2b5e40b9a338fb";
+      sha256 = "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8";
     })
   ];
 

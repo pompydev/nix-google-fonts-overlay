@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "fuggles-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b5ca2d5f29eb0783b85dadf973abeb350271b071/ofl/fuggles/Fuggles-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/fuggles/Fuggles-Regular.ttf?raw=true";
       name = "Fuggles-Regular.ttf";
       sha256 = "2e738fa143601d4415c858d8c844f12333b49c47ba5c12c787a0f6fa150e152a";
     })

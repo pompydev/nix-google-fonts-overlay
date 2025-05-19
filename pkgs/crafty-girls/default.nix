@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "crafty-girls-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/98e76702ed5605fca661a75a3880f5a5424904ab/apache/craftygirls/CraftyGirls-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/craftygirls/CraftyGirls-Regular.ttf?raw=true";
       name = "CraftyGirls-Regular.ttf";
       sha256 = "5f92fed441fc72e75fd520ee63b4785c9b657404c53e1f269c95a6016298ef45";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "calistoga-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/9e1fdc691d5820ecb79f76355a80a487ba78ad50/ofl/calistoga/Calistoga-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/calistoga/Calistoga-Regular.ttf?raw=true";
       name = "Calistoga-Regular.ttf";
-      sha256 = "90035db06f68599d725c3b9722a738940f7d76ed6236ed586c80c9c2993b3000";
+      sha256 = "85a5accb2453368357d432fd0edf4701545cac7551946711c06085677fd1399f";
     })
   ];
 

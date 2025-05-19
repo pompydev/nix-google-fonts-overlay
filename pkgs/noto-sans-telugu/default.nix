@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-telugu-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanstelugu/NotoSansTelugu%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanstelugu/NotoSansTelugu%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansTelugu_wdth,wght_.ttf";
-      sha256 = "4ccb16188c0129aa3f3d15058639c3f1cd39b7bedd10d734a3e609f4f30ed75b";
+      sha256 = "e618af7bf999df192ed4f388eba2e563f2b5015034e9cbb317b5bd793bd7334d";
     })
   ];
 

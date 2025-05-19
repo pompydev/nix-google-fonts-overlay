@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "julius-sans-one-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7a00bf8ff9fe91249ba901a38864268167e0598f/ofl/juliussansone/JuliusSansOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/juliussansone/JuliusSansOne-Regular.ttf?raw=true";
       name = "JuliusSansOne-Regular.ttf";
       sha256 = "b540bcad9283f58955a8db82d8103b1fd356378f55ec764cdb20d9f5ae749f23";
     })

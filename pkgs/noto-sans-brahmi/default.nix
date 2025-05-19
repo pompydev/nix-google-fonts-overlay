@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-brahmi-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansbrahmi/NotoSansBrahmi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansbrahmi/NotoSansBrahmi-Regular.ttf?raw=true";
       name = "NotoSansBrahmi-Regular.ttf";
-      sha256 = "0c9e9d7ebc20b81fff7cf5bcfc4ed5552ad97b3a583c6e33baa2d38952182d05";
+      sha256 = "3e3b877c30f3fa51328fd4fb96bf2f66bdb922c36c446ed0bb94bde0f90729d3";
     })
   ];
 

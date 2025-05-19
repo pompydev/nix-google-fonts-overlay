@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "asar-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/275d4928c4f5b7d9a0a2b8c68408a6410b0ece63/ofl/asar/Asar-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/asar/Asar-Regular.ttf?raw=true";
       name = "Asar-Regular.ttf";
       sha256 = "8b4147354af009836d031f50af3e0450768d78b1e0e0281c7df17cd26440cc2e";
     })

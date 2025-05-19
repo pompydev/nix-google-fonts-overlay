@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-egyptian-hieroglyphs-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansegyptianhieroglyphs/NotoSansEgyptianHieroglyphs-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansegyptianhieroglyphs/NotoSansEgyptianHieroglyphs-Regular.ttf?raw=true";
       name = "NotoSansEgyptianHieroglyphs-Regular.ttf";
-      sha256 = "ad50e535500acc88b9582c648cc84ca9a4679c1810a426aa85b7ba8bada8af15";
+      sha256 = "b792accc6207ca9caa59fc67f53926b6985a99d255dd432d7c68b68a6dfd62f8";
     })
   ];
 

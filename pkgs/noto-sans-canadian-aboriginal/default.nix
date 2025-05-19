@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-canadian-aboriginal-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanscanadianaboriginal/NotoSansCanadianAboriginal%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanscanadianaboriginal/NotoSansCanadianAboriginal%5Bwght%5D.ttf?raw=true";
       name = "NotoSansCanadianAboriginal_wght_.ttf";
-      sha256 = "66e2c47457bad34d00d702ee3a051ff020cd697c4a4e2896c1d3473de333ca9c";
+      sha256 = "81b0f7e7ca48b28e343bb6a523a066743acedfbb29f374cbe4501e6d5f08f7af";
     })
   ];
 

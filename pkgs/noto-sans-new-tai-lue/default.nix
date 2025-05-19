@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-new-tai-lue-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansnewtailue/NotoSansNewTaiLue-Regular.ttf?raw=true";
-      name = "NotoSansNewTaiLue-Regular.ttf";
-      sha256 = "53005c3e1b61c5d3002510479144867a5a1370a32a78c5cf374f9a6dd576cf9b";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansnewtailue/NotoSansNewTaiLue%5Bwght%5D.ttf?raw=true";
+      name = "NotoSansNewTaiLue_wght_.ttf";
+      sha256 = "5362f7ab42089804beb05c936bef575f08ab27cf26109c71df99bfa28bda1cb4";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoSansNewTaiLue-Regular.ttf $out/share/fonts/truetype/NotoSansNewTaiLue-Regular.ttf
+     install -Dm644 NotoSansNewTaiLue_wght_.ttf $out/share/fonts/truetype/NotoSansNewTaiLue_wght_.ttf
   '';
 
   meta = with lib; {

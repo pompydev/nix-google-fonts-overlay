@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "readex-pro-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/956ee3203d796c132e1a201fafb02931dab25a04/ofl/readexpro/ReadexPro%5Bwght%5D.ttf?raw=true";
-      name = "ReadexPro_wght_.ttf";
-      sha256 = "bdf57ad5b3477babe9087bda26202cc2f92e1f3910a0ce63d0d6ed6ac74c90f4";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/readexpro/ReadexPro%5BHEXP,wght%5D.ttf?raw=true";
+      name = "ReadexPro_HEXP,wght_.ttf";
+      sha256 = "268bba7e1e8f3b14d798b3fb0e40ebaa3fc39308c9ac0020e2faf6df181cc30e";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 ReadexPro_wght_.ttf $out/share/fonts/truetype/ReadexPro_wght_.ttf
+     install -Dm644 ReadexPro_HEXP,wght_.ttf $out/share/fonts/truetype/ReadexPro_HEXP,wght_.ttf
   '';
 
   meta = with lib; {

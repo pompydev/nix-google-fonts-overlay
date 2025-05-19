@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "adamina-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/baf1d1a971ba7f1fbb0d3211a63ffd0525597c21/ofl/adamina/Adamina-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/adamina/Adamina-Regular.ttf?raw=true";
       name = "Adamina-Regular.ttf";
       sha256 = "e7108cfee0a718d5885fc8d0f03555fa6e0c4b6309e4b15ea991aadd824c34b7";
     })

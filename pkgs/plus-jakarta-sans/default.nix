@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "plus-jakarta-sans-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/092204231c6bf36c0871c0cad11077660106cef5/ofl/plusjakartasans/PlusJakartaSans%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/plusjakartasans/PlusJakartaSans%5Bwght%5D.ttf?raw=true";
       name = "PlusJakartaSans_wght_.ttf";
-      sha256 = "917ee5a81ce762d0756c0541b169cfd592154f718db73e5c167945fb04670f29";
+      sha256 = "89b3fb38aa0d275d7a731d0d817a4f1622b316b4d7fbdedcf02ee9099ff68bc8";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/092204231c6bf36c0871c0cad11077660106cef5/ofl/plusjakartasans/PlusJakartaSans-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/plusjakartasans/PlusJakartaSans-Italic%5Bwght%5D.ttf?raw=true";
       name = "PlusJakartaSans-Italic_wght_.ttf";
-      sha256 = "422c593fd0e26bf7aecf9b6d3996e76467894249cdc9c2f4ba9453b1c49d8f03";
+      sha256 = "9529eb888668b6a3c6dd75b6341a2fc5263fb6c9e788822e6117c29dd9e8b115";
     })
   ];
 

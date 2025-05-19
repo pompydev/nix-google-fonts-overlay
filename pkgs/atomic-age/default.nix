@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "atomic-age-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8927638111f459d395b287bbef67b78a9fd86ca6/ofl/atomicage/AtomicAge-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/atomicage/AtomicAge-Regular.ttf?raw=true";
       name = "AtomicAge-Regular.ttf";
       sha256 = "5ea6111180af882b0799a1e1c04b7acc557807ff76e0cc24258b259a06f67ed2";
     })

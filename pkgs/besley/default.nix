@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "besley-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/85c5cea9da66117723c05bf5d7a7143fd10a411b/ofl/besley/Besley%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/besley/Besley%5Bwght%5D.ttf?raw=true";
       name = "Besley_wght_.ttf";
       sha256 = "71f352d8859c787631a0978161d48497a72caa69dcae6996d6712a564df86c1e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/85c5cea9da66117723c05bf5d7a7143fd10a411b/ofl/besley/Besley-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/besley/Besley-Italic%5Bwght%5D.ttf?raw=true";
       name = "Besley-Italic_wght_.ttf";
       sha256 = "de502a1ab6b06a63982dce8c9e58b3eee8aada175e78d5a4dc0a7b3721f26562";
     })

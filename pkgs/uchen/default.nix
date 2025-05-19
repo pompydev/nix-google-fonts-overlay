@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "uchen-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b44e8365d6ad70529595f6f9dcd556588dfeb4a3/ofl/uchen/Uchen-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/uchen/Uchen-Regular.ttf?raw=true";
       name = "Uchen-Regular.ttf";
       sha256 = "d466b41c9d11beea843ea16b13de220da2026836b88f3b7d30665215fc0c5d2f";
     })

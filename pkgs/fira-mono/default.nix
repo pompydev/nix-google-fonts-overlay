@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "fira-mono-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/22d9fb782d20f88fc9952807408d0e56739cc43a/ofl/firamono/FiraMono-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/firamono/FiraMono-Regular.ttf?raw=true";
       name = "FiraMono-Regular.ttf";
       sha256 = "2e00b0cf3106a3d792f35711b7722740b76c02ee7300ea8c60f940584b7a8ac9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/22d9fb782d20f88fc9952807408d0e56739cc43a/ofl/firamono/FiraMono-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/firamono/FiraMono-Medium.ttf?raw=true";
       name = "FiraMono-Medium.ttf";
       sha256 = "a5bc1a2db2f65946049de615ecc08603d788eb0c02b520f4ed95f05a5cc58532";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/22d9fb782d20f88fc9952807408d0e56739cc43a/ofl/firamono/FiraMono-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/firamono/FiraMono-Bold.ttf?raw=true";
       name = "FiraMono-Bold.ttf";
       sha256 = "61f0ca3ae72a83deb807040f314e1b8b4e40b08213df243db9fd430095cab305";
     })

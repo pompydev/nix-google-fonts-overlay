@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-buginese-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansbuginese/NotoSansBuginese-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansbuginese/NotoSansBuginese-Regular.ttf?raw=true";
       name = "NotoSansBuginese-Regular.ttf";
-      sha256 = "9572118c512044497fa06cf5ae5209a245295a21746dac2f34ec5fad094f66c0";
+      sha256 = "af1ed02af9eff48e872c3fcf922ba72053b776c2f0d1a0d4cb36e57d5e3508b5";
     })
   ];
 

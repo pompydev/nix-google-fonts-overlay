@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rubik-bubbles-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/1a1749768eb76dacf309b1affbf586c4fbbdcefd/ofl/rubikbubbles/RubikBubbles-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rubikbubbles/RubikBubbles-Regular.ttf?raw=true";
       name = "RubikBubbles-Regular.ttf";
       sha256 = "2171521dab2b1b3675bbb7aecd34b1c169167c360e3647dadb4939910490c974";
     })

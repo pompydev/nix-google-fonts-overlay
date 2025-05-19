@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "montserrat-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fd60a948760465ea72ad844667bbf0799828a7fa/ofl/montserrat/Montserrat%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/montserrat/Montserrat%5Bwght%5D.ttf?raw=true";
       name = "Montserrat_wght_.ttf";
-      sha256 = "faac83453081c6287619fffbb41e41c0a72c21f3fb6fbcd43d7d6a4f6221bced";
+      sha256 = "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fd60a948760465ea72ad844667bbf0799828a7fa/ofl/montserrat/Montserrat-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/montserrat/Montserrat-Italic%5Bwght%5D.ttf?raw=true";
       name = "Montserrat-Italic_wght_.ttf";
-      sha256 = "970a7595f5468e87be6107ffc86b93d4af21ed50293b2571186f6c89bece9d1f";
+      sha256 = "51607f316bc020e59f03cbf51543eecffbea501c0b31d73e5b82927c5cca442c";
     })
   ];
 

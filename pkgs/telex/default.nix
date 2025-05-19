@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "telex-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7ae33d0883b4578dac5f92c951277431e5c12ce8/ofl/telex/Telex-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/telex/Telex-Regular.ttf?raw=true";
       name = "Telex-Regular.ttf";
       sha256 = "eeaa2d17d105b6b46e5368ecd990f5b19c50131ff922dbf79bfb9bb45c249871";
     })

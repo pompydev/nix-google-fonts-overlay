@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-takri-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanstakri/NotoSansTakri-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanstakri/NotoSansTakri-Regular.ttf?raw=true";
       name = "NotoSansTakri-Regular.ttf";
-      sha256 = "08f770fcc0bc890a7738ebc03f8f5e51d207e27a87ded0c567cba76343c51f5c";
+      sha256 = "129764150a358e24eb65ec117d140440e84b28bf4aad23a608fe9526f10c4701";
     })
   ];
 

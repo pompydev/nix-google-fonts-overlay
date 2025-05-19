@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-inscriptional-parthian-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansinscriptionalparthian/NotoSansInscriptionalParthian-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansinscriptionalparthian/NotoSansInscriptionalParthian-Regular.ttf?raw=true";
       name = "NotoSansInscriptionalParthian-Regular.ttf";
-      sha256 = "6389b35ade6db9c469309d84034057c6738a032abe13f4eb2435cfd86ed10cc4";
+      sha256 = "a3b80af8a1927189a353b03075cbebd454291519dfc60a325070d6f405f5ba50";
     })
   ];
 

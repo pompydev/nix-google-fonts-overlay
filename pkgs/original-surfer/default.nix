@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "original-surfer-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/originalsurfer/OriginalSurfer-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/originalsurfer/OriginalSurfer-Regular.ttf?raw=true";
       name = "OriginalSurfer-Regular.ttf";
       sha256 = "ee4a42820b224a1934f2ba0997958d7965ad34762d88244fbffddb0b0ae488e4";
     })

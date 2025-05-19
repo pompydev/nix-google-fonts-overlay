@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-gothic-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansgothic/NotoSansGothic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansgothic/NotoSansGothic-Regular.ttf?raw=true";
       name = "NotoSansGothic-Regular.ttf";
-      sha256 = "c85e7780c3adda90f56591914d89c3ed4dc9ea1b23d7e3a462fcd39e888ec70f";
+      sha256 = "5a1b3946cc98fd9ccd8d3b32777cdaa82ae7f0278469d18272e1d9fcf2f6ff87";
     })
   ];
 

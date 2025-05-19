@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-hk-${version}";
-  version = "2022-06-07-112409";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d8073b365941159b40129acdc7422be43f9b4afb/ofl/notosanshk/NotoSansHK%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanshk/NotoSansHK%5Bwght%5D.ttf?raw=true";
       name = "NotoSansHK_wght_.ttf";
-      sha256 = "6e329b1850a358932c0bce9188f084aeff57e95f14d6aadfeb36a7cd1e317be6";
+      sha256 = "76098ee78ec234cd4f8c950742b3f766fea2f8b43d5180d901048f4fc86c6849";
     })
   ];
 

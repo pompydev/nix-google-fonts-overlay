@@ -2,15 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "alumni-sans-collegiate-one-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0df02275bb189dfb709e96205f69b66509ceca07/ofl/alumnisanscollegiateone/AlumniSansCollegiateOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/alumnisanscollegiateone/AlumniSansCollegiateOne-Regular.ttf?raw=true";
       name = "AlumniSansCollegiateOne-Regular.ttf";
-      sha256 = "7d20d30ed9c290df8088b99c24e7796db12513acbf8ae9c339a1829ba6cb5e16";
+      sha256 = "9bd48b280391794c7a5aea97476b25051b4705c7963e4b63b2c84876db31b59b";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/alumnisanscollegiateone/AlumniSansCollegiateOne-Italic.ttf?raw=true";
+      name = "AlumniSansCollegiateOne-Italic.ttf";
+      sha256 = "aa1ec3cafa94926b00e61da029c48271e6845400167c10f8b659b938da9d54ee";
     })
   ];
 
@@ -22,6 +27,7 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
      install -Dm644 AlumniSansCollegiateOne-Regular.ttf $out/share/fonts/truetype/AlumniSansCollegiateOne-Regular.ttf
+     install -Dm644 AlumniSansCollegiateOne-Italic.ttf $out/share/fonts/truetype/AlumniSansCollegiateOne-Italic.ttf
   '';
 
   meta = with lib; {

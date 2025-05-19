@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "vazirmatn-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2aa8060d53136c8dd5fbf02ee63038ea3af69bb6/ofl/vazirmatn/Vazirmatn%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/vazirmatn/Vazirmatn%5Bwght%5D.ttf?raw=true";
       name = "Vazirmatn_wght_.ttf";
-      sha256 = "c694cae070256edf1699dc5b0648793fa583060bf49d276e60be03d5fa1c8686";
+      sha256 = "696249a2c74b39ffdef55de4df2809c5b639d3ff80d618d8160a095d2fd49dca";
     })
   ];
 

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "tiro-gurmukhi-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5ef1e25a8a9a345c751b6f3cb512111007ea17e4/ofl/tirogurmukhi/TiroGurmukhi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tirogurmukhi/TiroGurmukhi-Regular.ttf?raw=true";
       name = "TiroGurmukhi-Regular.ttf";
       sha256 = "49d6959474d232763ed5b16c786c9e7ff0587c70c141efe78c070e709014a57d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5ef1e25a8a9a345c751b6f3cb512111007ea17e4/ofl/tirogurmukhi/TiroGurmukhi-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tirogurmukhi/TiroGurmukhi-Italic.ttf?raw=true";
       name = "TiroGurmukhi-Italic.ttf";
       sha256 = "01d2b2b13d1859005c87bf29c86389f2c7cabcb5672e54d03447990bd3ba7b71";
     })

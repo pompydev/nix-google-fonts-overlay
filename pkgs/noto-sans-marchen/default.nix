@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-marchen-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmarchen/NotoSansMarchen-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmarchen/NotoSansMarchen-Regular.ttf?raw=true";
       name = "NotoSansMarchen-Regular.ttf";
-      sha256 = "95bc61fd3fa20fb43aa07047372334dff8db5f6cda9a5ee756784b99da7ec056";
+      sha256 = "6c8ecfbf4e0b5926ebee810be293c1018f921577b2f6dff22e19ec0a596c7ce3";
     })
   ];
 

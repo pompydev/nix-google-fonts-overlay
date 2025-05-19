@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "katibeh-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/24319bb5f4eb888de54d5b2eefbcefb7f89844b6/ofl/katibeh/Katibeh-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/katibeh/Katibeh-Regular.ttf?raw=true";
       name = "Katibeh-Regular.ttf";
       sha256 = "334eeadb58eb442734fe7dea87412cbbd8c3fd00294252723aadf19a850cf11f";
     })

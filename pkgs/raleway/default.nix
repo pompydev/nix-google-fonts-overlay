@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "raleway-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e16e28b2a73398cbc960f5306f961c1276cc29fc/ofl/raleway/Raleway%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/raleway/Raleway%5Bwght%5D.ttf?raw=true";
       name = "Raleway_wght_.ttf";
       sha256 = "8bbcc3eb8275c388f4bcd998832f8a4b943eadbaf6a595205312774b5951aefb";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e16e28b2a73398cbc960f5306f961c1276cc29fc/ofl/raleway/Raleway-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/raleway/Raleway-Italic%5Bwght%5D.ttf?raw=true";
       name = "Raleway-Italic_wght_.ttf";
       sha256 = "96629caf2202183fab46c70237055a7d67e6a5400b85413d45a77ed6f2a0770c";
     })

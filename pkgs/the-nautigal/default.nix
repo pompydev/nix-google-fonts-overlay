@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "the-nautigal-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/78b7801b517f6d39ff033c9e72b3a08d08893b8b/ofl/thenautigal/TheNautigal-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/thenautigal/TheNautigal-Regular.ttf?raw=true";
       name = "TheNautigal-Regular.ttf";
       sha256 = "c7239b999c0d8127683116c8563307f0adbd63f7b16b342c180f8196941eca67";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/78b7801b517f6d39ff033c9e72b3a08d08893b8b/ofl/thenautigal/TheNautigal-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/thenautigal/TheNautigal-Bold.ttf?raw=true";
       name = "TheNautigal-Bold.ttf";
       sha256 = "d51898da90096cefd2edfc5aa4fea2bdde3bad012ba1de08ae659f06bb420e6f";
     })

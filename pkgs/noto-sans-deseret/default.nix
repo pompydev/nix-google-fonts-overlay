@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-deseret-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansdeseret/NotoSansDeseret-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansdeseret/NotoSansDeseret-Regular.ttf?raw=true";
       name = "NotoSansDeseret-Regular.ttf";
-      sha256 = "35a4d331a76073eeff539442b2c3b49efb58baa0d34d1da0f685f6a4b98d1e2f";
+      sha256 = "aaab78856a00ca015e8f545200c82093b33192990651a0f62926a13cf0a7b080";
     })
   ];
 

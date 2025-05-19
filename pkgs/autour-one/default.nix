@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "autour-one-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/592bee48b3d433ca40b3030ee9773e57c849c4dd/ofl/autourone/AutourOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/autourone/AutourOne-Regular.ttf?raw=true";
       name = "AutourOne-Regular.ttf";
       sha256 = "6a3f5bf27e9398c25bd8c4edaee8bd503d8074553537a2bf3b1d724353aab252";
     })

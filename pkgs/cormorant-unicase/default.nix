@@ -2,35 +2,35 @@
 
 stdenv.mkDerivation rec {
   name = "cormorant-unicase-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e439e90aeb56c594042255c453f3640e9cbfeb53/ofl/cormorantunicase/CormorantUnicase-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantunicase/CormorantUnicase-Light.ttf?raw=true";
       name = "CormorantUnicase-Light.ttf";
-      sha256 = "ae391c0f133dbe9cfa0eb9ba1d0afef3b25499fd7f84207d5f53cdbc105774df";
+      sha256 = "3cf4f15203a8d6ed559c7a3a1ea10910ef049a3b4863b09bda92d955614dc9b5";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e439e90aeb56c594042255c453f3640e9cbfeb53/ofl/cormorantunicase/CormorantUnicase-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantunicase/CormorantUnicase-Regular.ttf?raw=true";
       name = "CormorantUnicase-Regular.ttf";
-      sha256 = "46c9457bb19a7bbe97224a8ded11989ec6a5ccdb71b30c9dc5db3b6821f5e19d";
+      sha256 = "8fadf0a9ddf4b7d20fbc7c330a740378469fe4f4422c225dd23e6fc5dc028921";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e439e90aeb56c594042255c453f3640e9cbfeb53/ofl/cormorantunicase/CormorantUnicase-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantunicase/CormorantUnicase-Medium.ttf?raw=true";
       name = "CormorantUnicase-Medium.ttf";
-      sha256 = "30c78d23bdbb6368d2f9f76bac02b8685ab58b35216b6165daf3bb78b5e20f01";
+      sha256 = "057870894f166505a6587135e7a2586253a0ee96a35332507e2730ae36dca33f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e439e90aeb56c594042255c453f3640e9cbfeb53/ofl/cormorantunicase/CormorantUnicase-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantunicase/CormorantUnicase-SemiBold.ttf?raw=true";
       name = "CormorantUnicase-SemiBold.ttf";
-      sha256 = "a1787c2f214800e80fc80703430843a8cc34a30f410cc6b13f676f6dd1f1ee6e";
+      sha256 = "8e74b41f55bc7e0f199b91086916ad64ed83b7284352d5f4bd39d18ef279238b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e439e90aeb56c594042255c453f3640e9cbfeb53/ofl/cormorantunicase/CormorantUnicase-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantunicase/CormorantUnicase-Bold.ttf?raw=true";
       name = "CormorantUnicase-Bold.ttf";
-      sha256 = "745f4976b12df9836213c72f668979e48135ede0167c61ff0b239ede1298261a";
+      sha256 = "b934e5e865cd0301e0be8ef15f85006d5479fbb2faf875093ddc36493b8ea845";
     })
   ];
 

@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "bona-nova-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/728f6da025e3c73cab9192712492c01ad5922919/ofl/bonanova/BonaNova-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bonanova/BonaNova-Regular.ttf?raw=true";
       name = "BonaNova-Regular.ttf";
       sha256 = "d72f7715b6b66096e0cc2971e4954f8be33bdced1f143f9c5739a03cdb60bede";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/728f6da025e3c73cab9192712492c01ad5922919/ofl/bonanova/BonaNova-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bonanova/BonaNova-Italic.ttf?raw=true";
       name = "BonaNova-Italic.ttf";
       sha256 = "0d61c160a521b072d1af19e9683754f3f5761bbce35f73fdf091ecdf495bc6c2";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/728f6da025e3c73cab9192712492c01ad5922919/ofl/bonanova/BonaNova-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bonanova/BonaNova-Bold.ttf?raw=true";
       name = "BonaNova-Bold.ttf";
       sha256 = "c59ccb3ba8f0151236b1b427b58bee0c90607c82ef747cc6e19d5e20138385dd";
     })

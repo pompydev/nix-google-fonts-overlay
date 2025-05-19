@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "alfa-slab-one-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fb839dd24542f8f1b0678af6f74335553ee8e61a/ofl/alfaslabone/AlfaSlabOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/alfaslabone/AlfaSlabOne-Regular.ttf?raw=true";
       name = "AlfaSlabOne-Regular.ttf";
       sha256 = "28664afa698a3393bd5a29eec750230a0645c5301d62200e5f2d3a027fb2299d";
     })

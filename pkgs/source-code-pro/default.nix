@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "source-code-pro-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/04b9cc0b96616b190802646dc9a6d51a25d428de/ofl/sourcecodepro/SourceCodePro%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sourcecodepro/SourceCodePro%5Bwght%5D.ttf?raw=true";
       name = "SourceCodePro_wght_.ttf";
-      sha256 = "be88a2e3c368311c6ff8f62b043bb11addd696048582719253b681b8c8029aef";
+      sha256 = "b400fc584e10aff25d0e775ce181b4fc1c5ea1b5dc37b81aeb2084375b945790";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/04b9cc0b96616b190802646dc9a6d51a25d428de/ofl/sourcecodepro/SourceCodePro-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sourcecodepro/SourceCodePro-Italic%5Bwght%5D.ttf?raw=true";
       name = "SourceCodePro-Italic_wght_.ttf";
-      sha256 = "17a14e2460d871f6e55361b16be173f28448b1af9241e2781ae60cf57aa40812";
+      sha256 = "6db77d25aa7b30eff449305b5c998e475694c74d398421127ea5a60f536413cd";
     })
   ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "oi-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0750dc7c2e46ca92aa88a536264cb7e82484b13e/ofl/oi/Oi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oi/Oi-Regular.ttf?raw=true";
       name = "Oi-Regular.ttf";
-      sha256 = "fcf5ed9604e4c992254ef1f3d775316ab98196141707d3a6e25593b5bb366871";
+      sha256 = "a406eece17ef2416ffefd6f57e4d5272ab2fa226c001ccf6aee7838231175203";
     })
   ];
 

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "radley-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c19f2d37a7466e9da7b64aca5413f0ad5d584c3b/ofl/radley/Radley-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/radley/Radley-Regular.ttf?raw=true";
       name = "Radley-Regular.ttf";
       sha256 = "22012c9224fd2e6fe87bbea65648063a5a56dfca17282d65a4c1db4fd863dba7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c19f2d37a7466e9da7b64aca5413f0ad5d584c3b/ofl/radley/Radley-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/radley/Radley-Italic.ttf?raw=true";
       name = "Radley-Italic.ttf";
       sha256 = "31be2a0bbae272eae2ae125e059c67e113990620da4190cf966d7e2182152bcf";
     })

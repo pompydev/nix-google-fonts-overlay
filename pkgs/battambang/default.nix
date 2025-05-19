@@ -2,33 +2,33 @@
 
 stdenv.mkDerivation rec {
   name = "battambang-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/battambang/Battambang-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/battambang/Battambang-Thin.ttf?raw=true";
       name = "Battambang-Thin.ttf";
       sha256 = "8e02ceb59104791191d7370324a75c4e74e85623691272507f8bde3c83d7a8d9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/battambang/Battambang-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/battambang/Battambang-Light.ttf?raw=true";
       name = "Battambang-Light.ttf";
       sha256 = "282626df0ef99cdba8e2519e63705de621d1cf29c3d323a1d8e424df1caea5ed";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/battambang/Battambang-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/battambang/Battambang-Regular.ttf?raw=true";
       name = "Battambang-Regular.ttf";
       sha256 = "1fd3eb9960911396cb7955f2c68afe5ee21c2c14f8097e945d05b768ed4de942";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/battambang/Battambang-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/battambang/Battambang-Bold.ttf?raw=true";
       name = "Battambang-Bold.ttf";
       sha256 = "4cd10f7a56a7d9d1fb4184b2219821f8ad6f425be290243ef73c4ef3a80c86ff";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/battambang/Battambang-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/battambang/Battambang-Black.ttf?raw=true";
       name = "Battambang-Black.ttf";
       sha256 = "4426332a541f6cc85489813b11d99b8a1aaca53b313f8deb21b403a3d58286dd";
     })

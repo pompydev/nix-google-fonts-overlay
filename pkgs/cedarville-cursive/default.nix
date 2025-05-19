@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "cedarville-cursive-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8ccda7bf739842777d42661d1b384b926194e24b/ofl/cedarvillecursive/Cedarville-Cursive.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cedarvillecursive/Cedarville-Cursive.ttf?raw=true";
       name = "Cedarville-Cursive.ttf";
       sha256 = "5f86d71d08a68605d5912b9bcb639a060ce9c0debd7e0b715f5e268d4a4bc317";
     })

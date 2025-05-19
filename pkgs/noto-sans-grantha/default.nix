@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-grantha-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansgrantha/NotoSansGrantha-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansgrantha/NotoSansGrantha-Regular.ttf?raw=true";
       name = "NotoSansGrantha-Regular.ttf";
-      sha256 = "493f987e5e8c86d3f4464fab2fb5b4f435e1d4e847a46b1922c311a3a7c441bc";
+      sha256 = "a3e57ddeeb9763111d0e4bd6440af2c7b2fa6763fe02ca56570d33e2afbf7ffb";
     })
   ];
 

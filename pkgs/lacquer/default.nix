@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "lacquer-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b636f76a405cb9098a0f085ea89b028986ae2ead/ofl/lacquer/Lacquer-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lacquer/Lacquer-Regular.ttf?raw=true";
       name = "Lacquer-Regular.ttf";
       sha256 = "140c21f71907a16952926ee354c81081092c90d599c89fe8b4557baeaebbbe83";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "explora-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7705cc7f49183dd2f21c73cd9eb967ced0d977ec/ofl/explora/Explora-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/explora/Explora-Regular.ttf?raw=true";
       name = "Explora-Regular.ttf";
       sha256 = "a29a1b2f59eaceab955f6667e125dfcd41406a41ebc2cce3d837c45d0405b129";
     })

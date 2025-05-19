@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-wancho-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanswancho/NotoSansWancho-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanswancho/NotoSansWancho-Regular.ttf?raw=true";
       name = "NotoSansWancho-Regular.ttf";
-      sha256 = "e9840bd886a6133e000474eed786f0985a3cf68d45fa240d38a2a306c6a9965c";
+      sha256 = "a5cb8b34da1c91b55a789efd79188c103c34dd9d55218d40087afd3850e97f31";
     })
   ];
 

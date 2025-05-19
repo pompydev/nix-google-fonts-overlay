@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "damion-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/damion/Damion-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/damion/Damion-Regular.ttf?raw=true";
       name = "Damion-Regular.ttf";
-      sha256 = "9de51427297db717072b0d3adb07b7f90b8fa4d31a0463ad1ea674fa60e67666";
+      sha256 = "a51fd6c3c517feb9924b98139c2e902a7317caee52c22a2ec9682973969562bf";
     })
   ];
 

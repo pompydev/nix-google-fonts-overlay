@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "nerko-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0372d9c8cf912f903965ed2750929c3c47eb1c8f/ofl/nerkoone/NerkoOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/nerkoone/NerkoOne-Regular.ttf?raw=true";
       name = "NerkoOne-Regular.ttf";
       sha256 = "55695d7d77712b983973e2984d8014c5060aecfb2e94493671fa4f0ffc3876c7";
     })

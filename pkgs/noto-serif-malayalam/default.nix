@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-malayalam-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifmalayalam/NotoSerifMalayalam%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifmalayalam/NotoSerifMalayalam%5Bwght%5D.ttf?raw=true";
       name = "NotoSerifMalayalam_wght_.ttf";
-      sha256 = "8cc0300245cc68fd034c54692a491add209d7a9bdd8c45d50e964edcbb194d7c";
+      sha256 = "eed354cadb35992df6e8b32fdb7edb399989b165f0f25e7a921009683db26e8e";
     })
   ];
 

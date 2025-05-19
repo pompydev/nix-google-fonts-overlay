@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "grape-nuts-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/37f5e5ac2e472eb2403424bf9facbc8bf111362d/ofl/grapenuts/GrapeNuts-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/grapenuts/GrapeNuts-Regular.ttf?raw=true";
       name = "GrapeNuts-Regular.ttf";
       sha256 = "d4772724931dbafc507c610f10d8cffa4602f8b8e8abfc0bd384996875af4134";
     })

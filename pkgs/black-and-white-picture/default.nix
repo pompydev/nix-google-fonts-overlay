@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "black-and-white-picture-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/blackandwhitepicture/BlackAndWhitePicture-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/blackandwhitepicture/BlackAndWhitePicture-Regular.ttf?raw=true";
       name = "BlackAndWhitePicture-Regular.ttf";
       sha256 = "4d72cd6de1f210b446c86f06b4e13d7641cbcfb1b375c6927341388aa8e08056";
     })

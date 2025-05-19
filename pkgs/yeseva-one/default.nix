@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "yeseva-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b4b24ba90689a28678104a750714cda2e6927981/ofl/yesevaone/YesevaOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/yesevaone/YesevaOne-Regular.ttf?raw=true";
       name = "YesevaOne-Regular.ttf";
       sha256 = "88362b33820f0011e163e67b1d570fecd442aa8c05eaac89d5162f9c40d9dac3";
     })

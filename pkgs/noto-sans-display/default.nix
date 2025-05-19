@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-display-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansdisplay/NotoSansDisplay%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansdisplay/NotoSansDisplay%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansDisplay_wdth,wght_.ttf";
       sha256 = "deaa68141fa5ad21bd17d7c11fa79183ceda19b32e40ff5c33874d42f3636dde";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansdisplay/NotoSansDisplay-Italic%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansdisplay/NotoSansDisplay-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansDisplay-Italic_wdth,wght_.ttf";
       sha256 = "81374b375e9476e2fa5b31a9ee4bcab524a307270dd5bf033346c7ba932f226b";
     })

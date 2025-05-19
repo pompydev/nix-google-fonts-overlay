@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "pavanam-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ca92cf496b7d3076b67013505532bb13557543b2/ofl/pavanam/Pavanam-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pavanam/Pavanam-Regular.ttf?raw=true";
       name = "Pavanam-Regular.ttf";
       sha256 = "d2805bfdca57f7d7a0c69edf35a5f98d4605af6603dcca943db5d11ea531c2f3";
     })

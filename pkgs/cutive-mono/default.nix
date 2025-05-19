@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "cutive-mono-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5a070b8c1aeb9df027ce96135324183ac158c396/ofl/cutivemono/CutiveMono-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cutivemono/CutiveMono-Regular.ttf?raw=true";
       name = "CutiveMono-Regular.ttf";
-      sha256 = "543c74f6185531aebf6151fba7c618f5aeb43af8cb6b09d70e97e3611b351e6e";
+      sha256 = "96a36a00079058684982f61ee334323f8b501d7b68dcecd6049a4f9177e3a62c";
     })
   ];
 

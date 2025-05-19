@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "gorditas-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/gorditas/Gorditas-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gorditas/Gorditas-Regular.ttf?raw=true";
       name = "Gorditas-Regular.ttf";
       sha256 = "95543aaa4c3e1dc22b220b29bcbd8618ff744d904ed4c23179ab5a911d554ee0";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/gorditas/Gorditas-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gorditas/Gorditas-Bold.ttf?raw=true";
       name = "Gorditas-Bold.ttf";
       sha256 = "26b8259c2f61ef10dfa2a2fe1d1e113dfb241d6f780ce15878d005f86c1465c5";
     })

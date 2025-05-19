@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "yuji-syuku-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/807bf6c8eb6a18198f7944895bb8ec114ba5f381/ofl/yujisyuku/YujiSyuku-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/yujisyuku/YujiSyuku-Regular.ttf?raw=true";
       name = "YujiSyuku-Regular.ttf";
       sha256 = "82728ebafc8c97391e2dab633414a806f344b8e4e2227d307179f07b548fca61";
     })

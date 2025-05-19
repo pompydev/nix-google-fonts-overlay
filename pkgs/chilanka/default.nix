@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "chilanka-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0d26823e6a2fae2c57605f689c62c9ef03cc5f03/ofl/chilanka/Chilanka-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/chilanka/Chilanka-Regular.ttf?raw=true";
       name = "Chilanka-Regular.ttf";
-      sha256 = "10de9330ad0bae74f786a23b7761d538767d715f7b5b97d3b87e5fee58002ac2";
+      sha256 = "c6ce47d1a8d387310469c8e355351ff2bd4106030c2a45f1cef0c93215075ed7";
     })
   ];
 

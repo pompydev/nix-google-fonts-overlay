@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-inscriptional-pahlavi-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansinscriptionalpahlavi/NotoSansInscriptionalPahlavi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansinscriptionalpahlavi/NotoSansInscriptionalPahlavi-Regular.ttf?raw=true";
       name = "NotoSansInscriptionalPahlavi-Regular.ttf";
-      sha256 = "f5cf7e0d349edb45a9573ae9d1dd683977f0eef1794066fa9a29bdbb65abcf74";
+      sha256 = "96aa13745c70634bc902662aaa2a665818d277b04d3318992346c54954237cd6";
     })
   ];
 

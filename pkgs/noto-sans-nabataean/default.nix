@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-nabataean-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansnabataean/NotoSansNabataean-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansnabataean/NotoSansNabataean-Regular.ttf?raw=true";
       name = "NotoSansNabataean-Regular.ttf";
-      sha256 = "ac17e166ff5d68098dc766be70472fe4d730d56e00066a920ac4944d8c39b8b9";
+      sha256 = "b21dc4564143ce3647bfb5c410b8b2f0affb257756693b9578a1328fdf9d82e8";
     })
   ];
 

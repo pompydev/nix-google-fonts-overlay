@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "zen-loop-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f67bea885ba0ad06c6de7e41a8ec1f460f7820c6/ofl/zenloop/ZenLoop-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zenloop/ZenLoop-Regular.ttf?raw=true";
       name = "ZenLoop-Regular.ttf";
       sha256 = "06c4de349ee28ef965f9a5361ef2c28841628adcc3e86490b9811584acb2378b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f67bea885ba0ad06c6de7e41a8ec1f460f7820c6/ofl/zenloop/ZenLoop-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zenloop/ZenLoop-Italic.ttf?raw=true";
       name = "ZenLoop-Italic.ttf";
       sha256 = "7ae5141733792d8596d9be4b9ab865ccbfda30bcade02c935b5a918875bc46d8";
     })

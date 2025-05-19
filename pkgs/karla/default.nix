@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "karla-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/568985dba2cc5bf58d9f59af93fd5a5faea610ff/ofl/karla/Karla%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/karla/Karla%5Bwght%5D.ttf?raw=true";
       name = "Karla_wght_.ttf";
-      sha256 = "3acf8df2fcd53113f9a685eaf457e6c5fcc39caaa8ed7628c9e6519bfc6fb292";
+      sha256 = "ed3ca4cd9bdd899c543927c30bf5ff50706b24b3f2b7328e64b25f7d2a9d23dc";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/568985dba2cc5bf58d9f59af93fd5a5faea610ff/ofl/karla/Karla-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/karla/Karla-Italic%5Bwght%5D.ttf?raw=true";
       name = "Karla-Italic_wght_.ttf";
-      sha256 = "ec239d29a374c435e2d4d0b4f835683f8c733b4320edceb953be3548129929db";
+      sha256 = "98c02551288197a43d9c7e62c105f4b6f283a57f0f06d623313ea32d5c701977";
     })
   ];
 

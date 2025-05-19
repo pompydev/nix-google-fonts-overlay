@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-armenian-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifarmenian/NotoSerifArmenian%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifarmenian/NotoSerifArmenian%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSerifArmenian_wdth,wght_.ttf";
-      sha256 = "0e6ed760f484849071fa443204f90fe8098ffde0fa13209be193940d718e600d";
+      sha256 = "9354b74384d093d59f9a4ad958e188808d58b6f15debeaab18e07bc432f8ce0c";
     })
   ];
 

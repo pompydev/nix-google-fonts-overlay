@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "candal-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/cfa69ab461fc34b4f00c69304e9d10e0539191ce/ofl/candal/Candal.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/candal/Candal.ttf?raw=true";
       name = "Candal.ttf";
       sha256 = "cf4ff425c49ab2e167fb7d166ba57f2925b6df6161a228786b291ea3875f1eb5";
     })

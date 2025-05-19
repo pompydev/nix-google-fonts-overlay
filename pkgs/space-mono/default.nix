@@ -2,30 +2,30 @@
 
 stdenv.mkDerivation rec {
   name = "space-mono-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f88845ccf872c316f56420b3a9d00dd6f3057b31/ofl/spacemono/SpaceMono-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spacemono/SpaceMono-Regular.ttf?raw=true";
       name = "SpaceMono-Regular.ttf";
-      sha256 = "fa5802bba20311cca2673d3cdc1e89b34b7d44fe6f2d730bd6c5d4229199ae39";
+      sha256 = "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f88845ccf872c316f56420b3a9d00dd6f3057b31/ofl/spacemono/SpaceMono-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spacemono/SpaceMono-Italic.ttf?raw=true";
       name = "SpaceMono-Italic.ttf";
-      sha256 = "e383813db95fa1a86b8f2720dd6ac01a6533a9c8ea85ddf1c63d7f938cf81732";
+      sha256 = "eca264c8690a91fe837d19a6badf2d88961610c4c8aafcb196526192a9f258c5";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f88845ccf872c316f56420b3a9d00dd6f3057b31/ofl/spacemono/SpaceMono-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spacemono/SpaceMono-Bold.ttf?raw=true";
       name = "SpaceMono-Bold.ttf";
-      sha256 = "90319b9d3ab87c0ab9c3af919e50dacf73521aba80732f1e7905be68608a42a5";
+      sha256 = "405e73d41afb7e5906efce206a326af5c956f38e255f35421c260e861e599c59";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f88845ccf872c316f56420b3a9d00dd6f3057b31/ofl/spacemono/SpaceMono-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spacemono/SpaceMono-BoldItalic.ttf?raw=true";
       name = "SpaceMono-BoldItalic.ttf";
-      sha256 = "3e7c633dda1180bfba0dff9659a9883fae3a1ff5866148ddd633892a03bcb1a3";
+      sha256 = "cdcc95eddee312879a9728494e595f591cb159f3f276d79bc58673dec7e57138";
     })
   ];
 

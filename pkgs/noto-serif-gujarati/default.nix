@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-gujarati-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifgujarati/NotoSerifGujarati%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifgujarati/NotoSerifGujarati%5Bwght%5D.ttf?raw=true";
       name = "NotoSerifGujarati_wght_.ttf";
-      sha256 = "02883eeb9c795756c9cd8206eca66ddac06db496cee8d926fe1aa29d1dd0d354";
+      sha256 = "b76ad2086be5faa06a2e0d89e2ff58691d3754d1bb20f9dff0d7b10516c18831";
     })
   ];
 

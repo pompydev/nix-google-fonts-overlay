@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-tirhuta-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanstirhuta/NotoSansTirhuta-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanstirhuta/NotoSansTirhuta-Regular.ttf?raw=true";
       name = "NotoSansTirhuta-Regular.ttf";
-      sha256 = "6c2b525937ea47a0898a2a69675d84673f154f06d36aef5573f767ebdbdfefa0";
+      sha256 = "ad7123ee63118b83ed2f723591e5e861baad8dd157508b8339362850c6036efe";
     })
   ];
 

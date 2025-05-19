@@ -2,25 +2,25 @@
 
 stdenv.mkDerivation rec {
   name = "libre-baskerville-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/librebaskerville/LibreBaskerville-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librebaskerville/LibreBaskerville-Regular.ttf?raw=true";
       name = "LibreBaskerville-Regular.ttf";
-      sha256 = "fd64409c4238f4c90eafc8900e41924bbc3e86a86f48aaca66f6b4d01b0aceb7";
+      sha256 = "f6553cf1a8dc8092a073b0135b254f5f7261306e608d9b85485a321878e804ac";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/librebaskerville/LibreBaskerville-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librebaskerville/LibreBaskerville-Italic.ttf?raw=true";
       name = "LibreBaskerville-Italic.ttf";
-      sha256 = "f4d27b2b04767a73c8644b5bd4498f2c3352f27fc32949003e439721fe1f1d60";
+      sha256 = "5ed54bfcac9ecd3e7cbaba07243b3848dbd49d6ffed18cbdde43edc5694bef95";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/librebaskerville/LibreBaskerville-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librebaskerville/LibreBaskerville-Bold.ttf?raw=true";
       name = "LibreBaskerville-Bold.ttf";
-      sha256 = "899d2122e69d869b5ec7474b316ddb5be804f205d6b3e668a9d8b9ea09ed6f6f";
+      sha256 = "6f329db31dea139b15210963fadcea6f37fbfddf1f28669e257da9eda8cb9849";
     })
   ];
 

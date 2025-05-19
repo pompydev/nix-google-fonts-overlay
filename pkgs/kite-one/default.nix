@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "kite-one-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/kiteone/KiteOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kiteone/KiteOne-Regular.ttf?raw=true";
       name = "KiteOne-Regular.ttf";
-      sha256 = "656a36a211326dec6aaee28c376d0cb690aedb7583c37eb3f4967e36832d6a67";
+      sha256 = "f482673f99d08cf01d617e871cc49f529ae479c321e1ec7f009419275a2f7b61";
     })
   ];
 

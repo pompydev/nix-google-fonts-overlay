@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "arizonia-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ac8b7b6041bd7c1ba1784557e41e1c5d90f2e600/ofl/arizonia/Arizonia-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arizonia/Arizonia-Regular.ttf?raw=true";
       name = "Arizonia-Regular.ttf";
       sha256 = "8df1c10bc15d0aba145d4599c25cafad83db686d2cefa42619f069b6f1bbce62";
     })

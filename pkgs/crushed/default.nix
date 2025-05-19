@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "crushed-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8af024d4929a3781b07e331c71e27c9ecad47917/apache/crushed/Crushed-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/crushed/Crushed-Regular.ttf?raw=true";
       name = "Crushed-Regular.ttf";
       sha256 = "ce930a0ae7db21bc6d6fb08fc9964e84bf0ecaa60a6fde560d3d2a4ae0949a1a";
     })

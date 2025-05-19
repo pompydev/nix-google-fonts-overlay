@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "yomogi-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0d23c895fdfbbb977fa7a6317a169a4ba2dd6321/ofl/yomogi/Yomogi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/yomogi/Yomogi-Regular.ttf?raw=true";
       name = "Yomogi-Regular.ttf";
       sha256 = "3424e34bb951e89bf5dd2554a65d8964335ea3c0560f8d1ea9aa3591ef73cba9";
     })

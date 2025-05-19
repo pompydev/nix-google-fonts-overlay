@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-old-hungarian-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansoldhungarian/NotoSansOldHungarian-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansoldhungarian/NotoSansOldHungarian-Regular.ttf?raw=true";
       name = "NotoSansOldHungarian-Regular.ttf";
-      sha256 = "fd726b1df5a03c790c93b2be4e397f50319b1e04e6ae8a671386446e3c8e9888";
+      sha256 = "c23b363986fabc168af489c5d4eaf3c10fbb110599ffe6ca3b2eac777aa73079";
     })
   ];
 

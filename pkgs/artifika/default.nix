@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "artifika-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/1bccb2195ba803a9e047522cf7a928c09fd8b0e6/ofl/artifika/Artifika-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/artifika/Artifika-Regular.ttf?raw=true";
       name = "Artifika-Regular.ttf";
-      sha256 = "da37bc8fc80447c7e6c7a6a0e6f8ecd05e8bdd59a933d0a176786a4678c1e23c";
+      sha256 = "51d5e3b59c907938e11964306dcd13e4e4cd413acac7dccce4f81860d1ed9f86";
     })
   ];
 

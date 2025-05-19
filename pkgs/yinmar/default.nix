@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "yinmar-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7908dce93d00a47a0357217ba92c65864d54135f/ofl/yinmar/Yinmar-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/yinmar/Yinmar-Regular.ttf?raw=true";
       name = "Yinmar-Regular.ttf";
       sha256 = "a1976639a99f252b3471839c85fe5e87fc1c4e0d1386c9f8ac8c5ff84d357e35";
     })

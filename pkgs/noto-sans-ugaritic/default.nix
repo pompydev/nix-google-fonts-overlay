@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-ugaritic-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansugaritic/NotoSansUgaritic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansugaritic/NotoSansUgaritic-Regular.ttf?raw=true";
       name = "NotoSansUgaritic-Regular.ttf";
-      sha256 = "4fe28546a484fbb78df76aa349b99fd73df93bc8e2c486c9906ad0b5e89cb0c8";
+      sha256 = "68d5a37ab45ba3ab091dda2aa392698963a90e2b399e131394892b8224da6491";
     })
   ];
 

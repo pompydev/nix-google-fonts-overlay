@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-zanabazar-square-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanszanabazarsquare/NotoSansZanabazarSquare-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanszanabazarsquare/NotoSansZanabazarSquare-Regular.ttf?raw=true";
       name = "NotoSansZanabazarSquare-Regular.ttf";
-      sha256 = "7fa099bf15f01ab7ac6fa001658d08696bf3321f6bed3e3b569fdc266e334745";
+      sha256 = "73419252f55ba853edeb9f635533da240ed612b4dff59cdb48d83948864126c7";
     })
   ];
 

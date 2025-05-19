@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "khmer-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/49fbebd3dc75d42fe72c4a3eef6524f8fcc335fd/ofl/khmer/Khmer.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/khmer/Khmer.ttf?raw=true";
       name = "Khmer.ttf";
       sha256 = "cc88eae47fe7875f6a0ad2135e01e5910dacebed03445c4f8d1951f9cf69e3d1";
     })

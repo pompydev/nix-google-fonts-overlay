@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "abril-fatface-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/abrilfatface/AbrilFatface-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/abrilfatface/AbrilFatface-Regular.ttf?raw=true";
       name = "AbrilFatface-Regular.ttf";
       sha256 = "5971d4a3758a922a9fedc7f6fb825a96341a2e718c45a4b2c9a6b417c8c4dbe9";
     })

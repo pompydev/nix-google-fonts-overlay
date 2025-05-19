@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "bilbo-swash-caps-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4c45f1981d1080ac08a602c69559a45573ed0a55/ofl/bilboswashcaps/BilboSwashCaps-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bilboswashcaps/BilboSwashCaps-Regular.ttf?raw=true";
       name = "BilboSwashCaps-Regular.ttf";
       sha256 = "36e0a6d9f33c57797340a65c8789272247f8d2b0b9521a92112eaa13c77a4354";
     })

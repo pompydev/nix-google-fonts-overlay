@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "average-sans-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/76f813683a70f992a2720d763138d16138869f4d/ofl/averagesans/AverageSans-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/averagesans/AverageSans-Regular.ttf?raw=true";
       name = "AverageSans-Regular.ttf";
       sha256 = "f978bb0eb5ad93b02f3a8e4ef0ed525a1192b4076e8a8d0bb37b2546a297762e";
     })

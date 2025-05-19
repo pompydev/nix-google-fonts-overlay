@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-avestan-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansavestan/NotoSansAvestan-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansavestan/NotoSansAvestan-Regular.ttf?raw=true";
       name = "NotoSansAvestan-Regular.ttf";
-      sha256 = "7b12c0e594f8b13b9148763318238742a74dfe57032752238a0df3bd1a566331";
+      sha256 = "fe2ed44b8b3949cddced6c748bb67e161727b133d1e7a67c20385b314d2a4158";
     })
   ];
 

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "maiden-orange-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f59b595779198f4970e8fd7ad2545526ec567614/apache/maidenorange/MaidenOrange-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/maidenorange/MaidenOrange-Regular.ttf?raw=true";
       name = "MaidenOrange-Regular.ttf";
       sha256 = "fd63e44269350a9761db9a88db9a301c82671123c7a9550fa4004b26b5d16200";
     })

@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "archivo-narrow-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d4c821625c44c4adb6dbf7289a250597c0c99660/ofl/archivonarrow/ArchivoNarrow%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/archivonarrow/ArchivoNarrow%5Bwght%5D.ttf?raw=true";
       name = "ArchivoNarrow_wght_.ttf";
-      sha256 = "4d0dd5679371ad68be11b71a1e5d6fb9dab30276025afa0ca43ac5c7b224e9ec";
+      sha256 = "adbe027f625c8393ae0f6e174e32e233dda485bc3eda5153ce428275394ef97f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d4c821625c44c4adb6dbf7289a250597c0c99660/ofl/archivonarrow/ArchivoNarrow-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/archivonarrow/ArchivoNarrow-Italic%5Bwght%5D.ttf?raw=true";
       name = "ArchivoNarrow-Italic_wght_.ttf";
-      sha256 = "56f4f8d170f2fa8e29cbee7bf4d2b037c8a0d10c220e7f9bc844feaea7cf07ef";
+      sha256 = "147c09214be086bf1c70311ffb66f4f5a252e48f828f1d49e35ae56951016cc6";
     })
   ];
 

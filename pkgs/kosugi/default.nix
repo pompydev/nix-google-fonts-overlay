@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "kosugi-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/9fc4eac722cec1cbb58b3c85c2f687bc39eda180/apache/kosugi/Kosugi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/kosugi/Kosugi-Regular.ttf?raw=true";
       name = "Kosugi-Regular.ttf";
       sha256 = "f5e81d6a6b865d9b88c54d2d3c16bcaa3b239dfcefaf2a62976ac9dc7574bab7";
     })

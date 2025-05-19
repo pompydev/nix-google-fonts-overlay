@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "bungee-color-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/9f92199e0e5e1b0495d1ffc560b4c8559799aa11/ofl/bungeecolor/BungeeColor-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bungeecolor/BungeeColor-Regular.ttf?raw=true";
       name = "BungeeColor-Regular.ttf";
-      sha256 = "17e6dc7624924c6a0de0ab5b587954168ce8f4676cf94df47b8696d396dd4fde";
+      sha256 = "cf21a786e54f43694f4edbb51a38f81331a4c3414217c524c8cb2d091aa7fd63";
     })
   ];
 

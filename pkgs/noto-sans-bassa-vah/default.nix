@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-bassa-vah-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansbassavah/NotoSansBassaVah-Regular.ttf?raw=true";
-      name = "NotoSansBassaVah-Regular.ttf";
-      sha256 = "f00a72b0a05a8bc3da85a07b9a88a77b062737410e319726a0a7b217d8ca8169";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansbassavah/NotoSansBassaVah%5Bwght%5D.ttf?raw=true";
+      name = "NotoSansBassaVah_wght_.ttf";
+      sha256 = "b6c065b905d4ca228580027164f2102fae76215724c43a36e8ebf3c7ee81b8fb";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoSansBassaVah-Regular.ttf $out/share/fonts/truetype/NotoSansBassaVah-Regular.ttf
+     install -Dm644 NotoSansBassaVah_wght_.ttf $out/share/fonts/truetype/NotoSansBassaVah_wght_.ttf
   '';
 
   meta = with lib; {

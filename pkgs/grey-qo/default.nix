@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "grey-qo-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c4f002a9e243fb2646707cec90ed04571c86518a/ofl/greyqo/GreyQo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/greyqo/GreyQo-Regular.ttf?raw=true";
       name = "GreyQo-Regular.ttf";
       sha256 = "1ed4701c24145a2a3b4271c48fe27d3ae082b98efc7619c1e7ee5b29ffe2cd67";
     })

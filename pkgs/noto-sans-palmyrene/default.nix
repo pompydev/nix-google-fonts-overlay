@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-palmyrene-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanspalmyrene/NotoSansPalmyrene-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanspalmyrene/NotoSansPalmyrene-Regular.ttf?raw=true";
       name = "NotoSansPalmyrene-Regular.ttf";
-      sha256 = "f8d17a44b0a90e742d4213fbba95ca61f5cc1c0b7e14127e93a8e7e86d975718";
+      sha256 = "d9cb8aeef761d8f0639bdb182f03048435473f623f7567c9b6477fe320cd8404";
     })
   ];
 

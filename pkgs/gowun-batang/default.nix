@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "gowun-batang-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/539f6c4bb51e9b328dd5826bcbf2fd9b1ce56e19/ofl/gowunbatang/GowunBatang-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gowunbatang/GowunBatang-Regular.ttf?raw=true";
       name = "GowunBatang-Regular.ttf";
       sha256 = "466c593e7147412e748af4856d5ad14709b5a860bdf62b9c2546f2c5874e9849";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/539f6c4bb51e9b328dd5826bcbf2fd9b1ce56e19/ofl/gowunbatang/GowunBatang-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gowunbatang/GowunBatang-Bold.ttf?raw=true";
       name = "GowunBatang-Bold.ttf";
       sha256 = "dbfcaa646e5831e7478524924f02906f550285a5050699b4e38c9950b3ec4b94";
     })

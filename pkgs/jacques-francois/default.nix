@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "jacques-francois-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/jacquesfrancois/JacquesFrancois-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/jacquesfrancois/JacquesFrancois-Regular.ttf?raw=true";
       name = "JacquesFrancois-Regular.ttf";
       sha256 = "33aa3d742ee62f235016dd63f7e1ed6a3450e0d527a0e951bb1d410a47ac68cd";
     })

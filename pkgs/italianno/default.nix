@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "italianno-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c7039c870a09971a8f458ea1311b5ddf68cbfec3/ofl/italianno/Italianno-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/italianno/Italianno-Regular.ttf?raw=true";
       name = "Italianno-Regular.ttf";
       sha256 = "f6ae96dea0da46c73370eb0575848ab0eda190315bdfda3f5b252bba3dc9173c";
     })

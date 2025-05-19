@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "marmelad-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/af2a3aa05c4648cb0ded9602364d9af0518b0317/ofl/marmelad/Marmelad-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/marmelad/Marmelad-Regular.ttf?raw=true";
       name = "Marmelad-Regular.ttf";
-      sha256 = "9cbc7cd2da0ce8a854fc5c7e2308151d598b3b5eaa11d9fa3f23d63d317f85d4";
+      sha256 = "aadcea7a972d84294ab5399b99654506559d328e03169a2351854c7046b77fc6";
     })
   ];
 

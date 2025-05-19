@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "long-cang-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/20da2e7644bac5325abbc9f30848ae3162bfc974/ofl/longcang/LongCang-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/longcang/LongCang-Regular.ttf?raw=true";
       name = "LongCang-Regular.ttf";
       sha256 = "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc";
     })

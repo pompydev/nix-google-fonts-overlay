@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "gabriela-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/45b40149feae173672ac225998fadcdf8bd62186/ofl/gabriela/Gabriela-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gabriela/Gabriela-Regular.ttf?raw=true";
       name = "Gabriela-Regular.ttf";
-      sha256 = "13fcca7764f57ed130810066904517cec12188edf5ae3de713cc91090ba3d654";
+      sha256 = "c38334bfff10cc97fa6e5c5ddf1f12dd54428bb218d7a423fb3c07bf8180bfd8";
     })
   ];
 

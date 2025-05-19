@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-traditional-nushu-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/nototraditionalnushu/NotoTraditionalNushu-Regular.ttf?raw=true";
-      name = "NotoTraditionalNushu-Regular.ttf";
-      sha256 = "04b2fe18447e8794ea5226b1479074bccb86cf8e44639fff41e9d5a5f3457999";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/nototraditionalnushu/NotoTraditionalNushu%5Bwght%5D.ttf?raw=true";
+      name = "NotoTraditionalNushu_wght_.ttf";
+      sha256 = "5944d18bbd4cb3422e249177afe2e4a645b58e4265b079809b47a8210ca315e7";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoTraditionalNushu-Regular.ttf $out/share/fonts/truetype/NotoTraditionalNushu-Regular.ttf
+     install -Dm644 NotoTraditionalNushu_wght_.ttf $out/share/fonts/truetype/NotoTraditionalNushu_wght_.ttf
   '';
 
   meta = with lib; {

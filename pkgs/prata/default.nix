@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "prata-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c1f1a61cacbfa0bed4200a2565e231a88bb0a7a5/ofl/prata/Prata-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/prata/Prata-Regular.ttf?raw=true";
       name = "Prata-Regular.ttf";
       sha256 = "3b2b880737be3bda5f03554297b758516876157c88f9e3b3bae8fa1fc96a2c2c";
     })

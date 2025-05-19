@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "hubballi-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/29cde031be655567b6b237d401f3e1a172861e84/ofl/hubballi/Hubballi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hubballi/Hubballi-Regular.ttf?raw=true";
       name = "Hubballi-Regular.ttf";
       sha256 = "e51ad77d40b5adccd6c6ca537863ef4e364bd374c56593e007fbf5402a9a1cdd";
     })

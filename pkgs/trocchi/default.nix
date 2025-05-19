@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "trocchi-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/668ea549d5ac7b771a02e2d0d8cf4e2cfa3b5601/ofl/trocchi/Trocchi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/trocchi/Trocchi-Regular.ttf?raw=true";
       name = "Trocchi-Regular.ttf";
-      sha256 = "b1bdf6312239235bef451924f4dde308b6c1a498feb99f0ed25b516222681e1a";
+      sha256 = "d2d81d30d99aaa2c234e1d7bb67ee2e9f27f108f8d2ebef1c89e0db623734b91";
     })
   ];
 

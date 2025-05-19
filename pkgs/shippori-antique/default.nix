@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "shippori-antique-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d101ebd3b8c8f4dc8f1da2a7001885e943bce1a5/ofl/shipporiantique/ShipporiAntique-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/shipporiantique/ShipporiAntique-Regular.ttf?raw=true";
       name = "ShipporiAntique-Regular.ttf";
       sha256 = "b88fd5138c77c1359406051786d45c88ab34e2040c6dfa385f00a4e17edaab52";
     })

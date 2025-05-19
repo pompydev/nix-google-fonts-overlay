@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "oswald-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7737b61706f8b5de7e6d883f99cb99000ab6cce8/ofl/oswald/Oswald%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oswald/Oswald%5Bwght%5D.ttf?raw=true";
       name = "Oswald_wght_.ttf";
-      sha256 = "08f3f1296114563252ae4fc3ca38dcd432cb461aa32b119a4f49aba7ea8f37cc";
+      sha256 = "5b38c246e255a12f5712d640d56bcced0472466fc68983d2d0410ec0457c2817";
     })
   ];
 

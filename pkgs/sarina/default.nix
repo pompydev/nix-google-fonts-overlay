@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sarina-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/sarina/Sarina-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sarina/Sarina-Regular.ttf?raw=true";
       name = "Sarina-Regular.ttf";
       sha256 = "89c6e14d7638e48463cc6c61b2e463e3dcc5780a26197bcf7f4412d70048a4a6";
     })

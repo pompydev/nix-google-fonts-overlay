@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "pinyon-script-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/pinyonscript/PinyonScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pinyonscript/PinyonScript-Regular.ttf?raw=true";
       name = "PinyonScript-Regular.ttf";
-      sha256 = "26507b30d76ebdd4d2396c068c0ba1aec8c6d162dc10e2f1d21e57c0da0d36d1";
+      sha256 = "4aab130a6ed27f8b8117738c84a5602edf9300cdcc0651a9a65bf96f451ac29a";
     })
   ];
 

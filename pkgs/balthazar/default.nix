@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "balthazar-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/321eeddadf5516499f65151a01e89c3e08bc0058/ofl/balthazar/Balthazar-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/balthazar/Balthazar-Regular.ttf?raw=true";
       name = "Balthazar-Regular.ttf";
       sha256 = "b495856b693458a99a4fcfe420944b6034afe823eb159e8437b4e8929d5aceaa";
     })

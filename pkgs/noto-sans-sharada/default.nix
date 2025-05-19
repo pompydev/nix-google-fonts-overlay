@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-sharada-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssharada/NotoSansSharada-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanssharada/NotoSansSharada-Regular.ttf?raw=true";
       name = "NotoSansSharada-Regular.ttf";
-      sha256 = "d70fdd4d55beb32020d1fecf38ec9dea8304cec2a3098bdf3da70040cc0b2db7";
+      sha256 = "2ccfb8e72773d318c03b8414ad82686c97ee65a9825fdb1a388e376c4df13372";
     })
   ];
 

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rampart-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/40d0d88683b81fe307092951138cf81e626f621a/ofl/rampartone/RampartOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rampartone/RampartOne-Regular.ttf?raw=true";
       name = "RampartOne-Regular.ttf";
       sha256 = "a4c60ee835175fa147eb483fac0dd8ff9007c37884ef77af86b0a868fa554d49";
     })

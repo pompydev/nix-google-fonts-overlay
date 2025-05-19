@@ -2,30 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fc38515385021d838c296c6aa9d6342cee9e2047/ofl/notoserif/NotoSerif-Regular.ttf?raw=true";
-      name = "NotoSerif-Regular.ttf";
-      sha256 = "375e83eade60ffc1c2f516a89175358ba5fcb785a9bdb68c6a3be1b6470704dd";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserif/NotoSerif%5Bwdth,wght%5D.ttf?raw=true";
+      name = "NotoSerif_wdth,wght_.ttf";
+      sha256 = "4d8e6761424656867019081a1a01336f3cb086982682698714054fc33f782713";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fc38515385021d838c296c6aa9d6342cee9e2047/ofl/notoserif/NotoSerif-Italic.ttf?raw=true";
-      name = "NotoSerif-Italic.ttf";
-      sha256 = "4a5ae30931a7590be230ae1867650679f803188c5211493bd1a5e3fc0ac78181";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/fc38515385021d838c296c6aa9d6342cee9e2047/ofl/notoserif/NotoSerif-Bold.ttf?raw=true";
-      name = "NotoSerif-Bold.ttf";
-      sha256 = "58de10340959ee1abd715fb6f8a670f44ca3adfc5d9c7e09e48d7af4a1ff4192";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/fc38515385021d838c296c6aa9d6342cee9e2047/ofl/notoserif/NotoSerif-BoldItalic.ttf?raw=true";
-      name = "NotoSerif-BoldItalic.ttf";
-      sha256 = "c8d7e9e9a586cd5f671fc267906c8739be70fb5e92069fd891e1177e1d255fe1";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserif/NotoSerif-Italic%5Bwdth,wght%5D.ttf?raw=true";
+      name = "NotoSerif-Italic_wdth,wght_.ttf";
+      sha256 = "e87acbc6c0efd0d9a20d6a8cbbda2b266c14be3a3a6f5af8ec9d7b2460570ad1";
     })
   ];
 
@@ -36,10 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoSerif-Regular.ttf $out/share/fonts/truetype/NotoSerif-Regular.ttf
-     install -Dm644 NotoSerif-Italic.ttf $out/share/fonts/truetype/NotoSerif-Italic.ttf
-     install -Dm644 NotoSerif-Bold.ttf $out/share/fonts/truetype/NotoSerif-Bold.ttf
-     install -Dm644 NotoSerif-BoldItalic.ttf $out/share/fonts/truetype/NotoSerif-BoldItalic.ttf
+     install -Dm644 NotoSerif_wdth,wght_.ttf $out/share/fonts/truetype/NotoSerif_wdth,wght_.ttf
+     install -Dm644 NotoSerif-Italic_wdth,wght_.ttf $out/share/fonts/truetype/NotoSerif-Italic_wdth,wght_.ttf
   '';
 
   meta = with lib; {

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "oxanium-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/becd3517c582fa68f041364b02bc597ee822ef1c/ofl/oxanium/Oxanium%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oxanium/Oxanium%5Bwght%5D.ttf?raw=true";
       name = "Oxanium_wght_.ttf";
       sha256 = "2ce01d946e1e1ffc8d7eecfffbda8623bedd63eaf811a20488c4b69af45babb0";
     })

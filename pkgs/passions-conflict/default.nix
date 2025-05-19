@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "passions-conflict-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f937a9ba8f4f35aea43c9b5e09583762e196aa04/ofl/passionsconflict/PassionsConflict-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/passionsconflict/PassionsConflict-Regular.ttf?raw=true";
       name = "PassionsConflict-Regular.ttf";
       sha256 = "6fa9080c8a5577803c3e6073e92a54758930e8cc31112f6500901be34d5fc55a";
     })

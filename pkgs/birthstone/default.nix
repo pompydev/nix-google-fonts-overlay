@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "birthstone-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d829350c2f34cb6e60cf77bf786befe7b40a8073/ofl/birthstone/Birthstone-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/birthstone/Birthstone-Regular.ttf?raw=true";
       name = "Birthstone-Regular.ttf";
       sha256 = "cd04bb37f03d2e8caebaee2f26b09d3244bab7810fa348d8acb2e6a5228d8783";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "irish-grover-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/daa6505c6b31624e0c129f44da0f3a4341093734/apache/irishgrover/IrishGrover-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/irishgrover/IrishGrover-Regular.ttf?raw=true";
       name = "IrishGrover-Regular.ttf";
       sha256 = "d894be4e904bbd08a9d46670b4f631e84b7de5d70ede2c89e8217958ca32eec4";
     })

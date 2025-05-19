@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-phoenician-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansphoenician/NotoSansPhoenician-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansphoenician/NotoSansPhoenician-Regular.ttf?raw=true";
       name = "NotoSansPhoenician-Regular.ttf";
-      sha256 = "a79d2c4f0b4c04cfb8dc97c91145d29dc89965f3afc3985f7c4006ccbde58def";
+      sha256 = "9c248001ff674977172c89fb7686faf22b827b63641d0122352523f31780d1f4";
     })
   ];
 

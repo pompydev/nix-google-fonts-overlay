@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "paytone-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c1a228c0dd891c988b5017044f75acf6b2114a16/ofl/paytoneone/PaytoneOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/paytoneone/PaytoneOne-Regular.ttf?raw=true";
       name = "PaytoneOne-Regular.ttf";
-      sha256 = "92e7ad4c492c3542c7a88a5657dde8e68235c00c9592cd91121cb043abad852b";
+      sha256 = "1c07073b0b578199b54c7866d55e2b631d285e8aa4bb4fbc08809d980cd49b14";
     })
   ];
 

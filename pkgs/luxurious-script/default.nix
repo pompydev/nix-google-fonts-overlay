@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "luxurious-script-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ea4cc33bf2e7af6b2de45b34518206f61eeafa84/ofl/luxuriousscript/LuxuriousScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/luxuriousscript/LuxuriousScript-Regular.ttf?raw=true";
       name = "LuxuriousScript-Regular.ttf";
       sha256 = "db1a118a34eb835f7960a09d8be472b65971d7798772842dc3cd37a8641491e9";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "great-vibes-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/59adf74d6054b41e8e647193c1cfa69115256843/ofl/greatvibes/GreatVibes-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/greatvibes/GreatVibes-Regular.ttf?raw=true";
       name = "GreatVibes-Regular.ttf";
-      sha256 = "826eb3a5ebbbdcff40c31f475c7499ab535a67740d8f1c854192de9eccd24cae";
+      sha256 = "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15";
     })
   ];
 

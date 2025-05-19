@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "cairo-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ea017b81484c44a68dee2bce96205d115925916d/ofl/cairo/Cairo%5Bwght%5D.ttf?raw=true";
-      name = "Cairo_wght_.ttf";
-      sha256 = "d9929c901a57f7e29ba0eaf6f2979f8ab95c6f0170b9a0d914d61d6487a8959e";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cairo/Cairo%5Bslnt,wght%5D.ttf?raw=true";
+      name = "Cairo_slnt,wght_.ttf";
+      sha256 = "667c987182391c91f4e57a2f455b1794fb5e3ee6ca4ef3383e86bb690fa9c964";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Cairo_wght_.ttf $out/share/fonts/truetype/Cairo_wght_.ttf
+     install -Dm644 Cairo_slnt,wght_.ttf $out/share/fonts/truetype/Cairo_slnt,wght_.ttf
   '';
 
   meta = with lib; {

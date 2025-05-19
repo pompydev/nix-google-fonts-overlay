@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "oooh-baby-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e67686a9563bbeec9120663f62208976d2aa3995/ofl/ooohbaby/OoohBaby-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ooohbaby/OoohBaby-Regular.ttf?raw=true";
       name = "OoohBaby-Regular.ttf";
       sha256 = "904d1b79093da1ae4b7436ac2190ddf5048e3cb839b2dc0c0516d0f58a1c25ee";
     })

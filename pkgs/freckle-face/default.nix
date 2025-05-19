@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "freckle-face-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/freckleface/FreckleFace-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/freckleface/FreckleFace-Regular.ttf?raw=true";
       name = "FreckleFace-Regular.ttf";
       sha256 = "54b61a9f5bac3eb3a3d7f78f99d4d9c5d5688a9859e79bbf8704ae79c7f8f0fc";
     })

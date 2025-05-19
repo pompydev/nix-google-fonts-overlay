@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "amatic-sc-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/81e5d4b23540f0444ddc51fb2ca2b9db6a2820c0/ofl/amaticsc/AmaticSC-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/amaticsc/AmaticSC-Regular.ttf?raw=true";
       name = "AmaticSC-Regular.ttf";
       sha256 = "513a76f96d39a5366bd27c258674aaea35ee51c42b8f3060387f74649ee8c8aa";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/81e5d4b23540f0444ddc51fb2ca2b9db6a2820c0/ofl/amaticsc/AmaticSC-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/amaticsc/AmaticSC-Bold.ttf?raw=true";
       name = "AmaticSC-Bold.ttf";
       sha256 = "d367beadee66efbb657d24d3d8f30f3b60633e9d5c8ded7385541cf775cabb4d";
     })

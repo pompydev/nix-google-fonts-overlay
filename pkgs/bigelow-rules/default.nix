@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "bigelow-rules-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4a101fcb744cfa920da4f7b7ad342ffcc97f8fe7/ofl/bigelowrules/BigelowRules-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bigelowrules/BigelowRules-Regular.ttf?raw=true";
       name = "BigelowRules-Regular.ttf";
       sha256 = "b6cef7ba51c1fbca920b531a39ac2c348023b5b9e4d35d1bca43ec801eeb5fcb";
     })

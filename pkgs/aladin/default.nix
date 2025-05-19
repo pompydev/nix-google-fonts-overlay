@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "aladin-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/40ee6ca60db99f23f03b8d005dcc35154f3b804f/ofl/aladin/Aladin-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/aladin/Aladin-Regular.ttf?raw=true";
       name = "Aladin-Regular.ttf";
       sha256 = "c7ee57e19b1b2c89f8d786115dc69225091ff7665f30fea7908bc2fb27d13398";
     })

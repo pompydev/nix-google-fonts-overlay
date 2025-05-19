@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "roboto-flex-${version}";
-  version = "2022-05-24-010327";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/dce3aa6dca876ac74f787ae655373af010160e7b/ofl/robotoflex/RobotoFlex%5BGRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/robotoflex/RobotoFlex%5BGRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght%5D.ttf?raw=true";
       name = "RobotoFlex_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght_.ttf";
-      sha256 = "a8663ec429d36a7f243314289665da11ba5b6a7c8b032b02be85366451d88142";
+      sha256 = "9b523f7d82593df0107173849ebb8c817471a1df4b4fb2c3cbf40cfd810c8281";
     })
   ];
 

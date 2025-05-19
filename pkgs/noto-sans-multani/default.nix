@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-multani-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmultani/NotoSansMultani-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmultani/NotoSansMultani-Regular.ttf?raw=true";
       name = "NotoSansMultani-Regular.ttf";
-      sha256 = "feb45da05d09031ab31c9e34492c2672f6134c911eb73b66dab5ee1efd860973";
+      sha256 = "fe39d78a4f0acae8e5033ac59aa7af3f8664410c048a3b58b5d76ea44548c090";
     })
   ];
 

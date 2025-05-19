@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "berkshire-swash-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5e3cf075394685de1139f794ab1235137997e637/ofl/berkshireswash/BerkshireSwash-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/berkshireswash/BerkshireSwash-Regular.ttf?raw=true";
       name = "BerkshireSwash-Regular.ttf";
       sha256 = "f0c80837dc6f32b89b10894a7e39295db4a00ab697cada682a3f5942c342fe00";
     })

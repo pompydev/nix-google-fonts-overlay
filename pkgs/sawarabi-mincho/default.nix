@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "sawarabi-mincho-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bf19077ade7be4fb171532fb14f94391406a01c6/ofl/sawarabimincho/SawarabiMincho-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sawarabimincho/SawarabiMincho-Regular.ttf?raw=true";
       name = "SawarabiMincho-Regular.ttf";
-      sha256 = "86373c619710d1528aac3a4d47ce96834101bb38b057235b39e47b61ba143c6d";
+      sha256 = "1f27e6b0c2543a311c31d2ba3e895e50028069bd24b5e0d20a5b6e0a0b03e9c4";
     })
   ];
 

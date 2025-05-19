@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "alatsi-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3d91fe855aa2d3e40f003b337d77adcedbe4d917/ofl/alatsi/Alatsi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/alatsi/Alatsi-Regular.ttf?raw=true";
       name = "Alatsi-Regular.ttf";
-      sha256 = "f2662b6c86cf6d31119b9d42851f43c820fa102f5d54295e34ef60aef22c1359";
+      sha256 = "16b62400d74df555a35e145d0d8835e4f06e6d5c4707a8d0faf76d4e99910292";
     })
   ];
 

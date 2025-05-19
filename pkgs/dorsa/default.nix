@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "dorsa-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/dorsa/Dorsa-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/dorsa/Dorsa-Regular.ttf?raw=true";
       name = "Dorsa-Regular.ttf";
       sha256 = "d204db5ceb2d028529f9701fab1bf99a7f6b1f555cda5bffe51072ec1409e3c7";
     })

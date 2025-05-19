@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "bungee-shade-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8ec727b2c6ab8b81b2c7a4e7d59e82f253fecf2f/ofl/bungeeshade/BungeeShade-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bungeeshade/BungeeShade-Regular.ttf?raw=true";
       name = "BungeeShade-Regular.ttf";
-      sha256 = "cc4e08d958885390fa105fcbc7f614ad8d480303e978ef63c82c5313980c27c1";
+      sha256 = "665c626082682b462f4e696308eafa7071c114da8f8ff3fb73a289c7ff7df482";
     })
   ];
 

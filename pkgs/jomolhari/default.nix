@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "jomolhari-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/636da261d0d2ef4ef9344ba15754e914d634a863/ofl/jomolhari/Jomolhari-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/jomolhari/Jomolhari-Regular.ttf?raw=true";
       name = "Jomolhari-Regular.ttf";
       sha256 = "4507597ac6d8faad3908c06a4698167f8204a1101d38bf32b04582cc2d22e86c";
     })

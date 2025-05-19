@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "inika-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/inika/Inika-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/inika/Inika-Regular.ttf?raw=true";
       name = "Inika-Regular.ttf";
       sha256 = "3fe94a6697ababc3b8b580e005d2718a2ce0fe2afea08b164ee5259d9ea8db25";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/inika/Inika-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/inika/Inika-Bold.ttf?raw=true";
       name = "Inika-Bold.ttf";
       sha256 = "57c5b398a0d72c85283a4640337091bc974aae9ef03b1bd159523b747c1197f3";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "metrophobic-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b4e1615381e87f08a5d19bfcece435e612968c72/ofl/metrophobic/Metrophobic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/metrophobic/Metrophobic-Regular.ttf?raw=true";
       name = "Metrophobic-Regular.ttf";
-      sha256 = "f64caeab0ed6d83e429e544083b3ac391304b8b4ad3a4c561dbc88854cef0d02";
+      sha256 = "34e4ac3257307c28e6dd14f5d77bb296211f0ddd217607228a5375416ed8ac58";
     })
   ];
 

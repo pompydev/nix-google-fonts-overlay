@@ -1,0 +1,32 @@
+{ lib, stdenv, fetchurl }:
+
+stdenv.mkDerivation rec {
+  name = "lumanosimo-${version}";
+  version = "2025-05-16-181022";
+
+  phases = [ "unpackPhase" "installPhase" ];
+
+  srcs = [
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lumanosimo/Lumanosimo-Regular.ttf?raw=true";
+      name = "Lumanosimo-Regular.ttf";
+      sha256 = "768d2bbe3b9dcfe5cdd89a01cf4f90b9729b58ae565233a2fab0f7f48b42f662";
+    })
+  ];
+
+  unpackPhase = ''
+    for font in $srcs; do
+      cp "$font" "$(echo "$font" | cut -d- -f2-)"
+    done
+  '';
+
+  installPhase = ''
+     install -Dm644 Lumanosimo-Regular.ttf $out/share/fonts/truetype/Lumanosimo-Regular.ttf
+  '';
+
+  meta = with lib; {
+    description = "Lumanosimo";
+    license = licenses.ofl;
+    platforms = platforms.all;
+  };
+}

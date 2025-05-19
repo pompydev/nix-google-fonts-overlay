@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "alike-angular-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/84313974989a3e755cf8c66f28d3c8ec27972f41/ofl/alikeangular/AlikeAngular-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/alikeangular/AlikeAngular-Regular.ttf?raw=true";
       name = "AlikeAngular-Regular.ttf";
-      sha256 = "0b45870800a897713372ab6eb9ff4c096152807ed623e167c92b2790660f68be";
+      sha256 = "3706438e11bb219d6dbbb19958b637dc19470638da28fd97a620f7d7069bf448";
     })
   ];
 

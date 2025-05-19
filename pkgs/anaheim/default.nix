@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "anaheim-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c7c2d7c04e0c99a629cc73ace52c0bcdba6f4708/ofl/anaheim/Anaheim-Regular.ttf?raw=true";
-      name = "Anaheim-Regular.ttf";
-      sha256 = "ec304bd65495967cc2339f7d8f3c37475b49d85f7f1140ee789f307d2706daa6";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/anaheim/Anaheim%5Bwght%5D.ttf?raw=true";
+      name = "Anaheim_wght_.ttf";
+      sha256 = "4dcf9445d6d6791377da5079771ef565abf19a1d93869d6a46dcd5341944a058";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Anaheim-Regular.ttf $out/share/fonts/truetype/Anaheim-Regular.ttf
+     install -Dm644 Anaheim_wght_.ttf $out/share/fonts/truetype/Anaheim_wght_.ttf
   '';
 
   meta = with lib; {

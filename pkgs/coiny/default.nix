@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "coiny-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/413898858ade64383198fa773fec7fcf166de552/ofl/coiny/Coiny-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/coiny/Coiny-Regular.ttf?raw=true";
       name = "Coiny-Regular.ttf";
       sha256 = "ef02d723a54abe4819bea54ea8b2ecf72d77d258010bb336cd4862a37705eac7";
     })

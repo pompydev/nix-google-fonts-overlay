@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "mingzat-${version}";
-  version = "2022-06-01-140151";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5c2d328a5e26531d7f7b4a0b75ecf6165f32ba43/ofl/mingzat/Mingzat-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mingzat/Mingzat-Regular.ttf?raw=true";
       name = "Mingzat-Regular.ttf";
       sha256 = "63b8c9ea9ceb9953a6aeaf94e70be3d534c93070247c945512c1e782dace961a";
     })

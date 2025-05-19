@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-khojki-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanskhojki/NotoSansKhojki-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanskhojki/NotoSansKhojki-Regular.ttf?raw=true";
       name = "NotoSansKhojki-Regular.ttf";
-      sha256 = "535cb9a795b8bd6e2c5f899574cd6bd26c267d0431aa7b03d6d8ac25ef0c9183";
+      sha256 = "0b50d1f6d4f8c4254095eb3a9a7603444d9f30e21d8dca1305971288b8e5be1b";
     })
   ];
 

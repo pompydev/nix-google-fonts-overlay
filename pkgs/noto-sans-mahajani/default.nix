@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-mahajani-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmahajani/NotoSansMahajani-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmahajani/NotoSansMahajani-Regular.ttf?raw=true";
       name = "NotoSansMahajani-Regular.ttf";
-      sha256 = "14602358186a2361d57707105b9ea35ac90ff235598f2a890cfa65bef1634958";
+      sha256 = "a48694e1ea0178e11df1b9a760d7ad53b6aa3a7b86e5d8c18dfb37e144ae69c0";
     })
   ];
 

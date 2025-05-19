@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "butcherman-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8bfe28adb8dbab52d23b078006b3957c5d2e9129/ofl/butcherman/Butcherman-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/butcherman/Butcherman-Regular.ttf?raw=true";
       name = "Butcherman-Regular.ttf";
       sha256 = "b8cee5e2cdc71f44e6806dc0db1090a3ce2e48ca727072073700bf646b0ce6b5";
     })

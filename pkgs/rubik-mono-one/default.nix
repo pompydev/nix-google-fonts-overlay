@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rubik-mono-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0fc79a83d486f399f0fe3c07f4d0a5ab6a39ad1f/ofl/rubikmonoone/RubikMonoOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rubikmonoone/RubikMonoOne-Regular.ttf?raw=true";
       name = "RubikMonoOne-Regular.ttf";
       sha256 = "b22624b6a36e543e942106edfccd198c50b57b65b924bfe02a6f0a5699429e6b";
     })

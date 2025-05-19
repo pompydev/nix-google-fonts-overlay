@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "monomaniac-one-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3eec0534f6121952cd7d0d3d79d360831ff04110/ofl/monomaniacone/MonomaniacOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/monomaniacone/MonomaniacOne-Regular.ttf?raw=true";
       name = "MonomaniacOne-Regular.ttf";
       sha256 = "4045d2b419268efce1b1ef33004603c74c045804137693f1fb98c79576f31c6f";
     })

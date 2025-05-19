@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "karantina-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c6a35a05e759f79e20a99fd511fe84a9b944f80d/ofl/karantina/Karantina-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/karantina/Karantina-Light.ttf?raw=true";
       name = "Karantina-Light.ttf";
       sha256 = "3286ffc39003621874ad2ac2d6ca9374d2728443465c4df6222dff425814560d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c6a35a05e759f79e20a99fd511fe84a9b944f80d/ofl/karantina/Karantina-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/karantina/Karantina-Regular.ttf?raw=true";
       name = "Karantina-Regular.ttf";
       sha256 = "a1ef8ee51724f0182f07d060b63047540a0bca96db10d33fa6a0b539f99019bf";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c6a35a05e759f79e20a99fd511fe84a9b944f80d/ofl/karantina/Karantina-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/karantina/Karantina-Bold.ttf?raw=true";
       name = "Karantina-Bold.ttf";
       sha256 = "fc099ee72a843fb5b4d574abd099e047eec4cf476a1a2c65fe520e1cdcc897be";
     })

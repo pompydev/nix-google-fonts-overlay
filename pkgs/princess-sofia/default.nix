@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "princess-sofia-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/princesssofia/PrincessSofia-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/princesssofia/PrincessSofia-Regular.ttf?raw=true";
       name = "PrincessSofia-Regular.ttf";
       sha256 = "2b5df30a7b866cd764cc4ff586dc8c28e16967099d50ab582f003ffbc7228ee5";
     })

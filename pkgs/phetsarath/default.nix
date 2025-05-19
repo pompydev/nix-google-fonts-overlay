@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "phetsarath-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/phetsarath/Phetsarath-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/phetsarath/Phetsarath-Regular.ttf?raw=true";
       name = "Phetsarath-Regular.ttf";
       sha256 = "0d0328c2036319a06ae4e0093d1ea32b6d849069f624cf6dd67e1f6ebc4635a8";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/phetsarath/Phetsarath-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/phetsarath/Phetsarath-Bold.ttf?raw=true";
       name = "Phetsarath-Bold.ttf";
       sha256 = "3b8cced65a9b4a49da487c4abb6c36c9dafb2c11e3c75a16b7da32a28bc2ecab";
     })

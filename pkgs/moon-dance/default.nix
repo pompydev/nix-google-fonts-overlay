@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "moon-dance-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3e774f45f68235aef617bfd6d69e477fc6a41636/ofl/moondance/MoonDance-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/moondance/MoonDance-Regular.ttf?raw=true";
       name = "MoonDance-Regular.ttf";
       sha256 = "f25e6830b0c1b95df85446fc064cc0bc8db1588600a260a441b03011189e8335";
     })

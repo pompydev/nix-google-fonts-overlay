@@ -2,15 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "fruktur-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/adfe2b6efa9b5e7ba5788d8879e4193c2d9f27cb/ofl/fruktur/Fruktur-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/fruktur/Fruktur-Regular.ttf?raw=true";
       name = "Fruktur-Regular.ttf";
-      sha256 = "1862da38b1baf7e29c475ccc06d7f1673a208ad65551b7c02674ba7638f15a86";
+      sha256 = "dcba901b5fe11c0b6c3e8d5eb1003339b2dd020e2fc3949014ed0d8ff87715e7";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/fruktur/Fruktur-Italic.ttf?raw=true";
+      name = "Fruktur-Italic.ttf";
+      sha256 = "2fc0cb26f0d1945202b6022ea68ac566826d19e64b461b640e9a1056f1f40218";
     })
   ];
 
@@ -22,6 +27,7 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
      install -Dm644 Fruktur-Regular.ttf $out/share/fonts/truetype/Fruktur-Regular.ttf
+     install -Dm644 Fruktur-Italic.ttf $out/share/fonts/truetype/Fruktur-Italic.ttf
   '';
 
   meta = with lib; {

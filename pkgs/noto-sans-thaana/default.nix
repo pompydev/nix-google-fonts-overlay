@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-thaana-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansthaana/NotoSansThaana%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansthaana/NotoSansThaana%5Bwght%5D.ttf?raw=true";
       name = "NotoSansThaana_wght_.ttf";
-      sha256 = "dfbdfa4ec44ee90e654882805ed38e260da9314ada3fe2e6e62ee76f0addec04";
+      sha256 = "a296795c892a9ec2b0f4d3af315568506ef9fd55920386170992d3935d8866ca";
     })
   ];
 

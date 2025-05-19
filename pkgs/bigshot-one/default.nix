@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "bigshot-one-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c49ea130685460880723daee2fd781a441764075/ofl/bigshotone/BigshotOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bigshotone/BigshotOne-Regular.ttf?raw=true";
       name = "BigshotOne-Regular.ttf";
       sha256 = "3f87c969632dca932a76e875bb6931e32a003577436fe1f14eccefb274cf2ade";
     })

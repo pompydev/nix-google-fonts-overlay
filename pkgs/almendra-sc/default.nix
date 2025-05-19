@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "almendra-sc-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c5730ef6c912f2466b8f57ea937c4e8c94e7d745/ofl/almendrasc/AlmendraSC-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/almendrasc/AlmendraSC-Regular.ttf?raw=true";
       name = "AlmendraSC-Regular.ttf";
       sha256 = "dca733b5b03e4ea52c666365777c8f6b360d55de04efc9d834cf9f82b68308be";
     })

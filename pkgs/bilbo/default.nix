@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "bilbo-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4af5d21701761dd821a1163dd6b1d86d5af03968/ofl/bilbo/Bilbo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bilbo/Bilbo-Regular.ttf?raw=true";
       name = "Bilbo-Regular.ttf";
       sha256 = "f479505c839db0c7a8be7108d046acca3d409a034b777514241cc6a2f9d818fc";
     })

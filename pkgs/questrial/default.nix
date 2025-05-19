@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "questrial-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/9b891a0b19036b0868ff57016f4e70c1e2dc3433/ofl/questrial/Questrial-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/questrial/Questrial-Regular.ttf?raw=true";
       name = "Questrial-Regular.ttf";
       sha256 = "0ee7f2debabb13773fd38468b31820e11fca202a8f98c4d80b6ffcb796899b6f";
     })

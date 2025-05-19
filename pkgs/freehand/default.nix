@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "freehand-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/freehand/Freehand-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/freehand/Freehand-Regular.ttf?raw=true";
       name = "Freehand-Regular.ttf";
       sha256 = "3f2f1155d862304cf29cc4252aa5df4d47468d127c3c12cbf16894b0dda6c833";
     })

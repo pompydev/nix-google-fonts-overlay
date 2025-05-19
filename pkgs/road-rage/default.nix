@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "road-rage-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3e0358068d401966eb42ef11b2ae1af06430ce83/ofl/roadrage/RoadRage-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/roadrage/RoadRage-Regular.ttf?raw=true";
       name = "RoadRage-Regular.ttf";
       sha256 = "b25b8113340bd83520f92a32a13d8d2e39c46fcc595cf39e8ae9e9a4b6332eb8";
     })

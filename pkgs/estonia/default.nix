@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "estonia-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c1c96b1743b6a1984844abd0ecceb16224640652/ofl/estonia/Estonia-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/estonia/Estonia-Regular.ttf?raw=true";
       name = "Estonia-Regular.ttf";
       sha256 = "03087597ea24879c19d51ca4622f8c4e9cd867d081e7ad0ad3e7dccfdb1933b2";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "fuzzy-bubbles-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/19311a025d3069c8882a130bce378178e45dac9f/ofl/fuzzybubbles/FuzzyBubbles-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/fuzzybubbles/FuzzyBubbles-Regular.ttf?raw=true";
       name = "FuzzyBubbles-Regular.ttf";
       sha256 = "407829f1e0b6b73a9482ffdfd22702bb149a020fad33f95eb30bc98bf9d471d5";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/19311a025d3069c8882a130bce378178e45dac9f/ofl/fuzzybubbles/FuzzyBubbles-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/fuzzybubbles/FuzzyBubbles-Bold.ttf?raw=true";
       name = "FuzzyBubbles-Bold.ttf";
       sha256 = "f18fa58c66cf2540800f10ae4c9ae315c89149c41ace2a394c5efca7354c4ea8";
     })

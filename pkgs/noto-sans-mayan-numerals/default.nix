@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-mayan-numerals-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmayannumerals/NotoSansMayanNumerals-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmayannumerals/NotoSansMayanNumerals-Regular.ttf?raw=true";
       name = "NotoSansMayanNumerals-Regular.ttf";
-      sha256 = "5832050be8933ebbbe32e0ec2500ad27cace47a2cbe0a43e250cdef0a454bada";
+      sha256 = "b073279ae1eabfbe8bd4232f5f83fdaeb439267f5580a7849ed9c4a04cf35d34";
     })
   ];
 

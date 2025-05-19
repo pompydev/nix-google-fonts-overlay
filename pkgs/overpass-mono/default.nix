@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "overpass-mono-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/55c4c396ff0d12beaa40883ab3fe9b7400b67a12/ofl/overpassmono/OverpassMono%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/overpassmono/OverpassMono%5Bwght%5D.ttf?raw=true";
       name = "OverpassMono_wght_.ttf";
       sha256 = "49f230e10251608f0ae1a2ce46be768d7b9ddcbe5cdca2e9f6b762fcbce1ae4f";
     })

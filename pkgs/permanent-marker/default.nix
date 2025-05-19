@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "permanent-marker-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/740941b92c366cd9480403ec249412d8a6d47f0e/apache/permanentmarker/PermanentMarker-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/permanentmarker/PermanentMarker-Regular.ttf?raw=true";
       name = "PermanentMarker-Regular.ttf";
       sha256 = "28f82c8a7943cb8e9d599f8554da1d4fc75dbcf69b9885ad6c0611d20c6946c5";
     })

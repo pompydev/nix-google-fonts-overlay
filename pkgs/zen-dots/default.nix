@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "zen-dots-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f73db06f37f4e5abca57792f56fc0125b36e55e0/ofl/zendots/ZenDots-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zendots/ZenDots-Regular.ttf?raw=true";
       name = "ZenDots-Regular.ttf";
       sha256 = "2f81a9f4c26f302d87a40792e048cd7193c886aa50fa6792a4b4fb6266c25609";
     })

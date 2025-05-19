@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "alike-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7f63f6f0193c0fec43d78623d5ffa14e50b053b1/ofl/alike/Alike-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/alike/Alike-Regular.ttf?raw=true";
       name = "Alike-Regular.ttf";
-      sha256 = "1c797dda829ec3ef077dc9d1538a95054d83f233f389adebfaa39a96b20b9dfc";
+      sha256 = "accb24221880fbdcf8e8b23fc341ed43c6e0cc3cef1dfbad57ac72474dc1e512";
     })
   ];
 

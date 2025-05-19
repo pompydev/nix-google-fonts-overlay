@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "caveat-brush-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b05d7ed92bc2424f4dd1d2c5861a423868dea932/ofl/caveatbrush/CaveatBrush-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/caveatbrush/CaveatBrush-Regular.ttf?raw=true";
       name = "CaveatBrush-Regular.ttf";
       sha256 = "e565bd7bffd895ca64f8d1cb77c816b9b38d9c010246386a07c9648592f6f282";
     })

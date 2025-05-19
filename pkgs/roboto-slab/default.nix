@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "roboto-slab-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/726818c7767f8d3eef97efc2d260979d406e5864/apache/robotoslab/RobotoSlab%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/robotoslab/RobotoSlab%5Bwght%5D.ttf?raw=true";
       name = "RobotoSlab_wght_.ttf";
-      sha256 = "18137628b2731ac8d093c552b3a71abfc958bdb132ecf29a71614309c82836d9";
+      sha256 = "786ae192477447d33c6672c3055fba7cbfe45184c9a79e77a14f15716ca05b16";
     })
   ];
 

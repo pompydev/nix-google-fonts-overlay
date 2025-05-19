@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "festive-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7d43ecce95de59077ba3031103badf5c76a8cf34/ofl/festive/Festive-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/festive/Festive-Regular.ttf?raw=true";
       name = "Festive-Regular.ttf";
       sha256 = "34940d4e68ffdbaee80e25d9ac8ef956eb0f4965c804d067041373ddca6a9ec8";
     })

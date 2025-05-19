@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "tenali-ramakrishna-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/tenaliramakrishna/TenaliRamakrishna-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tenaliramakrishna/TenaliRamakrishna-Regular.ttf?raw=true";
       name = "TenaliRamakrishna-Regular.ttf";
       sha256 = "270de242b3a71275be5919cd1d5aefa272ae4a996d45e83b9672e15152caa4b8";
     })

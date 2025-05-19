@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-meetei-mayek-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e011c63812ec1b4bb6ff309cd8c2c47cb1706c93/ofl/notosansmeeteimayek/NotoSansMeeteiMayek%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmeeteimayek/NotoSansMeeteiMayek%5Bwght%5D.ttf?raw=true";
       name = "NotoSansMeeteiMayek_wght_.ttf";
-      sha256 = "b5e96c6175044e58d8842634b0f5077610110e75fe194eb434d8cc5121a3387f";
+      sha256 = "d56eb6d54ad8aad3570b7ee07f64866832a04f29bce6e5f183918c9eaf008fac";
     })
   ];
 

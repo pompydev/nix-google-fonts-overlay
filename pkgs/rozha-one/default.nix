@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rozha-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4d42699bf090b45aecf174fdf5f1c26ec46e80fc/ofl/rozhaone/RozhaOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rozhaone/RozhaOne-Regular.ttf?raw=true";
       name = "RozhaOne-Regular.ttf";
       sha256 = "8491b838c31f30272aa6da67e4749afabab8297db82a055fd2d0aa689f500ee3";
     })

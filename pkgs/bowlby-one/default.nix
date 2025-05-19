@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "bowlby-one-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5df13fc147bd59c2bef2746ae1707fcfe058fd4e/ofl/bowlbyone/BowlbyOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bowlbyone/BowlbyOne-Regular.ttf?raw=true";
       name = "BowlbyOne-Regular.ttf";
       sha256 = "c46a806d7b51fd4987e5f0be449fe40a944cb407e43290ce1cdeed029a8cdc1d";
     })

@@ -1,0 +1,32 @@
+{ lib, stdenv, fetchurl }:
+
+stdenv.mkDerivation rec {
+  name = "playwrite-ie-guides-${version}";
+  version = "2025-05-16-181022";
+
+  phases = [ "unpackPhase" "installPhase" ];
+
+  srcs = [
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwriteieguides/PlaywriteIEGuides-Regular.ttf?raw=true";
+      name = "PlaywriteIEGuides-Regular.ttf";
+      sha256 = "f6ca866bd7525359a7a06903607a10dcc7e339b5d3e85ad8d5066f1a1d3e1228";
+    })
+  ];
+
+  unpackPhase = ''
+    for font in $srcs; do
+      cp "$font" "$(echo "$font" | cut -d- -f2-)"
+    done
+  '';
+
+  installPhase = ''
+     install -Dm644 PlaywriteIEGuides-Regular.ttf $out/share/fonts/truetype/PlaywriteIEGuides-Regular.ttf
+  '';
+
+  meta = with lib; {
+    description = "Playwrite IE Guides";
+    license = licenses.ofl;
+    platforms = platforms.all;
+  };
+}

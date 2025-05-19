@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-old-north-arabian-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansoldnortharabian/NotoSansOldNorthArabian-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansoldnortharabian/NotoSansOldNorthArabian-Regular.ttf?raw=true";
       name = "NotoSansOldNorthArabian-Regular.ttf";
-      sha256 = "9068680d32d6bc14909bd1917d0270ce83e655f5e4d76c94ac55fc9a0a16d17f";
+      sha256 = "27e42ee27587eda9c2521650cca938d4b247e00d55603b0abab0789c2eb2cccb";
     })
   ];
 

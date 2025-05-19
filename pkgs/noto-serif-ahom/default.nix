@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-ahom-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifahom/NotoSerifAhom-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifahom/NotoSerifAhom-Regular.ttf?raw=true";
       name = "NotoSerifAhom-Regular.ttf";
-      sha256 = "d6a2a355b4ef6f2228d58b61e2f650255d36488efe272a36e67aa16b663ffa03";
+      sha256 = "2db70c33f5ef1796753743a87817278094fb031ba05d6b51d359c8cb5929631b";
     })
   ];
 

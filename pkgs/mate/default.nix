@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "mate-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/mate/Mate-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mate/Mate-Regular.ttf?raw=true";
       name = "Mate-Regular.ttf";
-      sha256 = "4e4360a59949fb48f8bf4b52cecca3cde736138bffd9908c43a1e9d5163acc25";
+      sha256 = "95480334bc38a94236f03cf1c8dec24ea5a906712a559598d40b322c61d14b43";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/mate/Mate-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mate/Mate-Italic.ttf?raw=true";
       name = "Mate-Italic.ttf";
-      sha256 = "3784df9d29ef28fde3635d2f9d6af842b9cdfae9aa957f99bd65c9620b6950d1";
+      sha256 = "52c32eaa806f093934883ee47df2cdb57fb000cbcb537c4982f45fb6decfc37f";
     })
   ];
 

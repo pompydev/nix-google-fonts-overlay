@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "blaka-hollow-${version}";
-  version = "2022-04-27-084210";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/21f51aedbe2704dc941c74711661b9d9c87b3558/ofl/blakahollow/BlakaHollow-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/blakahollow/BlakaHollow-Regular.ttf?raw=true";
       name = "BlakaHollow-Regular.ttf";
-      sha256 = "52551897a1bfec76303b277f0499c5d8ccf803409e0f5f49759a288174e45345";
+      sha256 = "59cb30824e6023d454b4b44038cf44cdc9a4ad67f9795171c646c98ceb2bd542";
     })
   ];
 

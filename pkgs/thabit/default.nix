@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "thabit-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/thabit/Thabit.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/thabit/Thabit.ttf?raw=true";
       name = "Thabit.ttf";
       sha256 = "3fe6f423d751919d6411b38d6de2ff823252292eef9e860c4a532faf779b674a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/thabit/Thabit-Oblique.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/thabit/Thabit-Oblique.ttf?raw=true";
       name = "Thabit-Oblique.ttf";
       sha256 = "dc8ca2cbcdd9d1925394b2261bb46897752b20a190ce7d108e20b56b465ce686";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/thabit/Thabit-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/thabit/Thabit-Bold.ttf?raw=true";
       name = "Thabit-Bold.ttf";
       sha256 = "8dded564a1f6dc6a223112b66f20d12a221ad76a7f688dd570cef794940dd124";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/thabit/Thabit-BoldOblique.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/thabit/Thabit-BoldOblique.ttf?raw=true";
       name = "Thabit-BoldOblique.ttf";
       sha256 = "5375ed9d0d5ea6e9e9806bbddd1dc860b1857018d3229d10f944ca39e04318ff";
     })

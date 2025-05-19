@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "preahvihear-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4f5dbdb58c9075640112a760b0f2376ab04cd187/ofl/preahvihear/Preahvihear-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/preahvihear/Preahvihear-Regular.ttf?raw=true";
       name = "Preahvihear-Regular.ttf";
       sha256 = "ea306be8e286bc3bd75b9cb497caa38bdcd06e8d6541a53e2e1a77f16d7ed522";
     })

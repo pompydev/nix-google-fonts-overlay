@@ -2,15 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "museomoderno-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e151ae63ce2df8f180388b1482be245f75754cde/ofl/museomoderno/MuseoModerno%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/museomoderno/MuseoModerno%5Bwght%5D.ttf?raw=true";
       name = "MuseoModerno_wght_.ttf";
-      sha256 = "fb5809d00561da99e3283dbd357a6fc459e4432296a6eca92bcbda29a398e4ec";
+      sha256 = "d03b027cf5cf72d014c8a405a8ceb83ea1d5d8ae2c64a7f602b131d9973e3503";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/museomoderno/MuseoModerno-Italic%5Bwght%5D.ttf?raw=true";
+      name = "MuseoModerno-Italic_wght_.ttf";
+      sha256 = "ff123989a6c175cd3fce6b3decba302d3841d65d9839ec09dd0c850bea212b56";
     })
   ];
 
@@ -22,6 +27,7 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
      install -Dm644 MuseoModerno_wght_.ttf $out/share/fonts/truetype/MuseoModerno_wght_.ttf
+     install -Dm644 MuseoModerno-Italic_wght_.ttf $out/share/fonts/truetype/MuseoModerno-Italic_wght_.ttf
   '';
 
   meta = with lib; {

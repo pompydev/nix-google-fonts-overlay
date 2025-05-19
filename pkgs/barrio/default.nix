@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "barrio-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f10784f5c52eab5dff74c4aa970558da6c07df40/ofl/barrio/Barrio-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/barrio/Barrio-Regular.ttf?raw=true";
       name = "Barrio-Regular.ttf";
       sha256 = "6f86249fbed4d0d620bcfefda64a0081e15cf0c8c5fd2ad17db157b98b558bc5";
     })

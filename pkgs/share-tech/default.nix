@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "share-tech-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b62a9cb704ec5f83dd4f29583cb596212e8eb60e/ofl/sharetech/ShareTech-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sharetech/ShareTech-Regular.ttf?raw=true";
       name = "ShareTech-Regular.ttf";
       sha256 = "2d1dc42631c22ce99285a3a7c1d0ca9e0bae9e67aa1ca01a501081f27a203df4";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-kaithi-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanskaithi/NotoSansKaithi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanskaithi/NotoSansKaithi-Regular.ttf?raw=true";
       name = "NotoSansKaithi-Regular.ttf";
-      sha256 = "d217c8bc858594b12e13d0d4accce754284c8f80b5531313ddd1dc2359e03f0f";
+      sha256 = "e33f6b7e0c9d3c4edfb3f9bf9c00b0814bef14f25fef9d2c6a8d1451520ffe43";
     })
   ];
 

@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "libre-bodoni-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8c9641917db6868b3b0ea8b88882c65c11e09453/ofl/librebodoni/LibreBodoni%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librebodoni/LibreBodoni%5Bwght%5D.ttf?raw=true";
       name = "LibreBodoni_wght_.ttf";
-      sha256 = "eb40812b2fdb250e3dad9c38f8b2bffe4c66f778a1299ec32622005ff4f0996d";
+      sha256 = "0d543665bd869819ffd7d46608804e245497ba835960832d44be89e561b0c717";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8c9641917db6868b3b0ea8b88882c65c11e09453/ofl/librebodoni/LibreBodoni-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librebodoni/LibreBodoni-Italic%5Bwght%5D.ttf?raw=true";
       name = "LibreBodoni-Italic_wght_.ttf";
-      sha256 = "53df41b370bb6745621eab290a72ea42e4237fcc303c875f550d5bb7bc446595";
+      sha256 = "6a9b0c88764dcf6c094653e3c28da045fcebca48734254afdcbfec46b9ab4fcd";
     })
   ];
 

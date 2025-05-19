@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-naskh-arabic-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notonaskharabic/NotoNaskhArabic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notonaskharabic/NotoNaskhArabic%5Bwght%5D.ttf?raw=true";
       name = "NotoNaskhArabic_wght_.ttf";
-      sha256 = "d9c87ec796cd6155d47a91b8270f93932a25618a102c8ec7c1441a80c2b25851";
+      sha256 = "4b5bcbca51d8a1b0fc598db42a497660e538f75c1244893d3330a3c7b15741da";
     })
   ];
 

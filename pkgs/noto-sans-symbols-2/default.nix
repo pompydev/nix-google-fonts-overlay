@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-symbols-2-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssymbols2/NotoSansSymbols2-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanssymbols2/NotoSansSymbols2-Regular.ttf?raw=true";
       name = "NotoSansSymbols2-Regular.ttf";
-      sha256 = "876598db5f1e3bef2bc77c4d94c5b0d5d2c1620be4878a06f18fb5434e331688";
+      sha256 = "7d5fb73b7ca67a6798101741f5d280a3d016a56a197afcd4199dbb57b4b82a21";
     })
   ];
 

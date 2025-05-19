@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-kannada-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifkannada/NotoSerifKannada%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifkannada/NotoSerifKannada%5Bwght%5D.ttf?raw=true";
       name = "NotoSerifKannada_wght_.ttf";
-      sha256 = "8ccf2c7b4e89ba4c7c7e57e9d54d2e052835e2d2e3a51f254342894d649126a8";
+      sha256 = "3d97c98dd59251a85fcc6e95edf9be02b60147e92486927390247f1cd4d5eb37";
     })
   ];
 

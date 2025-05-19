@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-glagolitic-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansglagolitic/NotoSansGlagolitic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansglagolitic/NotoSansGlagolitic-Regular.ttf?raw=true";
       name = "NotoSansGlagolitic-Regular.ttf";
-      sha256 = "5526e640b205befa2f59b3c46513fc94be896a13c4428f84000eb22f8a8f3a32";
+      sha256 = "6472cfa8cda3efd3c680a007af9b55dc02469104a068bf9fd08f934a1fb27310";
     })
   ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-old-permic-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansoldpermic/NotoSansOldPermic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansoldpermic/NotoSansOldPermic-Regular.ttf?raw=true";
       name = "NotoSansOldPermic-Regular.ttf";
-      sha256 = "752d2519d4bbc1f961f2f79f2896267e18f5775531fa01718d67c1d2ecbb7f12";
+      sha256 = "a0a446342fbb13aee85bdfd77b27362ca9b5a4fd8f8fa4318ee33e41dc581bf6";
     })
   ];
 

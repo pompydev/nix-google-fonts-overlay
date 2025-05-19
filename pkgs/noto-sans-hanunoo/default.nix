@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-hanunoo-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanshanunoo/NotoSansHanunoo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanshanunoo/NotoSansHanunoo-Regular.ttf?raw=true";
       name = "NotoSansHanunoo-Regular.ttf";
-      sha256 = "63e65378a4f2bbbdeb5f3bf1641baa4d4908a1808390450ec40abff3c94800d9";
+      sha256 = "bdf8e293a79d753fcff1c3fdfc5e09fdfd8141cd08dbf2ac1268a24f4549a005";
     })
   ];
 

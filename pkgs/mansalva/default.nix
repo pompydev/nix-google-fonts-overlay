@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "mansalva-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a5784483f71ba1bce0ecb5b2b82ea11713078c01/ofl/mansalva/Mansalva-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mansalva/Mansalva-Regular.ttf?raw=true";
       name = "Mansalva-Regular.ttf";
-      sha256 = "b6d01ecd924ad830c3bb49d1e4a62843dfea341385d94f62900963f3ddb8c725";
+      sha256 = "613ca294f0a364fd282a06d5e8a65db5d8f2bb8b834f8b21437a53cf70dafb8a";
     })
   ];
 

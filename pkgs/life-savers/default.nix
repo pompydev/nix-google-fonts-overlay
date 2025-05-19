@@ -2,25 +2,25 @@
 
 stdenv.mkDerivation rec {
   name = "life-savers-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/177d8ea721d408efc0bc64ae7bedd1193e0ed0d1/ofl/lifesavers/LifeSavers-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lifesavers/LifeSavers-Regular.ttf?raw=true";
       name = "LifeSavers-Regular.ttf";
-      sha256 = "4e4bfebdf05737dd20d82c265ddf128b7dbd962bd53941075a6aa56cde30e8c3";
+      sha256 = "9cfbf78067b2f17079be543d38bc614ddad23cc6e9c61f119b2ad96289236056";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/177d8ea721d408efc0bc64ae7bedd1193e0ed0d1/ofl/lifesavers/LifeSavers-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lifesavers/LifeSavers-Bold.ttf?raw=true";
       name = "LifeSavers-Bold.ttf";
-      sha256 = "9d5534f9ad41a14794be42768bae114fdd3ef64feaba65008a17bf22821d1b01";
+      sha256 = "cbcc2ded1b108aca167abc1a8d752b1deb975c445611c0fb725d32d21dcfb000";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/177d8ea721d408efc0bc64ae7bedd1193e0ed0d1/ofl/lifesavers/LifeSavers-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lifesavers/LifeSavers-ExtraBold.ttf?raw=true";
       name = "LifeSavers-ExtraBold.ttf";
-      sha256 = "c5d0ba88ca91171573bc0ea3eead229da892c827be8b62738f9c975c0dc18b52";
+      sha256 = "a7392b6a21ec8f22e5019d0adf9945fc4acba8761d4ff1e53eec65c9a230b454";
     })
   ];
 

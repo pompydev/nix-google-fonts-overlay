@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "love-ya-like-a-sister-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/loveyalikeasister/LoveYaLikeASister.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/loveyalikeasister/LoveYaLikeASister.ttf?raw=true";
       name = "LoveYaLikeASister.ttf";
       sha256 = "4fbe2c1fa647de5a415acac7b2b6491542fe9767b6199719a3bd77a7cf35eb0d";
     })

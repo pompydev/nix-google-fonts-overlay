@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "ruda-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b275aee5408f826c7d929c8f93b61bd7a9ab81eb/ofl/ruda/Ruda%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ruda/Ruda%5Bwght%5D.ttf?raw=true";
       name = "Ruda_wght_.ttf";
       sha256 = "acc6e412c74545f934bed8564f8650f113d46d220f0f3a94484e6a6558cb40f0";
     })

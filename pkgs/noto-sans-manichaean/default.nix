@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-manichaean-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmanichaean/NotoSansManichaean-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmanichaean/NotoSansManichaean-Regular.ttf?raw=true";
       name = "NotoSansManichaean-Regular.ttf";
-      sha256 = "50fd97d20306431271e23523a8d3e57210d105add3c340efd2ee5f77b63ac756";
+      sha256 = "692e31fc2600b1db6a369dd50b808914ebea385530b0d95ca1f103e7943e7487";
     })
   ];
 

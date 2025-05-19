@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "delius-unicase-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/deliusunicase/DeliusUnicase-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/deliusunicase/DeliusUnicase-Regular.ttf?raw=true";
       name = "DeliusUnicase-Regular.ttf";
       sha256 = "26fb53b7297281e4907dfe254cc23c206f28510f683eb726e5c5024ca36dc95d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/deliusunicase/DeliusUnicase-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/deliusunicase/DeliusUnicase-Bold.ttf?raw=true";
       name = "DeliusUnicase-Bold.ttf";
       sha256 = "2fc8f72a7257d837a5b710a8f6ca9e6b7a179f809243eef9380ba2185b8c2a67";
     })

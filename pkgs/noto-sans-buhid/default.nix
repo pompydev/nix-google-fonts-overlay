@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-buhid-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansbuhid/NotoSansBuhid-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansbuhid/NotoSansBuhid-Regular.ttf?raw=true";
       name = "NotoSansBuhid-Regular.ttf";
-      sha256 = "435cfa275e7ccdff7326430ac498158d0377ac357570efd224f8c2888c8f6b94";
+      sha256 = "70408dbcf0da33d12d3b582305057a63a3ea132b4bf313027834e5b9b6a7d886";
     })
   ];
 

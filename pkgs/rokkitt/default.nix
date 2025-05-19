@@ -2,15 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "rokkitt-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/990aa67659702681deea9b98db0a3b69658ccef4/ofl/rokkitt/Rokkitt%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rokkitt/Rokkitt%5Bwght%5D.ttf?raw=true";
       name = "Rokkitt_wght_.ttf";
-      sha256 = "9b40356f9bb233c7bd0626ae9d4798a1871ecb410b7c833a6f61be60276b7558";
+      sha256 = "737b2881d2e98f85424b473ab049da3216289a1f84266becb972c87664de2b40";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rokkitt/Rokkitt-Italic%5Bwght%5D.ttf?raw=true";
+      name = "Rokkitt-Italic_wght_.ttf";
+      sha256 = "acd236589a7fb42b60735c37a4d0d6dcd22bdad364e9503be428f5dd9e8615d5";
     })
   ];
 
@@ -22,6 +27,7 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
      install -Dm644 Rokkitt_wght_.ttf $out/share/fonts/truetype/Rokkitt_wght_.ttf
+     install -Dm644 Rokkitt-Italic_wght_.ttf $out/share/fonts/truetype/Rokkitt-Italic_wght_.ttf
   '';
 
   meta = with lib; {

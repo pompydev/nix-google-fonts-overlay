@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "tai-heritage-pro-${version}";
-  version = "2022-05-12-152025";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f6d3dee82ebbc3bec83e78e200f6d0b62a9d702e/ofl/taiheritagepro/TaiHeritagePro-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/taiheritagepro/TaiHeritagePro-Regular.ttf?raw=true";
       name = "TaiHeritagePro-Regular.ttf";
       sha256 = "dd2e9d518584b2214762ab4de572c5bd2d3955c0d32b74739a5c471412e2bbac";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f6d3dee82ebbc3bec83e78e200f6d0b62a9d702e/ofl/taiheritagepro/TaiHeritagePro-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/taiheritagepro/TaiHeritagePro-Bold.ttf?raw=true";
       name = "TaiHeritagePro-Bold.ttf";
       sha256 = "658ba5d655942e0139233cc8e8a7e04529976c38dd9abd80a093dceccad42ff4";
     })

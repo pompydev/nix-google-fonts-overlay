@@ -2,33 +2,33 @@
 
 stdenv.mkDerivation rec {
   name = "abhaya-libre-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f8dbc76905437e947506289c8d41dfc0e123f02f/ofl/abhayalibre/AbhayaLibre-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/abhayalibre/AbhayaLibre-Regular.ttf?raw=true";
       name = "AbhayaLibre-Regular.ttf";
       sha256 = "d4279d38a0012fa54d340979694e70e3235266220dedc0d7000131345fb33bd4";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f8dbc76905437e947506289c8d41dfc0e123f02f/ofl/abhayalibre/AbhayaLibre-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/abhayalibre/AbhayaLibre-Medium.ttf?raw=true";
       name = "AbhayaLibre-Medium.ttf";
       sha256 = "d3d4051877dc9538a71720d5fdba4118cdcd467096972c524a9fff9c45269f4b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f8dbc76905437e947506289c8d41dfc0e123f02f/ofl/abhayalibre/AbhayaLibre-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/abhayalibre/AbhayaLibre-SemiBold.ttf?raw=true";
       name = "AbhayaLibre-SemiBold.ttf";
       sha256 = "254d773d80ecd382f5e4d818418ad521aa5a8d69cc996d0ac0a1c3f0417fabc0";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f8dbc76905437e947506289c8d41dfc0e123f02f/ofl/abhayalibre/AbhayaLibre-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/abhayalibre/AbhayaLibre-Bold.ttf?raw=true";
       name = "AbhayaLibre-Bold.ttf";
       sha256 = "01fb4cd74841c5f108372737a74cfedeaf0a722ca23e2275dc69f411dc0ad5a6";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f8dbc76905437e947506289c8d41dfc0e123f02f/ofl/abhayalibre/AbhayaLibre-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/abhayalibre/AbhayaLibre-ExtraBold.ttf?raw=true";
       name = "AbhayaLibre-ExtraBold.ttf";
       sha256 = "a8d05da8766a9bc540e0ea5b63f36a141d629907e8f06c4c2b23bb0bd741b2e1";
     })

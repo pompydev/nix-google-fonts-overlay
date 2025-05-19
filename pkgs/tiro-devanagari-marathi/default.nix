@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "tiro-devanagari-marathi-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/265268499351c2a22f660b9ded70cb111eea4203/ofl/tirodevanagarimarathi/TiroDevanagariMarathi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tirodevanagarimarathi/TiroDevanagariMarathi-Regular.ttf?raw=true";
       name = "TiroDevanagariMarathi-Regular.ttf";
       sha256 = "8e1d4edf924c0685f1383d0d37aa7c4662103d2e485e53b535b4528af5acd966";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/265268499351c2a22f660b9ded70cb111eea4203/ofl/tirodevanagarimarathi/TiroDevanagariMarathi-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tirodevanagarimarathi/TiroDevanagariMarathi-Italic.ttf?raw=true";
       name = "TiroDevanagariMarathi-Italic.ttf";
       sha256 = "ffa2383d457e468db75775cf19910a4817c3e250da6cfa28a3c6994954ab7d4c";
     })

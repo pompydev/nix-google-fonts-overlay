@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "exo-2-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8d29a3e2062681d3793fcf5bb1a156dcc8281987/ofl/exo2/Exo2%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/exo2/Exo2%5Bwght%5D.ttf?raw=true";
       name = "Exo2_wght_.ttf";
-      sha256 = "6dc268b35134ea07db4ea6b19c965bc82e650cefbd1e4f8fb265bfc4e630c897";
+      sha256 = "205a448676a2586f9c57c25f3d5c58ca8db7e6cf5edf7506783a010c6fe2bfb5";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/8d29a3e2062681d3793fcf5bb1a156dcc8281987/ofl/exo2/Exo2-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/exo2/Exo2-Italic%5Bwght%5D.ttf?raw=true";
       name = "Exo2-Italic_wght_.ttf";
-      sha256 = "6b8089c27e1a29b3c7e22eade6190f5c756d0abdd20a0d5c736afdec6d29a942";
+      sha256 = "bad568cea9ed23d6ae4aea41ad3f7747752952aabdd85d7f01474af392a21b32";
     })
   ];
 

@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "familjen-grotesk-${version}";
-  version = "2022-06-02-125518";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/917cad5aeb6953227b5b7740ad7fadf53210f55b/ofl/familjengrotesk/FamiljenGrotesk%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/familjengrotesk/FamiljenGrotesk%5Bwght%5D.ttf?raw=true";
       name = "FamiljenGrotesk_wght_.ttf";
-      sha256 = "5300f02ffd415d435ea02983e710ae943340137418cb99a1672c2dd38fd84f53";
+      sha256 = "2d25fc41321a04561fab20a90fc8bc9ed4d1c0743fe8ba76cc51cd3632138b80";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/917cad5aeb6953227b5b7740ad7fadf53210f55b/ofl/familjengrotesk/FamiljenGrotesk-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/familjengrotesk/FamiljenGrotesk-Italic%5Bwght%5D.ttf?raw=true";
       name = "FamiljenGrotesk-Italic_wght_.ttf";
-      sha256 = "c3b1c16b5fe240662f823af51dbe7b3d5eff4308d3d2469c527a433bb2266efc";
+      sha256 = "278047492643756c75533d2acb90e0644abfe5df7bc6b99f21cf72a750580634";
     })
   ];
 

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-old-italic-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansolditalic/NotoSansOldItalic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansolditalic/NotoSansOldItalic-Regular.ttf?raw=true";
       name = "NotoSansOldItalic-Regular.ttf";
-      sha256 = "732462966b4e78346875e63b78c66094d64bf2a3a9a56d4084f623a542f74904";
+      sha256 = "be47cca5000d090c3716c86428afbce436864a67c817271af0b57e450e2b7aab";
     })
   ];
 

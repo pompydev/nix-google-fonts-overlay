@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "cabin-sketch-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7f5b5570350b5fa778d3b8a01a05a112e507a655/ofl/cabinsketch/CabinSketch-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cabinsketch/CabinSketch-Regular.ttf?raw=true";
       name = "CabinSketch-Regular.ttf";
       sha256 = "a6f989fcc910ca321e06cd6a20dbcab20f9e41bce084911432857cfe286355e7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7f5b5570350b5fa778d3b8a01a05a112e507a655/ofl/cabinsketch/CabinSketch-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cabinsketch/CabinSketch-Bold.ttf?raw=true";
       name = "CabinSketch-Bold.ttf";
       sha256 = "0961688037b97947495c2e35e6e5a93f2b234490514e33346605ffedf9c7e6be";
     })

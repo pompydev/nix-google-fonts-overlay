@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "oleo-script-swash-caps-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/oleoscriptswashcaps/OleoScriptSwashCaps-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oleoscriptswashcaps/OleoScriptSwashCaps-Regular.ttf?raw=true";
       name = "OleoScriptSwashCaps-Regular.ttf";
       sha256 = "b8811c803202bbc80e6124200666080a62b63df3b52e1833456189ec1f798c31";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/oleoscriptswashcaps/OleoScriptSwashCaps-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oleoscriptswashcaps/OleoScriptSwashCaps-Bold.ttf?raw=true";
       name = "OleoScriptSwashCaps-Bold.ttf";
       sha256 = "0d622c6a5db8507ecbaaa844672e8553f26249c6a1566b098f54295a77eb42a2";
     })

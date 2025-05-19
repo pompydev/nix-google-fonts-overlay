@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "bonbon-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/153c9f093c6f2c954611ddd1a2480be9e69855fe/ofl/bonbon/Bonbon-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bonbon/Bonbon-Regular.ttf?raw=true";
       name = "Bonbon-Regular.ttf";
       sha256 = "718753f714468e878b2af1c82ec65b68c60ce81732308957c3e90d59bce7ce98";
     })

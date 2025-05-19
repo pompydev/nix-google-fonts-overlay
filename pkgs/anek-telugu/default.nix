@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "anek-telugu-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2d216f8bd5906809f23313a9fe05480000669367/ofl/anektelugu/AnekTelugu%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/anektelugu/AnekTelugu%5Bwdth,wght%5D.ttf?raw=true";
       name = "AnekTelugu_wdth,wght_.ttf";
       sha256 = "25981968a8a3faab975993a54eec455829214390821037fb3a4d6c447d2e1179";
     })

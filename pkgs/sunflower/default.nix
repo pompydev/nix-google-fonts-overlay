@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "sunflower-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/sunflower/Sunflower-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sunflower/Sunflower-Light.ttf?raw=true";
       name = "Sunflower-Light.ttf";
       sha256 = "dd9fb97aa9ec1fdb65e0328513d9c54c114fba41decca1d32a1e1ed992e255c5";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5ea1323a545e2f977c19b043cbf4358062cbd7e4/ofl/sunflower/Sunflower-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sunflower/Sunflower-Medium.ttf?raw=true";
       name = "Sunflower-Medium.ttf";
       sha256 = "6e216d6b2f77a850f6b73be25633d09e03385dfa63a3a632f9e7d83a90ea7f79";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/sunflower/Sunflower-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sunflower/Sunflower-Bold.ttf?raw=true";
       name = "Sunflower-Bold.ttf";
       sha256 = "6b033627817f6619433afe82028013dc45a78ff82406b1dbe5b16e1bbc370e0a";
     })

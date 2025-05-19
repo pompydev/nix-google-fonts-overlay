@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "libre-franklin-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bac9b4ad19c8f13b8586908f09c735b528a05b2e/ofl/librefranklin/LibreFranklin%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librefranklin/LibreFranklin%5Bwght%5D.ttf?raw=true";
       name = "LibreFranklin_wght_.ttf";
-      sha256 = "7625f0843447628c2c263c463a970cf3c53da32af57a37a873ea283f44311dc0";
+      sha256 = "2329f394b10ed1c71107df20fddc11e2bb1b68c1ecbb385f975b36fd64a971f8";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bac9b4ad19c8f13b8586908f09c735b528a05b2e/ofl/librefranklin/LibreFranklin-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librefranklin/LibreFranklin-Italic%5Bwght%5D.ttf?raw=true";
       name = "LibreFranklin-Italic_wght_.ttf";
-      sha256 = "266bd4859e5b5cbbd1f815ad6bc5d1c425adfb39e287c1adc174d95785845673";
+      sha256 = "b8d2f40203bd4d90fe3e805953d9b79d62a6486db756d984b0d8ef4435b367ba";
     })
   ];
 

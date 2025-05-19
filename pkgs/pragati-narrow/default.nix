@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "pragati-narrow-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/53b54ff5ea832b83500403b50affe8be04200cda/ofl/pragatinarrow/PragatiNarrow-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pragatinarrow/PragatiNarrow-Regular.ttf?raw=true";
       name = "PragatiNarrow-Regular.ttf";
       sha256 = "c00d288cc79bce384e85161a256570d278bf25598f809c9718a4f59421516a94";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/53b54ff5ea832b83500403b50affe8be04200cda/ofl/pragatinarrow/PragatiNarrow-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pragatinarrow/PragatiNarrow-Bold.ttf?raw=true";
       name = "PragatiNarrow-Bold.ttf";
       sha256 = "8e151c9307194e6fdd69503999f2150e066dc5e9cdb2a966c861ec53286fc863";
     })

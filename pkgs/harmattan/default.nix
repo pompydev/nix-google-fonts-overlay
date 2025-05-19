@@ -2,20 +2,30 @@
 
 stdenv.mkDerivation rec {
   name = "harmattan-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7028be6bbe82a4e5fd97acca2fe02915fd2c80d6/ofl/harmattan/Harmattan-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/harmattan/Harmattan-Regular.ttf?raw=true";
       name = "Harmattan-Regular.ttf";
-      sha256 = "6aeaeb33a1f0775e1f206b8692a1f2b031ae093ab267c382b99d6c7bf085f2eb";
+      sha256 = "1f3c746defd5404994f667c6e9e45d6961ba67475ac987788f7af0638173d5fe";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/7028be6bbe82a4e5fd97acca2fe02915fd2c80d6/ofl/harmattan/Harmattan-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/harmattan/Harmattan-Medium.ttf?raw=true";
+      name = "Harmattan-Medium.ttf";
+      sha256 = "64d11b95dccd5130ad263cc13802872b1204e966da9959e2e8f367b7ddeca0b9";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/harmattan/Harmattan-SemiBold.ttf?raw=true";
+      name = "Harmattan-SemiBold.ttf";
+      sha256 = "979761b23e714beba0da76f1a2e6675604e394af53461de00bd1daaad80429a7";
+    })
+    (fetchurl {
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/harmattan/Harmattan-Bold.ttf?raw=true";
       name = "Harmattan-Bold.ttf";
-      sha256 = "22432ecd64834ed1bae59c457836b6d978e1364f2a148883b06243ab01caea70";
+      sha256 = "b32887dee3e6847c9044e17424a6876461e7371cf8d17cc7c430e2ac6d450bc8";
     })
   ];
 
@@ -27,6 +37,8 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
      install -Dm644 Harmattan-Regular.ttf $out/share/fonts/truetype/Harmattan-Regular.ttf
+     install -Dm644 Harmattan-Medium.ttf $out/share/fonts/truetype/Harmattan-Medium.ttf
+     install -Dm644 Harmattan-SemiBold.ttf $out/share/fonts/truetype/Harmattan-SemiBold.ttf
      install -Dm644 Harmattan-Bold.ttf $out/share/fonts/truetype/Harmattan-Bold.ttf
   '';
 

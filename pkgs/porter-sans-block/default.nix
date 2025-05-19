@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "porter-sans-block-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bacec3651f66c2e219e20a9a0d0aa0286c74a777/ofl/portersansblock/PorterSansBlock-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/portersansblock/PorterSansBlock-Regular.ttf?raw=true";
       name = "PorterSansBlock-Regular.ttf";
       sha256 = "760943d1b089f37c8d079f3e0347e2b0858c8598894f2c04b7dc52cbd2ab4dfd";
     })

@@ -2,80 +2,80 @@
 
 stdenv.mkDerivation rec {
   name = "spectral-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-ExtraLight.ttf?raw=true";
       name = "Spectral-ExtraLight.ttf";
-      sha256 = "51b068460469fb9be9ff81a350102b8eef7d39e0d1f3ace87d9a2e518f0e7f68";
+      sha256 = "5d852db897fd7ad5ce640a6e88f1cd70eac75777c541d02d86749af8d4797ff1";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-ExtraLightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-ExtraLightItalic.ttf?raw=true";
       name = "Spectral-ExtraLightItalic.ttf";
-      sha256 = "c880181264feed10195cf2bb4a439551a9acca3e190256a30be939a48b4ec4e6";
+      sha256 = "492e823b5d8d67d2f18fe06938d84e8decee24b1790d4c6ebdade3cbd1b83b44";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-Light.ttf?raw=true";
       name = "Spectral-Light.ttf";
-      sha256 = "68efd194d714f1471a38cd5451daa47516c39e50310191a0b61e54252fa2a01f";
+      sha256 = "a2a530303d326473b69ab7863b879e9203ec747e51d5fa7c7b19e0e975e00740";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-LightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-LightItalic.ttf?raw=true";
       name = "Spectral-LightItalic.ttf";
-      sha256 = "103f14954b4fc44cac98d90ddd27aae5e733b3a465fadd1f6e0c0976abda28f9";
+      sha256 = "4cb424aeb1d6b822e9ce6213789afeabd403c6765fc7339e184c27ae4d6a6b01";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-Regular.ttf?raw=true";
       name = "Spectral-Regular.ttf";
-      sha256 = "fb147ad6ef88dfa39d06e368f08ac84a86274bb0590466af146fe06cd4a287a2";
+      sha256 = "c89021dc20720c8d0dcf40b0b2f6e00c13665fa8041717f581396f51b8c78f5d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-Italic.ttf?raw=true";
       name = "Spectral-Italic.ttf";
-      sha256 = "a14d10bc698bb5561c1ee5097dbb8e57cc521ba9699a8fa2f6fe5bb2f9325d25";
+      sha256 = "7ec97244259db4008c4b1224c7914e5371c797c0044af9d85c2d761ba0e5f787";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-Medium.ttf?raw=true";
       name = "Spectral-Medium.ttf";
-      sha256 = "c210f15365a7bc8e1f0b9991ebe88cc66237fd7159d2975826f427a69c7e6808";
+      sha256 = "f385bc588599c879112272711d4acecc126674009d747a27284f59e93a240e83";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-MediumItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-MediumItalic.ttf?raw=true";
       name = "Spectral-MediumItalic.ttf";
-      sha256 = "33b6d201be5e778bdd5e2cd7414a90aa8415563cd348cc16bc6bacc2a58fb4cc";
+      sha256 = "82388c41e76d6417ce9947418fa2cda1ed99f24d4ff295b2f05572178127663f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-SemiBold.ttf?raw=true";
       name = "Spectral-SemiBold.ttf";
-      sha256 = "376abb0253fa6e517c8b7d5c83cfde93c4ada07858143927e62c330bc084fd77";
+      sha256 = "5f86915a744832ecf6e4a17ab04bea091b9fa992ef5164ff65ae34c1da2fe94b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-SemiBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-SemiBoldItalic.ttf?raw=true";
       name = "Spectral-SemiBoldItalic.ttf";
-      sha256 = "d0d8a8f0029e3e584195331f898f12b243521fe63b18ed30ec9bc557c1e18e1c";
+      sha256 = "46ad3a9f93b98dc2dbdeee265e76eb846c5be912aa8f09f42e3692706c6f563b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-Bold.ttf?raw=true";
       name = "Spectral-Bold.ttf";
-      sha256 = "5f93ecd9966a3a1581a949c9f882eced5f93015104e7df1ea80c37ffd9986f31";
+      sha256 = "70ddb1ec6ae3b0b8d0c79231f670de786978f19baeba2130757526e407aebf9b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-BoldItalic.ttf?raw=true";
       name = "Spectral-BoldItalic.ttf";
-      sha256 = "ce2e6e87edd549c5d6b4f72caaf2d7e4df51d101733b2e5c19b17e5e2e5459ae";
+      sha256 = "709fa4f2da9be216fd52125db2d6caa4f90150f48de1a453c9ecf91117ab49b6";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-ExtraBold.ttf?raw=true";
       name = "Spectral-ExtraBold.ttf";
-      sha256 = "99f385f4df531a481cede2166f396f8bc130bf3c0919c794ec30ac437c63894a";
+      sha256 = "af3f8513db8d047ebecb1682b5e04dfc12ec7e6b51b71654d4d348f12a5e6b5a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/68de4ebfd9566ea5d6e759218bf1f0280bc2df1b/ofl/spectral/Spectral-ExtraBoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spectral/Spectral-ExtraBoldItalic.ttf?raw=true";
       name = "Spectral-ExtraBoldItalic.ttf";
-      sha256 = "8bd936f5c046f5169c1601e669e5ffbbfb6d8f9f9004c40f53a452394249f8fb";
+      sha256 = "680ba360e376759b54f33154a89e3c75842d4cf8faa498a717c3e1a65a93305a";
     })
   ];
 

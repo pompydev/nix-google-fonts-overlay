@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "new-tegomin-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/65de92210286af265c9f3d7fb5e96c71d0913127/ofl/newtegomin/NewTegomin-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/newtegomin/NewTegomin-Regular.ttf?raw=true";
       name = "NewTegomin-Regular.ttf";
       sha256 = "bcae8775f0f9b88e12e40434918c56817e96e3a291e2a6595a34fb38fe3e58fb";
     })

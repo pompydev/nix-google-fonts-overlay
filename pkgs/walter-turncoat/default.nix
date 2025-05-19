@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "walter-turncoat-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/049adcf63176dea41d159e92e7419dee3c24203d/apache/walterturncoat/WalterTurncoat-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/walterturncoat/WalterTurncoat-Regular.ttf?raw=true";
       name = "WalterTurncoat-Regular.ttf";
       sha256 = "ab7e9ca31710733211c5a938d2c851c84c0d21f6af4486f32bc6d374281b2da0";
     })

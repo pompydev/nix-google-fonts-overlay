@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "signika-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/80874660e59fabe523036a20957a9370fe1230a7/ofl/signika/Signika%5Bwght%5D.ttf?raw=true";
-      name = "Signika_wght_.ttf";
-      sha256 = "be6b2e7a46a901d483cb9ce5df880a91e63d5e709451bd380051e04ae2c49c89";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/signika/Signika%5BGRAD,wght%5D.ttf?raw=true";
+      name = "Signika_GRAD,wght_.ttf";
+      sha256 = "fae0180ef82a6169d169854595377e1dfa3ab657c96995be8cbf128ffaf07820";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Signika_wght_.ttf $out/share/fonts/truetype/Signika_wght_.ttf
+     install -Dm644 Signika_GRAD,wght_.ttf $out/share/fonts/truetype/Signika_GRAD,wght_.ttf
   '';
 
   meta = with lib; {

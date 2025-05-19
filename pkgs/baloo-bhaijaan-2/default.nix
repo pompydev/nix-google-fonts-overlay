@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "baloo-bhaijaan-2-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a6eb370bf3728a1f47e483a0d5a31788fd5aabf4/ofl/baloobhaijaan2/BalooBhaijaan2%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/baloobhaijaan2/BalooBhaijaan2%5Bwght%5D.ttf?raw=true";
       name = "BalooBhaijaan2_wght_.ttf";
-      sha256 = "e5c2144df39fae55c342431c177cc50a00542de93b94d1365af6288d440deaf8";
+      sha256 = "3e9f07fbc796c0ddcb3e6e0aa26f9c86741d9f5b7f5cb72f4ed3c06e55a19336";
     })
   ];
 

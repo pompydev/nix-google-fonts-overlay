@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "zcool-qingke-huangyou-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/56328c01842464f3af41632473d3e9a4731b7627/ofl/zcoolqingkehuangyou/ZCOOLQingKeHuangYou-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zcoolqingkehuangyou/ZCOOLQingKeHuangYou-Regular.ttf?raw=true";
       name = "ZCOOLQingKeHuangYou-Regular.ttf";
       sha256 = "54f0c0df4308cd74cd0f2fd3494ae054dbc4a1fd6fa7d71f4807eb4cdd8b4136";
     })

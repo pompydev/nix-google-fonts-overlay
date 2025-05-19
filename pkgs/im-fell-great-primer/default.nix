@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "im-fell-great-primer-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/imfellgreatprimer/IMFeGPrm28P.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/imfellgreatprimer/IMFeGPrm28P.ttf?raw=true";
       name = "IMFeGPrm28P.ttf";
       sha256 = "5c6de386acb87550ded558f701d288ec1ce7ffa9ec4b160ae06ee3728a1784b2";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/imfellgreatprimer/IMFeGPit28P.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/imfellgreatprimer/IMFeGPit28P.ttf?raw=true";
       name = "IMFeGPit28P.ttf";
       sha256 = "a3c1cd9fc694e6f090923423ed8e4dc203c6ccc74ea246ee86279068302fe23d";
     })

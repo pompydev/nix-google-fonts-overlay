@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sansita-swashed-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/e24965e60f784bdfeff869baca4ff94dbb3b542d/ofl/sansitaswashed/SansitaSwashed%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sansitaswashed/SansitaSwashed%5Bwght%5D.ttf?raw=true";
       name = "SansitaSwashed_wght_.ttf";
       sha256 = "a6ff6619f22d01eb9582fb00a38052d7afba404ff5868be9bddf37e2888a1c6a";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sriracha-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a50fb4ed42457bbe21254d808c1b18754ede9145/ofl/sriracha/Sriracha-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sriracha/Sriracha-Regular.ttf?raw=true";
       name = "Sriracha-Regular.ttf";
       sha256 = "c3128c30cb21e8724b792586c87059d1b5eceae10d9957ba2ab26c80bbed3669";
     })

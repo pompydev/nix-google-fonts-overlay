@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "ultra-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/57fc85106fc69192c6395466f92e982c053cea1c/apache/ultra/Ultra-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/ultra/Ultra-Regular.ttf?raw=true";
       name = "Ultra-Regular.ttf";
       sha256 = "9ee63cffbc379e5d4eb5fed6a0b94b770da919497e5cba4a227a6393dae0939e";
     })

@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "strait-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/strait/Strait-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/strait/Strait-Regular.ttf?raw=true";
       name = "Strait-Regular.ttf";
-      sha256 = "648f84d4c594ee1c857ed52f28da94d33539dfdcc2fb03d4c1ca0af4b9e01c0e";
+      sha256 = "f705c4ade7470e084582b1f5a1f1e45c16524c7b30ce81204c76236ef4ffbb38";
     })
   ];
 

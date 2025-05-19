@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "langar-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/eff7e984bce02e3a73c94c9d10e4c938279ac575/ofl/langar/Langar-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/langar/Langar-Regular.ttf?raw=true";
       name = "Langar-Regular.ttf";
       sha256 = "b3c5559480f2c8587bdc24816f92ed3ad906d1d2ccc2294d2e051dc4ea0fe806";
     })

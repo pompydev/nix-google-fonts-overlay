@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-lepcha-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanslepcha/NotoSansLepcha-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanslepcha/NotoSansLepcha-Regular.ttf?raw=true";
       name = "NotoSansLepcha-Regular.ttf";
-      sha256 = "168771a2b64da0214bc92d0b93c20f910685b6b4107405fb57ce7ede438fe9d9";
+      sha256 = "9624931ae8f9a8a2a45233e5486fac1a80f333a0b3a25f84d0e2484363914f84";
     })
   ];
 

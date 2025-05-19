@@ -2,25 +2,25 @@
 
 stdenv.mkDerivation rec {
   name = "nanum-myeongjo-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/nanummyeongjo/NanumMyeongjo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/nanummyeongjo/NanumMyeongjo-Regular.ttf?raw=true";
       name = "NanumMyeongjo-Regular.ttf";
-      sha256 = "42e62ca26e86f476797f92aa854ea7a66f5638a05873b4cddcf77ca239845270";
+      sha256 = "7ed9e8653a8ed04285d51dc343ffea6eb3d9c73afc27383ea8929ee4ffd03205";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/245b697e303885b8b8373d75459623eee23259fb/ofl/nanummyeongjo/NanumMyeongjo-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/nanummyeongjo/NanumMyeongjo-Bold.ttf?raw=true";
       name = "NanumMyeongjo-Bold.ttf";
-      sha256 = "8c5e0c90a2d6511f3f326d2f0dc31adbbc8f26e1093668bdf00a6991fe80b238";
+      sha256 = "bc9ed8e60d93fe6db054b8fb988481b625f2eef8cb2317ad0e9834681b8fe3f3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/245b697e303885b8b8373d75459623eee23259fb/ofl/nanummyeongjo/NanumMyeongjo-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/nanummyeongjo/NanumMyeongjo-ExtraBold.ttf?raw=true";
       name = "NanumMyeongjo-ExtraBold.ttf";
-      sha256 = "7081925ba6eb268e25fb8891855ee673b4ffc4d9cecb52c4cd3e0d90ef646d9e";
+      sha256 = "60c0077fce069ba90ae97c0a3679f6eb3712e0ca637bdd0c15b72d335ec46db7";
     })
   ];
 

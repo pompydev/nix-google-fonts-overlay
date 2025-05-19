@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "puppies-play-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2ee01b24ac4952705ea15ba79bac31ae5e1071d8/ofl/puppiesplay/PuppiesPlay-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/puppiesplay/PuppiesPlay-Regular.ttf?raw=true";
       name = "PuppiesPlay-Regular.ttf";
       sha256 = "104fd20ddc4f78f256dd5e3a77d2cfdb0ef5b26e467404377f7bd0afabbb24c0";
     })

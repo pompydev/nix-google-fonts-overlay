@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "libre-barcode-ean13-text-${version}";
-  version = "2021-12-12-182943";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90233404dd9c0092de76afe4eccb279277c97e8b/ofl/librebarcodeean13text/LibreBarcodeEAN13Text-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librebarcodeean13text/LibreBarcodeEAN13Text-Regular.ttf?raw=true";
       name = "LibreBarcodeEAN13Text-Regular.ttf";
       sha256 = "4a7c7c830a98e9dc6896b80e9f6e7bc6ec0a0fab942bc4a4cbe9a29f5bcd3c02";
     })

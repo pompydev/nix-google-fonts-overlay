@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-hatran-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanshatran/NotoSansHatran-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanshatran/NotoSansHatran-Regular.ttf?raw=true";
       name = "NotoSansHatran-Regular.ttf";
-      sha256 = "b4c2cee352c218a47f64c186636bd28ef7646156a5171ca348f2fbf8773e83fa";
+      sha256 = "8d26a25e634783f3fe285868bc71ca396c11d0f760129ce9f85a24f3f943116d";
     })
   ];
 

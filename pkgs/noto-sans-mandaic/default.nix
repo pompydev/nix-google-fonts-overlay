@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-mandaic-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmandaic/NotoSansMandaic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmandaic/NotoSansMandaic-Regular.ttf?raw=true";
       name = "NotoSansMandaic-Regular.ttf";
-      sha256 = "a50d69dc52998618f39e490423ab5943d6456f50ade486b54c339e06d53a2c3a";
+      sha256 = "28f9cdd5221c0c0ce42871996a3ca716e0f2f7be5131423e51021c6397be0fdc";
     })
   ];
 

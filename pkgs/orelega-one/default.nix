@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "orelega-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/38c4e065b473adfad469f67fad7fff4d160f7d99/ofl/orelegaone/OrelegaOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/orelegaone/OrelegaOne-Regular.ttf?raw=true";
       name = "OrelegaOne-Regular.ttf";
       sha256 = "df8372dca68d1a5bc4c7713594ec275d14192f2260b9d5c67c426d300505b704";
     })

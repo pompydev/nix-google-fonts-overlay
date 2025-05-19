@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-balinese-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifbalinese/NotoSerifBalinese-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifbalinese/NotoSerifBalinese-Regular.ttf?raw=true";
       name = "NotoSerifBalinese-Regular.ttf";
-      sha256 = "1bf8d4f3e8615b0cacb92ffcf5b694256ba1f3813fa05b0871ad8f1e9a0e4377";
+      sha256 = "781c98b8d5ff17e9647442f2d2e931c2033df17b3ce63cb376fc9b6c8ede05d4";
     })
   ];
 

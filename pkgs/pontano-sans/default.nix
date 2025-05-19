@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "pontano-sans-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/pontanosans/PontanoSans-Regular.ttf?raw=true";
-      name = "PontanoSans-Regular.ttf";
-      sha256 = "d82dab3318176d696707ddf6687bb5ca7e9702b5429ecd2f304087c6fbd3f9b4";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pontanosans/PontanoSans%5Bwght%5D.ttf?raw=true";
+      name = "PontanoSans_wght_.ttf";
+      sha256 = "cafd98966b473326a8d6344abb34ec543267f47fb76ca7532855db5a08a0a002";
     })
   ];
 
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 PontanoSans-Regular.ttf $out/share/fonts/truetype/PontanoSans-Regular.ttf
+     install -Dm644 PontanoSans_wght_.ttf $out/share/fonts/truetype/PontanoSans_wght_.ttf
   '';
 
   meta = with lib; {

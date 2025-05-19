@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "kristi-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/1ac6f76ab672f0f9854a5eea883893a6fb2971f5/ofl/kristi/Kristi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kristi/Kristi-Regular.ttf?raw=true";
       name = "Kristi-Regular.ttf";
       sha256 = "6725b7a28d9bd8761e2834a6ab380babe073678c6f42017fe576116b9d6fd2a0";
     })

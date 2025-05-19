@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "basic-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/9db9820a4304b094946a98f3c71cc93c68e37b6f/ofl/basic/Basic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/basic/Basic-Regular.ttf?raw=true";
       name = "Basic-Regular.ttf";
       sha256 = "077f7245f6459045495b1ca0493f2b426c421d2112d10b48a38ff8858a07397a";
     })

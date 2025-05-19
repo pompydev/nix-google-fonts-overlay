@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "grechen-fuemen-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ac4afe52d74603ee7dd571b1f43126ba45552856/ofl/grechenfuemen/GrechenFuemen-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/grechenfuemen/GrechenFuemen-Regular.ttf?raw=true";
       name = "GrechenFuemen-Regular.ttf";
       sha256 = "0048d2ccb3f58ce8994804be5764e074771977f4add2f3dd12dfe9a658f1adc0";
     })

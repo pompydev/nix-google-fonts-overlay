@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "padauk-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/padauk/Padauk-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/padauk/Padauk-Regular.ttf?raw=true";
       name = "Padauk-Regular.ttf";
-      sha256 = "2f767c6978439ba4b7262d2239bbc2efd8ab27f8c9ffddb3dcf7d3c54f347b46";
+      sha256 = "c89cf56e572abda9652d9e54203bd729b0c59541c4b569046b9b61acd0b532f3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fab83f4bec30374b922992db6ee7d3618fd60f17/ofl/padauk/Padauk-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/padauk/Padauk-Bold.ttf?raw=true";
       name = "Padauk-Bold.ttf";
-      sha256 = "e1e641fb70a7fa0c1e36c1bd761d66938a9a8391faaea5e16aa55b3362a9f924";
+      sha256 = "9dbb46745ae4ed42d9030210e63f7aa53281861c7fa0be072980161f94927115";
     })
   ];
 

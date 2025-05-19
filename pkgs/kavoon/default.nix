@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "kavoon-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a6ae3d21c413d61473b28c637a9da275d87c939c/ofl/kavoon/Kavoon-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kavoon/Kavoon-Regular.ttf?raw=true";
       name = "Kavoon-Regular.ttf";
       sha256 = "d9600e05c23bba0872171f094cffe98851f52d3ce1d343f1741d32bfcbcdffa2";
     })

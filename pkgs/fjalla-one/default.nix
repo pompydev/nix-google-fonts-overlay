@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "fjalla-one-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c19f2d37a7466e9da7b64aca5413f0ad5d584c3b/ofl/fjallaone/FjallaOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/fjallaone/FjallaOne-Regular.ttf?raw=true";
       name = "FjallaOne-Regular.ttf";
-      sha256 = "8b67075f4791c35b8cd889b3089d0d8dcb0f7813cdfbdb4ff1a9871304602a7f";
+      sha256 = "ce3b299625abe3c76f8acd235b57b3e07ac6ee2d550e106a4b4e4d60095ae2ba";
     })
   ];
 

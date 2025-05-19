@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "warnes-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/warnes/Warnes-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/warnes/Warnes-Regular.ttf?raw=true";
       name = "Warnes-Regular.ttf";
-      sha256 = "2dc982bec57f86da62c214bfb279ffea2690ab97be8c0b4e83f32e7c508e4798";
+      sha256 = "d3bd538498237de2f30420b45efe9b1a2d0671f66868ddf595284f797266ba32";
     })
   ];
 

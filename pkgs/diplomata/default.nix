@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "diplomata-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/diplomata/Diplomata-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/diplomata/Diplomata-Regular.ttf?raw=true";
       name = "Diplomata-Regular.ttf";
-      sha256 = "a02adc3d8790dfac28e3ff841a63529024c93233fd6acdede0b044ce1a425477";
+      sha256 = "0197d3dd0c7e8daf4ec373f15a4cdeeb963f76748ffd8360b9150bac90b73997";
     })
   ];
 

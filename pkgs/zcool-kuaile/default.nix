@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "zcool-kuaile-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/864474ef086b6bacf0737873ad8ce29c2d0b30f0/ofl/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf?raw=true";
       name = "ZCOOLKuaiLe-Regular.ttf";
       sha256 = "634fdf8945efec10319a3001f670823dc73d69233481072a743a45c96415967b";
     })

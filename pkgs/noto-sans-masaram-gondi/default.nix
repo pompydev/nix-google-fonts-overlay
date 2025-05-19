@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-masaram-gondi-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmasaramgondi/NotoSansMasaramGondi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmasaramgondi/NotoSansMasaramGondi-Regular.ttf?raw=true";
       name = "NotoSansMasaramGondi-Regular.ttf";
-      sha256 = "58fea17ae8fb1d51f647e20d0246ede2b0abca1917f9121a1451488a2295765c";
+      sha256 = "e1caa285f93023d2cdf8e9594310062b8310a3d6addf6b56103a9f828198c98f";
     })
   ];
 

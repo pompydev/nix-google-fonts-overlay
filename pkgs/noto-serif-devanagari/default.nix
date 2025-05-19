@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-devanagari-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notoserifdevanagari/NotoSerifDevanagari%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifdevanagari/NotoSerifDevanagari%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSerifDevanagari_wdth,wght_.ttf";
-      sha256 = "f10eb2840c882e0eb25dae9134861df47201b697ba9ad412e9150160aead7725";
+      sha256 = "1191e07bfeb062d80e252eb85b0eafdfbda1e350707a2a60628668e8f677dbbb";
     })
   ];
 

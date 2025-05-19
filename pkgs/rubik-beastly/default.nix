@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rubik-beastly-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/bc8911e6ce854087efe7675afe3caa7876271329/ofl/rubikbeastly/RubikBeastly-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rubikbeastly/RubikBeastly-Regular.ttf?raw=true";
       name = "RubikBeastly-Regular.ttf";
       sha256 = "854c5f4bd05aae76d7830e871e2c990ea309a436072d8f0b67a796a80ec1cb18";
     })

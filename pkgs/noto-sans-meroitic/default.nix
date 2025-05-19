@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-meroitic-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansmeroitic/NotoSansMeroitic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansmeroitic/NotoSansMeroitic-Regular.ttf?raw=true";
       name = "NotoSansMeroitic-Regular.ttf";
-      sha256 = "49c76f5da44b932249c6150f41d20e8f4a405e28d8823a6fd724b05bc1029375";
+      sha256 = "0a9920e60a884d517c9385f68bef840d380ea0918b397a02357a882c28acca69";
     })
   ];
 

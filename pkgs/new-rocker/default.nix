@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "new-rocker-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/newrocker/NewRocker-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/newrocker/NewRocker-Regular.ttf?raw=true";
       name = "NewRocker-Regular.ttf";
       sha256 = "28a499ce5b8bcf0652f8b2e25135183eaddf0c3c8c3e251259b075c71d1ef14c";
     })

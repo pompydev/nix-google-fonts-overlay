@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "clicker-script-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/clickerscript/ClickerScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/clickerscript/ClickerScript-Regular.ttf?raw=true";
       name = "ClickerScript-Regular.ttf";
       sha256 = "0221d4376fc0a25795a32d7e309798b6693b56f65c5851f92529043b230a9117";
     })

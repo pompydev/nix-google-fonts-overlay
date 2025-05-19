@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "bahiana-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/0f4557a57c5b09516a6b26c9f13fe28fa13df79f/ofl/bahiana/Bahiana-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bahiana/Bahiana-Regular.ttf?raw=true";
       name = "Bahiana-Regular.ttf";
       sha256 = "75760e955339cd70012c8bd9577d373f8bdd4256a73f571f61a42f58ea26fe9c";
     })

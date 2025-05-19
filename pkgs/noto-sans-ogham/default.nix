@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-ogham-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansogham/NotoSansOgham-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansogham/NotoSansOgham-Regular.ttf?raw=true";
       name = "NotoSansOgham-Regular.ttf";
-      sha256 = "0656e8c6a1adeedba26a04cd3537072924c5e114b5743e211e1e5e52fbddcedb";
+      sha256 = "6a70572d381f3a54fdaa3b373b865f4d97377c65434493b294b1dfacc7c4f58c";
     })
   ];
 

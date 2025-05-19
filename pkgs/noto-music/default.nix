@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-music-${version}";
-  version = "2022-03-09-183858";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notomusic/NotoMusic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notomusic/NotoMusic-Regular.ttf?raw=true";
       name = "NotoMusic-Regular.ttf";
-      sha256 = "fdf04893f04fabd36261bc5fb4fb2b0ae4da268286318ab8919f34b3e3458397";
+      sha256 = "e913be269fe16723d1dea0afc3c31a28be6958f6a7f0e6d5be6e98506c4022bd";
     })
   ];
 

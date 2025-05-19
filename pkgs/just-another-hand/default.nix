@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "just-another-hand-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a7995c7485a3a0b6dae125b91834ba384e8df0d6/apache/justanotherhand/JustAnotherHand-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/justanotherhand/JustAnotherHand-Regular.ttf?raw=true";
       name = "JustAnotherHand-Regular.ttf";
       sha256 = "f1cd102ebacdb6388c879c9d481d63908ee0d5939a301415a78cdfdc752f79ea";
     })

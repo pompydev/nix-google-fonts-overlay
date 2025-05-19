@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "poiret-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/36ca1a45b594aa73b65c74238799224496b2cc0e/ofl/poiretone/PoiretOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/poiretone/PoiretOne-Regular.ttf?raw=true";
       name = "PoiretOne-Regular.ttf";
       sha256 = "457f2d03263f58e5a6dbcc1b607b10dff6581e7cf9c4ebdf330ec3e6772a3558";
     })

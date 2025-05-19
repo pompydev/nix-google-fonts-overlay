@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "work-sans-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f9a520d3956150b929616354dc7ec915be39e3b4/ofl/worksans/WorkSans%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/worksans/WorkSans%5Bwght%5D.ttf?raw=true";
       name = "WorkSans_wght_.ttf";
       sha256 = "f50f61f2ba738e239442d40bf1069adb195c224b6a5a73a581fc2f3ed62a9f63";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f9a520d3956150b929616354dc7ec915be39e3b4/ofl/worksans/WorkSans-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/worksans/WorkSans-Italic%5Bwght%5D.ttf?raw=true";
       name = "WorkSans-Italic_wght_.ttf";
       sha256 = "0a9f935ea490d3477fc97e40248f356c29bce11a1973939056c4316b122341ec";
     })

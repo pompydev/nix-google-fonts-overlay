@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-sora-sompeng-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssorasompeng/NotoSansSoraSompeng%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanssorasompeng/NotoSansSoraSompeng%5Bwght%5D.ttf?raw=true";
       name = "NotoSansSoraSompeng_wght_.ttf";
-      sha256 = "b714275278d77a82778e330220dcc50c614ae0aa78e987c3f18e2e3aa34f3208";
+      sha256 = "1fe66f4904e960705b68c60f7e92ae579ef80bab30f29b894d44eed1edc306e0";
     })
   ];
 

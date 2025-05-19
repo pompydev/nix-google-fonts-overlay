@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "butterfly-kids-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4c300c5d1647425354921554490c191e54b19229/ofl/butterflykids/ButterflyKids-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/butterflykids/ButterflyKids-Regular.ttf?raw=true";
       name = "ButterflyKids-Regular.ttf";
       sha256 = "4a131f49c3d90e816e6447d244090eb2c36cdbf26be53254271ccdf2d8d111b9";
     })

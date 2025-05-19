@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "single-day-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/81997650b429cd0b3fdfc330a35664673074b31e/ofl/singleday/SingleDay-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/singleday/SingleDay-Regular.ttf?raw=true";
       name = "SingleDay-Regular.ttf";
       sha256 = "716ff67a4b0675b35c26d60a4bb83173f7d153ab754474ed36c3369593ca1ca8";
     })

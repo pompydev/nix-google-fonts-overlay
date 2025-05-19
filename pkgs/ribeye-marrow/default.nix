@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "ribeye-marrow-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/ribeyemarrow/RibeyeMarrow-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ribeyemarrow/RibeyeMarrow-Regular.ttf?raw=true";
       name = "RibeyeMarrow-Regular.ttf";
       sha256 = "4b19d54b86a068bb5b8a060938d87d1e6028d566c8efb68fa9c7debaa19987d0";
     })

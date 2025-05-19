@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "jomhuria-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/9ff1e8c280b2a25076c9fa9dd018ff1b25be2dd8/ofl/jomhuria/Jomhuria-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/jomhuria/Jomhuria-Regular.ttf?raw=true";
       name = "Jomhuria-Regular.ttf";
       sha256 = "17b4b0453acdaafb940a8be8acccc968713e223e5d03942347f6562ca3b1dec3";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "murecho-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/15010ad77ab4506015ff78788f3991db34a94ded/ofl/murecho/Murecho%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/murecho/Murecho%5Bwght%5D.ttf?raw=true";
       name = "Murecho_wght_.ttf";
       sha256 = "3a273c2f11e0164f829bc15c0689e587fe34d1493ff167d5afff8fe71a29e667";
     })

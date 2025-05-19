@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-armenian-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansarmenian/NotoSansArmenian%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansarmenian/NotoSansArmenian%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansArmenian_wdth,wght_.ttf";
-      sha256 = "658758b9a091df5b08feac419206c74a06e18d4125b081eecf37d9ea9ad34cc0";
+      sha256 = "0870908d8318435a5daf1cd280ae15063f990cd9ad60f3e94c734ce9e1ffef71";
     })
   ];
 

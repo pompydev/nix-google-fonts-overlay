@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "schoolbell-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fdcd2ce472b05c4e6b85daecc3dc303e4d476ae2/apache/schoolbell/Schoolbell-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/apache/schoolbell/Schoolbell-Regular.ttf?raw=true";
       name = "Schoolbell-Regular.ttf";
       sha256 = "00ff6655a5eb1eb70d32f2b7351d1bcf3f45f3f9ca40fd5c0d25da79f7f82a50";
     })

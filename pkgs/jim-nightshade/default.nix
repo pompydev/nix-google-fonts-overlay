@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "jim-nightshade-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/jimnightshade/JimNightshade-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/jimnightshade/JimNightshade-Regular.ttf?raw=true";
       name = "JimNightshade-Regular.ttf";
       sha256 = "ad49a9f652cb1d7ce711d7ccdfb5922e3961f871705e88fb0e5d033e0e707103";
     })

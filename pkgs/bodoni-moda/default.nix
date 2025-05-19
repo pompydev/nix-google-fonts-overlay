@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "bodoni-moda-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5cbf0538b9df18080568c5c021a29bd5e36926ec/ofl/bodonimoda/BodoniModa%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bodonimoda/BodoniModa%5Bopsz,wght%5D.ttf?raw=true";
       name = "BodoniModa_opsz,wght_.ttf";
-      sha256 = "5ae2241d6322ad81786a8b2975a3e317a2a755517eb1be26b6605098960e2e35";
+      sha256 = "550f5e34ee0a828d7941b1fe9bc58b34e5260d3f33a61532e6d0a0114e79a5cf";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/5cbf0538b9df18080568c5c021a29bd5e36926ec/ofl/bodonimoda/BodoniModa-Italic%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bodonimoda/BodoniModa-Italic%5Bopsz,wght%5D.ttf?raw=true";
       name = "BodoniModa-Italic_opsz,wght_.ttf";
-      sha256 = "af75390c13f6731653ecc135a5f65067c223945edadcc8b40b827d3955959e1b";
+      sha256 = "dfff1619f8f6871c6372f8855b67211f9a73b4e93d45aca868cd8f46a48622de";
     })
   ];
 

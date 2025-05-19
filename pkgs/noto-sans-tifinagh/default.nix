@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-tifinagh-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanstifinagh/NotoSansTifinagh-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanstifinagh/NotoSansTifinagh-Regular.ttf?raw=true";
       name = "NotoSansTifinagh-Regular.ttf";
-      sha256 = "176233c9dd5649184f3206680debc1a50b411a9229049e0b5d212776af1e2034";
+      sha256 = "b08755bdee9835ebbca1095460e36a9e2f3ae396919fd0fa2377d9b4a3388f7e";
     })
   ];
 

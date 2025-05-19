@@ -2,20 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "kameron-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/kameron/Kameron-Regular.ttf?raw=true";
-      name = "Kameron-Regular.ttf";
-      sha256 = "58ae1aca1002c49e4daee9bf243d58b45846cc574aa46cf05e9700847941aeaa";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/kameron/Kameron-Bold.ttf?raw=true";
-      name = "Kameron-Bold.ttf";
-      sha256 = "817364e5891badba887a0d8346544431d00509d2eb21189800e5de4268a5e9a6";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kameron/Kameron%5Bwght%5D.ttf?raw=true";
+      name = "Kameron_wght_.ttf";
+      sha256 = "b7e9bf8756c3403c1acb1d93d225dcd14dbafc9864ee891268c89459e99db410";
     })
   ];
 
@@ -26,8 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Kameron-Regular.ttf $out/share/fonts/truetype/Kameron-Regular.ttf
-     install -Dm644 Kameron-Bold.ttf $out/share/fonts/truetype/Kameron-Bold.ttf
+     install -Dm644 Kameron_wght_.ttf $out/share/fonts/truetype/Kameron_wght_.ttf
   '';
 
   meta = with lib; {

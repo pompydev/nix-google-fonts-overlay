@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "kavivanar-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/2af7a09e55d95c1c8b805eae52a67dcc44ccd78e/ofl/kavivanar/Kavivanar-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kavivanar/Kavivanar-Regular.ttf?raw=true";
       name = "Kavivanar-Regular.ttf";
       sha256 = "ab373a218ee8464fee6ed14ee864d5a6c5146ca0458f0a61678a1889fe44b710";
     })

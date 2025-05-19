@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "goudy-bookletter-1911-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/goudybookletter1911/GoudyBookletter1911.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/goudybookletter1911/GoudyBookletter1911.ttf?raw=true";
       name = "GoudyBookletter1911.ttf";
       sha256 = "62d219942d2e4a3a8473c116254966d308820ae1729e2fac3730e66c073a5548";
     })

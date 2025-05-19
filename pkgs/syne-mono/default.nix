@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "syne-mono-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/27d61f9f7001a1c61572ce06edf8e5443e55f184/ofl/synemono/SyneMono-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/synemono/SyneMono-Regular.ttf?raw=true";
       name = "SyneMono-Regular.ttf";
       sha256 = "b142b088680791725849cc74c54d7937c981de2378583bde72f826bd3eb267dc";
     })

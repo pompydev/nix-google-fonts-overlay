@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "glass-antiqua-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/glassantiqua/GlassAntiqua-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/glassantiqua/GlassAntiqua-Regular.ttf?raw=true";
       name = "GlassAntiqua-Regular.ttf";
       sha256 = "af93faedd95bd2ea55fd6f6ca62136933b641497693f15b19fc3642d54b5b44e";
     })

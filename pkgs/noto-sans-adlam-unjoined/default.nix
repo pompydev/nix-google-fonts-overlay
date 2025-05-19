@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-adlam-unjoined-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansadlamunjoined/NotoSansAdlamUnjoined%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansadlamunjoined/NotoSansAdlamUnjoined%5Bwght%5D.ttf?raw=true";
       name = "NotoSansAdlamUnjoined_wght_.ttf";
-      sha256 = "55997df7decd05f31e0238154fb0a1092a25dfed8fcf9965a8898817688cd7e3";
+      sha256 = "edd3827faf66232eede488883b7bc73fdc7de0cddc96cfc1e3a72c7a73e5f2a2";
     })
   ];
 

@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "sofia-sans-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ae2673e9576cef514b32a81811d0891e57d45ad2/ofl/sofiasans/SofiaSans%5Bwdth,wght%5D.ttf?raw=true";
-      name = "SofiaSans_wdth,wght_.ttf";
-      sha256 = "3b7e7a151692a86efbcdd1766b83e85cce76773a0c8ac494b7d6933ff71d6821";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sofiasans/SofiaSans%5Bwght%5D.ttf?raw=true";
+      name = "SofiaSans_wght_.ttf";
+      sha256 = "a3e1019b8867e21b75d26a7b59d4eb2c81d1acf6b69b9ae6cedca269fb68e291";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/ae2673e9576cef514b32a81811d0891e57d45ad2/ofl/sofiasans/SofiaSans-Italic%5Bwdth,wght%5D.ttf?raw=true";
-      name = "SofiaSans-Italic_wdth,wght_.ttf";
-      sha256 = "1fc51eee4df3526b62d3039ca049e95e799f15a69ccb7c07cd9eaec89623f97f";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sofiasans/SofiaSans-Italic%5Bwght%5D.ttf?raw=true";
+      name = "SofiaSans-Italic_wght_.ttf";
+      sha256 = "c0e69116d34100212881b5f993225ff0c3ea23e2c147f4c0853389923c9ab6a5";
     })
   ];
 
@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 SofiaSans_wdth,wght_.ttf $out/share/fonts/truetype/SofiaSans_wdth,wght_.ttf
-     install -Dm644 SofiaSans-Italic_wdth,wght_.ttf $out/share/fonts/truetype/SofiaSans-Italic_wdth,wght_.ttf
+     install -Dm644 SofiaSans_wght_.ttf $out/share/fonts/truetype/SofiaSans_wght_.ttf
+     install -Dm644 SofiaSans-Italic_wght_.ttf $out/share/fonts/truetype/SofiaSans-Italic_wght_.ttf
   '';
 
   meta = with lib; {

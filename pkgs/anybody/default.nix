@@ -2,20 +2,20 @@
 
 stdenv.mkDerivation rec {
   name = "anybody-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3134d388c0a77e1ebea71cf0ac374fdf7d054b26/ofl/anybody/Anybody%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/anybody/Anybody%5Bwdth,wght%5D.ttf?raw=true";
       name = "Anybody_wdth,wght_.ttf";
-      sha256 = "5ed69aa8c9a947737adb91f4b5f6b448f34725770cdbaec10e8ce7882f085179";
+      sha256 = "b184bd7e6ca8348bbaecec98951565729d7e89b7872d4898a1f9981342b5b64c";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/3134d388c0a77e1ebea71cf0ac374fdf7d054b26/ofl/anybody/Anybody-Italic%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/anybody/Anybody-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "Anybody-Italic_wdth,wght_.ttf";
-      sha256 = "f0ae65b0d4b21de98b4457d6f5767b89d2397bbd0728ec644e7b43e348b656ee";
+      sha256 = "f9a465a1e5af36e30c37ba11812e4763e3c37febda2c2244acbcec8092063fd7";
     })
   ];
 

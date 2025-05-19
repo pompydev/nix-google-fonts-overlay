@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "ceviche-one-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/08e091b33ee54b21c64ef05743bcc6716d1bdcb7/ofl/cevicheone/CevicheOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cevicheone/CevicheOne-Regular.ttf?raw=true";
       name = "CevicheOne-Regular.ttf";
       sha256 = "366249c911e689cd5ea3d576c0eba0c37a938e0a58721fce3733a4244dd9ab32";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "hahmlet-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/afb3b9481d0a9a6be66bd779417b48ebcfd437bc/ofl/hahmlet/Hahmlet%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hahmlet/Hahmlet%5Bwght%5D.ttf?raw=true";
       name = "Hahmlet_wght_.ttf";
       sha256 = "892bffe530255770a7435226154a02f519055ff6bedf64254f37f21d15a59279";
     })

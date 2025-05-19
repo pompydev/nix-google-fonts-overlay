@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sedgwick-ave-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/fc22e72a35ba7dffa2aab08283c9194f1cee8870/ofl/sedgwickave/SedgwickAve-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sedgwickave/SedgwickAve-Regular.ttf?raw=true";
       name = "SedgwickAve-Regular.ttf";
       sha256 = "9c3633e56a8a104e0d10debb70907b66bb3cf32b03137fae7d5392712b253efa";
     })

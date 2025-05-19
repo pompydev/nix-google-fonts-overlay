@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-oriya-ui-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansoriyaui/NotoSansOriyaUI-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansoriyaui/NotoSansOriyaUI-Thin.ttf?raw=true";
       name = "NotoSansOriyaUI-Thin.ttf";
       sha256 = "7fea1870b88536a0e6efb66dc862993629036334b425e8966c1b3cee21d9f887";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansoriyaui/NotoSansOriyaUI-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansoriyaui/NotoSansOriyaUI-Regular.ttf?raw=true";
       name = "NotoSansOriyaUI-Regular.ttf";
       sha256 = "2d151a5c2c9fb01a6cbe767f200b263d090d88bf6a74880f43ed81c211e51fb2";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansoriyaui/NotoSansOriyaUI-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansoriyaui/NotoSansOriyaUI-Bold.ttf?raw=true";
       name = "NotoSansOriyaUI-Bold.ttf";
       sha256 = "0083e64c0b67116b8ecc920c0284301971c9099bf33a383eb38fd42e29476fa4";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosansoriyaui/NotoSansOriyaUI-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansoriyaui/NotoSansOriyaUI-Black.ttf?raw=true";
       name = "NotoSansOriyaUI-Black.ttf";
       sha256 = "ba5174bfd33278d3d28cf092ae64e3bdedeba0ad8cf8cfa6b4338b3556712b8b";
     })

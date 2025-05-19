@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "londrina-shadow-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/4d029f5d7df036d1fbc3aeb0a9654144c282d002/ofl/londrinashadow/LondrinaShadow-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/londrinashadow/LondrinaShadow-Regular.ttf?raw=true";
       name = "LondrinaShadow-Regular.ttf";
       sha256 = "bdc4a66213c2bed3a0e58912bb2e47f7b0ea51b07d291a43896eed5c87e01a21";
     })

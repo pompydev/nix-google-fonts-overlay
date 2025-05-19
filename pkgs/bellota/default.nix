@@ -2,38 +2,38 @@
 
 stdenv.mkDerivation rec {
   name = "bellota-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d22365f72284a6af8f644aecbe74a680c55c2014/ofl/bellota/Bellota-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bellota/Bellota-Light.ttf?raw=true";
       name = "Bellota-Light.ttf";
       sha256 = "18d184f3598bae830082041cf7fb49a24d0dee605de2b52e4ae68bded698df0a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d22365f72284a6af8f644aecbe74a680c55c2014/ofl/bellota/Bellota-LightItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bellota/Bellota-LightItalic.ttf?raw=true";
       name = "Bellota-LightItalic.ttf";
       sha256 = "6f61044daac01399bd7d1fd00c2ccfeb6b916f10f4c96a303e1a1007bb48e17d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d22365f72284a6af8f644aecbe74a680c55c2014/ofl/bellota/Bellota-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bellota/Bellota-Regular.ttf?raw=true";
       name = "Bellota-Regular.ttf";
       sha256 = "d46806f9c5fd46cd6bf1c261bfa46b2d22503130d585451dc7863d8ce80524fc";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d22365f72284a6af8f644aecbe74a680c55c2014/ofl/bellota/Bellota-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bellota/Bellota-Italic.ttf?raw=true";
       name = "Bellota-Italic.ttf";
       sha256 = "8e1ae4d9fa4e055e9fc202be586f8a9a5bef81d8731bdd40bd862df2071edb99";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d22365f72284a6af8f644aecbe74a680c55c2014/ofl/bellota/Bellota-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bellota/Bellota-Bold.ttf?raw=true";
       name = "Bellota-Bold.ttf";
       sha256 = "2120a9b5c3c92e7fe7cf4e964e925ac04cb013c63ac72da4a756ae6ed872e97b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/d22365f72284a6af8f644aecbe74a680c55c2014/ofl/bellota/Bellota-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bellota/Bellota-BoldItalic.ttf?raw=true";
       name = "Bellota-BoldItalic.ttf";
       sha256 = "82caafa69ed7cd8ab3723b2c8eedb443be908f9088e57ffcde0b5f0d38dc3708";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "comforter-brush-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/097afc14a608c7a78fd997998f89dfd20727b719/ofl/comforterbrush/ComforterBrush-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/comforterbrush/ComforterBrush-Regular.ttf?raw=true";
       name = "ComforterBrush-Regular.ttf";
       sha256 = "7bd357dc8bf83d71f27fd5155ece5c8c100a2042d4530e4487635473c5836f95";
     })

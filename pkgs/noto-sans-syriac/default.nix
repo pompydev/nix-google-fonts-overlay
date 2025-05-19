@@ -2,25 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-syriac-${version}";
-  version = "2022-05-24-075352";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssyriac/NotoSansSyriac-Thin.ttf?raw=true";
-      name = "NotoSansSyriac-Thin.ttf";
-      sha256 = "a2dd1b2a67c526c6d858db9b2db6c55b1ac6b76ab991d1cfc29e93086f49f1f5";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssyriac/NotoSansSyriac-Regular.ttf?raw=true";
-      name = "NotoSansSyriac-Regular.ttf";
-      sha256 = "49917b4472e91dfb37291ef4f4821957f4225edaddb6100b1d8736df3910b237";
-    })
-    (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanssyriac/NotoSansSyriac-Black.ttf?raw=true";
-      name = "NotoSansSyriac-Black.ttf";
-      sha256 = "d48f1f27a8192aa675a46de3b2e6f6308a8a79e61b2d38c481be8e8a4c0ff571";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanssyriac/NotoSansSyriac%5Bwght%5D.ttf?raw=true";
+      name = "NotoSansSyriac_wght_.ttf";
+      sha256 = "775585cc3c12877115d588f70af3aa140c78cb440f9d42c98273bf05bed3f6b1";
     })
   ];
 
@@ -31,9 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoSansSyriac-Thin.ttf $out/share/fonts/truetype/NotoSansSyriac-Thin.ttf
-     install -Dm644 NotoSansSyriac-Regular.ttf $out/share/fonts/truetype/NotoSansSyriac-Regular.ttf
-     install -Dm644 NotoSansSyriac-Black.ttf $out/share/fonts/truetype/NotoSansSyriac-Black.ttf
+     install -Dm644 NotoSansSyriac_wght_.ttf $out/share/fonts/truetype/NotoSansSyriac_wght_.ttf
   '';
 
   meta = with lib; {

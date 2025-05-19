@@ -2,30 +2,30 @@
 
 stdenv.mkDerivation rec {
   name = "balsamiq-sans-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/cbaef391e69a0c330d907a3fab7c19fc573c346e/ofl/balsamiqsans/BalsamiqSans-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/balsamiqsans/BalsamiqSans-Regular.ttf?raw=true";
       name = "BalsamiqSans-Regular.ttf";
-      sha256 = "2ab10a6a2c91fe13934877d7590abcaf90d1458c54e64e988304b6c9ace8d48d";
+      sha256 = "fcc9c00a9ad6e78673fa84653745569097241d99b5d1387a23f395858ed46b7e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/cbaef391e69a0c330d907a3fab7c19fc573c346e/ofl/balsamiqsans/BalsamiqSans-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/balsamiqsans/BalsamiqSans-Italic.ttf?raw=true";
       name = "BalsamiqSans-Italic.ttf";
-      sha256 = "b9f3b9fddbacf8ad031a340943014078b0c9ea60288c214340aa6ed4798099a0";
+      sha256 = "0a287472035409f556acd66c1c926047ee9829a62f88b0fa273591332a8606df";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/cbaef391e69a0c330d907a3fab7c19fc573c346e/ofl/balsamiqsans/BalsamiqSans-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/balsamiqsans/BalsamiqSans-Bold.ttf?raw=true";
       name = "BalsamiqSans-Bold.ttf";
-      sha256 = "ed75cc3d6d0d478ce55e598ebbfc766248883d457d1074b996239d5b0d2af658";
+      sha256 = "a3302bd8424e6a37704eb5e20d5c5a3a2fd80feaf57e48a19d261f8e0c583621";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/cbaef391e69a0c330d907a3fab7c19fc573c346e/ofl/balsamiqsans/BalsamiqSans-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/balsamiqsans/BalsamiqSans-BoldItalic.ttf?raw=true";
       name = "BalsamiqSans-BoldItalic.ttf";
-      sha256 = "0ef14892b6e44585594a711daa588ba79f7b767ecf0f3f6559d38f6a1635917f";
+      sha256 = "4999588a66defbf39e718b3edb0b965b932157bd8d1321130de06bec0cdccc75";
     })
   ];
 

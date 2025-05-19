@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "yeon-sung-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/16680f8688ffcd467d2eb2146a9ce0343404581d/ofl/yeonsung/YeonSung-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/yeonsung/YeonSung-Regular.ttf?raw=true";
       name = "YeonSung-Regular.ttf";
-      sha256 = "8e5ff1cc1b1302afac8b9ee5296a04bc1c92af1e67a2ae07a593aa6b5e3eb792";
+      sha256 = "49ac2a11009f5f58307d377911eb45d210cf4c1d379d9eca38fb4cdad5491ef6";
     })
   ];
 

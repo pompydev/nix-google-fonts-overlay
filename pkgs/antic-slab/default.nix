@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "antic-slab-${version}";
-  version = "2022-05-23-195233";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/29d7c65b584eef4881d7ea5cb5b52b714b2b5ccf/ofl/anticslab/AnticSlab-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/anticslab/AnticSlab-Regular.ttf?raw=true";
       name = "AnticSlab-Regular.ttf";
       sha256 = "bea5831a412ccf18bf34612a575d908b7892c4669fa91b80405cba508fc32a56";
     })

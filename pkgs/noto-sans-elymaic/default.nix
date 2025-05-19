@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-elymaic-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanselymaic/NotoSansElymaic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanselymaic/NotoSansElymaic-Regular.ttf?raw=true";
       name = "NotoSansElymaic-Regular.ttf";
-      sha256 = "47760a41aa36d69b442a3988e12b904290c24e7b54ff11762d826e84aa0c1e7a";
+      sha256 = "4a4772cbb8a278019152bafd58fef3892fae055d0b137f3fb1f61663960e156b";
     })
   ];
 

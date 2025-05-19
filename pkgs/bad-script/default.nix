@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "bad-script-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/235f2c1aaec5b2febe07cc0b2b9a41c7152e3233/ofl/badscript/BadScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/badscript/BadScript-Regular.ttf?raw=true";
       name = "BadScript-Regular.ttf";
-      sha256 = "a34dc4a654dea3ff64afc5e45ecc19079a333d760681febb78324a56dd1c7753";
+      sha256 = "40ec737eee65ec4efbc24ae636fa31d7d84d1ccca83ab54cd555edb72cb3eaf0";
     })
   ];
 

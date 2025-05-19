@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-jp-${version}";
-  version = "2022-06-08-123023";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a27016c0db1ca8449de5f960ddf1406b327f3c67/ofl/notoserifjp/NotoSerifJP%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifjp/NotoSerifJP%5Bwght%5D.ttf?raw=true";
       name = "NotoSerifJP_wght_.ttf";
-      sha256 = "4c6b4670b73d0843c7b2d30b9e2fbcfa596aef6fd3937f894929ab0b8d659d1e";
+      sha256 = "2fd527ba12b6a44ec30d796d633360da0aeba6c5d4af1304ce12bb4dc15a7dfc";
     })
   ];
 

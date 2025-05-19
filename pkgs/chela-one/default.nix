@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "chela-one-${version}";
-  version = "2022-05-23-211740";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/c72712175756f83586900c0f708d4644cf9c7fd8/ofl/chelaone/ChelaOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/chelaone/ChelaOne-Regular.ttf?raw=true";
       name = "ChelaOne-Regular.ttf";
       sha256 = "a5633f28945f31a5e494683af2c1f99f9f91c96578bf47dc9c315ebe3050c8f5";
     })

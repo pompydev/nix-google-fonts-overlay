@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-limbu-${version}";
-  version = "2022-05-24-065742";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/a559a6efcfed22bf50219f52ecefcf20b9522408/ofl/notosanslimbu/NotoSansLimbu-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanslimbu/NotoSansLimbu-Regular.ttf?raw=true";
       name = "NotoSansLimbu-Regular.ttf";
-      sha256 = "2a7e9f84c1dedb1016a841a81363b2e609090c78799afe01247ccb0f25efd9b0";
+      sha256 = "5a8b4fd72c5a64051332f66fcf46fda1a32a37d130631362378c6b465d852dd5";
     })
   ];
 

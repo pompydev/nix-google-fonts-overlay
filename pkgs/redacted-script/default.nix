@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "redacted-script-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b86355816fa30ea84fc8958b034b75ded8ee76a4/ofl/redactedscript/RedactedScript-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/redactedscript/RedactedScript-Light.ttf?raw=true";
       name = "RedactedScript-Light.ttf";
       sha256 = "5ff11d7b9510a90cbee1525564457b6991a65e0a413ecc4fdbdde697452fe665";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b86355816fa30ea84fc8958b034b75ded8ee76a4/ofl/redactedscript/RedactedScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/redactedscript/RedactedScript-Regular.ttf?raw=true";
       name = "RedactedScript-Regular.ttf";
       sha256 = "1ebaab9642a2f43fa33f449760469903143fd1d08b2433eb6c15e28602d9360d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b86355816fa30ea84fc8958b034b75ded8ee76a4/ofl/redactedscript/RedactedScript-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/redactedscript/RedactedScript-Bold.ttf?raw=true";
       name = "RedactedScript-Bold.ttf";
       sha256 = "48ad6a76be6f094893541898d1c9a04e3debe48645c314cf07add92c019e7983";
     })

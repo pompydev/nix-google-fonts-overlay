@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "trispace-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/b85ab0fbcfc0bbf38423f56638abb9169f2d1b91/ofl/trispace/Trispace%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/trispace/Trispace%5Bwdth,wght%5D.ttf?raw=true";
       name = "Trispace_wdth,wght_.ttf";
       sha256 = "4021d8d7abd42907c64f0bf192446ad9f869320563f8c71a526993830e405464";
     })

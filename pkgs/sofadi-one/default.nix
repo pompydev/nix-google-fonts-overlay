@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sofadi-one-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/f8374b9b09665e4efc355c827906be21383d438e/ofl/sofadione/SofadiOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sofadione/SofadiOne-Regular.ttf?raw=true";
       name = "SofadiOne-Regular.ttf";
       sha256 = "e88fa20679a9e3568b66ee0bb973bc8bebf73bb868297a2dffd30a99354c0a2f";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "ravi-prakash-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/raviprakash/RaviPrakash-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/raviprakash/RaviPrakash-Regular.ttf?raw=true";
       name = "RaviPrakash-Regular.ttf";
       sha256 = "f539bdb2673b3e1b69a279da763d178a6e4b4cafe5a12c85be0f5e03b547fcb6";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "my-soul-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/76cd30cda533ba978c384b5460d9c79e62b2eda3/ofl/mysoul/MySoul-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mysoul/MySoul-Regular.ttf?raw=true";
       name = "MySoul-Regular.ttf";
       sha256 = "28bcb050c1220145fd6aff6f6f13b1b8f4a9608388c0c34e4ff94452e5e6444f";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "nova-cut-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/novacut/NovaCut.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/novacut/NovaCut.ttf?raw=true";
       name = "NovaCut.ttf";
       sha256 = "09b4238312770fb6a4405027dc33feef1bb1c9283d3c907fe7282960da4eb5f7";
     })

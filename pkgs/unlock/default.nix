@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "unlock-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/unlock/Unlock-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/unlock/Unlock-Regular.ttf?raw=true";
       name = "Unlock-Regular.ttf";
-      sha256 = "408560b387d49cc5bdde72936531a6da3abd74abee117efcc77615822acba537";
+      sha256 = "916edbbc325dd8abc630d688c88b4501df9494183295662f017ebe2ace843519";
     })
   ];
 

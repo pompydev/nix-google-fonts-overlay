@@ -2,15 +2,15 @@
 
 stdenv.mkDerivation rec {
   name = "imprima-${version}";
-  version = "2022-05-23-214203";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/90abd17b4f97671435798b6147b698aa9087612f/ofl/imprima/Imprima-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/imprima/Imprima-Regular.ttf?raw=true";
       name = "Imprima-Regular.ttf";
-      sha256 = "069f3d0c87bae5d21be3b86f1b59aad3180121a26f8db6f58e7f37d9c20b6c32";
+      sha256 = "c563e40bc5609b8c7bcc39f93cba05455c0d0b8c43460ff991d2834301609c08";
     })
   ];
 

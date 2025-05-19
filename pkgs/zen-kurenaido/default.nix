@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "zen-kurenaido-${version}";
-  version = "2022-05-23-231859";
+  version = "2025-05-16-181022";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/301365039c8637f7a5420e65bac7f57a54421b04/ofl/zenkurenaido/ZenKurenaido-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/zenkurenaido/ZenKurenaido-Regular.ttf?raw=true";
       name = "ZenKurenaido-Regular.ttf";
       sha256 = "58b8d930d9fc10c8a5810c085bae378dacb98d0779073ee6d53d919f19ee6a4f";
     })
