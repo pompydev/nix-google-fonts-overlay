@@ -21,8 +21,7 @@ install_nix_google_fonts_gen() {
   fi
 
   pushd ./nix-google-fonts-gen &&
-    pip install -r requirements.txt &&
-    ./setup.py install &&
+    pip install . &&
     popd
 }
 
