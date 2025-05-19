@@ -1,6 +1,8 @@
 {
   description = "Google Fonts";
-  outputs = { self }: {
-    lib = import ./.;
-  };
+  outputs =
+    { self }:
+    {
+      lib = import ./.;
+    };
 }

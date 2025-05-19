@@ -1,26 +1,23 @@
 # Nix Google Fonts Overlay 🎁
 
-[![Build Status](https://travis-ci.org/dimitarnestorov/nix-google-fonts-overlay.svg?branch=master)](https://travis-ci.org/dimitarnestorov/nix-google-fonts-overlay)
-
 **1523 high-quality fonts packaged for Nix**
 
-This [Nix overlay](https://nixos.org) contains individual packages for all the
-fonts from the [Google Fonts project](https://github.com/google/fonts). The
-packages are automatically generated using
-[nix-google-fonts-gen](https://github.com/dimitarnestorov/nix-google-fonts-gen) tool.
-Updated weekly.
+This [Nix overlay](https://nixos.org) allows you to use fonts in
+[github.com/google/fonts](https://github.com/google/fonts). Updated weekly.
 
-## Use in NixOS configuration
-
-To use fonts from this overlay as a part of NixOS configuration, something like
-the following can be used:
+## Examples
 
 ```nix
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 let
   fontsOverlay = import (
-    builtins.fetchTarball https://github.com/dimitarnestorov/nix-google-fonts-overlay/archive/master.tar.gz
+    builtins.fetchTarball "https://github.com/pompydev/nix-google-fonts-overlay/archive/master.tar.gz"
   );
 in
 {
@@ -31,7 +28,5 @@ in
     google-fonts-exo
     google-fonts-lobster
   ];
-
-  ...
 }
 ```
