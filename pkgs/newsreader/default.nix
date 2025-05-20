@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Newsreader_opsz,wght_.ttf $out/share/fonts/truetype/Newsreader_opsz,wght_.ttf
-     install -Dm644 Newsreader-Italic_opsz,wght_.ttf $out/share/fonts/truetype/Newsreader-Italic_opsz,wght_.ttf
+     install -Dm644 Newsreader_opsz-wght_.ttf $out/share/fonts/truetype/Newsreader_opsz-wght_.ttf
+     install -Dm644 Newsreader-Italic_opsz-wght_.ttf $out/share/fonts/truetype/Newsreader-Italic_opsz-wght_.ttf
   '';
 
   meta = with lib; {

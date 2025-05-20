@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 BigShouldersStencil_opsz,wght_.ttf $out/share/fonts/truetype/BigShouldersStencil_opsz,wght_.ttf
+     install -Dm644 BigShouldersStencil_opsz-wght_.ttf $out/share/fonts/truetype/BigShouldersStencil_opsz-wght_.ttf
   '';
 
   meta = with lib; {

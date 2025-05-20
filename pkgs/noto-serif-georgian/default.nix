@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoSerifGeorgian_wdth,wght_.ttf $out/share/fonts/truetype/NotoSerifGeorgian_wdth,wght_.ttf
+     install -Dm644 NotoSerifGeorgian_wdth-wght_.ttf $out/share/fonts/truetype/NotoSerifGeorgian_wdth-wght_.ttf
   '';
 
   meta = with lib; {

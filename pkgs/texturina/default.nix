@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Texturina_opsz,wght_.ttf $out/share/fonts/truetype/Texturina_opsz,wght_.ttf
-     install -Dm644 Texturina-Italic_opsz,wght_.ttf $out/share/fonts/truetype/Texturina-Italic_opsz,wght_.ttf
+     install -Dm644 Texturina_opsz-wght_.ttf $out/share/fonts/truetype/Texturina_opsz-wght_.ttf
+     install -Dm644 Texturina-Italic_opsz-wght_.ttf $out/share/fonts/truetype/Texturina-Italic_opsz-wght_.ttf
   '';
 
   meta = with lib; {

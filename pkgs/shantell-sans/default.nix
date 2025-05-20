@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 ShantellSans_BNCE,INFM,SPAC,wght_.ttf $out/share/fonts/truetype/ShantellSans_BNCE,INFM,SPAC,wght_.ttf
-     install -Dm644 ShantellSans-Italic_BNCE,INFM,SPAC,wght_.ttf $out/share/fonts/truetype/ShantellSans-Italic_BNCE,INFM,SPAC,wght_.ttf
+     install -Dm644 ShantellSans_BNCE-INFM-SPAC-wght_.ttf $out/share/fonts/truetype/ShantellSans_BNCE-INFM-SPAC-wght_.ttf
+     install -Dm644 ShantellSans-Italic_BNCE-INFM-SPAC-wght_.ttf $out/share/fonts/truetype/ShantellSans-Italic_BNCE-INFM-SPAC-wght_.ttf
   '';
 
   meta = with lib; {

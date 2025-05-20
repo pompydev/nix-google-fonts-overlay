@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Sono_MONO,wght_.ttf $out/share/fonts/truetype/Sono_MONO,wght_.ttf
+     install -Dm644 Sono_MONO-wght_.ttf $out/share/fonts/truetype/Sono_MONO-wght_.ttf
   '';
 
   meta = with lib; {

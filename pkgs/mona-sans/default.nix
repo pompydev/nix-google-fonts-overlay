@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 MonaSans_wdth,wght_.ttf $out/share/fonts/truetype/MonaSans_wdth,wght_.ttf
-     install -Dm644 MonaSans-Italic_wdth,wght_.ttf $out/share/fonts/truetype/MonaSans-Italic_wdth,wght_.ttf
+     install -Dm644 MonaSans_wdth-wght_.ttf $out/share/fonts/truetype/MonaSans_wdth-wght_.ttf
+     install -Dm644 MonaSans-Italic_wdth-wght_.ttf $out/share/fonts/truetype/MonaSans-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

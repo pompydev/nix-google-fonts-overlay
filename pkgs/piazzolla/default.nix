@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Piazzolla_opsz,wght_.ttf $out/share/fonts/truetype/Piazzolla_opsz,wght_.ttf
-     install -Dm644 Piazzolla-Italic_opsz,wght_.ttf $out/share/fonts/truetype/Piazzolla-Italic_opsz,wght_.ttf
+     install -Dm644 Piazzolla_opsz-wght_.ttf $out/share/fonts/truetype/Piazzolla_opsz-wght_.ttf
+     install -Dm644 Piazzolla-Italic_opsz-wght_.ttf $out/share/fonts/truetype/Piazzolla-Italic_opsz-wght_.ttf
   '';
 
   meta = with lib; {

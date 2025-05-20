@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 BigShouldersInline_opsz,wght_.ttf $out/share/fonts/truetype/BigShouldersInline_opsz,wght_.ttf
+     install -Dm644 BigShouldersInline_opsz-wght_.ttf $out/share/fonts/truetype/BigShouldersInline_opsz-wght_.ttf
   '';
 
   meta = with lib; {

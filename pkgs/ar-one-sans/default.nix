@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 AROneSans_ARRR,wght_.ttf $out/share/fonts/truetype/AROneSans_ARRR,wght_.ttf
+     install -Dm644 AROneSans_ARRR-wght_.ttf $out/share/fonts/truetype/AROneSans_ARRR-wght_.ttf
   '';
 
   meta = with lib; {

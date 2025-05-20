@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 OpenSans_wdth,wght_.ttf $out/share/fonts/truetype/OpenSans_wdth,wght_.ttf
-     install -Dm644 OpenSans-Italic_wdth,wght_.ttf $out/share/fonts/truetype/OpenSans-Italic_wdth,wght_.ttf
+     install -Dm644 OpenSans_wdth-wght_.ttf $out/share/fonts/truetype/OpenSans_wdth-wght_.ttf
+     install -Dm644 OpenSans-Italic_wdth-wght_.ttf $out/share/fonts/truetype/OpenSans-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Kalnia_wdth,wght_.ttf $out/share/fonts/truetype/Kalnia_wdth,wght_.ttf
+     install -Dm644 Kalnia_wdth-wght_.ttf $out/share/fonts/truetype/Kalnia_wdth-wght_.ttf
   '';
 
   meta = with lib; {

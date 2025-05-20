@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 KumbhSans_YOPQ,wght_.ttf $out/share/fonts/truetype/KumbhSans_YOPQ,wght_.ttf
+     install -Dm644 KumbhSans_YOPQ-wght_.ttf $out/share/fonts/truetype/KumbhSans_YOPQ-wght_.ttf
   '';
 
   meta = with lib; {

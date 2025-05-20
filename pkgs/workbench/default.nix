@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Workbench_BLED,SCAN_.ttf $out/share/fonts/truetype/Workbench_BLED,SCAN_.ttf
+     install -Dm644 Workbench_BLED-SCAN_.ttf $out/share/fonts/truetype/Workbench_BLED-SCAN_.ttf
   '';
 
   meta = with lib; {

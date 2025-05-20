@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 RobotoSerif_GRAD,opsz,wdth,wght_.ttf $out/share/fonts/truetype/RobotoSerif_GRAD,opsz,wdth,wght_.ttf
-     install -Dm644 RobotoSerif-Italic_GRAD,opsz,wdth,wght_.ttf $out/share/fonts/truetype/RobotoSerif-Italic_GRAD,opsz,wdth,wght_.ttf
+     install -Dm644 RobotoSerif_GRAD-opsz-wdth-wght_.ttf $out/share/fonts/truetype/RobotoSerif_GRAD-opsz-wdth-wght_.ttf
+     install -Dm644 RobotoSerif-Italic_GRAD-opsz-wdth-wght_.ttf $out/share/fonts/truetype/RobotoSerif-Italic_GRAD-opsz-wdth-wght_.ttf
   '';
 
   meta = with lib; {

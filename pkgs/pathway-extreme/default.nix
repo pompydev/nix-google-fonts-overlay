@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 PathwayExtreme_opsz,wdth,wght_.ttf $out/share/fonts/truetype/PathwayExtreme_opsz,wdth,wght_.ttf
-     install -Dm644 PathwayExtreme-Italic_opsz,wdth,wght_.ttf $out/share/fonts/truetype/PathwayExtreme-Italic_opsz,wdth,wght_.ttf
+     install -Dm644 PathwayExtreme_opsz-wdth-wght_.ttf $out/share/fonts/truetype/PathwayExtreme_opsz-wdth-wght_.ttf
+     install -Dm644 PathwayExtreme-Italic_opsz-wdth-wght_.ttf $out/share/fonts/truetype/PathwayExtreme-Italic_opsz-wdth-wght_.ttf
   '';
 
   meta = with lib; {

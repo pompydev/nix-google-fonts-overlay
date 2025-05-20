@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Imbue_opsz,wght_.ttf $out/share/fonts/truetype/Imbue_opsz,wght_.ttf
+     install -Dm644 Imbue_opsz-wght_.ttf $out/share/fonts/truetype/Imbue_opsz-wght_.ttf
   '';
 
   meta = with lib; {

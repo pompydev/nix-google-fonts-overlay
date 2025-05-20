@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Wavefont_ROND,YELA,wght_.ttf $out/share/fonts/truetype/Wavefont_ROND,YELA,wght_.ttf
+     install -Dm644 Wavefont_ROND-YELA-wght_.ttf $out/share/fonts/truetype/Wavefont_ROND-YELA-wght_.ttf
   '';
 
   meta = with lib; {

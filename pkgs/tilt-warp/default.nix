@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 TiltWarp_XROT,YROT_.ttf $out/share/fonts/truetype/TiltWarp_XROT,YROT_.ttf
+     install -Dm644 TiltWarp_XROT-YROT_.ttf $out/share/fonts/truetype/TiltWarp_XROT-YROT_.ttf
   '';
 
   meta = with lib; {

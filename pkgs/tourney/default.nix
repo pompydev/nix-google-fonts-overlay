@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Tourney_wdth,wght_.ttf $out/share/fonts/truetype/Tourney_wdth,wght_.ttf
-     install -Dm644 Tourney-Italic_wdth,wght_.ttf $out/share/fonts/truetype/Tourney-Italic_wdth,wght_.ttf
+     install -Dm644 Tourney_wdth-wght_.ttf $out/share/fonts/truetype/Tourney_wdth-wght_.ttf
+     install -Dm644 Tourney-Italic_wdth-wght_.ttf $out/share/fonts/truetype/Tourney-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

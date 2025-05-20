@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Gluten_slnt,wght_.ttf $out/share/fonts/truetype/Gluten_slnt,wght_.ttf
+     install -Dm644 Gluten_slnt-wght_.ttf $out/share/fonts/truetype/Gluten_slnt-wght_.ttf
   '';
 
   meta = with lib; {

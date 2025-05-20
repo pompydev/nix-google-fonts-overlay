@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 BodoniModa_opsz,wght_.ttf $out/share/fonts/truetype/BodoniModa_opsz,wght_.ttf
-     install -Dm644 BodoniModa-Italic_opsz,wght_.ttf $out/share/fonts/truetype/BodoniModa-Italic_opsz,wght_.ttf
+     install -Dm644 BodoniModa_opsz-wght_.ttf $out/share/fonts/truetype/BodoniModa_opsz-wght_.ttf
+     install -Dm644 BodoniModa-Italic_opsz-wght_.ttf $out/share/fonts/truetype/BodoniModa-Italic_opsz-wght_.ttf
   '';
 
   meta = with lib; {

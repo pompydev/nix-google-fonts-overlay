@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Cairo_slnt,wght_.ttf $out/share/fonts/truetype/Cairo_slnt,wght_.ttf
+     install -Dm644 Cairo_slnt-wght_.ttf $out/share/fonts/truetype/Cairo_slnt-wght_.ttf
   '';
 
   meta = with lib; {

@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Playfair_opsz,wdth,wght_.ttf $out/share/fonts/truetype/Playfair_opsz,wdth,wght_.ttf
-     install -Dm644 Playfair-Italic_opsz,wdth,wght_.ttf $out/share/fonts/truetype/Playfair-Italic_opsz,wdth,wght_.ttf
+     install -Dm644 Playfair_opsz-wdth-wght_.ttf $out/share/fonts/truetype/Playfair_opsz-wdth-wght_.ttf
+     install -Dm644 Playfair-Italic_opsz-wdth-wght_.ttf $out/share/fonts/truetype/Playfair-Italic_opsz-wdth-wght_.ttf
   '';
 
   meta = with lib; {

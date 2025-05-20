@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 UbuntuSans_wdth,wght_.ttf $out/share/fonts/truetype/UbuntuSans_wdth,wght_.ttf
-     install -Dm644 UbuntuSans-Italic_wdth,wght_.ttf $out/share/fonts/truetype/UbuntuSans-Italic_wdth,wght_.ttf
+     install -Dm644 UbuntuSans_wdth-wght_.ttf $out/share/fonts/truetype/UbuntuSans_wdth-wght_.ttf
+     install -Dm644 UbuntuSans-Italic_wdth-wght_.ttf $out/share/fonts/truetype/UbuntuSans-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

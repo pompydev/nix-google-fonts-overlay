@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 AdventPro_wdth,wght_.ttf $out/share/fonts/truetype/AdventPro_wdth,wght_.ttf
-     install -Dm644 AdventPro-Italic_wdth,wght_.ttf $out/share/fonts/truetype/AdventPro-Italic_wdth,wght_.ttf
+     install -Dm644 AdventPro_wdth-wght_.ttf $out/share/fonts/truetype/AdventPro_wdth-wght_.ttf
+     install -Dm644 AdventPro-Italic_wdth-wght_.ttf $out/share/fonts/truetype/AdventPro-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

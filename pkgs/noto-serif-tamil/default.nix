@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoSerifTamil_wdth,wght_.ttf $out/share/fonts/truetype/NotoSerifTamil_wdth,wght_.ttf
-     install -Dm644 NotoSerifTamil-Italic_wdth,wght_.ttf $out/share/fonts/truetype/NotoSerifTamil-Italic_wdth,wght_.ttf
+     install -Dm644 NotoSerifTamil_wdth-wght_.ttf $out/share/fonts/truetype/NotoSerifTamil_wdth-wght_.ttf
+     install -Dm644 NotoSerifTamil-Italic_wdth-wght_.ttf $out/share/fonts/truetype/NotoSerifTamil-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

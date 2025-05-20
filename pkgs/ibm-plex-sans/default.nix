@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 IBMPlexSans_wdth,wght_.ttf $out/share/fonts/truetype/IBMPlexSans_wdth,wght_.ttf
-     install -Dm644 IBMPlexSans-Italic_wdth,wght_.ttf $out/share/fonts/truetype/IBMPlexSans-Italic_wdth,wght_.ttf
+     install -Dm644 IBMPlexSans_wdth-wght_.ttf $out/share/fonts/truetype/IBMPlexSans_wdth-wght_.ttf
+     install -Dm644 IBMPlexSans-Italic_wdth-wght_.ttf $out/share/fonts/truetype/IBMPlexSans-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

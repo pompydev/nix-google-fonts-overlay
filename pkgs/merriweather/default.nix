@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Merriweather_opsz,wdth,wght_.ttf $out/share/fonts/truetype/Merriweather_opsz,wdth,wght_.ttf
-     install -Dm644 Merriweather-Italic_opsz,wdth,wght_.ttf $out/share/fonts/truetype/Merriweather-Italic_opsz,wdth,wght_.ttf
+     install -Dm644 Merriweather_opsz-wdth-wght_.ttf $out/share/fonts/truetype/Merriweather_opsz-wdth-wght_.ttf
+     install -Dm644 Merriweather-Italic_opsz-wdth-wght_.ttf $out/share/fonts/truetype/Merriweather-Italic_opsz-wdth-wght_.ttf
   '';
 
   meta = with lib; {

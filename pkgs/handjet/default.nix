@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Handjet_ELGR,ELSH,wght_.ttf $out/share/fonts/truetype/Handjet_ELGR,ELSH,wght_.ttf
+     install -Dm644 Handjet_ELGR-ELSH-wght_.ttf $out/share/fonts/truetype/Handjet_ELGR-ELSH-wght_.ttf
   '';
 
   meta = with lib; {

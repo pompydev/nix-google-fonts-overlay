@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 AnekKannada_wdth,wght_.ttf $out/share/fonts/truetype/AnekKannada_wdth,wght_.ttf
+     install -Dm644 AnekKannada_wdth-wght_.ttf $out/share/fonts/truetype/AnekKannada_wdth-wght_.ttf
   '';
 
   meta = with lib; {

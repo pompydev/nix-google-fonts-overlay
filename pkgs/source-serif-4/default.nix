@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 SourceSerif4_opsz,wght_.ttf $out/share/fonts/truetype/SourceSerif4_opsz,wght_.ttf
-     install -Dm644 SourceSerif4-Italic_opsz,wght_.ttf $out/share/fonts/truetype/SourceSerif4-Italic_opsz,wght_.ttf
+     install -Dm644 SourceSerif4_opsz-wght_.ttf $out/share/fonts/truetype/SourceSerif4_opsz-wght_.ttf
+     install -Dm644 SourceSerif4-Italic_opsz-wght_.ttf $out/share/fonts/truetype/SourceSerif4-Italic_opsz-wght_.ttf
   '';
 
   meta = with lib; {

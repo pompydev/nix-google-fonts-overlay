@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 CairoPlay_slnt,wght_.ttf $out/share/fonts/truetype/CairoPlay_slnt,wght_.ttf
+     install -Dm644 CairoPlay_slnt-wght_.ttf $out/share/fonts/truetype/CairoPlay_slnt-wght_.ttf
   '';
 
   meta = with lib; {

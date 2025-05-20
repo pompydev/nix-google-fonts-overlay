@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Saira_wdth,wght_.ttf $out/share/fonts/truetype/Saira_wdth,wght_.ttf
-     install -Dm644 Saira-Italic_wdth,wght_.ttf $out/share/fonts/truetype/Saira-Italic_wdth,wght_.ttf
+     install -Dm644 Saira_wdth-wght_.ttf $out/share/fonts/truetype/Saira_wdth-wght_.ttf
+     install -Dm644 Saira-Italic_wdth-wght_.ttf $out/share/fonts/truetype/Saira-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

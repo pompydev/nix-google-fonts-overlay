@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Honk_MORF,SHLN_.ttf $out/share/fonts/truetype/Honk_MORF,SHLN_.ttf
+     install -Dm644 Honk_MORF-SHLN_.ttf $out/share/fonts/truetype/Honk_MORF-SHLN_.ttf
   '';
 
   meta = with lib; {

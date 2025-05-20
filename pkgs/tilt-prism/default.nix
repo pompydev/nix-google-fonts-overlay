@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 TiltPrism_XROT,YROT_.ttf $out/share/fonts/truetype/TiltPrism_XROT,YROT_.ttf
+     install -Dm644 TiltPrism_XROT-YROT_.ttf $out/share/fonts/truetype/TiltPrism_XROT-YROT_.ttf
   '';
 
   meta = with lib; {

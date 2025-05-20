@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 MPLUSCodeLatin_wdth,wght_.ttf $out/share/fonts/truetype/MPLUSCodeLatin_wdth,wght_.ttf
+     install -Dm644 MPLUSCodeLatin_wdth-wght_.ttf $out/share/fonts/truetype/MPLUSCodeLatin_wdth-wght_.ttf
   '';
 
   meta = with lib; {

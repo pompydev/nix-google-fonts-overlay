@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Commissioner_FLAR,VOLM,slnt,wght_.ttf $out/share/fonts/truetype/Commissioner_FLAR,VOLM,slnt,wght_.ttf
+     install -Dm644 Commissioner_FLAR-VOLM-slnt-wght_.ttf $out/share/fonts/truetype/Commissioner_FLAR-VOLM-slnt-wght_.ttf
   '';
 
   meta = with lib; {

@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Fraunces_SOFT,WONK,opsz,wght_.ttf $out/share/fonts/truetype/Fraunces_SOFT,WONK,opsz,wght_.ttf
-     install -Dm644 Fraunces-Italic_SOFT,WONK,opsz,wght_.ttf $out/share/fonts/truetype/Fraunces-Italic_SOFT,WONK,opsz,wght_.ttf
+     install -Dm644 Fraunces_SOFT-WONK-opsz-wght_.ttf $out/share/fonts/truetype/Fraunces_SOFT-WONK-opsz-wght_.ttf
+     install -Dm644 Fraunces-Italic_SOFT-WONK-opsz-wght_.ttf $out/share/fonts/truetype/Fraunces-Italic_SOFT-WONK-opsz-wght_.ttf
   '';
 
   meta = with lib; {

@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Georama_wdth,wght_.ttf $out/share/fonts/truetype/Georama_wdth,wght_.ttf
-     install -Dm644 Georama-Italic_wdth,wght_.ttf $out/share/fonts/truetype/Georama-Italic_wdth,wght_.ttf
+     install -Dm644 Georama_wdth-wght_.ttf $out/share/fonts/truetype/Georama_wdth-wght_.ttf
+     install -Dm644 Georama-Italic_wdth-wght_.ttf $out/share/fonts/truetype/Georama-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

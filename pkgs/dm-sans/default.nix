@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 DMSans_opsz,wght_.ttf $out/share/fonts/truetype/DMSans_opsz,wght_.ttf
-     install -Dm644 DMSans-Italic_opsz,wght_.ttf $out/share/fonts/truetype/DMSans-Italic_opsz,wght_.ttf
+     install -Dm644 DMSans_opsz-wght_.ttf $out/share/fonts/truetype/DMSans_opsz-wght_.ttf
+     install -Dm644 DMSans-Italic_opsz-wght_.ttf $out/share/fonts/truetype/DMSans-Italic_opsz-wght_.ttf
   '';
 
   meta = with lib; {

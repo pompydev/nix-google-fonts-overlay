@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Inconsolata_wdth,wght_.ttf $out/share/fonts/truetype/Inconsolata_wdth,wght_.ttf
+     install -Dm644 Inconsolata_wdth-wght_.ttf $out/share/fonts/truetype/Inconsolata_wdth-wght_.ttf
   '';
 
   meta = with lib; {

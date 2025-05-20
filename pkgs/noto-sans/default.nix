@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoSans_wdth,wght_.ttf $out/share/fonts/truetype/NotoSans_wdth,wght_.ttf
-     install -Dm644 NotoSans-Italic_wdth,wght_.ttf $out/share/fonts/truetype/NotoSans-Italic_wdth,wght_.ttf
+     install -Dm644 NotoSans_wdth-wght_.ttf $out/share/fonts/truetype/NotoSans_wdth-wght_.ttf
+     install -Dm644 NotoSans-Italic_wdth-wght_.ttf $out/share/fonts/truetype/NotoSans-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

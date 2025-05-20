@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Inter_opsz,wght_.ttf $out/share/fonts/truetype/Inter_opsz,wght_.ttf
-     install -Dm644 Inter-Italic_opsz,wght_.ttf $out/share/fonts/truetype/Inter-Italic_opsz,wght_.ttf
+     install -Dm644 Inter_opsz-wght_.ttf $out/share/fonts/truetype/Inter_opsz-wght_.ttf
+     install -Dm644 Inter-Italic_opsz-wght_.ttf $out/share/fonts/truetype/Inter-Italic_opsz-wght_.ttf
   '';
 
   meta = with lib; {

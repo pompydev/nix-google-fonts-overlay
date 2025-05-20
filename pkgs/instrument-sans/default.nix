@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 InstrumentSans_wdth,wght_.ttf $out/share/fonts/truetype/InstrumentSans_wdth,wght_.ttf
-     install -Dm644 InstrumentSans-Italic_wdth,wght_.ttf $out/share/fonts/truetype/InstrumentSans-Italic_wdth,wght_.ttf
+     install -Dm644 InstrumentSans_wdth-wght_.ttf $out/share/fonts/truetype/InstrumentSans_wdth-wght_.ttf
+     install -Dm644 InstrumentSans-Italic_wdth-wght_.ttf $out/share/fonts/truetype/InstrumentSans-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

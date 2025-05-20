@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 RobotoFlex_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght_.ttf $out/share/fonts/truetype/RobotoFlex_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght_.ttf
+     install -Dm644 RobotoFlex_GRAD-XOPQ-XTRA-YOPQ-YTAS-YTDE-YTFI-YTLC-YTUC-opsz-slnt-wdth-wght_.ttf $out/share/fonts/truetype/RobotoFlex_GRAD-XOPQ-XTRA-YOPQ-YTAS-YTDE-YTFI-YTLC-YTUC-opsz-slnt-wdth-wght_.ttf
   '';
 
   meta = with lib; {

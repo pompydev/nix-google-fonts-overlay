@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Anybody_wdth,wght_.ttf $out/share/fonts/truetype/Anybody_wdth,wght_.ttf
-     install -Dm644 Anybody-Italic_wdth,wght_.ttf $out/share/fonts/truetype/Anybody-Italic_wdth,wght_.ttf
+     install -Dm644 Anybody_wdth-wght_.ttf $out/share/fonts/truetype/Anybody_wdth-wght_.ttf
+     install -Dm644 Anybody-Italic_wdth-wght_.ttf $out/share/fonts/truetype/Anybody-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

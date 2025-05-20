@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Nabla_EDPT,EHLT_.ttf $out/share/fonts/truetype/Nabla_EDPT,EHLT_.ttf
+     install -Dm644 Nabla_EDPT-EHLT_.ttf $out/share/fonts/truetype/Nabla_EDPT-EHLT_.ttf
   '';
 
   meta = with lib; {

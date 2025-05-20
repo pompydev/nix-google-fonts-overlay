@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 SourGummy_wdth,wght_.ttf $out/share/fonts/truetype/SourGummy_wdth,wght_.ttf
-     install -Dm644 SourGummy-Italic_wdth,wght_.ttf $out/share/fonts/truetype/SourGummy-Italic_wdth,wght_.ttf
+     install -Dm644 SourGummy_wdth-wght_.ttf $out/share/fonts/truetype/SourGummy_wdth-wght_.ttf
+     install -Dm644 SourGummy-Italic_wdth-wght_.ttf $out/share/fonts/truetype/SourGummy-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

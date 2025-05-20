@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Asap_wdth,wght_.ttf $out/share/fonts/truetype/Asap_wdth,wght_.ttf
-     install -Dm644 Asap-Italic_wdth,wght_.ttf $out/share/fonts/truetype/Asap-Italic_wdth,wght_.ttf
+     install -Dm644 Asap_wdth-wght_.ttf $out/share/fonts/truetype/Asap_wdth-wght_.ttf
+     install -Dm644 Asap-Italic_wdth-wght_.ttf $out/share/fonts/truetype/Asap-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

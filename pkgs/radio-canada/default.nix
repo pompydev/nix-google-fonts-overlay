@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 RadioCanada_wdth,wght_.ttf $out/share/fonts/truetype/RadioCanada_wdth,wght_.ttf
-     install -Dm644 RadioCanada-Italic_wdth,wght_.ttf $out/share/fonts/truetype/RadioCanada-Italic_wdth,wght_.ttf
+     install -Dm644 RadioCanada_wdth-wght_.ttf $out/share/fonts/truetype/RadioCanada_wdth-wght_.ttf
+     install -Dm644 RadioCanada-Italic_wdth-wght_.ttf $out/share/fonts/truetype/RadioCanada-Italic_wdth-wght_.ttf
   '';
 
   meta = with lib; {

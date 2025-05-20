@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 BitcountPropSingleInk_CRSV,ELSH,ELXP,SZP1,SZP2,XPN1,XPN2,YPN1,YPN2,slnt,wght_.ttf $out/share/fonts/truetype/BitcountPropSingleInk_CRSV,ELSH,ELXP,SZP1,SZP2,XPN1,XPN2,YPN1,YPN2,slnt,wght_.ttf
+     install -Dm644 BitcountPropSingleInk_CRSV-ELSH-ELXP-SZP1-SZP2-XPN1-XPN2-YPN1-YPN2-slnt-wght_.ttf $out/share/fonts/truetype/BitcountPropSingleInk_CRSV-ELSH-ELXP-SZP1-SZP2-XPN1-XPN2-YPN1-YPN2-slnt-wght_.ttf
   '';
 
   meta = with lib; {

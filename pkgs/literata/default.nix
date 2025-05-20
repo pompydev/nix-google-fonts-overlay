@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Literata_opsz,wght_.ttf $out/share/fonts/truetype/Literata_opsz,wght_.ttf
-     install -Dm644 Literata-Italic_opsz,wght_.ttf $out/share/fonts/truetype/Literata-Italic_opsz,wght_.ttf
+     install -Dm644 Literata_opsz-wght_.ttf $out/share/fonts/truetype/Literata_opsz-wght_.ttf
+     install -Dm644 Literata-Italic_opsz-wght_.ttf $out/share/fonts/truetype/Literata-Italic_opsz-wght_.ttf
   '';
 
   meta = with lib; {

@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 Recursive_CASL,CRSV,MONO,slnt,wght_.ttf $out/share/fonts/truetype/Recursive_CASL,CRSV,MONO,slnt,wght_.ttf
+     install -Dm644 Recursive_CASL-CRSV-MONO-slnt-wght_.ttf $out/share/fonts/truetype/Recursive_CASL-CRSV-MONO-slnt-wght_.ttf
   '';
 
   meta = with lib; {

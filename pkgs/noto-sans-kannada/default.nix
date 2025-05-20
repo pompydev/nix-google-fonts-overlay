@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 NotoSansKannada_wdth,wght_.ttf $out/share/fonts/truetype/NotoSansKannada_wdth,wght_.ttf
+     install -Dm644 NotoSansKannada_wdth-wght_.ttf $out/share/fonts/truetype/NotoSansKannada_wdth-wght_.ttf
   '';
 
   meta = with lib; {

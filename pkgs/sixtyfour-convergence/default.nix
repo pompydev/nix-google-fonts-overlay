@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 SixtyfourConvergence_BLED,SCAN,XELA,YELA_.ttf $out/share/fonts/truetype/SixtyfourConvergence_BLED,SCAN,XELA,YELA_.ttf
+     install -Dm644 SixtyfourConvergence_BLED-SCAN-XELA-YELA_.ttf $out/share/fonts/truetype/SixtyfourConvergence_BLED-SCAN-XELA-YELA_.ttf
   '';
 
   meta = with lib; {

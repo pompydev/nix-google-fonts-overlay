@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-     install -Dm644 MontaguSlab_opsz,wght_.ttf $out/share/fonts/truetype/MontaguSlab_opsz,wght_.ttf
+     install -Dm644 MontaguSlab_opsz-wght_.ttf $out/share/fonts/truetype/MontaguSlab_opsz-wght_.ttf
   '';
 
   meta = with lib; {
