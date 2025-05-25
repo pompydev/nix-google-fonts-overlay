@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "libertinus-mono-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/libertinusmono/LibertinusMono-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/libertinusmono/LibertinusMono-Regular.ttf?raw=true";
       name = "LibertinusMono-Regular.ttf";
       sha256 = "98e3326985108f7d427d1f447d4fa00c93f6787bc53b5c15150c115c5b9d9b9a";
     })

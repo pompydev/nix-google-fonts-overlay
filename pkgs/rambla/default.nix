@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "rambla-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rambla/Rambla-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rambla/Rambla-Regular.ttf?raw=true";
       name = "Rambla-Regular.ttf";
       sha256 = "50b69b938921d41a868e8cfbcc71a411e04caf14edad6a153222fc03d316ed97";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rambla/Rambla-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rambla/Rambla-Italic.ttf?raw=true";
       name = "Rambla-Italic.ttf";
       sha256 = "359e2cc8e935ab9bbd17734c774ca086b8dc7a30f39cb5440429d298a44390a6";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rambla/Rambla-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rambla/Rambla-Bold.ttf?raw=true";
       name = "Rambla-Bold.ttf";
       sha256 = "0e5af09d5cf4c7f04a95ae034fed45b8d37dc5a7f3f5492961bb4ecb3a2aa359";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rambla/Rambla-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rambla/Rambla-BoldItalic.ttf?raw=true";
       name = "Rambla-BoldItalic.ttf";
       sha256 = "6cd51a19872e3736c92e0d0dd48fbef314df200b5b169b7d57b9ffdcc46f92a3";
     })

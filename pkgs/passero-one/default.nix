@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "passero-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/passeroone/PasseroOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/passeroone/PasseroOne-Regular.ttf?raw=true";
       name = "PasseroOne-Regular.ttf";
       sha256 = "b5170ecc855200d369f8a60fc8c0c351cc8cb5ec9fab9a838d5a27f34e01982d";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "arapey-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arapey/Arapey-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/arapey/Arapey-Regular.ttf?raw=true";
       name = "Arapey-Regular.ttf";
       sha256 = "5da4525899a27708241a4108e76d6bfd087766a66d159d80dcf986801bfb1092";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arapey/Arapey-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/arapey/Arapey-Italic.ttf?raw=true";
       name = "Arapey-Italic.ttf";
       sha256 = "3053e62a5bf1fe0f08d8196bf31de312def7dea7b0415d6b20385caa5d333b0a";
     })

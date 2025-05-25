@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "caveat-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/caveat/Caveat%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/caveat/Caveat%5Bwght%5D.ttf?raw=true";
       name = "Caveat_wght_.ttf";
       sha256 = "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "playwrite-gb-j-guides-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwritegbjguides/PlaywriteGBJGuides-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwritegbjguides/PlaywriteGBJGuides-Regular.ttf?raw=true";
       name = "PlaywriteGBJGuides-Regular.ttf";
       sha256 = "b7be1f39971fd700acf9ef4e5c51d9412a3fc70af9e0efbfd5286ea88ea7b351";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwritegbjguides/PlaywriteGBJGuides-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwritegbjguides/PlaywriteGBJGuides-Italic.ttf?raw=true";
       name = "PlaywriteGBJGuides-Italic.ttf";
       sha256 = "f6741238e70ee582a1a28d97e271f1dc69fce769d12c8e4a126c4500c1e0b7b4";
     })

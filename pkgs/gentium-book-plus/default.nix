@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "gentium-book-plus-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gentiumbookplus/GentiumBookPlus-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gentiumbookplus/GentiumBookPlus-Regular.ttf?raw=true";
       name = "GentiumBookPlus-Regular.ttf";
       sha256 = "fe7b64eeacc430fcf46836a6f0dfe00d2c5a15483ed36692a2a185cb23ec2a5c";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gentiumbookplus/GentiumBookPlus-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gentiumbookplus/GentiumBookPlus-Italic.ttf?raw=true";
       name = "GentiumBookPlus-Italic.ttf";
       sha256 = "7a0ab4bd78701fa46d325e362654c41a47e2a0a5cb4a3eebc94dce89c2ee7df1";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gentiumbookplus/GentiumBookPlus-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gentiumbookplus/GentiumBookPlus-Bold.ttf?raw=true";
       name = "GentiumBookPlus-Bold.ttf";
       sha256 = "b39c3fb12e2e15e2336f2ec6d051c778618ec25f7360bc4765bfe755b408c011";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gentiumbookplus/GentiumBookPlus-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gentiumbookplus/GentiumBookPlus-BoldItalic.ttf?raw=true";
       name = "GentiumBookPlus-BoldItalic.ttf";
       sha256 = "e557dd7a7f818fa482c3e63c7576c6d455f6f2e3bf9d84e0a11d1617e2bc1383";
     })

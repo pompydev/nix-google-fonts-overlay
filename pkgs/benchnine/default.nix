@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "benchnine-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/benchnine/BenchNine-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/benchnine/BenchNine-Light.ttf?raw=true";
       name = "BenchNine-Light.ttf";
       sha256 = "b1a0aa5fd59b09aff1e396fb617c7ca9223c39e1bbbc1199d96784a8ce707878";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/benchnine/BenchNine-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/benchnine/BenchNine-Regular.ttf?raw=true";
       name = "BenchNine-Regular.ttf";
       sha256 = "abc1e1dfcfcf8fecf322d85bd461f308a68d313ab2a82f4f192d9580a82bb0d7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/benchnine/BenchNine-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/benchnine/BenchNine-Bold.ttf?raw=true";
       name = "BenchNine-Bold.ttf";
       sha256 = "5d3c445184569f424ed6d434cad16bdda130c5a395f79e2674f447cd5495cb97";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "epunda-sans-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/epundasans/EpundaSans%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/epundasans/EpundaSans%5Bwght%5D.ttf?raw=true";
       name = "EpundaSans_wght_.ttf";
       sha256 = "7ffff4f353f31e66f459ef47beb50d4e39e987421d3bd4b68f622461771dfe8d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/epundasans/EpundaSans-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/epundasans/EpundaSans-Italic%5Bwght%5D.ttf?raw=true";
       name = "EpundaSans-Italic_wght_.ttf";
       sha256 = "c2cb23ad0ce25f306458545efff1341ce0221e4cc94b1ca3277b785aaf3184d2";
     })

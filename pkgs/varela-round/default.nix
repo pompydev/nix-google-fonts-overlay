@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "varela-round-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/varelaround/VarelaRound-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/varelaround/VarelaRound-Regular.ttf?raw=true";
       name = "VarelaRound-Regular.ttf";
       sha256 = "e1e47eb66dbc2ddc106661338e712d9176c9e83c669a82fde155324823d03aa2";
     })

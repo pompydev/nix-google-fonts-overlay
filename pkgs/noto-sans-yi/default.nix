@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-yi-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansyi/NotoSansYi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosansyi/NotoSansYi-Regular.ttf?raw=true";
       name = "NotoSansYi-Regular.ttf";
       sha256 = "ee4de376a1e4f3c4bc7e116f4f46538348716b8408b86a0fc18c1c6128d2e56d";
     })

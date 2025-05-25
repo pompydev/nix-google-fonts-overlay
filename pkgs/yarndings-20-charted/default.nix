@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "yarndings-20-charted-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/yarndings20charted/Yarndings20Charted-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/yarndings20charted/Yarndings20Charted-Regular.ttf?raw=true";
       name = "Yarndings20Charted-Regular.ttf";
       sha256 = "06130542e36f1cce66ae8b5b7c2585f6a478aadfa6caf1634dd39c3a4fc0590c";
     })

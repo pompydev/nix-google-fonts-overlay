@@ -2,53 +2,53 @@
 
 stdenv.mkDerivation rec {
   name = "encode-sans-semi-expanded-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Thin.ttf?raw=true";
       name = "EncodeSansSemiExpanded-Thin.ttf";
       sha256 = "2d62660af2b106f8ff45356d009c4dbc4107c950e5ce3145522b1a1137c3f86a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-ExtraLight.ttf?raw=true";
       name = "EncodeSansSemiExpanded-ExtraLight.ttf";
       sha256 = "ba81657a3d28eb922075b6419ef79b74098f6bf74770797f90e0ce59796a529a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Light.ttf?raw=true";
       name = "EncodeSansSemiExpanded-Light.ttf";
       sha256 = "ed235d922e0f859ac9cbcd559d0441e32506d44ddae24aea89926e98841f982c";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Regular.ttf?raw=true";
       name = "EncodeSansSemiExpanded-Regular.ttf";
       sha256 = "aa69bcb0adf89d178c82e381ab6b959eca58c861440532cafbcc24e03cdce0ff";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Medium.ttf?raw=true";
       name = "EncodeSansSemiExpanded-Medium.ttf";
       sha256 = "ceb8cd76cedec8021892bc46dff129cde6c47ae19cd5d9cf676044ff337b3a98";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-SemiBold.ttf?raw=true";
       name = "EncodeSansSemiExpanded-SemiBold.ttf";
       sha256 = "1bc6f3f5aa3db42d4fc37d924f4b22f313a677fd3575fec805fc1169006e3e1f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Bold.ttf?raw=true";
       name = "EncodeSansSemiExpanded-Bold.ttf";
       sha256 = "388f18cbf0bcc4dcafc916c5f03989be30de3efebab71ef800f36d1f86b65962";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-ExtraBold.ttf?raw=true";
       name = "EncodeSansSemiExpanded-ExtraBold.ttf";
       sha256 = "b50b6596ceb2e5ba62c33b46ba7e6f3a0a8cc7cf2b491f01bfa4ee30aa177a85";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Black.ttf?raw=true";
       name = "EncodeSansSemiExpanded-Black.ttf";
       sha256 = "5ccf895878db2154b4a21def75594258e89e7122d05134d56cd37981ea22ff8f";
     })

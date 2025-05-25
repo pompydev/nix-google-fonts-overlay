@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "source-serif-4-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sourceserif4/SourceSerif4%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sourceserif4/SourceSerif4%5Bopsz,wght%5D.ttf?raw=true";
       name = "SourceSerif4_opsz,wght_.ttf";
       sha256 = "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sourceserif4/SourceSerif4-Italic%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sourceserif4/SourceSerif4-Italic%5Bopsz,wght%5D.ttf?raw=true";
       name = "SourceSerif4-Italic_opsz,wght_.ttf";
       sha256 = "15fbc7e4679489a501998c3669272637a6646388ef7e4bd77eebb5bf967a1f42";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "inter-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/inter/Inter%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/inter/Inter%5Bopsz,wght%5D.ttf?raw=true";
       name = "Inter_opsz,wght_.ttf";
       sha256 = "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/inter/Inter-Italic%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/inter/Inter-Italic%5Bopsz,wght%5D.ttf?raw=true";
       name = "Inter-Italic_opsz,wght_.ttf";
       sha256 = "acd98e64795781b2058f07b18475e0ecee2a0fe2b42a49e2f9e37d0d6bf66ce6";
     })

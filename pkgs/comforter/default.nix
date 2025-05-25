@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "comforter-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/comforter/Comforter-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/comforter/Comforter-Regular.ttf?raw=true";
       name = "Comforter-Regular.ttf";
       sha256 = "2852da85b2fbfd37ccd87387f3578a251cb9a8814fbab22c4487f792936a2267";
     })

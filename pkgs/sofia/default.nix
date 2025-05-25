@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sofia-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sofia/Sofia-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sofia/Sofia-Regular.ttf?raw=true";
       name = "Sofia-Regular.ttf";
       sha256 = "5634c4ecf066fba2fa11645a3c5b41e830ca240e1eeab81e10b9d476101b1eea";
     })

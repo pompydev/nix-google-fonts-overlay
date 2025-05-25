@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "wix-madefor-display-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/wixmadefordisplay/WixMadeforDisplay%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/wixmadefordisplay/WixMadeforDisplay%5Bwght%5D.ttf?raw=true";
       name = "WixMadeforDisplay_wght_.ttf";
       sha256 = "5cab84cd1f7231a866e59ee34245c9ca95cf23984d6b7d79132b3ffac2ef821f";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "libre-barcode-39-extended-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librebarcode39extended/LibreBarcode39Extended-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/librebarcode39extended/LibreBarcode39Extended-Regular.ttf?raw=true";
       name = "LibreBarcode39Extended-Regular.ttf";
       sha256 = "4fd24568bda30f28cf430f5a9ba2aa3fcce3677e08f306edf30ab42fd6187535";
     })

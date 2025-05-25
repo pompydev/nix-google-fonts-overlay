@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "edu-au-vic-wa-nt-arrows-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/eduauvicwantarrows/EduAUVICWANTArrows%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/eduauvicwantarrows/EduAUVICWANTArrows%5Bwght%5D.ttf?raw=true";
       name = "EduAUVICWANTArrows_wght_.ttf";
       sha256 = "adf8176cc45747608c091094612a7e8d3088d4d46dc89acc37df37fb7a561903";
     })

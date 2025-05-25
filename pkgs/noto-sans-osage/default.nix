@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-osage-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansosage/NotoSansOsage-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosansosage/NotoSansOsage-Regular.ttf?raw=true";
       name = "NotoSansOsage-Regular.ttf";
       sha256 = "fb7f7fed310568cceddf3d08cfbb13ccde7b84b1ddd93f9430cb91c2bdd4172d";
     })

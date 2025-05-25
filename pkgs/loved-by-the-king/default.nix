@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "loved-by-the-king-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lovedbytheking/LovedbytheKing.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/lovedbytheking/LovedbytheKing.ttf?raw=true";
       name = "LovedbytheKing.ttf";
       sha256 = "1d2fce705c902a0c47264992e698ce76336013458f0612cc68917025ca6fcfb3";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "cambo-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cambo/Cambo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/cambo/Cambo-Regular.ttf?raw=true";
       name = "Cambo-Regular.ttf";
       sha256 = "526c80a8d006783e899537314972ac43449b520f53b96befc17c47175e9b2e2a";
     })

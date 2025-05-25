@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-old-sogdian-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansoldsogdian/NotoSansOldSogdian-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosansoldsogdian/NotoSansOldSogdian-Regular.ttf?raw=true";
       name = "NotoSansOldSogdian-Regular.ttf";
       sha256 = "3686573e4175d14e8681cdd7bdf10b57762ded8bc3e5a5fa0083e4e14f4f2613";
     })

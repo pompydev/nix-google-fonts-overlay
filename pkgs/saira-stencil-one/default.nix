@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "saira-stencil-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sairastencilone/SairaStencilOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sairastencilone/SairaStencilOne-Regular.ttf?raw=true";
       name = "SairaStencilOne-Regular.ttf";
       sha256 = "781496fdaf8e04cf6741b31025f6b4ba84f66021b097a8e0d85cbea2180cf223";
     })

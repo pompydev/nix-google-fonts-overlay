@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "playwrite-at-guides-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwriteatguides/PlaywriteATGuides-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwriteatguides/PlaywriteATGuides-Regular.ttf?raw=true";
       name = "PlaywriteATGuides-Regular.ttf";
       sha256 = "7708b88b250f4cb7a5a6395c97ffb46daf80034e2954c497b7c1a34ac6401ff6";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwriteatguides/PlaywriteATGuides-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwriteatguides/PlaywriteATGuides-Italic.ttf?raw=true";
       name = "PlaywriteATGuides-Italic.ttf";
       sha256 = "a9f075e96d4c33b614c5454a7b6b3e6f4ca68cfed0f3674713d3d0369f7dd058";
     })

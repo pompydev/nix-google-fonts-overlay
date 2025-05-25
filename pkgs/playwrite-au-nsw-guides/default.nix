@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "playwrite-au-nsw-guides-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwriteaunswguides/PlaywriteAUNSWGuides-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwriteaunswguides/PlaywriteAUNSWGuides-Regular.ttf?raw=true";
       name = "PlaywriteAUNSWGuides-Regular.ttf";
       sha256 = "06f40972bde2537413aea34fcb4e9ca40b1b1dbbd0cb9a5a159bd6cda2b473e3";
     })

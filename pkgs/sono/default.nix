@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sono-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sono/Sono%5BMONO,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sono/Sono%5BMONO,wght%5D.ttf?raw=true";
       name = "Sono_MONO,wght_.ttf";
       sha256 = "247ca641ca7066e3addc8081d89613c06a79e4276cd4f2164d07a6493530010f";
     })

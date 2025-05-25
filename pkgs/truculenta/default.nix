@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "truculenta-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/truculenta/Truculenta%5Bopsz,wdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/truculenta/Truculenta%5Bopsz,wdth,wght%5D.ttf?raw=true";
       name = "Truculenta_opsz,wdth,wght_.ttf";
       sha256 = "08d8abe8590e3fef246801f86ef1ede30f8c7a000500857024a590529c443f3c";
     })

@@ -1,6 +1,6 @@
 # Nix Google Fonts Overlay 🎁
 
-**1920 high-quality fonts packaged for Nix**
+**1414 high-quality fonts packaged for Nix**
 
 This [Nix overlay](https://nixos.org) allows you to use fonts in
 [github.com/google/fonts](https://github.com/google/fonts). Updated weekly.

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "squada-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/squadaone/SquadaOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/squadaone/SquadaOne-Regular.ttf?raw=true";
       name = "SquadaOne-Regular.ttf";
       sha256 = "5b34a1633dbc48db3835d8a847bc475e6e0267121d3435854729ba4b407a05df";
     })

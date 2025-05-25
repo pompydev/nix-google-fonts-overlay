@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "tilt-warp-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tiltwarp/TiltWarp%5BXROT,YROT%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/tiltwarp/TiltWarp%5BXROT,YROT%5D.ttf?raw=true";
       name = "TiltWarp_XROT,YROT_.ttf";
       sha256 = "e650320e405c220853184fa20a60a812f3f0275c3a1b2d1769409ad1cb4bfca5";
     })

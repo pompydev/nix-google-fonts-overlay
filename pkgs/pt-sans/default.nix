@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "pt-sans-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ptsans/PT_Sans-Web-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ptsans/PT_Sans-Web-Regular.ttf?raw=true";
       name = "PT_Sans-Web-Regular.ttf";
       sha256 = "9cc831490532009bae2b3ce0d39c62adfc889060beb421593bfd9d2396d0f10a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ptsans/PT_Sans-Web-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ptsans/PT_Sans-Web-Italic.ttf?raw=true";
       name = "PT_Sans-Web-Italic.ttf";
       sha256 = "5a90fe2d0cd798700935240580bdcc12c0ffc9102c0c7163b3418e13bc21debd";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ptsans/PT_Sans-Web-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ptsans/PT_Sans-Web-Bold.ttf?raw=true";
       name = "PT_Sans-Web-Bold.ttf";
       sha256 = "3128bd5ecf01816e59a23d54c57a7a6b14615b07db53ff277c77376010265b05";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ptsans/PT_Sans-Web-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ptsans/PT_Sans-Web-BoldItalic.ttf?raw=true";
       name = "PT_Sans-Web-BoldItalic.ttf";
       sha256 = "81ac221cdd02bccfa679c74adb122478e9d092e65a722e31ca11469961483785";
     })

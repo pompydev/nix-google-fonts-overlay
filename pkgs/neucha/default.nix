@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "neucha-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/neucha/Neucha.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/neucha/Neucha.ttf?raw=true";
       name = "Neucha.ttf";
       sha256 = "7927bd6ce090fa032857dcbc3ad0e8b765c462d0a72a8779068132496b4e087d";
     })

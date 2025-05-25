@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "electrolize-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/electrolize/Electrolize-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/electrolize/Electrolize-Regular.ttf?raw=true";
       name = "Electrolize-Regular.ttf";
       sha256 = "aa81ab9015fc0190bb5e68c50290565c7a4a723ddf32b88774aaff05cdd66bca";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "playwrite-no-guides-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwritenoguides/PlaywriteNOGuides-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwritenoguides/PlaywriteNOGuides-Regular.ttf?raw=true";
       name = "PlaywriteNOGuides-Regular.ttf";
       sha256 = "517e97496d1a3921bef96178f6c66f48ababae63df07b77f45db5be384bb95d1";
     })

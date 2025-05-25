@@ -2,33 +2,33 @@
 
 stdenv.mkDerivation rec {
   name = "rajdhani-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rajdhani/Rajdhani-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rajdhani/Rajdhani-Light.ttf?raw=true";
       name = "Rajdhani-Light.ttf";
       sha256 = "140e9f13af69538161c5780fcf7f81594c069aea887e7bffd417ae1c641213c3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rajdhani/Rajdhani-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rajdhani/Rajdhani-Regular.ttf?raw=true";
       name = "Rajdhani-Regular.ttf";
       sha256 = "6e1fc228a8318251a6e569502ec57bac1e4656c582f92f59ccecc4688e039b98";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rajdhani/Rajdhani-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rajdhani/Rajdhani-Medium.ttf?raw=true";
       name = "Rajdhani-Medium.ttf";
       sha256 = "12ff7dcfe4c206e3875ac53b1762eab57de6a2fa7f5a86c26b97b88d6591eac2";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rajdhani/Rajdhani-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rajdhani/Rajdhani-SemiBold.ttf?raw=true";
       name = "Rajdhani-SemiBold.ttf";
       sha256 = "94bbd25a18ca665999feb05a537de9fd2b860dcfb78bbe9ca00270825bf235da";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rajdhani/Rajdhani-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rajdhani/Rajdhani-Bold.ttf?raw=true";
       name = "Rajdhani-Bold.ttf";
       sha256 = "691470dd3286a14e9677940d0bf75796179841ba5215cbda1a2c8910a3226afd";
     })

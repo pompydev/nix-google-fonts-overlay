@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "sassy-frass-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sassyfrass/SassyFrass-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sassyfrass/SassyFrass-Regular.ttf?raw=true";
       name = "SassyFrass-Regular.ttf";
       sha256 = "91fc6e0f43a277ddb590faf8a97fd3016f4f1251a9dea2deaf658b1812c42899";
     })

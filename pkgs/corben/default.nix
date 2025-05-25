@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "corben-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/corben/Corben-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/corben/Corben-Regular.ttf?raw=true";
       name = "Corben-Regular.ttf";
       sha256 = "dd2c2697a8f936a43b5f0a2bae1bc82cdaf40f8a5fc1d15c1ecd562b3ea16044";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/corben/Corben-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/corben/Corben-Bold.ttf?raw=true";
       name = "Corben-Bold.ttf";
       sha256 = "1fb5959682b89680467ab628e2f1e6359c6062acbb7edcea14ffcca1124db0f1";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "hedvig-letters-serif-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hedviglettersserif/HedvigLettersSerif%5Bopsz%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/hedviglettersserif/HedvigLettersSerif%5Bopsz%5D.ttf?raw=true";
       name = "HedvigLettersSerif_opsz_.ttf";
       sha256 = "4892f22754178b5d18360b24b16bfac38b4a2344395316d66ebd1f3d11ca28c6";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "schibsted-grotesk-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/schibstedgrotesk/SchibstedGrotesk%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/schibstedgrotesk/SchibstedGrotesk%5Bwght%5D.ttf?raw=true";
       name = "SchibstedGrotesk_wght_.ttf";
       sha256 = "6ceeadf6be8e1fd7687011c7fa38ed0edd1abe967a0b73d97caec183552e823d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/schibstedgrotesk/SchibstedGrotesk-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/schibstedgrotesk/SchibstedGrotesk-Italic%5Bwght%5D.ttf?raw=true";
       name = "SchibstedGrotesk-Italic_wght_.ttf";
       sha256 = "b49fedb6f3a2ff9b43e13351888641505dc8e5f300941e597eecbc3f52ba357b";
     })

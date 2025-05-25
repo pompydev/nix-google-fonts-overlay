@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "playpen-sans-deva-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playpensansdeva/PlaypenSansDeva%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playpensansdeva/PlaypenSansDeva%5Bwght%5D.ttf?raw=true";
       name = "PlaypenSansDeva_wght_.ttf";
       sha256 = "741156a0ea70b12b150625cd715c34f0a921db5f7dd2bceb37043e59764ae3ea";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "vujahday-script-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/vujahdayscript/VujahdayScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/vujahdayscript/VujahdayScript-Regular.ttf?raw=true";
       name = "VujahdayScript-Regular.ttf";
       sha256 = "f102428da88931f20c5ed947d9f8aea85ee3f1d4a18b51a74b4f59a344ce5daa";
     })

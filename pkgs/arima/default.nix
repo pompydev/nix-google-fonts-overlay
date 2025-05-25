@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "arima-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arima/Arima%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/arima/Arima%5Bwght%5D.ttf?raw=true";
       name = "Arima_wght_.ttf";
       sha256 = "c6b0db0d4343e9d08b8e79f9c6f868576c94bc0c839d349535f030b011884e45";
     })

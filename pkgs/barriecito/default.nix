@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "barriecito-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/barriecito/Barriecito-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/barriecito/Barriecito-Regular.ttf?raw=true";
       name = "Barriecito-Regular.ttf";
       sha256 = "ff32a099b68e0eb5e236adcb9a58141d00fbdf196586e421d1c6a0d1859f75b8";
     })

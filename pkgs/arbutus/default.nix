@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "arbutus-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arbutus/Arbutus-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/arbutus/Arbutus-Regular.ttf?raw=true";
       name = "Arbutus-Regular.ttf";
       sha256 = "6c86e8b86c9eebcdb963f83b382e5ba92764b34c53cd9dd96a00ec5d3c5acfdb";
     })

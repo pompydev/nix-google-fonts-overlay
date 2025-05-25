@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-tamil-supplement-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanstamilsupplement/NotoSansTamilSupplement-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosanstamilsupplement/NotoSansTamilSupplement-Regular.ttf?raw=true";
       name = "NotoSansTamilSupplement-Regular.ttf";
       sha256 = "321ef3c69cd8b3859420164820f316f245772ab24a587ac35f484a7e18760071";
     })

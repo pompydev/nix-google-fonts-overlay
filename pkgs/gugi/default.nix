@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "gugi-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gugi/Gugi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gugi/Gugi-Regular.ttf?raw=true";
       name = "Gugi-Regular.ttf";
       sha256 = "c0b1f979979cfc309fb2438fa9464f96173353e0c4842cc7a5919658184ed9d3";
     })

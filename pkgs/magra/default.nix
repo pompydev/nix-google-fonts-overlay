@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "magra-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/magra/Magra-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/magra/Magra-Regular.ttf?raw=true";
       name = "Magra-Regular.ttf";
       sha256 = "d4d0fe421d324b3a7886cac4c6c2069f4e671ae1859463f14af1488ad27f215e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/magra/Magra-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/magra/Magra-Bold.ttf?raw=true";
       name = "Magra-Bold.ttf";
       sha256 = "3e991012c290becfeb29943f86391a435b8bbf1fc853dc8399ccbfcce6b56a81";
     })

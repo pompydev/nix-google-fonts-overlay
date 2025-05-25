@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "cinzel-decorative-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cinzeldecorative/CinzelDecorative-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/cinzeldecorative/CinzelDecorative-Regular.ttf?raw=true";
       name = "CinzelDecorative-Regular.ttf";
       sha256 = "5b862be329103ad287a10f0a53e27a40e8cc519999253f1a0223e2dc330b10b8";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cinzeldecorative/CinzelDecorative-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/cinzeldecorative/CinzelDecorative-Bold.ttf?raw=true";
       name = "CinzelDecorative-Bold.ttf";
       sha256 = "e854e68a388aa50d742a4415c1ae5c17a617ef7956c95a70021d0a4a44f20518";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cinzeldecorative/CinzelDecorative-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/cinzeldecorative/CinzelDecorative-Black.ttf?raw=true";
       name = "CinzelDecorative-Black.ttf";
       sha256 = "a6c1eb3e228f639a98aafd8a8e8a035582dd50ad5f8a84e9dcbc8664e7457114";
     })

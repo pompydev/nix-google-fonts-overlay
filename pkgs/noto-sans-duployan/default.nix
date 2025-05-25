@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-duployan-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansduployan/NotoSansDuployan-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosansduployan/NotoSansDuployan-Regular.ttf?raw=true";
       name = "NotoSansDuployan-Regular.ttf";
       sha256 = "2510875cbe4b602f90446e185b25eff1dc600acbc37e8a7a46bbf352603373be";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosansduployan/NotoSansDuployan-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosansduployan/NotoSansDuployan-Bold.ttf?raw=true";
       name = "NotoSansDuployan-Bold.ttf";
       sha256 = "f7766eabbec7c00e50b0e64bf130805f03da77474c203809ceedf1ae96a521db";
     })

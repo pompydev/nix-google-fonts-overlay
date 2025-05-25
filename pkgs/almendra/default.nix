@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "almendra-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/almendra/Almendra-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/almendra/Almendra-Regular.ttf?raw=true";
       name = "Almendra-Regular.ttf";
       sha256 = "b127a6121209353b53da9ce73bf9d350f74190d8384c28ede179e4fb9440f946";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/almendra/Almendra-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/almendra/Almendra-Italic.ttf?raw=true";
       name = "Almendra-Italic.ttf";
       sha256 = "972eb95dd030592755064c35e8e394b75423973d0b7dbfd759c7e36ef80bb7cb";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/almendra/Almendra-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/almendra/Almendra-Bold.ttf?raw=true";
       name = "Almendra-Bold.ttf";
       sha256 = "5895ef04d0d56c60083ec302e72db99b952b044ab2b440ee12283649b5edc971";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/almendra/Almendra-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/almendra/Almendra-BoldItalic.ttf?raw=true";
       name = "Almendra-BoldItalic.ttf";
       sha256 = "10e0a7dd4b9f5ad7d51be7f8ee42d76919c322dcbb7733dbad48f4ac751cb105";
     })

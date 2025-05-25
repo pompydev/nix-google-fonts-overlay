@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "jacquard-24-charted-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/jacquard24charted/Jacquard24Charted-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/jacquard24charted/Jacquard24Charted-Regular.ttf?raw=true";
       name = "Jacquard24Charted-Regular.ttf";
       sha256 = "3db5951a07e33560837054e4fa6110cc07866e58bfe14363f81314c2460ff0f2";
     })

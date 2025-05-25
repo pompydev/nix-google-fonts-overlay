@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "reggae-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/reggaeone/ReggaeOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/reggaeone/ReggaeOne-Regular.ttf?raw=true";
       name = "ReggaeOne-Regular.ttf";
       sha256 = "aebe62598732d76036f30ec11bb0ec5f68938e373a06d1b4ceb6b9cf1abf3db2";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "figtree-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/figtree/Figtree%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/figtree/Figtree%5Bwght%5D.ttf?raw=true";
       name = "Figtree_wght_.ttf";
       sha256 = "26ad3db9b31ff7dde67a91ff515d022d2f495cd506590699cf264f0bfe6fb714";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/figtree/Figtree-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/figtree/Figtree-Italic%5Bwght%5D.ttf?raw=true";
       name = "Figtree-Italic_wght_.ttf";
       sha256 = "94dec1f18b9275d69e8b4a91b6514bdc18199048347e1c36e1285b11b0b87653";
     })

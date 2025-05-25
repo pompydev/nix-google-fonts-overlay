@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "jacquarda-bastarda-9-charted-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/jacquardabastarda9charted/JacquardaBastarda9Charted-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/jacquardabastarda9charted/JacquardaBastarda9Charted-Regular.ttf?raw=true";
       name = "JacquardaBastarda9Charted-Regular.ttf";
       sha256 = "812bb5613b16bd8cefdc43b4497400ea548c55a64f0d6e8cb1bf510a28da8581";
     })

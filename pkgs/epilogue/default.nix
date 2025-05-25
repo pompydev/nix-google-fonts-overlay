@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "epilogue-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/epilogue/Epilogue%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/epilogue/Epilogue%5Bwght%5D.ttf?raw=true";
       name = "Epilogue_wght_.ttf";
       sha256 = "012f651b45f47c10c7714cb7e3f2f7d9ccb7f235a2cc72c6b273ddc735705c67";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/epilogue/Epilogue-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/epilogue/Epilogue-Italic%5Bwght%5D.ttf?raw=true";
       name = "Epilogue-Italic_wght_.ttf";
       sha256 = "7e5263bfe5b8ea9d46201fc3e3d59c354628de2220c3f3fe831fad946a1f7db2";
     })

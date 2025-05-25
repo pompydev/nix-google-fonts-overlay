@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "convergence-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/convergence/Convergence-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/convergence/Convergence-Regular.ttf?raw=true";
       name = "Convergence-Regular.ttf";
       sha256 = "4e17355228610042e6922db7f19d9d87eb99b4f09ba3a12be8a2800bad0e9904";
     })

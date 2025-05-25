@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "milonga-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/milonga/Milonga-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/milonga/Milonga-Regular.ttf?raw=true";
       name = "Milonga-Regular.ttf";
       sha256 = "202ce337fad18b3d542af04e6dbd76a19b47c00c88d15b7555cef54e1818e383";
     })

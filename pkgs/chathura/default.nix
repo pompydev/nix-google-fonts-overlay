@@ -2,33 +2,33 @@
 
 stdenv.mkDerivation rec {
   name = "chathura-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/chathura/Chathura-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/chathura/Chathura-Thin.ttf?raw=true";
       name = "Chathura-Thin.ttf";
       sha256 = "ffa6266426a6339d2dcb9ae7ccd0d06f5360e91c9a67db2597d70b0bd2e10aad";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/chathura/Chathura-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/chathura/Chathura-Light.ttf?raw=true";
       name = "Chathura-Light.ttf";
       sha256 = "a998baa580e25340e1a44a343c62a0f106f4763e7e0cf153f279fb6c965a122d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/chathura/Chathura-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/chathura/Chathura-Regular.ttf?raw=true";
       name = "Chathura-Regular.ttf";
       sha256 = "aff3aab23f202092d411dae54a612968dee39cf411c0d8049e6a9ea99f7e2c14";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/chathura/Chathura-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/chathura/Chathura-Bold.ttf?raw=true";
       name = "Chathura-Bold.ttf";
       sha256 = "0a493c95a74cc13f6766dbf2de4c47dda0c446c5fc0d6576b970d7890ce9f9aa";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/chathura/Chathura-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/chathura/Chathura-ExtraBold.ttf?raw=true";
       name = "Chathura-ExtraBold.ttf";
       sha256 = "8323a68a9b99940ce5009503503c0a75b739ac2e1e767e32c4b35b20b0a163fc";
     })

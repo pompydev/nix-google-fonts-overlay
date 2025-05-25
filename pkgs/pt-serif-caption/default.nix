@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "pt-serif-caption-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ptserifcaption/PT_Serif-Caption-Web-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ptserifcaption/PT_Serif-Caption-Web-Regular.ttf?raw=true";
       name = "PT_Serif-Caption-Web-Regular.ttf";
       sha256 = "d17d47f44e840eee017f839b27dff3c94c7afe7743eff308d4bd11f7018b69af";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ptserifcaption/PT_Serif-Caption-Web-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ptserifcaption/PT_Serif-Caption-Web-Italic.ttf?raw=true";
       name = "PT_Serif-Caption-Web-Italic.ttf";
       sha256 = "afe69233498676c418383b9defda8aace407eca0e86f4499d9ba4e9f494f9da5";
     })

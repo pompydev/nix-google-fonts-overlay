@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "ledger-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ledger/Ledger-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ledger/Ledger-Regular.ttf?raw=true";
       name = "Ledger-Regular.ttf";
       sha256 = "0d9e4086208d5aee8813ae1185010c58fa2f07933fb5c1a1d0950f42bd976272";
     })

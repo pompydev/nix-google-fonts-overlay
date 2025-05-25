@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "amaranth-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/amaranth/Amaranth-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/amaranth/Amaranth-Regular.ttf?raw=true";
       name = "Amaranth-Regular.ttf";
       sha256 = "49d60587db044af5158afe373bfa6204d8dcce647ccd4f1f1c61f560980554ec";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/amaranth/Amaranth-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/amaranth/Amaranth-Italic.ttf?raw=true";
       name = "Amaranth-Italic.ttf";
       sha256 = "6c96bda248c8ed3ebda63382cfcc233a26213d87d457a5224b79a0452aff27ea";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/amaranth/Amaranth-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/amaranth/Amaranth-Bold.ttf?raw=true";
       name = "Amaranth-Bold.ttf";
       sha256 = "2ca9f93499ad3af5679afe2930170fd00c50c2fdaf0240c7de976e23be5791dc";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/amaranth/Amaranth-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/amaranth/Amaranth-BoldItalic.ttf?raw=true";
       name = "Amaranth-BoldItalic.ttf";
       sha256 = "e8fc151453806c6aaed72a40bacaf3fcf380ccd5d852de08bd686e55ae70464b";
     })

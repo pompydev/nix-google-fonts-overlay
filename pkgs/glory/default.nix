@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "glory-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/glory/Glory%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/glory/Glory%5Bwght%5D.ttf?raw=true";
       name = "Glory_wght_.ttf";
       sha256 = "7282178080ca4fc5feca7b6ff96212acee58462efdff8a43b80d67204f100837";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/glory/Glory-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/glory/Glory-Italic%5Bwght%5D.ttf?raw=true";
       name = "Glory-Italic_wght_.ttf";
       sha256 = "f24daaa4671778f0788535471fe9aa6a0a09ecb97ee644d9a7b5801de9f6cb94";
     })

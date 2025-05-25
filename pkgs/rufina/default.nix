@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "rufina-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rufina/Rufina-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rufina/Rufina-Regular.ttf?raw=true";
       name = "Rufina-Regular.ttf";
       sha256 = "0b26e1388e827afa7c40e3ec268c85010dda0c759be0a169025509b59b1a4b1c";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rufina/Rufina-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rufina/Rufina-Bold.ttf?raw=true";
       name = "Rufina-Bold.ttf";
       sha256 = "6677451f47d8fd528b8607335ad3bae52db34f775559fc3db99dc7281f5805e0";
     })

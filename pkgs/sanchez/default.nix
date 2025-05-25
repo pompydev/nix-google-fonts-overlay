@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "sanchez-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sanchez/Sanchez-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sanchez/Sanchez-Regular.ttf?raw=true";
       name = "Sanchez-Regular.ttf";
       sha256 = "759e73bad0b78e84555215fd9a68637cf445d41d29e0e9834f5ee9dc43fa7684";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sanchez/Sanchez-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sanchez/Sanchez-Italic.ttf?raw=true";
       name = "Sanchez-Italic.ttf";
       sha256 = "50978369880866e41534bcdb215ebed9b632efae31d434b252a607688bf4bc05";
     })

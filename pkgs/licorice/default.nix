@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "licorice-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/licorice/Licorice-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/licorice/Licorice-Regular.ttf?raw=true";
       name = "Licorice-Regular.ttf";
       sha256 = "c72d8cb2f56e6995b3682d8620e2d602bacf78b67121cdfbface9acc422750d8";
     })

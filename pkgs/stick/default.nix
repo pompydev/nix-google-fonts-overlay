@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "stick-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/stick/Stick-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/stick/Stick-Regular.ttf?raw=true";
       name = "Stick-Regular.ttf";
       sha256 = "0e582d72b5125c7847d1c46b658333194f7a3f70bfa210d2f8cae1a596a17857";
     })

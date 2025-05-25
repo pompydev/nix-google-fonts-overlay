@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "tiro-devanagari-sanskrit-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tirodevanagarisanskrit/TiroDevanagariSanskrit-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/tirodevanagarisanskrit/TiroDevanagariSanskrit-Regular.ttf?raw=true";
       name = "TiroDevanagariSanskrit-Regular.ttf";
       sha256 = "75ae873e5e3f9c30fb962a3d283b9f5e7bc5bca57822a2aa926753b297b150ca";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tirodevanagarisanskrit/TiroDevanagariSanskrit-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/tirodevanagarisanskrit/TiroDevanagariSanskrit-Italic.ttf?raw=true";
       name = "TiroDevanagariSanskrit-Italic.ttf";
       sha256 = "9641914032154ea68a7caed100320cf547d63891a1e3962033ba91dc9c33ac2b";
     })

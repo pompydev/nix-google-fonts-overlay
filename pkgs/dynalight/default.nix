@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "dynalight-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/dynalight/Dynalight-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/dynalight/Dynalight-Regular.ttf?raw=true";
       name = "Dynalight-Regular.ttf";
       sha256 = "360da5d767b48c849d06a608a4605d53c32a49fde127603aa83b096b6b43d0f1";
     })

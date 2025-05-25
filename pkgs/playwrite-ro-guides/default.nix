@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "playwrite-ro-guides-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwriteroguides/PlaywriteROGuides-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwriteroguides/PlaywriteROGuides-Regular.ttf?raw=true";
       name = "PlaywriteROGuides-Regular.ttf";
       sha256 = "273be2263db17dc6e2367a642b4d30b7159787f16bf8bdb0cfcf86e184f1acf5";
     })

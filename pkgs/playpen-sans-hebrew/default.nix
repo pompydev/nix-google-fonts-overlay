@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "playpen-sans-hebrew-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playpensanshebrew/PlaypenSansHebrew%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playpensanshebrew/PlaypenSansHebrew%5Bwght%5D.ttf?raw=true";
       name = "PlaypenSansHebrew_wght_.ttf";
       sha256 = "0ec8a95033c5a01e1799c60b49ab76d9922a68f715a081fc1f5587e4d2bb5b69";
     })

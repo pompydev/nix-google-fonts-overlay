@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "lobster-two-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lobstertwo/LobsterTwo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/lobstertwo/LobsterTwo-Regular.ttf?raw=true";
       name = "LobsterTwo-Regular.ttf";
       sha256 = "be3d8ce18188bc559de37e4355f5f902b4960a7b65a99efb78c03bb65bb782e6";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lobstertwo/LobsterTwo-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/lobstertwo/LobsterTwo-Italic.ttf?raw=true";
       name = "LobsterTwo-Italic.ttf";
       sha256 = "c727ae1d9e1e166a7c0679fcf79c2ff0c21bc5483ee253fdfee2f5792c0bebd9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lobstertwo/LobsterTwo-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/lobstertwo/LobsterTwo-Bold.ttf?raw=true";
       name = "LobsterTwo-Bold.ttf";
       sha256 = "5255b383fc8aa432e4e7e5f8005210477c0983370adc6ad6205c9bd2cd1ceb76";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lobstertwo/LobsterTwo-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/lobstertwo/LobsterTwo-BoldItalic.ttf?raw=true";
       name = "LobsterTwo-BoldItalic.ttf";
       sha256 = "980ee087455f1f0a96fb2ea74bef441a2bf29048e2c739d11683d330cfc19329";
     })

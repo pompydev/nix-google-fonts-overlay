@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "baskervville-sc-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/baskervvillesc/BaskervvilleSC%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/baskervvillesc/BaskervvilleSC%5Bwght%5D.ttf?raw=true";
       name = "BaskervvilleSC_wght_.ttf";
       sha256 = "cd2ac64e7b75f6c31fcec8b8c85a729f88d6b2987bdc0062d057f06904069304";
     })

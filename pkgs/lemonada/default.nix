@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "lemonada-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lemonada/Lemonada%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/lemonada/Lemonada%5Bwght%5D.ttf?raw=true";
       name = "Lemonada_wght_.ttf";
       sha256 = "84134e9e1da7d593839073157980a4d38296d2be10b61469a8f3169204959ad9";
     })

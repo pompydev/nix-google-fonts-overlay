@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "dm-serif-display-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/dmserifdisplay/DMSerifDisplay-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/dmserifdisplay/DMSerifDisplay-Regular.ttf?raw=true";
       name = "DMSerifDisplay-Regular.ttf";
       sha256 = "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/dmserifdisplay/DMSerifDisplay-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/dmserifdisplay/DMSerifDisplay-Italic.ttf?raw=true";
       name = "DMSerifDisplay-Italic.ttf";
       sha256 = "df74c0ac387baeaeb0fe4f2324e1668e6a3ed8c09cd9796fe162c71753e19e45";
     })

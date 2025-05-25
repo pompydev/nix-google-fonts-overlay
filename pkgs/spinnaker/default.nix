@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "spinnaker-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/spinnaker/Spinnaker-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/spinnaker/Spinnaker-Regular.ttf?raw=true";
       name = "Spinnaker-Regular.ttf";
       sha256 = "f89852fb1cbf415eac1893d98978d77b934475d53d46838fd146924a4d2e13fc";
     })

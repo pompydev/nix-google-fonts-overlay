@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "carlito-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/carlito/Carlito-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/carlito/Carlito-Regular.ttf?raw=true";
       name = "Carlito-Regular.ttf";
       sha256 = "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/carlito/Carlito-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/carlito/Carlito-Italic.ttf?raw=true";
       name = "Carlito-Italic.ttf";
       sha256 = "0b019225e58d702bfedcbd35c21696769f8ee115cb6343f84c2f240312450d1c";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/carlito/Carlito-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/carlito/Carlito-Bold.ttf?raw=true";
       name = "Carlito-Bold.ttf";
       sha256 = "bb5d20f79b82599ec72983597437373a80f2d2085fa91fc144fd74e876a594db";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/carlito/Carlito-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/carlito/Carlito-BoldItalic.ttf?raw=true";
       name = "Carlito-BoldItalic.ttf";
       sha256 = "b32928186c119599e03ca6a1ffc680fdcb7fac95772f4b95d989cf6cd3861517";
     })

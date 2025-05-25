@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "shojumaru-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/shojumaru/Shojumaru-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/shojumaru/Shojumaru-Regular.ttf?raw=true";
       name = "Shojumaru-Regular.ttf";
       sha256 = "8607110ef45da664861c72d95fb804c3609169ebfd2a380cb47b353a7b241c75";
     })

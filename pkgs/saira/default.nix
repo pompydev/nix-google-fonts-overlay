@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "saira-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/saira/Saira%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/saira/Saira%5Bwdth,wght%5D.ttf?raw=true";
       name = "Saira_wdth,wght_.ttf";
       sha256 = "9d050fc5a01c85f74c4257c207d50b55d1e40c37308c642f974a2c5003231dde";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/saira/Saira-Italic%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/saira/Saira-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "Saira-Italic_wdth,wght_.ttf";
       sha256 = "965972c2543b72948aedb55fae36e23175661d0f9d2d8d7f14a1009e466912f8";
     })

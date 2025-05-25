@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "condiment-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/condiment/Condiment-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/condiment/Condiment-Regular.ttf?raw=true";
       name = "Condiment-Regular.ttf";
       sha256 = "fb12978739fe3824e95b3e5f739ae623f888f715fe44481117fb3436be9a4b5d";
     })

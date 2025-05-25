@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "montserrat-underline-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/montserratunderline/MontserratUnderline%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/montserratunderline/MontserratUnderline%5Bwght%5D.ttf?raw=true";
       name = "MontserratUnderline_wght_.ttf";
       sha256 = "b77c3c339f0a793692f32d53b0cf631a426f6deec94e53e013cb612f87370fcc";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/montserratunderline/MontserratUnderline-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/montserratunderline/MontserratUnderline-Italic%5Bwght%5D.ttf?raw=true";
       name = "MontserratUnderline-Italic_wght_.ttf";
       sha256 = "774bbfa2403188cbec3884c8a349f2700d6d2cd1fe81d91751d71bf252026a87";
     })

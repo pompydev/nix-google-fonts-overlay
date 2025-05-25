@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "jaini-purva-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/jainipurva/JainiPurva-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/jainipurva/JainiPurva-Regular.ttf?raw=true";
       name = "JainiPurva-Regular.ttf";
       sha256 = "178d7f5a40594d4ef6c28b7a68d85da7eae46df2f71becedfb40251ff678c2f5";
     })

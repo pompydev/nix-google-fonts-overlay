@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "yuji-hentaigana-akebono-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/yujihentaiganaakebono/YujiHentaiganaAkebono-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/yujihentaiganaakebono/YujiHentaiganaAkebono-Regular.ttf?raw=true";
       name = "YujiHentaiganaAkebono-Regular.ttf";
       sha256 = "8e387eeb5c24cd2945d8804caab8f97985b694cec8d2b228da63cceb16c7a8f3";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "akaya-kanadaka-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/akayakanadaka/AkayaKanadaka-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/akayakanadaka/AkayaKanadaka-Regular.ttf?raw=true";
       name = "AkayaKanadaka-Regular.ttf";
       sha256 = "7891840f8c14326220aafd73f599f592bf44c60e4f8882bcf7c57426d62e9427";
     })

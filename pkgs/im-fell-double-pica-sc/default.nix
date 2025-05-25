@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "im-fell-double-pica-sc-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/imfelldoublepicasc/IMFeDPsc28P.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/imfelldoublepicasc/IMFeDPsc28P.ttf?raw=true";
       name = "IMFeDPsc28P.ttf";
       sha256 = "cde1b1e206b36ef2f74ea4b2bf19786d99e93e1c65775b926701e1141726de81";
     })

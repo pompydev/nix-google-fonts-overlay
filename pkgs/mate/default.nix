@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "mate-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mate/Mate-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/mate/Mate-Regular.ttf?raw=true";
       name = "Mate-Regular.ttf";
       sha256 = "95480334bc38a94236f03cf1c8dec24ea5a906712a559598d40b322c61d14b43";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mate/Mate-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/mate/Mate-Italic.ttf?raw=true";
       name = "Mate-Italic.ttf";
       sha256 = "52c32eaa806f093934883ee47df2cdb57fb000cbcb537c4982f45fb6decfc37f";
     })

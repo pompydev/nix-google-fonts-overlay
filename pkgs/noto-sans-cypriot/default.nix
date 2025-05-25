@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-cypriot-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanscypriot/NotoSansCypriot-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosanscypriot/NotoSansCypriot-Regular.ttf?raw=true";
       name = "NotoSansCypriot-Regular.ttf";
       sha256 = "80590aed2c4223ee0ca53fda21281236529dcc637451d016248559c83880d14d";
     })

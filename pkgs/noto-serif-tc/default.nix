@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-tc-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoseriftc/NotoSerifTC%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notoseriftc/NotoSerifTC%5Bwght%5D.ttf?raw=true";
       name = "NotoSerifTC_wght_.ttf";
       sha256 = "0077e18f57c6908f4a000969880940bdb0dad057c0e8d98b49dc364c3d1b09c6";
     })

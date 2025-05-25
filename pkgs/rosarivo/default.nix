@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "rosarivo-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rosarivo/Rosarivo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rosarivo/Rosarivo-Regular.ttf?raw=true";
       name = "Rosarivo-Regular.ttf";
       sha256 = "8b6503b67c5c080bbef8cebc59f4665b7c6d45429c677ebffa0dbe797a4dc4d0";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rosarivo/Rosarivo-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rosarivo/Rosarivo-Italic.ttf?raw=true";
       name = "Rosarivo-Italic.ttf";
       sha256 = "a9865d8ed5f7984c6994b8630a6ee9fa29395a13a72b5e257b3461139e305b47";
     })

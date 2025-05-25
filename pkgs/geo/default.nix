@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "geo-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/geo/Geo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/geo/Geo-Regular.ttf?raw=true";
       name = "Geo-Regular.ttf";
       sha256 = "38669ed77c0ffe1859f45143c63614c0f1953074331536cb35d3caca944be605";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/geo/Geo-Oblique.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/geo/Geo-Oblique.ttf?raw=true";
       name = "Geo-Oblique.ttf";
       sha256 = "4f0083782a238a2c03fb8864119b1df5c0c8388a208a0f03d7a7c11313e679f3";
     })

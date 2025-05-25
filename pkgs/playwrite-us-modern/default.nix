@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "playwrite-us-modern-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwriteusmodern/PlaywriteUSModern%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwriteusmodern/PlaywriteUSModern%5Bwght%5D.ttf?raw=true";
       name = "PlaywriteUSModern_wght_.ttf";
       sha256 = "1352219a8867e04e25727ec63d35621d704b627a7eb5bf27d7d6f7974e1d3b2d";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "quattrocento-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/quattrocento/Quattrocento-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/quattrocento/Quattrocento-Regular.ttf?raw=true";
       name = "Quattrocento-Regular.ttf";
       sha256 = "57dc8daff9121be82e54cf1221658b7ba4f1801212817aead2d184a5660fbcb9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/quattrocento/Quattrocento-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/quattrocento/Quattrocento-Bold.ttf?raw=true";
       name = "Quattrocento-Bold.ttf";
       sha256 = "5945de7b6d6c7c9fefbb67bc34ec60f64a7dd1bd645fb2771ec7728c0ab67c9d";
     })

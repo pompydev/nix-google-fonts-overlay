@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "museomoderno-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/museomoderno/MuseoModerno%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/museomoderno/MuseoModerno%5Bwght%5D.ttf?raw=true";
       name = "MuseoModerno_wght_.ttf";
       sha256 = "d03b027cf5cf72d014c8a405a8ceb83ea1d5d8ae2c64a7f602b131d9973e3503";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/museomoderno/MuseoModerno-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/museomoderno/MuseoModerno-Italic%5Bwght%5D.ttf?raw=true";
       name = "MuseoModerno-Italic_wght_.ttf";
       sha256 = "ff123989a6c175cd3fce6b3decba302d3841d65d9839ec09dd0c850bea212b56";
     })

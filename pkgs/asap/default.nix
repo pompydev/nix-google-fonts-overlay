@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "asap-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/asap/Asap%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/asap/Asap%5Bwdth,wght%5D.ttf?raw=true";
       name = "Asap_wdth,wght_.ttf";
       sha256 = "a3938b208d7a46d88faf22d2d4221e871ab2cc686c0e555a273b2a126a2bd321";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/asap/Asap-Italic%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/asap/Asap-Italic%5Bwdth,wght%5D.ttf?raw=true";
       name = "Asap-Italic_wdth,wght_.ttf";
       sha256 = "6cea0e3ea852761503c25f3505a328a9f4c064a33d28ab97c78533f093e6ab74";
     })

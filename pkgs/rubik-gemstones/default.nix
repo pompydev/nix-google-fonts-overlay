@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rubik-gemstones-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rubikgemstones/RubikGemstones-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rubikgemstones/RubikGemstones-Regular.ttf?raw=true";
       name = "RubikGemstones-Regular.ttf";
       sha256 = "3f308a5b3744c2727f87ffa29a1e6c8e63ad65eb5b4a36584bddec08a88468fa";
     })

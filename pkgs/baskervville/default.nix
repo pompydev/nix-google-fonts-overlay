@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "baskervville-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/baskervville/Baskervville%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/baskervville/Baskervville%5Bwght%5D.ttf?raw=true";
       name = "Baskervville_wght_.ttf";
       sha256 = "a08bcf988383b344aacfd34365a8cd408a4a9665caaf19dc0d716a93833a0fa7";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/baskervville/Baskervville-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/baskervville/Baskervville-Italic%5Bwght%5D.ttf?raw=true";
       name = "Baskervville-Italic_wght_.ttf";
       sha256 = "279ff53ed5c733efabb206345af87face1c137b8ab2667298d6cf228ebffbf01";
     })

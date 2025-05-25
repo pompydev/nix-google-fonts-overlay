@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "keania-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/keaniaone/KeaniaOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/keaniaone/KeaniaOne-Regular.ttf?raw=true";
       name = "KeaniaOne-Regular.ttf";
       sha256 = "55c6be3d0cdc816c462bccbcc935ef20f560bd7aecbf1b38caed4752b52c14c0";
     })

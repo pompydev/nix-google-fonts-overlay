@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "commissioner-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/commissioner/Commissioner%5BFLAR,VOLM,slnt,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/commissioner/Commissioner%5BFLAR,VOLM,slnt,wght%5D.ttf?raw=true";
       name = "Commissioner_FLAR,VOLM,slnt,wght_.ttf";
       sha256 = "db01279a6eb8676ee62675a4d7e5edbfe5f08fbc109358e2f49760b70c0447d3";
     })

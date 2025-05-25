@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "kumar-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kumarone/KumarOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/kumarone/KumarOne-Regular.ttf?raw=true";
       name = "KumarOne-Regular.ttf";
       sha256 = "04d6479721639f0d00aa34cfaa18d940eacf84060b427433edb70100b6d01100";
     })

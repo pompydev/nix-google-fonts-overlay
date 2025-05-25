@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "badeen-display-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/badeendisplay/BadeenDisplay-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/badeendisplay/BadeenDisplay-Regular.ttf?raw=true";
       name = "BadeenDisplay-Regular.ttf";
       sha256 = "274805b3ee44f9b45a99bdcecf25cd44944c0a81f6cf8086b5cf30d00e860537";
     })

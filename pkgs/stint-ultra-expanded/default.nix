@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "stint-ultra-expanded-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/stintultraexpanded/StintUltraExpanded-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/stintultraexpanded/StintUltraExpanded-Regular.ttf?raw=true";
       name = "StintUltraExpanded-Regular.ttf";
       sha256 = "82b0ec50644e8824100a32085c7136aeb79b2dc9a81804aefc82c3c9337f8a6f";
     })

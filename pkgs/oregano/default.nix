@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "oregano-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oregano/Oregano-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/oregano/Oregano-Regular.ttf?raw=true";
       name = "Oregano-Regular.ttf";
       sha256 = "0c2eaed981aeefa8445c4a937794fd1ec7dd5a5b40ff60307a59775cc239b187";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oregano/Oregano-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/oregano/Oregano-Italic.ttf?raw=true";
       name = "Oregano-Italic.ttf";
       sha256 = "5e4df67997869d4e68dba1a38463a70c8679d29cb7ac678779631db9382f5538";
     })

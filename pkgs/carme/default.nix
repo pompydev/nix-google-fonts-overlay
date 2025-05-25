@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "carme-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/carme/Carme-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/carme/Carme-Regular.ttf?raw=true";
       name = "Carme-Regular.ttf";
       sha256 = "2be32ebe8f62944b1df0f1bf0c76957bda369567b99454d749e51192a393db90";
     })

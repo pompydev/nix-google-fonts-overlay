@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "anton-sc-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/antonsc/AntonSC-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/antonsc/AntonSC-Regular.ttf?raw=true";
       name = "AntonSC-Regular.ttf";
       sha256 = "a38d04953f7a3878d947381081b2b80c673dec58404878702788a9c81a944bea";
     })

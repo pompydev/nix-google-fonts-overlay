@@ -2,43 +2,43 @@
 
 stdenv.mkDerivation rec {
   name = "biryani-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/biryani/Biryani-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/biryani/Biryani-ExtraLight.ttf?raw=true";
       name = "Biryani-ExtraLight.ttf";
       sha256 = "f2a95908cf136847faa9dbda8226d1d2f45cfcadf17696d082010404509dd770";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/biryani/Biryani-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/biryani/Biryani-Light.ttf?raw=true";
       name = "Biryani-Light.ttf";
       sha256 = "83238e32854ac489e02276aebca90d4c675ea95a4413c3ce3d012581c67fea8b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/biryani/Biryani-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/biryani/Biryani-Regular.ttf?raw=true";
       name = "Biryani-Regular.ttf";
       sha256 = "0b846b4f8600e7943a3a86a2f7ce04c20daa7d2cdad74c951edcc8e07c367116";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/biryani/Biryani-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/biryani/Biryani-SemiBold.ttf?raw=true";
       name = "Biryani-SemiBold.ttf";
       sha256 = "8bb5d78fb28fa27909394f3c3548ce544376e23448ff15fbb7cb22ee650b0e5d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/biryani/Biryani-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/biryani/Biryani-Bold.ttf?raw=true";
       name = "Biryani-Bold.ttf";
       sha256 = "5e1b0cc60cbf479a1ce41c6b764fcb25160726485c6676db8e789ed4bab43e43";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/biryani/Biryani-ExtraBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/biryani/Biryani-ExtraBold.ttf?raw=true";
       name = "Biryani-ExtraBold.ttf";
       sha256 = "ea9ae707985de3f2318fb2ba812facef31253c27e1b039bae922dced15f2273a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/biryani/Biryani-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/biryani/Biryani-Black.ttf?raw=true";
       name = "Biryani-Black.ttf";
       sha256 = "45d7963ee617b4508f16d182e0eb7aeebb6431614a0641ccc8d4534f3673bafa";
     })

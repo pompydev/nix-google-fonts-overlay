@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "odibee-sans-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/odibeesans/OdibeeSans-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/odibeesans/OdibeeSans-Regular.ttf?raw=true";
       name = "OdibeeSans-Regular.ttf";
       sha256 = "4e4006c713f5509f772f64e16c8a0821ad26411a69f688c71b127568355520e8";
     })

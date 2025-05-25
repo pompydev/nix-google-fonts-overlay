@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "caudex-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/caudex/Caudex-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/caudex/Caudex-Regular.ttf?raw=true";
       name = "Caudex-Regular.ttf";
       sha256 = "dbb493e1adc50aaec52071535e6fccf4176793c79545f54d95a812cbfb85169b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/caudex/Caudex-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/caudex/Caudex-Italic.ttf?raw=true";
       name = "Caudex-Italic.ttf";
       sha256 = "ffa47f625d746e7b75c2306b7572f22561e1d73312a375772325c98213e0a4f9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/caudex/Caudex-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/caudex/Caudex-Bold.ttf?raw=true";
       name = "Caudex-Bold.ttf";
       sha256 = "880fb67901ce94573ed0262d152b87115a08f928c72fc6c1101375a1223d390a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/caudex/Caudex-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/caudex/Caudex-BoldItalic.ttf?raw=true";
       name = "Caudex-BoldItalic.ttf";
       sha256 = "78440e8ab6730581ac71fe780ad2fa15ba15d240313028678e404ace4e70eb20";
     })

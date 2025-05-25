@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "seaweed-script-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/seaweedscript/SeaweedScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/seaweedscript/SeaweedScript-Regular.ttf?raw=true";
       name = "SeaweedScript-Regular.ttf";
       sha256 = "48a7f01ce3f307b532c9c5f8582a8ed87883389933b311b8e3704e8798ba4bc7";
     })

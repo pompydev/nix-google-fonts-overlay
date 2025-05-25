@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "updock-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/updock/Updock-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/updock/Updock-Regular.ttf?raw=true";
       name = "Updock-Regular.ttf";
       sha256 = "2b9138ac107e6b5831828474c5f9e773c2da3a762afb76841deb6ecf5fd99ef6";
     })

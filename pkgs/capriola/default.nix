@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "capriola-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/capriola/Capriola-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/capriola/Capriola-Regular.ttf?raw=true";
       name = "Capriola-Regular.ttf";
       sha256 = "4a6e1a7b6b34852674ef0ffd2f7049a903e68b49d3533b6f651cad039df42288";
     })

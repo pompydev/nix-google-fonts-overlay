@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "pathway-extreme-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pathwayextreme/PathwayExtreme%5Bopsz,wdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/pathwayextreme/PathwayExtreme%5Bopsz,wdth,wght%5D.ttf?raw=true";
       name = "PathwayExtreme_opsz,wdth,wght_.ttf";
       sha256 = "a7640e7731dbd5556123aa8b56948c23542ce8696f0bc882ce56f2dd9a9ee9fa";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pathwayextreme/PathwayExtreme-Italic%5Bopsz,wdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/pathwayextreme/PathwayExtreme-Italic%5Bopsz,wdth,wght%5D.ttf?raw=true";
       name = "PathwayExtreme-Italic_opsz,wdth,wght_.ttf";
       sha256 = "ad71db067a33c101fb1ec792e94c405f22274f68a6842dc4521f623c17805fa1";
     })

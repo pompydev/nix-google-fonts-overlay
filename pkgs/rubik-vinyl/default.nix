@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rubik-vinyl-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rubikvinyl/RubikVinyl-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rubikvinyl/RubikVinyl-Regular.ttf?raw=true";
       name = "RubikVinyl-Regular.ttf";
       sha256 = "64f1d1636851d814a9031a945bc6ca6b7bc26a29009eb316176d27f00f2b7d4e";
     })

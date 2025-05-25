@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "edu-nsw-act-foundation-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/edunswactfoundation/EduNSWACTFoundation%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/edunswactfoundation/EduNSWACTFoundation%5Bwght%5D.ttf?raw=true";
       name = "EduNSWACTFoundation_wght_.ttf";
       sha256 = "5a4b22cc39c04d97472bbe705b9700e864492b853b4941645da60202b796146a";
     })

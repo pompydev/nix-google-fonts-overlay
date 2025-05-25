@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "borel-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/borel/Borel-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/borel/Borel-Regular.ttf?raw=true";
       name = "Borel-Regular.ttf";
       sha256 = "a548b566d49f5f88b4bd57ecf6cf677adcff4917cc63a28d0c2d2c0c21309d5c";
     })

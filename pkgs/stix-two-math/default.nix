@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "stix-two-math-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/stixtwomath/STIXTwoMath-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/stixtwomath/STIXTwoMath-Regular.ttf?raw=true";
       name = "STIXTwoMath-Regular.ttf";
       sha256 = "562551b15b836e6e01d1b7350909baf3c8c8d83260c1190fbf4544333e6936de";
     })

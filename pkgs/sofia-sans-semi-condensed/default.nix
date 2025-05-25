@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "sofia-sans-semi-condensed-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sofiasanssemicondensed/SofiaSansSemiCondensed%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sofiasanssemicondensed/SofiaSansSemiCondensed%5Bwght%5D.ttf?raw=true";
       name = "SofiaSansSemiCondensed_wght_.ttf";
       sha256 = "7942e1c0b370cb5fe8dbf3584a3f38a913ad84a27e13e74ccd0e547e43d57a1f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sofiasanssemicondensed/SofiaSansSemiCondensed-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sofiasanssemicondensed/SofiaSansSemiCondensed-Italic%5Bwght%5D.ttf?raw=true";
       name = "SofiaSansSemiCondensed-Italic_wght_.ttf";
       sha256 = "ac7f4f8e5cee9c63c722c52e6cb73c97a7894992746e90a0ee8286291e4dfaff";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "windsong-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/windsong/WindSong-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/windsong/WindSong-Regular.ttf?raw=true";
       name = "WindSong-Regular.ttf";
       sha256 = "44bea4f8cdb818e9df6eef5334c63915acb7f1877b239debb373277d16b0aac2";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/windsong/WindSong-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/windsong/WindSong-Medium.ttf?raw=true";
       name = "WindSong-Medium.ttf";
       sha256 = "df3525097cb0273f610b87da52399879f87dcce0cbddee08c3e52395108079aa";
     })

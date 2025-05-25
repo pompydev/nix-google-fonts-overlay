@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "edu-sa-beginner-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/edusabeginner/EduSABeginner%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/edusabeginner/EduSABeginner%5Bwght%5D.ttf?raw=true";
       name = "EduSABeginner_wght_.ttf";
       sha256 = "1ec0d8b4f3a6fda018079fa284570d2c4a3a514e3687d139b25b05dbb86c7ff4";
     })

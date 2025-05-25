@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "train-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/trainone/TrainOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/trainone/TrainOne-Regular.ttf?raw=true";
       name = "TrainOne-Regular.ttf";
       sha256 = "07d67ad14231a4a41f0ee501b14bd6f9c7a9beada5ee6af2924114863a034623";
     })

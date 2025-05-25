@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "gupter-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gupter/Gupter-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gupter/Gupter-Regular.ttf?raw=true";
       name = "Gupter-Regular.ttf";
       sha256 = "cad87b6c06ac63e24f2b9741c0cbe4bcf5945826696f4baca61933c959052cf6";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gupter/Gupter-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gupter/Gupter-Medium.ttf?raw=true";
       name = "Gupter-Medium.ttf";
       sha256 = "6ca9e0c2fa74cbd2b75a0e69b116218570ac74d80c1e92ebcc59bb6bdc8bb032";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gupter/Gupter-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gupter/Gupter-Bold.ttf?raw=true";
       name = "Gupter-Bold.ttf";
       sha256 = "8fab8a84e5a47c4c5a5a4449ca62e3a6492fbddadd778de9d9fb2d3b1b36989c";
     })

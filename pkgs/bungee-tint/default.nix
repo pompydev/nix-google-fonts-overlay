@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "bungee-tint-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bungeetint/BungeeTint-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/bungeetint/BungeeTint-Regular.ttf?raw=true";
       name = "BungeeTint-Regular.ttf";
       sha256 = "ebe2699c1507981225cfa75c601a2f66aea813e919b34ada735c676fb4b32726";
     })

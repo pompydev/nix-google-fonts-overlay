@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "victor-mono-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/victormono/VictorMono%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/victormono/VictorMono%5Bwght%5D.ttf?raw=true";
       name = "VictorMono_wght_.ttf";
       sha256 = "6fab3abe37b456f56d180987e04a3a0c326bace2cb825bc638b6be1eb03edf8f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/victormono/VictorMono-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/victormono/VictorMono-Italic%5Bwght%5D.ttf?raw=true";
       name = "VictorMono-Italic_wght_.ttf";
       sha256 = "e393afee873d56e052c10bdfcbf67053c429895bd73a4f8e59100a09ffb9d8ec";
     })

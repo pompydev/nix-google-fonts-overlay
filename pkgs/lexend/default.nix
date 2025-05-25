@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "lexend-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lexend/Lexend%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/lexend/Lexend%5Bwght%5D.ttf?raw=true";
       name = "Lexend_wght_.ttf";
       sha256 = "3add53e641fbc81da64da4bb254285e2831b52b029527bc0714e2b9610832ee6";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "pirata-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/pirataone/PirataOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/pirataone/PirataOne-Regular.ttf?raw=true";
       name = "PirataOne-Regular.ttf";
       sha256 = "5347a2e155589ecf667d4b766613c8ee003edde9f83717fd24c09599a4b1ecc0";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "unifrakturmaguntia-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/unifrakturmaguntia/UnifrakturMaguntia-Book.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/unifrakturmaguntia/UnifrakturMaguntia-Book.ttf?raw=true";
       name = "UnifrakturMaguntia-Book.ttf";
       sha256 = "d64afc0547059dd2e4a78da48bda0aba0a9901be58c7f8c201a8b2b6b4492cc8";
     })

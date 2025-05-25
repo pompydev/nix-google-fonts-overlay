@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "slackside-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/slacksideone/SlacksideOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/slacksideone/SlacksideOne-Regular.ttf?raw=true";
       name = "SlacksideOne-Regular.ttf";
       sha256 = "c32d67d921cfde2f89d2fe12b6e78a58618a41774a7cb1b0e321d5d1ae9a324a";
     })

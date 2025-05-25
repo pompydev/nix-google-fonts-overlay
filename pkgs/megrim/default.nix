@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "megrim-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/megrim/Megrim.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/megrim/Megrim.ttf?raw=true";
       name = "Megrim.ttf";
       sha256 = "88d30544a63121ab021f4cf60f57257c81caaeddeeb2eb4d6ec1a600ae779cfd";
     })

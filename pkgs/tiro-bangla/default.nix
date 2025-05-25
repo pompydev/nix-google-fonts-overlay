@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "tiro-bangla-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tirobangla/TiroBangla-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/tirobangla/TiroBangla-Regular.ttf?raw=true";
       name = "TiroBangla-Regular.ttf";
       sha256 = "a763523dc3f90a71962cb8d9400b8f0a86b40b2cb01676f165101a2967127ae4";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tirobangla/TiroBangla-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/tirobangla/TiroBangla-Italic.ttf?raw=true";
       name = "TiroBangla-Italic.ttf";
       sha256 = "deb8330a56697cfabef8ff393c6d36af60531229b138bf9a3ffe834330cb03e1";
     })

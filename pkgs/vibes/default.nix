@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "vibes-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/vibes/Vibes-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/vibes/Vibes-Regular.ttf?raw=true";
       name = "Vibes-Regular.ttf";
       sha256 = "297d9c8499e7383ac7675932741625ab12d9bb3abd1c31d2659b385d965a7ab7";
     })

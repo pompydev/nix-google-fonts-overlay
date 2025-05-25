@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "pt-serif-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ptserif/PT_Serif-Web-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ptserif/PT_Serif-Web-Regular.ttf?raw=true";
       name = "PT_Serif-Web-Regular.ttf";
       sha256 = "a4951fade06ff8f09b7673aa81ffb65a8cd409e24d3289a6dc670bc4dda2557a";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ptserif/PT_Serif-Web-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ptserif/PT_Serif-Web-Italic.ttf?raw=true";
       name = "PT_Serif-Web-Italic.ttf";
       sha256 = "f57e95ff9dc85691a3b2e193f2028db36f6663939a46c0fc4f286d618b80b7ce";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ptserif/PT_Serif-Web-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ptserif/PT_Serif-Web-Bold.ttf?raw=true";
       name = "PT_Serif-Web-Bold.ttf";
       sha256 = "038ba7336bd7ea14f12ad155bed51a4345cac5153275d521dec3ba04021c526e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ptserif/PT_Serif-Web-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ptserif/PT_Serif-Web-BoldItalic.ttf?raw=true";
       name = "PT_Serif-Web-BoldItalic.ttf";
       sha256 = "f003788ba08981eb0988b3557a6f224a53dab49c20e283e8b74d5af3c466f8be";
     })

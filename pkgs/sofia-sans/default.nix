@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "sofia-sans-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sofiasans/SofiaSans%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sofiasans/SofiaSans%5Bwght%5D.ttf?raw=true";
       name = "SofiaSans_wght_.ttf";
       sha256 = "a3e1019b8867e21b75d26a7b59d4eb2c81d1acf6b69b9ae6cedca269fb68e291";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sofiasans/SofiaSans-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sofiasans/SofiaSans-Italic%5Bwght%5D.ttf?raw=true";
       name = "SofiaSans-Italic_wght_.ttf";
       sha256 = "c0e69116d34100212881b5f993225ff0c3ea23e2c147f4c0853389923c9ab6a5";
     })

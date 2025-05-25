@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "fanwood-text-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/fanwoodtext/FanwoodText-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/fanwoodtext/FanwoodText-Regular.ttf?raw=true";
       name = "FanwoodText-Regular.ttf";
       sha256 = "98aa9cbf5c5ece368501d188b1565ae3e7f6c9970ee3823769b8e67219dc33c2";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/fanwoodtext/FanwoodText-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/fanwoodtext/FanwoodText-Italic.ttf?raw=true";
       name = "FanwoodText-Italic.ttf";
       sha256 = "23f51e2fda243a8759d5c32ff8a94da23dc697e8c9a014d4718aa0ab7ed3c808";
     })

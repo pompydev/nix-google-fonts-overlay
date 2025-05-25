@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "amiri-quran-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/amiriquran/AmiriQuran-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/amiriquran/AmiriQuran-Regular.ttf?raw=true";
       name = "AmiriQuran-Regular.ttf";
       sha256 = "3eb64ce8c981993c6c561ceb74e4a11589595627a4038c1f17be94057cf95c0a";
     })

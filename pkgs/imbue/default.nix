@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "imbue-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/imbue/Imbue%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/imbue/Imbue%5Bopsz,wght%5D.ttf?raw=true";
       name = "Imbue_opsz,wght_.ttf";
       sha256 = "bf45ff1dc01974acedf4f11bcbfa7365053d97f4d598ddafe189d238ac80a534";
     })

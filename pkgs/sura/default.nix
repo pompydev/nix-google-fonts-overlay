@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "sura-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sura/Sura-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sura/Sura-Regular.ttf?raw=true";
       name = "Sura-Regular.ttf";
       sha256 = "df35bdf883ef6cda173f3e75e88970a257ae69eaa94b93655451f33b9f960234";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sura/Sura-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sura/Sura-Bold.ttf?raw=true";
       name = "Sura-Bold.ttf";
       sha256 = "3f05a9ce75f1d8eaf8f2dc57684fc8aa84a81fa72a437583849eeb84f57089eb";
     })

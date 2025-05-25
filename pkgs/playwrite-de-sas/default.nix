@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "playwrite-de-sas-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwritedesas/PlaywriteDESAS%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwritedesas/PlaywriteDESAS%5Bwght%5D.ttf?raw=true";
       name = "PlaywriteDESAS_wght_.ttf";
       sha256 = "5c66767e8db56ff661215964bd3372e8d87122a7a9259486d500d791fe328065";
     })

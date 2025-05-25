@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "michroma-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/michroma/Michroma-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/michroma/Michroma-Regular.ttf?raw=true";
       name = "Michroma-Regular.ttf";
       sha256 = "b62301163788bc5b7f8fcac0b74b184e34e1827e577b499ecb724da065098f87";
     })

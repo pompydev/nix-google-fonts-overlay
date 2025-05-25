@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-signwriting-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanssignwriting/NotoSansSignWriting-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosanssignwriting/NotoSansSignWriting-Regular.ttf?raw=true";
       name = "NotoSansSignWriting-Regular.ttf";
       sha256 = "1da27fe7b8e959efaf338818f2a6c1aa2c02ff97cf60c34c6d0825675ebc53fb";
     })

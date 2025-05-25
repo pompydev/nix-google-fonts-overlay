@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "darumadrop-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/darumadropone/DarumadropOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/darumadropone/DarumadropOne-Regular.ttf?raw=true";
       name = "DarumadropOne-Regular.ttf";
       sha256 = "beef6d9031918823176ea0f9f729cb811a5f250598d7c8c684b3dee333810689";
     })

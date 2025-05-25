@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "aref-ruqaa-ink-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arefruqaaink/ArefRuqaaInk-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/arefruqaaink/ArefRuqaaInk-Regular.ttf?raw=true";
       name = "ArefRuqaaInk-Regular.ttf";
       sha256 = "0415c2410b1e453f5d0ea0db114fb95d01f65ba2e9e2dc4ae67c5fb73c33e863";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arefruqaaink/ArefRuqaaInk-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/arefruqaaink/ArefRuqaaInk-Bold.ttf?raw=true";
       name = "ArefRuqaaInk-Bold.ttf";
       sha256 = "601b5c607e7e20e7957673b92947d35eb87620cd406214037a140695221c31b4";
     })

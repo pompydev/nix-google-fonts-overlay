@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "cormorant-infant-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantinfant/CormorantInfant%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/cormorantinfant/CormorantInfant%5Bwght%5D.ttf?raw=true";
       name = "CormorantInfant_wght_.ttf";
       sha256 = "48c6efe07539c75d3108795467898706a9cd71ce876d461e45f58482156d7bf3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cormorantinfant/CormorantInfant-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/cormorantinfant/CormorantInfant-Italic%5Bwght%5D.ttf?raw=true";
       name = "CormorantInfant-Italic_wght_.ttf";
       sha256 = "d5f81edef82cf31c093d057709e1bfb42aa776aacf78651b14f9817c2decb251";
     })

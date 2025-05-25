@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rhodium-libre-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rhodiumlibre/RhodiumLibre-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rhodiumlibre/RhodiumLibre-Regular.ttf?raw=true";
       name = "RhodiumLibre-Regular.ttf";
       sha256 = "d068be8060fd77135bd7c94ee36822d6902aed3bf0d382d8bcdfcbb5ad1b8283";
     })

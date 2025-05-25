@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "andika-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/andika/Andika-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/andika/Andika-Regular.ttf?raw=true";
       name = "Andika-Regular.ttf";
       sha256 = "202b96b1f174a4a43baefe885b40dacacb81786755efd08ed4b7704e79c45515";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/andika/Andika-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/andika/Andika-Italic.ttf?raw=true";
       name = "Andika-Italic.ttf";
       sha256 = "6a4a0dd26d28f577b51dd6afb5acf6fd91ab21694e25649c270a32179bb52a62";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/andika/Andika-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/andika/Andika-Bold.ttf?raw=true";
       name = "Andika-Bold.ttf";
       sha256 = "4361126189a2d0e0da66999352db58aaf1b4ca940faf8a8239d725f8303d890d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/andika/Andika-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/andika/Andika-BoldItalic.ttf?raw=true";
       name = "Andika-BoldItalic.ttf";
       sha256 = "2d000f8791a1827c0c4d411e9f4593c4fc2db0fdbb868bb1f863593b3d3968e6";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "playpen-sans-arabic-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playpensansarabic/PlaypenSansArabic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playpensansarabic/PlaypenSansArabic%5Bwght%5D.ttf?raw=true";
       name = "PlaypenSansArabic_wght_.ttf";
       sha256 = "31122f11b6aa8a36a283f95797663a575afffbe2d52b69e496f3a2440942a226";
     })

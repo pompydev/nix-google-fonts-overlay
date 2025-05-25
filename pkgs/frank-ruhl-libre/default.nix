@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "frank-ruhl-libre-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/frankruhllibre/FrankRuhlLibre%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/frankruhllibre/FrankRuhlLibre%5Bwght%5D.ttf?raw=true";
       name = "FrankRuhlLibre_wght_.ttf";
       sha256 = "f9bf26966681037aae894b031bd0dcf2c1bfdfa128dd0640cf276fe62a338a43";
     })

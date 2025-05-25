@@ -2,33 +2,33 @@
 
 stdenv.mkDerivation rec {
   name = "suwannaphum-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/suwannaphum/Suwannaphum-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/suwannaphum/Suwannaphum-Thin.ttf?raw=true";
       name = "Suwannaphum-Thin.ttf";
       sha256 = "a7622a399293c36352a182d829d71b90bf8e711416c9ed551434a15451933766";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/suwannaphum/Suwannaphum-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/suwannaphum/Suwannaphum-Light.ttf?raw=true";
       name = "Suwannaphum-Light.ttf";
       sha256 = "4c63d8be65e55a9b755385c6114d9e40dd3d00542cb7581d321e41b029826be9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/suwannaphum/Suwannaphum-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/suwannaphum/Suwannaphum-Regular.ttf?raw=true";
       name = "Suwannaphum-Regular.ttf";
       sha256 = "f10e67bb256c78c126ac9def562a933ac44a51e5fa0cebea2a6234faa55de4a5";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/suwannaphum/Suwannaphum-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/suwannaphum/Suwannaphum-Bold.ttf?raw=true";
       name = "Suwannaphum-Bold.ttf";
       sha256 = "8afa1154b77de9be28248395160cf5f94cda7847aca123971af212e074d6f83d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/suwannaphum/Suwannaphum-Black.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/suwannaphum/Suwannaphum-Black.ttf?raw=true";
       name = "Suwannaphum-Black.ttf";
       sha256 = "c68112a98a143165dcf231b04a335497f6c028214006b0e1ad5905d65d0a2906";
     })

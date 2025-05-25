@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "kanchenjunga-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kanchenjunga/Kanchenjunga-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/kanchenjunga/Kanchenjunga-Regular.ttf?raw=true";
       name = "Kanchenjunga-Regular.ttf";
       sha256 = "45609f8cc90d4733d3d1665346d359afc1a659def340d0f369121af034322ef9";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kanchenjunga/Kanchenjunga-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/kanchenjunga/Kanchenjunga-Medium.ttf?raw=true";
       name = "Kanchenjunga-Medium.ttf";
       sha256 = "cba5d8031cdbfd8d0eee90f11453a39f6f72cd6a9062636bedf4ebf7b72a27d5";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kanchenjunga/Kanchenjunga-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/kanchenjunga/Kanchenjunga-SemiBold.ttf?raw=true";
       name = "Kanchenjunga-SemiBold.ttf";
       sha256 = "126e137cb641813aa6f0a3688ea5d0c3b5b0a2121cd64237d39e0b3bafae9895";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kanchenjunga/Kanchenjunga-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/kanchenjunga/Kanchenjunga-Bold.ttf?raw=true";
       name = "Kanchenjunga-Bold.ttf";
       sha256 = "67a9a29cd49a17832a5eee8d2747fb9a66ee32e49dc52f5dd43887ff24eb0935";
     })

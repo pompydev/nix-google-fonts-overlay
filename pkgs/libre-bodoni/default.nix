@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "libre-bodoni-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librebodoni/LibreBodoni%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/librebodoni/LibreBodoni%5Bwght%5D.ttf?raw=true";
       name = "LibreBodoni_wght_.ttf";
       sha256 = "0d543665bd869819ffd7d46608804e245497ba835960832d44be89e561b0c717";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/librebodoni/LibreBodoni-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/librebodoni/LibreBodoni-Italic%5Bwght%5D.ttf?raw=true";
       name = "LibreBodoni-Italic_wght_.ttf";
       sha256 = "6a9b0c88764dcf6c094653e3c28da045fcebca48734254afdcbfec46b9ab4fcd";
     })

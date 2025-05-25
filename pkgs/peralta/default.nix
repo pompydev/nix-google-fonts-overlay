@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "peralta-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/peralta/Peralta-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/peralta/Peralta-Regular.ttf?raw=true";
       name = "Peralta-Regular.ttf";
       sha256 = "2bbd48b64ff49ca19148bbc3d6d8595f0262d8cf39809f443528754295c56c2b";
     })

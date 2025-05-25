@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-khudawadi-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanskhudawadi/NotoSansKhudawadi-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosanskhudawadi/NotoSansKhudawadi-Regular.ttf?raw=true";
       name = "NotoSansKhudawadi-Regular.ttf";
       sha256 = "1650e84136b1e9a4e3b4e8f2e96b3542be7587716c58b4c0da6814ed1d87a721";
     })

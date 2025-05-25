@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "nanum-pen-script-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/nanumpenscript/NanumPenScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/nanumpenscript/NanumPenScript-Regular.ttf?raw=true";
       name = "NanumPenScript-Regular.ttf";
       sha256 = "6f0d1ab29c7894010dc88831fb7a0a51edb79136e450344183de5b1a8b52bd43";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-syriac-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanssyriac/NotoSansSyriac%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosanssyriac/NotoSansSyriac%5Bwght%5D.ttf?raw=true";
       name = "NotoSansSyriac_wght_.ttf";
       sha256 = "775585cc3c12877115d588f70af3aa140c78cb440f9d42c98273bf05bed3f6b1";
     })

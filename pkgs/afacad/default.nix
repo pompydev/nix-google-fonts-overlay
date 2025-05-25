@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "afacad-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/afacad/Afacad%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/afacad/Afacad%5Bwght%5D.ttf?raw=true";
       name = "Afacad_wght_.ttf";
       sha256 = "89513fc375cafeecca81110f6a3ef5882d7ac2d871a365b6c93bbfa6039b8230";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/afacad/Afacad-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/afacad/Afacad-Italic%5Bwght%5D.ttf?raw=true";
       name = "Afacad-Italic_wght_.ttf";
       sha256 = "1cf0a5853330267433c0a1603e239ff33e5963887ec2545c96a1516ca960a717";
     })

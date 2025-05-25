@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "shanti-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/shanti/Shanti-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/shanti/Shanti-Regular.ttf?raw=true";
       name = "Shanti-Regular.ttf";
       sha256 = "cc7320c8c4579293f4389ac391b4189c59d8276c3ac1f3b902bf0b0f0e2e9278";
     })

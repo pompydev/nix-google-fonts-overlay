@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "happy-monkey-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/happymonkey/HappyMonkey-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/happymonkey/HappyMonkey-Regular.ttf?raw=true";
       name = "HappyMonkey-Regular.ttf";
       sha256 = "154d17efd5043e9f76ea4b8a15743fe19634c7adbe3531d6af68bec8a0c7fad3";
     })

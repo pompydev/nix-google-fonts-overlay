@@ -2,43 +2,43 @@
 
 stdenv.mkDerivation rec {
   name = "ibm-plex-sans-thai-looped-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-Thin.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-Thin.ttf?raw=true";
       name = "IBMPlexSansThaiLooped-Thin.ttf";
       sha256 = "3ad5c3c2a6b9107a8105250c450e1b2bbaa539a40da58e305c4b61b853e30126";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-ExtraLight.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-ExtraLight.ttf?raw=true";
       name = "IBMPlexSansThaiLooped-ExtraLight.ttf";
       sha256 = "1d8ae33823d3e797b32f5d884ff04879b8d1e266da24e4e9465a50bb209d7a96";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-Light.ttf?raw=true";
       name = "IBMPlexSansThaiLooped-Light.ttf";
       sha256 = "9827df92fc68774d9e51203b11bb831351bfe7bb11509788aeec8dc85ef78365";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-Regular.ttf?raw=true";
       name = "IBMPlexSansThaiLooped-Regular.ttf";
       sha256 = "6d7910d13a7a9e33872d5501fd81a71f84ee532f729bfb72c6ffa94d1f13009e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-Medium.ttf?raw=true";
       name = "IBMPlexSansThaiLooped-Medium.ttf";
       sha256 = "0219cd6e21c9bb226378fa60ebd73e2550b1adb245fec821c817e2b1efcb1f04";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-SemiBold.ttf?raw=true";
       name = "IBMPlexSansThaiLooped-SemiBold.ttf";
       sha256 = "90535e0096a25940788473d2f51ca2dbe4a2404b9fad570b92dc80b792ab22d1";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/ibmplexsansthailooped/IBMPlexSansThaiLooped-Bold.ttf?raw=true";
       name = "IBMPlexSansThaiLooped-Bold.ttf";
       sha256 = "df53c5c794b910f68bb8f3075a6c9bf59261c3ad964bd2be0ddff1bd4c79c7a9";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-lao-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanslao/NotoSansLao%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosanslao/NotoSansLao%5Bwdth,wght%5D.ttf?raw=true";
       name = "NotoSansLao_wdth,wght_.ttf";
       sha256 = "9608b94603a82d09a8038946f9775242f99e3b3459b7f1e4d5b335b578cd7ab3";
     })

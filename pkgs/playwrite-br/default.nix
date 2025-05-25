@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "playwrite-br-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwritebr/PlaywriteBR%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwritebr/PlaywriteBR%5Bwght%5D.ttf?raw=true";
       name = "PlaywriteBR_wght_.ttf";
       sha256 = "31b8e64e49edef06243dfe4eb36210713a0555e043705c93f524bff93557a057";
     })

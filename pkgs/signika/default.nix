@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "signika-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/signika/Signika%5BGRAD,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/signika/Signika%5BGRAD,wght%5D.ttf?raw=true";
       name = "Signika_GRAD,wght_.ttf";
       sha256 = "fae0180ef82a6169d169854595377e1dfa3ab657c96995be8cbf128ffaf07820";
     })

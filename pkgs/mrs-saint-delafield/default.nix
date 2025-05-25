@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "mrs-saint-delafield-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mrssaintdelafield/MrsSaintDelafield-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/mrssaintdelafield/MrsSaintDelafield-Regular.ttf?raw=true";
       name = "MrsSaintDelafield-Regular.ttf";
       sha256 = "67a7abc298ce9d368b2c00fcbff52ec54be948889b8a59032ae80ca3322e5b34";
     })

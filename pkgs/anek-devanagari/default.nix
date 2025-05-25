@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "anek-devanagari-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/anekdevanagari/AnekDevanagari%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/anekdevanagari/AnekDevanagari%5Bwdth,wght%5D.ttf?raw=true";
       name = "AnekDevanagari_wdth,wght_.ttf";
       sha256 = "b88cf0ff5705599b2f16fce4ba9ce2029f76106dd24f0419976c417d89f20888";
     })

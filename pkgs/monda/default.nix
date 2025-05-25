@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "monda-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/monda/Monda%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/monda/Monda%5Bwght%5D.ttf?raw=true";
       name = "Monda_wght_.ttf";
       sha256 = "c95b63f7612df912adc262cb0ef3e8a6c3e6022beb279d9c2ca01c557aa94b59";
     })

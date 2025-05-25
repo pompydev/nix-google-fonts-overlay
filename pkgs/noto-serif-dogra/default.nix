@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-serif-dogra-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notoserifdogra/NotoSerifDogra-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notoserifdogra/NotoSerifDogra-Regular.ttf?raw=true";
       name = "NotoSerifDogra-Regular.ttf";
       sha256 = "82c4680f67a8437f6e237adbc5da559751bb3fcd251e9b82c6d7bd9879896024";
     })

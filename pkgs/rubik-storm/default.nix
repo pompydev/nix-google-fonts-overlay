@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rubik-storm-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/rubikstorm/RubikStorm-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/rubikstorm/RubikStorm-Regular.ttf?raw=true";
       name = "RubikStorm-Regular.ttf";
       sha256 = "0ccc7b5901c6ad6908dfc0125f12ef0dc2647c8b8641c6dd70328df86108229c";
     })

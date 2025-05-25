@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "judson-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/judson/Judson-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/judson/Judson-Regular.ttf?raw=true";
       name = "Judson-Regular.ttf";
       sha256 = "73790bf79197e5bbf24178df3841ff27fb2fca05dd1f17fc1046e4bbe16caf95";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/judson/Judson-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/judson/Judson-Italic.ttf?raw=true";
       name = "Judson-Italic.ttf";
       sha256 = "2bddaed218ead284599fcdcc2889dfb59e804f89db48779e05c0ee87216fdd8f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/judson/Judson-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/judson/Judson-Bold.ttf?raw=true";
       name = "Judson-Bold.ttf";
       sha256 = "07e77390c353d7e4e69862b91e0a79f6774b19d1602b5f4a504ed15ef6f1023c";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "short-stack-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/shortstack/ShortStack-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/shortstack/ShortStack-Regular.ttf?raw=true";
       name = "ShortStack-Regular.ttf";
       sha256 = "9f0e16e8683b2dce66edd7c3340362b554326739fbac594cabc1e9442cf5e8cc";
     })

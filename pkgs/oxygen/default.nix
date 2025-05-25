@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "oxygen-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oxygen/Oxygen-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/oxygen/Oxygen-Light.ttf?raw=true";
       name = "Oxygen-Light.ttf";
       sha256 = "014b444c3073bcf433577cca0aaa177b35ab1b9a46ada562710006cb35128409";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oxygen/Oxygen-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/oxygen/Oxygen-Regular.ttf?raw=true";
       name = "Oxygen-Regular.ttf";
       sha256 = "a328b8fa366bdd94f507ad02e2721ac49cb4257a9ef1e49560b230079386010e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oxygen/Oxygen-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/oxygen/Oxygen-Bold.ttf?raw=true";
       name = "Oxygen-Bold.ttf";
       sha256 = "d86d9a11ad1aa242dbf50d2a2a3295baab2a11349dcf6db5bd28e36036b7f6c0";
     })

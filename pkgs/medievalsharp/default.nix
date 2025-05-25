@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "medievalsharp-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/medievalsharp/MedievalSharp.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/medievalsharp/MedievalSharp.ttf?raw=true";
       name = "MedievalSharp.ttf";
       sha256 = "74cb2e6738bd7703adf120802f68fba0c9ddb9147a08e6847f1005b1e55df5a5";
     })

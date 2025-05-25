@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "noto-sans-linear-a-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/notosanslineara/NotoSansLinearA-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/notosanslineara/NotoSansLinearA-Regular.ttf?raw=true";
       name = "NotoSansLinearA-Regular.ttf";
       sha256 = "f2f281d2bfd685ed2fb9597d77ed50dbe64bc36e0e80acf88b0862f2561e5aa0";
     })

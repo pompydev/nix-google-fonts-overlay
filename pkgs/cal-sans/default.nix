@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "cal-sans-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/calsans/CalSans-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/calsans/CalSans-Regular.ttf?raw=true";
       name = "CalSans-Regular.ttf";
       sha256 = "040f5d1335848146e769ca40ce9664ca8b7639eecdd7316f468b7db20d1c9c01";
     })

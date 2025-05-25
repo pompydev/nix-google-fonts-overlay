@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "do-hyeon-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/dohyeon/DoHyeon-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/dohyeon/DoHyeon-Regular.ttf?raw=true";
       name = "DoHyeon-Regular.ttf";
       sha256 = "35644be7f28e0a68a447b1f7af351dcde5674b870f24f7b5f43e26d00b4ab653";
     })

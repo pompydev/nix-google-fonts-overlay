@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "caprasimo-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/caprasimo/Caprasimo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/caprasimo/Caprasimo-Regular.ttf?raw=true";
       name = "Caprasimo-Regular.ttf";
       sha256 = "786ab84ee787d40df55be78cb4361e485a1c6687195cbcccf3538cb5e46ced90";
     })

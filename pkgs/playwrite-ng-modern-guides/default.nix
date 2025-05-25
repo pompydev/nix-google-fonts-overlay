@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "playwrite-ng-modern-guides-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/playwritengmodernguides/PlaywriteNGModernGuides-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/playwritengmodernguides/PlaywriteNGModernGuides-Regular.ttf?raw=true";
       name = "PlaywriteNGModernGuides-Regular.ttf";
       sha256 = "9420e0a536cbcaa5bc9c029dab09d2540e9ae6e235daf6517f81eb39174af9f8";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "anek-gujarati-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/anekgujarati/AnekGujarati%5Bwdth,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/anekgujarati/AnekGujarati%5Bwdth,wght%5D.ttf?raw=true";
       name = "AnekGujarati_wdth,wght_.ttf";
       sha256 = "7d68cf90804e69cd23717f9f5485f4ac10b660096ab0b406e86f32e09d96029b";
     })

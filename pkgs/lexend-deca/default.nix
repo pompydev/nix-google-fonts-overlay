@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "lexend-deca-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lexenddeca/LexendDeca%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/lexenddeca/LexendDeca%5Bwght%5D.ttf?raw=true";
       name = "LexendDeca_wght_.ttf";
       sha256 = "d11c12298f431d7e416a1e615d33f2c2b98bda2318a0c186c8c94f08c2d90ce8";
     })

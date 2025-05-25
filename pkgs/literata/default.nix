@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "literata-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/literata/Literata%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/literata/Literata%5Bopsz,wght%5D.ttf?raw=true";
       name = "Literata_opsz,wght_.ttf";
       sha256 = "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/literata/Literata-Italic%5Bopsz,wght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/literata/Literata-Italic%5Bopsz,wght%5D.ttf?raw=true";
       name = "Literata-Italic_opsz,wght_.ttf";
       sha256 = "d483dfaeba9cbf4ce71d32a52ee65df82f7e35b15fff8d1011cdb242d1fcd465";
     })

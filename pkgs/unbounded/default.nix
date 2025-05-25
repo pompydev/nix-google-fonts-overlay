@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "unbounded-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/unbounded/Unbounded%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/unbounded/Unbounded%5Bwght%5D.ttf?raw=true";
       name = "Unbounded_wght_.ttf";
       sha256 = "323b511be380c8d474ef030686b71aedde501f8d9cd46da558b7c40454372c3f";
     })

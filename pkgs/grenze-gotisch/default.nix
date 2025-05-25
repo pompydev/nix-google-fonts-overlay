@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "grenze-gotisch-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/grenzegotisch/GrenzeGotisch%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/grenzegotisch/GrenzeGotisch%5Bwght%5D.ttf?raw=true";
       name = "GrenzeGotisch_wght_.ttf";
       sha256 = "701b299d8dc002a2b4bea2ff0f1272c0e4081a2835914354804565c410d0c637";
     })

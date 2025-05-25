@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "cherry-swash-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cherryswash/CherrySwash-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/cherryswash/CherrySwash-Regular.ttf?raw=true";
       name = "CherrySwash-Regular.ttf";
       sha256 = "ce98243d428163be0d59fc02d3133507cd5afe78c501aa320c09c5deaa78a4a3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cherryswash/CherrySwash-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/cherryswash/CherrySwash-Bold.ttf?raw=true";
       name = "CherrySwash-Bold.ttf";
       sha256 = "5cca323c29a80e19400a06be7c0c46e19db8ff2966cbbff7e05eac33354124ba";
     })

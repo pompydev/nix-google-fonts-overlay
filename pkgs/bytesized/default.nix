@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "bytesized-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bytesized/Bytesized-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/bytesized/Bytesized-Regular.ttf?raw=true";
       name = "Bytesized-Regular.ttf";
       sha256 = "867b090a29cf5b45378692d3163439bb51875a3ddf4e37dcabf62030d04f1d51";
     })

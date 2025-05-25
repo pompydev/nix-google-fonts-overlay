@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "vampiro-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/vampiroone/VampiroOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/vampiroone/VampiroOne-Regular.ttf?raw=true";
       name = "VampiroOne-Regular.ttf";
       sha256 = "6e1920a4bbbc66552f793ecc686313ef09469ae75b6b25878bf8923fdfecb2a2";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "sofia-sans-condensed-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sofiasanscondensed/SofiaSansCondensed%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sofiasanscondensed/SofiaSansCondensed%5Bwght%5D.ttf?raw=true";
       name = "SofiaSansCondensed_wght_.ttf";
       sha256 = "3282c4e1a09d14e91c5fdb10aadee93048d017fa00f857f43fdcc29c989221fd";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/sofiasanscondensed/SofiaSansCondensed-Italic%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/sofiasanscondensed/SofiaSansCondensed-Italic%5Bwght%5D.ttf?raw=true";
       name = "SofiaSansCondensed-Italic_wght_.ttf";
       sha256 = "5832d10c7277b70baf954c3a9f5e235da075daa187dfa59c86b8e62649f81250";
     })

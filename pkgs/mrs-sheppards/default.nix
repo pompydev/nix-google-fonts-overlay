@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "mrs-sheppards-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/mrssheppards/MrsSheppards-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/mrssheppards/MrsSheppards-Regular.ttf?raw=true";
       name = "MrsSheppards-Regular.ttf";
       sha256 = "0fa5f282a2ad512d3d5d276fc6d4796fe4fda0fc0612d8687113d5423c8c33d8";
     })

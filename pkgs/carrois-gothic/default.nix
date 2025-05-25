@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "carrois-gothic-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/carroisgothic/CarroisGothic-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/carroisgothic/CarroisGothic-Regular.ttf?raw=true";
       name = "CarroisGothic-Regular.ttf";
       sha256 = "5fa38885ea9f9ea2d42319d1e88ce9170d67b858da7a67a2740460d15d7fcff8";
     })

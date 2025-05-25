@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "miltonian-tattoo-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/miltoniantattoo/MiltonianTattoo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/miltoniantattoo/MiltonianTattoo-Regular.ttf?raw=true";
       name = "MiltonianTattoo-Regular.ttf";
       sha256 = "b4e9f4c263fc1e7beb14b09572ecb21ba893ce8d5e5cec1e5727c79d5c8583dc";
     })

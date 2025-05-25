@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "biz-udpmincho-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bizudpmincho/BIZUDPMincho-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/bizudpmincho/BIZUDPMincho-Regular.ttf?raw=true";
       name = "BIZUDPMincho-Regular.ttf";
       sha256 = "dbcea04578ac1e9d3484525e870ce491bd04361768f4d2ba4b827d96e20f891d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/bizudpmincho/BIZUDPMincho-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/bizudpmincho/BIZUDPMincho-Bold.ttf?raw=true";
       name = "BIZUDPMincho-Bold.ttf";
       sha256 = "99618e39b881597efc03d58706bd194757c968c1bf7a7017a893efead6b1b260";
     })

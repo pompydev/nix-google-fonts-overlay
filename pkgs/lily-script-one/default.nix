@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "lily-script-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/lilyscriptone/LilyScriptOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/lilyscriptone/LilyScriptOne-Regular.ttf?raw=true";
       name = "LilyScriptOne-Regular.ttf";
       sha256 = "191c8e3bfd653ae020cf23cd5b4c5a6a2de7412464a290e51461dd084aa62765";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "prosto-one-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/prostoone/ProstoOne-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/prostoone/ProstoOne-Regular.ttf?raw=true";
       name = "ProstoOne-Regular.ttf";
       sha256 = "745974a4c404cc1fd646d4134940ed359657d6c28634b544f9cbc0f830791ea6";
     })

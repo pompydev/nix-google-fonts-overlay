@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "cherish-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/cherish/Cherish-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/cherish/Cherish-Regular.ttf?raw=true";
       name = "Cherish-Regular.ttf";
       sha256 = "5d6588a51682057329566baf12a11c405dea771a9dcec61ac5fe9a83d9db6b13";
     })

@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "alumni-sans-collegiate-one-sc-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/alumnisanscollegiateonesc/AlumniSansCollegiateOneSC-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/alumnisanscollegiateonesc/AlumniSansCollegiateOneSC-Regular.ttf?raw=true";
       name = "AlumniSansCollegiateOneSC-Regular.ttf";
       sha256 = "dae9c9d91919a15c3bf226538a5dc2bab1bc108d685bdaea3232979cc100de53";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/alumnisanscollegiateonesc/AlumniSansCollegiateOneSC-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/alumnisanscollegiateonesc/AlumniSansCollegiateOneSC-Italic.ttf?raw=true";
       name = "AlumniSansCollegiateOneSC-Italic.ttf";
       sha256 = "e6a3630296c51921596647bd834f7fbfa5b04fe9335e4b33ad9ee702ac8654d7";
     })

@@ -2,33 +2,33 @@
 
 stdenv.mkDerivation rec {
   name = "hind-madurai-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hindmadurai/HindMadurai-Light.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/hindmadurai/HindMadurai-Light.ttf?raw=true";
       name = "HindMadurai-Light.ttf";
       sha256 = "dbe7a2234d341e80b345d4ffc2002e3089492cd07cd4ff5c38fe2dcbbfea54cc";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hindmadurai/HindMadurai-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/hindmadurai/HindMadurai-Regular.ttf?raw=true";
       name = "HindMadurai-Regular.ttf";
       sha256 = "8bd56d6002d4fe4f5f378dd29f9ad382dbbd03a2bf16da24599aabe33f9b55b3";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hindmadurai/HindMadurai-Medium.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/hindmadurai/HindMadurai-Medium.ttf?raw=true";
       name = "HindMadurai-Medium.ttf";
       sha256 = "522aae6dea7fb9a9dfbf2ea25bf2ebf5d6f05c4ecba30fd2a56d22a690f4c072";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hindmadurai/HindMadurai-SemiBold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/hindmadurai/HindMadurai-SemiBold.ttf?raw=true";
       name = "HindMadurai-SemiBold.ttf";
       sha256 = "fce32cd155130741e8dbae7256ddc2cb195eb07f7816746e7bc828e03c7b0ce5";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/hindmadurai/HindMadurai-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/hindmadurai/HindMadurai-Bold.ttf?raw=true";
       name = "HindMadurai-Bold.ttf";
       sha256 = "842086c4312100a032494dcb43fa7afc69ad5772fe004865e0761f92165910a1";
     })

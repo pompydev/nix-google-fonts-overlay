@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "holtwood-one-sc-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/holtwoodonesc/HoltwoodOneSC-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/holtwoodonesc/HoltwoodOneSC-Regular.ttf?raw=true";
       name = "HoltwoodOneSC-Regular.ttf";
       sha256 = "17c8ed01cc4557554749f9435798a7d18afbc97fd0c866405edd38a40470d96c";
     })

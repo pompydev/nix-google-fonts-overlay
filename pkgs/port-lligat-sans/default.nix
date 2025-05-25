@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "port-lligat-sans-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/portlligatsans/PortLligatSans-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/portlligatsans/PortLligatSans-Regular.ttf?raw=true";
       name = "PortLligatSans-Regular.ttf";
       sha256 = "89374c75b8b86c3634abb037997483708611cdd25faa3da9564bb68a9e162757";
     })

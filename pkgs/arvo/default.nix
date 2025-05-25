@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "arvo-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arvo/Arvo-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/arvo/Arvo-Regular.ttf?raw=true";
       name = "Arvo-Regular.ttf";
       sha256 = "f41bd41471ec2db7140351bdde614da5341524503598ff7fe79f3c89c13b605e";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arvo/Arvo-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/arvo/Arvo-Italic.ttf?raw=true";
       name = "Arvo-Italic.ttf";
       sha256 = "a2eb63a0771b8d13d8e54bf650a02aef813eeaa2e10f6298358e6b15d26c6686";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arvo/Arvo-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/arvo/Arvo-Bold.ttf?raw=true";
       name = "Arvo-Bold.ttf";
       sha256 = "6239b2edee762db0ab99343137c9ba15ae81fc843da2e76a0a395781748cc21f";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/arvo/Arvo-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/arvo/Arvo-BoldItalic.ttf?raw=true";
       name = "Arvo-BoldItalic.ttf";
       sha256 = "fc29e57f5558873e41ca9ff9a9c77521565f12c6972756d0fbcc592e1f0f4edb";
     })

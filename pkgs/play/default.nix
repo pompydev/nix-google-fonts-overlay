@@ -2,18 +2,18 @@
 
 stdenv.mkDerivation rec {
   name = "play-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/play/Play-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/play/Play-Regular.ttf?raw=true";
       name = "Play-Regular.ttf";
       sha256 = "eed0da79005cab35d6ed0eacab594ed67cc643be0b2632fa9e440b3bc5078dc4";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/play/Play-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/play/Play-Bold.ttf?raw=true";
       name = "Play-Bold.ttf";
       sha256 = "45c572eccda4cf335165b750345258e753035bf48ee2fdf37faa07c7db88bce0";
     })

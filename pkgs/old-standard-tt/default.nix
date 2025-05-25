@@ -2,23 +2,23 @@
 
 stdenv.mkDerivation rec {
   name = "old-standard-tt-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oldstandardtt/OldStandard-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/oldstandardtt/OldStandard-Regular.ttf?raw=true";
       name = "OldStandard-Regular.ttf";
       sha256 = "42717a1280b523a506ca2b0285cca380e77fe214b1f6e3d75a8b925005f19eac";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oldstandardtt/OldStandard-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/oldstandardtt/OldStandard-Italic.ttf?raw=true";
       name = "OldStandard-Italic.ttf";
       sha256 = "4b9522f4711317fc06e2413a58b4662c249cb707df193d682b9d640e365ef564";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/oldstandardtt/OldStandard-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/oldstandardtt/OldStandard-Bold.ttf?raw=true";
       name = "OldStandard-Bold.ttf";
       sha256 = "7d831e9d799ad23ee98e889381a9db2a283b2dac7f228dd5c06071decb9c54db";
     })

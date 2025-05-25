@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "forum-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/forum/Forum-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/forum/Forum-Regular.ttf?raw=true";
       name = "Forum-Regular.ttf";
       sha256 = "5c9fbe9c4ce76d0269f5088d921d57e58082fd9c28433eacb6de95baf938adf8";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "geist-mono-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/geistmono/GeistMono%5Bwght%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/geistmono/GeistMono%5Bwght%5D.ttf?raw=true";
       name = "GeistMono_wght_.ttf";
       sha256 = "2386ddac2c72b6e0c126561e91486b7284412f303d8d9513da9ffec789e63338";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "kaushan-script-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/kaushanscript/KaushanScript-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/kaushanscript/KaushanScript-Regular.ttf?raw=true";
       name = "KaushanScript-Regular.ttf";
       sha256 = "6d8d379d9bba98178bee476d68114c8f83812c18005ecccf679e70f60e03d8f6";
     })

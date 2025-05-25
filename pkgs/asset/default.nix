@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "asset-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/asset/Asset-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/asset/Asset-Regular.ttf?raw=true";
       name = "Asset-Regular.ttf";
       sha256 = "1dac444192904730f28fbbb10a5ca7a629fe38e4717e026fdfea50ed69bef920";
     })

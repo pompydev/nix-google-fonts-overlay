@@ -2,28 +2,28 @@
 
 stdenv.mkDerivation rec {
   name = "gentium-plus-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gentiumplus/GentiumPlus-Regular.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gentiumplus/GentiumPlus-Regular.ttf?raw=true";
       name = "GentiumPlus-Regular.ttf";
       sha256 = "845e06bb4673a908a5f3b3b4ac9f38841750a07faa9aa45bfcb5796893346f0b";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gentiumplus/GentiumPlus-Italic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gentiumplus/GentiumPlus-Italic.ttf?raw=true";
       name = "GentiumPlus-Italic.ttf";
       sha256 = "18df1f3ddf09cf72338f25c45ca0d1922fb5e86cdd748522dbd6bede4fb1f99d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gentiumplus/GentiumPlus-Bold.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gentiumplus/GentiumPlus-Bold.ttf?raw=true";
       name = "GentiumPlus-Bold.ttf";
       sha256 = "716c4a16887550b13f40b408df5dad6c410c72a00867c5fe802a9ed483e3fb8d";
     })
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/gentiumplus/GentiumPlus-BoldItalic.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/gentiumplus/GentiumPlus-BoldItalic.ttf?raw=true";
       name = "GentiumPlus-BoldItalic.ttf";
       sha256 = "35e7ad6591694a832de59df1899bccc88e0af8ad5fff20533b63751747851c71";
     })

@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "tilt-prism-${version}";
-  version = "2025-05-16-181022";
+  version = "2025-05-23-133205";
 
   phases = [ "unpackPhase" "installPhase" ];
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/google/fonts/blob/973a8934ba60f3a32a83617dce24edc3605fe3bb/ofl/tiltprism/TiltPrism%5BXROT,YROT%5D.ttf?raw=true";
+      url = "https://github.com/google/fonts/blob/c781e48f571fe26740a9814c0461064628cbd175/ofl/tiltprism/TiltPrism%5BXROT,YROT%5D.ttf?raw=true";
       name = "TiltPrism_XROT,YROT_.ttf";
       sha256 = "28e96351753e177dc6e097f7f089c6942cdf26416e861f4ab9d6ee0bc57c7515";
     })
